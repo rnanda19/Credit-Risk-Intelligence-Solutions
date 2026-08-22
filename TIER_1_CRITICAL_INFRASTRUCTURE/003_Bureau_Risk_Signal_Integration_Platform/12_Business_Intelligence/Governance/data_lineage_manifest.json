@@ -1,0 +1,12 @@
+{
+  "Model Predictions & Portfolio Data": [
+    {
+      "source": "Model Predictions & Portfolio Data",
+      "output": "12_Business_Intelligence/Dashboards/dashboard_definitions.json",
+      "record_count": 307511,
+      "transformation_type": "PREDICTION_TO_DASHBOARD_VISUALIZATION",
+      "timestamp": "2026-08-11T18:42:03.043366",
+      "checksum": "N/A"
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "BUREAU_HIGH_RISK_FLAG": [
+    {
+      "field": "BUREAU_HIGH_RISK_FLAG",
+      "change_type": "ENGINEERED_FEATURE",
+      "before": "N/A",
+      "after": "Binary (0/1)",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:29:38.132954"
+    }
+  ],
+  "BUREAU_INQUIRY_FREQUENCY": [
+    {
+      "field": "BUREAU_INQUIRY_FREQUENCY",
+      "change_type": "ENGINEERED_FEATURE",
+      "before": "N/A",
+      "after": "Numeric",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:29:38.133661"
+    }
+  ],
+  "BUREAU_URGENT_INQUIRY": [
+    {
+      "field": "BUREAU_URGENT_INQUIRY",
+      "change_type": "ENGINEERED_FEATURE",
+      "before": "N/A",
+      "after": "Binary (0/1)",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:29:38.135009"
+    }
+  ],
+  "CREDIT_TO_INCOME_RATIO": [
+    {
+      "field": "CREDIT_TO_INCOME_RATIO",
+      "change_type": "ENGINEERED_FEATURE",
+      "before": "N/A",
+      "after": "Numeric [0, 100]",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:29:38.139483"
+    }
+  ],
+  "ANNUITY_TO_INCOME_RATIO": [
+    {
+      "field": "ANNUITY_TO_INCOME_RATIO",
+      "change_type": "ENGINEERED_FEATURE",
+      "before": "N/A",
+      "after": "Numeric [0, 1]",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:29:38.142827"
+    }
+  ],
+  "GOODS_PRICE_TO_CREDIT_RATIO": [
+    {
+      "field": "GOODS_PRICE_TO_CREDIT_RATIO",
+      "change_type": "ENGINEERED_FEATURE",
+      "before": "N/A",
+      "after": "Numeric [0, 2]",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:29:38.146373"
+    }
+  ],
+  "EMPLOYMENT_STABILITY": [
+    {
+      "field": "EMPLOYMENT_STABILITY",
+      "change_type": "ENGINEERED_FEATURE",
+      "before": "N/A",
+      "after": "Numeric [0, 50]",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:29:38.150068"
+    }
+  ],
+  "AGE_AT_APPLICATION": [
+    {
+      "field": "AGE_AT_APPLICATION",
+      "change_type": "ENGINEERED_FEATURE",
+      "before": "N/A",
+      "after": "Numeric [15, 100]",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:29:38.152810"
+    }
+  ],
+  "REGISTRATION_TENURE": [
+    {
+      "field": "REGISTRATION_TENURE",
+      "change_type": "ENGINEERED_FEATURE",
+      "before": "N/A",
+      "after": "Numeric [0, 70]",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:29:38.155579"
+    }
+  ],
+  "HAS_DEPENDENTS": [
+    {
+      "field": "HAS_DEPENDENTS",
+      "change_type": "ENGINEERED_FEATURE",
+      "before": "N/A",
+      "after": "Binary (0/1)",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:29:38.157055"
+    }
+  ],
+  "DOCUMENTS_SUBMITTED_COUNT": [
+    {
+      "field": "DOCUMENTS_SUBMITTED_COUNT",
+      "change_type": "ENGINEERED_FEATURE",
+      "before": "N/A",
+      "after": "Numeric [0, 20]",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:29:38.191749"
+    }
+  ],
+  "CONTACT_INFO_COMPLETENESS": [
+    {
+      "field": "CONTACT_INFO_COMPLETENESS",
+      "change_type": "ENGINEERED_FEATURE",
+      "before": "N/A",
+      "after": "Numeric [0, 5]",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:29:38.216163"
+    }
+  ],
+  "PAYMENT_CONSISTENCY": [
+    {
+      "field": "PAYMENT_CONSISTENCY",
+      "change_type": "ENGINEERED_FEATURE",
+      "before": "N/A",
+      "after": "Numeric [0, 1]",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:29:38.222314"
+    }
+  ],
+  "CC_UTILIZATION_RATE": [
+    {
+      "field": "CC_UTILIZATION_RATE",
+      "change_type": "ENGINEERED_FEATURE",
+      "before": "N/A",
+      "after": "Numeric [0, 2]",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:29:38.225575"
+    }
+  ]
+}

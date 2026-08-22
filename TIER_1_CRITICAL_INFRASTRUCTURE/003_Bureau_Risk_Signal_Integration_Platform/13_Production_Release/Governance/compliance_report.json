@@ -1,0 +1,72 @@
+{
+  "timestamp": "2026-08-11T18:42:40.661991",
+  "execution_id": "CHUNK_13_20260811_184240_Problem 20: Bureau Risk Signal Integration",
+  "chunk": "CHUNK_13",
+  "problem": "Problem 20: Bureau Risk Signal Integration",
+  "data_owner": "Production Release & Operations Team",
+  "sensitivity": "CONFIDENTIAL",
+  "execution_duration_minutes": 0.0,
+  "quality_gates": {
+    "total": 2,
+    "passed": 2,
+    "failed": 0,
+    "pass_rate": "100.0%",
+    "details": {
+      "production_readiness": {
+        "gate_name": "production_readiness",
+        "threshold": 37,
+        "actual_value": 37,
+        "unit": "qa_checks",
+        "pass": true,
+        "status": "PASS",
+        "timestamp": "2026-08-11T18:42:40.617396"
+      },
+      "release_documentation": {
+        "gate_name": "release_documentation",
+        "threshold": 4,
+        "actual_value": 4,
+        "unit": "documentation_artifacts",
+        "pass": true,
+        "status": "PASS",
+        "timestamp": "2026-08-11T18:42:40.623715"
+      }
+    }
+  },
+  "reconciliation": {
+    "total": 2,
+    "passed": 2,
+    "failed": 0,
+    "pass_rate": "100.0%",
+    "details": {
+      "PRODUCTION_SYSTEM_VERIFICATION": {
+        "reconciliation_name": "PRODUCTION_SYSTEM_VERIFICATION",
+        "source_count": 13,
+        "output_count": 13,
+        "variance_percentage": 0.0,
+        "within_tolerance": true,
+        "timestamp": "2026-08-11T18:42:40.617950"
+      },
+      "FINAL_PROJECT_COMPLETION": {
+        "reconciliation_name": "FINAL_PROJECT_COMPLETION",
+        "source_count": 13,
+        "output_count": 13,
+        "variance_percentage": 0.0,
+        "within_tolerance": true,
+        "timestamp": "2026-08-11T18:42:40.624345"
+      }
+    }
+  },
+  "data_lineage": {
+    "sources": 1,
+    "transformations": 1
+  },
+  "pii_fields_identified": 3,
+  "pii_fields": [
+    "CUSTOMER_PREDICTIONS",
+    "PRODUCTION_DEPLOYMENT",
+    "AUDIT_LOGS"
+  ],
+  "governance_events": 7,
+  "access_audit_entries": 3,
+  "overall_status": "COMPLIANT"
+}

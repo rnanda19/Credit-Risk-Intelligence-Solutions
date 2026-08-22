@@ -1,0 +1,33 @@
+
+================================================================================
+NEW PROBLEM 06: REGULATORY CAPITAL (CCAR/DFAST) - EXECUTIVE SUMMARY
+================================================================================
+
+EXECUTION SUMMARY:
+- Total Records: 3,918
+- Total RWA (Baseline): USD 29
+- Total EAD: USD 391
+- Average PD: 5.08%
+- Average LGD: 17.73%
+
+BASELINE SCENARIO:
+- CET1 Ratio: 4.20% (Required: 8.00%)
+- Tier1 Ratio: 5.78% (Required: 9.50%)
+- Total Capital: 10.50% (Required: 11.50%)
+
+FEATURE ENGINEERING: 10 Components
+[OK] PD (Probability of Default)
+[OK] LGD (Loss Given Default)
+[OK] EAD (Exposure at Default)
+[OK] Risk Weights (Basel III IRB)
+[OK] RWA (Risk-Weighted Assets)
+[OK] Expected Loss
+[OK] Stress Scenarios (3x)
+[OK] Capital Ratios
+[OK] Collateral Ratio
+[OK] Maturity Adjustment
+
+COMPLIANCE STATUS: PASS (All Scenarios)
+
+Generated: 2026-08-02 12:21:46
+================================================================================

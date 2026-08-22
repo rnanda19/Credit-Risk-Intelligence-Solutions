@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html><head><title>Regulatory Capital Analysis</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 20px; background-color: #f5f5f5; }
+.container { max-width: 1200px; margin: 0 auto; background-color: white; padding: 20px; border-radius: 5px; }
+h1 { color: #1f77b4; border-bottom: 3px solid #1f77b4; padding-bottom: 10px; }
+h2 { color: #ff7f0e; margin-top: 30px; }
+table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+th { background-color: #1f77b4; color: white; }
+tr:nth-child(even) { background-color: #f9f9f9; }
+.pass { color: green; font-weight: bold; }
+.fail { color: red; font-weight: bold; }
+</style></head><body>
+<div class="container">
+<h1>Regulatory Capital Analysis Report - CCAR/DFAST</h1>
+<p><strong>Report Date:</strong> 2026-08-02 15:28:29</p>
+<h2>Capital Ratios</h2>
+<table>
+<tr><th>Ratio</th><th>Current</th><th>Required</th><th>Status</th></tr>
+<tr><td>CET1</td><td>0.9564</td><td>0.0625</td><td class="pass">PASS</td></tr>
+<tr><td>TIER1</td><td>1.1614</td><td>0.0700</td><td class="pass">PASS</td></tr>
+<tr><td>TOTAL</td><td>1.3663</td><td>0.0875</td><td class="pass">PASS</td></tr>
+</table>
+<h2>Stress Test Results</h2>
+<table>
+<tr><th>Scenario</th><th>CET1 Ratio</th><th>TIER1 Ratio</th><th>TOTAL Ratio</th></tr>
+<tr><td>Baseline</td><td>0.9564</td><td>1.1614</td><td>1.3663</td></tr><tr><td>Adverse</td><td>0.4433</td><td>0.5383</td><td>0.6333</td></tr><tr><td>Severely_Adverse</td><td>0.2533</td><td>0.3076</td><td>0.3619</td></tr></table></div></body></html>

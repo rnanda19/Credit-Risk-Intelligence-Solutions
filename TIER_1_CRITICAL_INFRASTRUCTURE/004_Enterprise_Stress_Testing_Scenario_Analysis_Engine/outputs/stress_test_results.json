@@ -1,0 +1,45 @@
+{
+  "base_case": {
+    "default_rate": 0.08052553989138872,
+    "ecl": 74701886.32431097,
+    "total_exposure": 2089397766.0650501,
+    "model_auc": 0.7255085081597027
+  },
+  "scenarios": {
+    "Base Case": {
+      "default_rate": 0.08052553989138872,
+      "ecl": 74701886.32431097,
+      "execution_time": 0.0
+    },
+    "Mild Recession": {
+      "default_rate": 0.07969321738886055,
+      "ecl": 73733812.90587273,
+      "execution_time": 0.01572895050048828
+    },
+    "Moderate Recession": {
+      "default_rate": 0.0798031840744199,
+      "ecl": 74191141.43450347,
+      "execution_time": 0.0
+    },
+    "Severe Recession": {
+      "default_rate": 0.07981582656189559,
+      "ecl": 74279737.09469315,
+      "execution_time": 0.0
+    },
+    "Financial Crisis": {
+      "default_rate": 0.07978743656467104,
+      "ecl": 74351702.15777619,
+      "execution_time": 0.009178876876831055
+    },
+    "Depression Scenario": {
+      "default_rate": 0.08031642642045912,
+      "ecl": 75030167.78826855,
+      "execution_time": 0.0
+    }
+  },
+  "risk_metrics": {
+    "var_95": 73733812.90587273,
+    "worst_scenario": "Depression Scenario",
+    "worst_case_ecl": 75030167.78826855
+  }
+}

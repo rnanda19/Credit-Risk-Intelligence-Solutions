@@ -1,0 +1,228 @@
+{
+  "checklist_id": "GOLIVE-BUREAU-RISK-001",
+  "go_live_date": "2024-09-15",
+  "go_live_time": "00:00 UTC",
+  "pre_golive_week": {
+    "monday": {
+      "task_1": {
+        "description": "Final stakeholder review meeting",
+        "owner": "Project Lead",
+        "status": "PENDING"
+      },
+      "task_2": {
+        "description": "Conduct security penetration test",
+        "owner": "Security Team",
+        "status": "PENDING"
+      },
+      "task_3": {
+        "description": "Load test: 5,000 req/sec for 1 hour",
+        "owner": "QA Team",
+        "status": "PENDING"
+      }
+    },
+    "tuesday": {
+      "task_1": {
+        "description": "Regulatory sign-off confirmation",
+        "owner": "Compliance",
+        "status": "PENDING"
+      },
+      "task_2": {
+        "description": "Board Risk Committee approval",
+        "owner": "CRO",
+        "status": "PENDING"
+      },
+      "task_3": {
+        "description": "Finalize rollback procedures",
+        "owner": "DevOps",
+        "status": "PENDING"
+      }
+    },
+    "wednesday": {
+      "task_1": {
+        "description": "Staging environment full validation",
+        "owner": "QA Team",
+        "status": "PENDING"
+      },
+      "task_2": {
+        "description": "Production environment final checks",
+        "owner": "DevOps",
+        "status": "PENDING"
+      },
+      "task_3": {
+        "description": "Brief customer/user teams",
+        "owner": "Product",
+        "status": "PENDING"
+      }
+    },
+    "thursday": {
+      "task_1": {
+        "description": "Final data validation (full dataset reconciliation)",
+        "owner": "Data Team",
+        "status": "PENDING"
+      },
+      "task_2": {
+        "description": "Smoke test on production-like environment",
+        "owner": "QA Team",
+        "status": "PENDING"
+      },
+      "task_3": {
+        "description": "Notify all stakeholders of go-live schedule",
+        "owner": "Comms",
+        "status": "PENDING"
+      }
+    },
+    "friday": {
+      "task_1": {
+        "description": "Dry run: Execute full deployment process",
+        "owner": "DevOps",
+        "status": "PENDING"
+      },
+      "task_2": {
+        "description": "Review incident response procedures",
+        "owner": "Incident Cmdr",
+        "status": "PENDING"
+      },
+      "task_3": {
+        "description": "Brief support team on production runbook",
+        "owner": "DevOps",
+        "status": "PENDING"
+      }
+    }
+  },
+  "golive_day": {
+    "before_deployment": [
+      {
+        "time": "23:30",
+        "task": "Alert all on-call staff",
+        "owner": "Incident Commander"
+      },
+      {
+        "time": "23:45",
+        "task": "Final pre-deployment checks (db, backups, logs)",
+        "owner": "DevOps"
+      },
+      {
+        "time": "23:55",
+        "task": "Communication channel open (Slack war room)",
+        "owner": "Incident Commander"
+      }
+    ],
+    "deployment": [
+      {
+        "time": "00:00",
+        "task": "Begin canary deployment (1 of 3 replicas)",
+        "owner": "DevOps"
+      },
+      {
+        "time": "00:05",
+        "task": "Monitor canary health & error rates",
+        "owner": "Ops"
+      },
+      {
+        "time": "00:15",
+        "task": "If healthy: scale canary to 50% traffic",
+        "owner": "DevOps"
+      },
+      {
+        "time": "00:30",
+        "task": "Canary validation complete - scale to 100%",
+        "owner": "DevOps"
+      },
+      {
+        "time": "00:35",
+        "task": "Deploy remaining 2 replicas",
+        "owner": "DevOps"
+      },
+      {
+        "time": "00:45",
+        "task": "All 3 replicas healthy - deployment complete",
+        "owner": "DevOps"
+      }
+    ],
+    "validation": [
+      {
+        "time": "00:45",
+        "task": "Run final smoke tests on production",
+        "owner": "QA"
+      },
+      {
+        "time": "01:00",
+        "task": "Verify dashboards pulling live data",
+        "owner": "BI"
+      },
+      {
+        "time": "01:15",
+        "task": "Generate first production prediction batch",
+        "owner": "Data Eng"
+      },
+      {
+        "time": "01:30",
+        "task": "Reconcile predictions vs expected output",
+        "owner": "Data QA"
+      },
+      {
+        "time": "02:00",
+        "task": "Executive summary to stakeholders",
+        "owner": "Project Lead"
+      }
+    ]
+  },
+  "post_golive": {
+    "first_24_hours": [
+      {
+        "hour": 1,
+        "action": "Continuous monitoring (every 5 minutes)",
+        "owner": "Ops"
+      },
+      {
+        "hour": 2,
+        "action": "Check error logs, investigate any anomalies",
+        "owner": "Support"
+      },
+      {
+        "hour": 4,
+        "action": "Generate 4-hour performance report",
+        "owner": "BI"
+      },
+      {
+        "hour": 8,
+        "action": "Check batch processing (overnight run)",
+        "owner": "Data Eng"
+      },
+      {
+        "hour": 24,
+        "action": "Full 24-hour post-deployment review",
+        "owner": "Project Lead"
+      }
+    ],
+    "first_week": [
+      "Daily 10am standup: status, issues, learnings",
+      "Monitor for any unexpected behavior or errors",
+      "Collect user feedback from Risk Teams",
+      "Review dashboard usage and engagement",
+      "Document any lessons learned"
+    ]
+  },
+  "go_nogo_criteria": {
+    "must_have": [
+      "All QA tests passing (100%)",
+      "Regulatory approval confirmed",
+      "Board sign-off obtained",
+      "Production infrastructure tested",
+      "Rollback procedure verified"
+    ],
+    "deployment_abort_criteria": [
+      "Critical security vulnerability found",
+      "Model AUC drops below 0.65 (severe degradation)",
+      "Production infrastructure not available",
+      "Regulatory approval withdrawn",
+      ">3 P1 bugs found in final validation"
+    ]
+  },
+  "sign_off": {
+    "chief_risk_officer": "Pending",
+    "head_of_compliance": "Pending",
+    "chief_technology_officer": "Pending",
+    "project_sponsor": "Pending"
+  }
+}

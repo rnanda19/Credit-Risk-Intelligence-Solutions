@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-08-11T17:29:49.515687",
+  "chunk": "CHUNK_04",
+  "problem": "Problem 20: Bureau Risk Signal Integration",
+  "execution_id": "CHUNK_04_20260811_172933_Problem 20: Bureau Risk Signal Integration",
+  "data_owner": "Risk Analytics & Feature Engineering Team",
+  "features_summary": {
+    "original_count": 128,
+    "new_features_created": 14,
+    "final_selected_count": 91,
+    "by_category": {
+      "bureau_risk_features": 3,
+      "ratio_features": 3,
+      "behavioral_features": 4,
+      "document_contact_features": 2,
+      "payment_history_features": 2
+    },
+    "total_new_features": 14
+  },
+  "feature_selection": {
+    "method": "Univariate (Point-biserial correlation) + Top-60",
+    "significant_features_p005": 71,
+    "top_features": 60,
+    "total_selected": 91,
+    "selection_criteria": "p-value < 0.05 OR top 60 by correlation"
+  },
+  "new_features_created": {
+    "BUREAU_HIGH_RISK_FLAG": "Binary flag for high bureau risk (days_overdue > 30)",
+    "BUREAU_INQUIRY_FREQUENCY": "Annual bureau inquiry frequency",
+    "BUREAU_URGENT_INQUIRY": "Flag for urgent inquiry activity",
+    "CREDIT_TO_INCOME_RATIO": "Credit to income ratio (capped at 100x)",
+    "ANNUITY_TO_INCOME_RATIO": "Annuity to income ratio",
+    "GOODS_PRICE_TO_CREDIT_RATIO": "Goods price to credit ratio",
+    "EMPLOYMENT_STABILITY": "Years of employment (tenure)",
+    "AGE_AT_APPLICATION": "Age at application",
+    "REGISTRATION_TENURE": "Years registered with bureau",
+    "HAS_DEPENDENTS": "Flag for having dependents",
+    "DOCUMENTS_SUBMITTED_COUNT": "Count of documents submitted",
+    "CONTACT_INFO_COMPLETENESS": "Count of contact methods provided",
+    "PAYMENT_CONSISTENCY": "Payment consistency score [0, 1]",
+    "CC_UTILIZATION_RATE": "Credit card utilization rate"
+  }
+}

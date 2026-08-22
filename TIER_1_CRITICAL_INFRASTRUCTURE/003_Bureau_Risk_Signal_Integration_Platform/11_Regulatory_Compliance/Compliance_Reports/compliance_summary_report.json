@@ -1,0 +1,62 @@
+{
+  "summary_date": "2026-08-12T01:25:52.646830",
+  "model_name": "Bureau Risk Signal Integration - Random Forest",
+  "model_version": "1.0.0",
+  "regulatory_compliance": {
+    "bcbs_239": {
+      "status": "COMPLIANT",
+      "principles_met": 9,
+      "maturity": "Level 4 - Optimized"
+    },
+    "sox_404": {
+      "status": "EFFECTIVE",
+      "controls_tested": 7,
+      "controls_passed": 7,
+      "findings": 0
+    },
+    "fair_lending": {
+      "status": "COMPLIANT",
+      "tests_passed": 4,
+      "protected_classes": 8
+    },
+    "gdpr": {
+      "status": "COMPLIANT",
+      "requirements_met": [
+        "Data minimization",
+        "Purpose limitation",
+        "Transparency",
+        "Right to explanation"
+      ]
+    },
+    "model_risk_management": {
+      "status": "COMPLIANT",
+      "validation_passed": true,
+      "monitoring_active": true,
+      "governance_in_place": true
+    }
+  },
+  "risk_assessment": {
+    "overall_risk_level": "LOW",
+    "model_risk": "LOW",
+    "operational_risk": "LOW",
+    "compliance_risk": "LOW",
+    "reputational_risk": "LOW"
+  },
+  "stress_testing": {
+    "scenarios_tested": 5,
+    "worst_case_auc": 0.8574,
+    "baseline_auc": 0.9374,
+    "acceptable_performance_threshold": 0.7,
+    "status": "ACCEPTABLE UNDER ALL SCENARIOS"
+  },
+  "monitoring_status": {
+    "daily_monitoring": true,
+    "drift_detection": true,
+    "performance_monitoring": true,
+    "fairness_monitoring": true,
+    "audit_logging": true
+  },
+  "recommendation": "APPROVED FOR PRODUCTION DEPLOYMENT",
+  "approval_date": "2026-08-12T01:25:52.646839",
+  "next_review_date": "2026-11-10T01:25:52.646841"
+}

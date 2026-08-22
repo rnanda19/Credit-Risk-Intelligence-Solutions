@@ -1,0 +1,8 @@
+{
+  "framework": "SOP_04_Data_Lineage",
+  "input_source": "CHUNK_02_Output",
+  "transformation": "Feature Engineering + Selection",
+  "input_features": 75,
+  "output_features": 91,
+  "records": 307511
+}

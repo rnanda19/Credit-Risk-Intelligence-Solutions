@@ -1,0 +1,55 @@
+{
+  "timestamp": "2026-08-11T17:43:22.340295",
+  "chunk": "CHUNK_07",
+  "problem": "Problem 20: Bureau Risk Signal Integration",
+  "execution_id": "CHUNK_07_20260811_174312_Problem 20: Bureau Risk Signal Integration",
+  "data_owner": "Model Calibration & Optimization Team",
+  "baseline_metrics": {
+    "auc": 0.916115981464786,
+    "brier_score": 0.13897493899842564,
+    "default_rate": 0.08072881945686496
+  },
+  "optimal_threshold_analysis": {
+    "optimal_threshold": 0.6171717171717171,
+    "optimal_f1": 0.5644742239846848,
+    "optimal_precision": 0.49027583954392945,
+    "optimal_recall": 0.6651359516616314,
+    "optimal_specificity": 0.9392718422560721
+  },
+  "business_thresholds": {
+    "conservative": {
+      "threshold": 0.7,
+      "flagged_customers": 15090,
+      "false_positives": 5693,
+      "false_negatives": 15428,
+      "total_cost": 159973000,
+      "cost_per_flagged": 10601.2591119947
+    },
+    "balanced": {
+      "threshold": 0.6171717171717171,
+      "flagged_customers": 33679,
+      "false_positives": 17167,
+      "false_negatives": 8313,
+      "total_cost": 100297000,
+      "cost_per_flagged": 2978.02785118323
+    },
+    "aggressive": {
+      "threshold": 0.3,
+      "flagged_customers": 172157,
+      "false_positives": 148063,
+      "false_negatives": 731,
+      "total_cost": 155373000,
+      "cost_per_flagged": 902.5075948117126
+    }
+  },
+  "calibration_quality": {
+    "brier_score": 0.13897493899842564,
+    "auc": 0.916115981464786,
+    "calibration_status": "WELL_CALIBRATED"
+  },
+  "recommendation": {
+    "recommended_threshold": 0.6171717171717171,
+    "rationale": "Optimal F1 score of 0.5645 at threshold 0.617",
+    "business_considerations": "Balances false positives (cost=1000) vs false negatives (cost=10000)"
+  }
+}

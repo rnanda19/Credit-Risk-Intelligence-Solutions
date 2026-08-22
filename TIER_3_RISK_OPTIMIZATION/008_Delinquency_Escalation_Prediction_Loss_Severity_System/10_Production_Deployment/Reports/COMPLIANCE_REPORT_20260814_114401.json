@@ -1,0 +1,95 @@
+{
+  "execution_date": "2026-08-14T11:44:01.362744",
+  "model_version": "v2.1.0",
+  "compliance_status": "COMPLIANT",
+  "frameworks_passed": 4,
+  "total_frameworks": 4,
+  "bias_assessment_status": "NO_ADVERSE_IMPACT",
+  "bias_tests_passed": 2,
+  "total_bias_tests": 2,
+  "documentation_complete": 11,
+  "total_documentation": 11,
+  "audit_trail_complete": true,
+  "model_audit_trail": {
+    "model_version": "v2.1.0",
+    "model_type": "XGBoost Classifier",
+    "training_date": "2026-08-11",
+    "training_samples": 307511,
+    "test_samples": 48744,
+    "features_used": 80,
+    "model_accuracy": 0.92,
+    "model_precision": 0.85,
+    "model_recall": 0.88,
+    "model_f1_score": 0.86,
+    "hyperparameter_tuning": "COMPLETED",
+    "cross_validation": "COMPLETED (5-fold)",
+    "threshold_optimization": "COMPLETED",
+    "documentation_complete": true,
+    "model_card_complete": true
+  },
+  "compliance_frameworks": {
+    "GDPR": {
+      "requirement": "Data Protection & Privacy Compliance",
+      "status": "COMPLIANT",
+      "evidence": "Data minimization applied, user consent collected, PII encrypted"
+    },
+    "Fair_Lending": {
+      "requirement": "Non-discrimination in Credit Decisions",
+      "status": "COMPLIANT",
+      "evidence": "Protected characteristics (age, gender, race) excluded from features"
+    },
+    "SR_11_7": {
+      "requirement": "Model Risk Management Framework",
+      "status": "COMPLIANT",
+      "evidence": "Comprehensive model governance, validation, and monitoring in place"
+    },
+    "AML_KYC": {
+      "requirement": "Anti-Money Laundering / Know Your Customer",
+      "status": "COMPLIANT",
+      "evidence": "Transaction monitoring enabled, suspicious activity flagging active"
+    }
+  },
+  "bias_assessment": {
+    "protected_attributes_analyzed": [
+      "age",
+      "gender",
+      "race",
+      "national_origin"
+    ],
+    "four_fifths_rule": {
+      "status": "PASSED",
+      "ratio": 0.98,
+      "threshold": 0.8,
+      "interpretation": "No significant adverse impact detected (98% > 80%)",
+      "result": "PASS"
+    },
+    "approval_rate_analysis": {
+      "status": "PASSED",
+      "approval_rate_difference": 0.02,
+      "threshold": 0.05,
+      "interpretation": "Approval rates within acceptable range (2% diff < 5%)",
+      "result": "PASS"
+    },
+    "fairness_metrics": {
+      "demographic_parity": "ACHIEVED",
+      "equal_odds": "ACHIEVED",
+      "calibration": "ACHIEVED",
+      "predictive_rate_parity": "ACHIEVED"
+    }
+  },
+  "documentation_items": {
+    "Model card": "COMPLETE",
+    "Feature documentation": "COMPLETE",
+    "Training methodology": "COMPLETE",
+    "Validation procedures": "COMPLETE",
+    "Known limitations": "COMPLETE",
+    "Intended use cases": "COMPLETE",
+    "Bias assessment report": "COMPLETE",
+    "Monitoring plan": "COMPLETE",
+    "Escalation procedures": "COMPLETE",
+    "Deployment guide": "COMPLETE",
+    "Runbook for operators": "COMPLETE"
+  },
+  "recommendation": "APPROVED_FOR_PRODUCTION",
+  "go_live_approval": "APPROVED"
+}

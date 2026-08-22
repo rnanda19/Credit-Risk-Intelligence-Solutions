@@ -1,0 +1,34 @@
+{
+  "model_name": "XGBoost",
+  "model_file": "tuned_xgboost_model.pkl",
+  "hyperparameters": {
+    "subsample": 0.9,
+    "n_estimators": 300,
+    "min_child_weight": 1,
+    "max_depth": 10,
+    "learning_rate": 0.1,
+    "gamma": 0.25,
+    "colsample_bytree": 0.7
+  },
+  "performance_metrics": {
+    "accuracy": 0.9569289302960832,
+    "precision": 0.9416475972540046,
+    "recall": 0.4972809667673716,
+    "f1_score": 0.6508501383946224,
+    "roc_auc": 0.954692896616832
+  },
+  "baseline_metrics": {
+    "accuracy": 0.9510105198120417,
+    "precision": 0.8554260742898762,
+    "recall": 0.47311178247734137,
+    "f1_score": 0.6092594994164181,
+    "roc_auc": 0.9324918687774341
+  },
+  "improvement": {
+    "accuracy": 0.005918410484041514,
+    "precision": 0.08622152296412844,
+    "recall": 0.024169184290030232,
+    "f1_score": 0.04159063897820425,
+    "roc_auc": 0.022201027839397924
+  }
+}

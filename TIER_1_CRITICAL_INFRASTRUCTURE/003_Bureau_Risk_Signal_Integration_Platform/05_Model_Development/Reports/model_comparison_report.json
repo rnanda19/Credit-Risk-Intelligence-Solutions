@@ -1,0 +1,72 @@
+{
+  "timestamp": "2026-08-11T23:29:16.638583",
+  "training_records": 246008,
+  "test_records": 61503,
+  "features": 90,
+  "individual_models": {
+    "Random Forest": {
+      "AUC": 0.5018570866313387,
+      "F1": 0.0,
+      "Precision": 0.0,
+      "Recall": 0.0,
+      "Accuracy": 0.9190771181893567,
+      "LogLoss": 0.5340828575262714
+    },
+    "XGBoost": {
+      "AUC": 0.5012932432614291,
+      "F1": 0.05139935414424112,
+      "Precision": 0.07780040733197556,
+      "Recall": 0.03837653204741812,
+      "Accuracy": 0.8853714452953515,
+      "LogLoss": 0.41176560521125793
+    },
+    "LightGBM": {
+      "AUC": 0.500551349141692,
+      "F1": 0.0834796177101619,
+      "Precision": 0.08110668940685996,
+      "Recall": 0.08599557966646575,
+      "Accuracy": 0.8471944457993918,
+      "LogLoss": 0.5010170809195217
+    },
+    "Logistic Regression": {
+      "AUC": 0.5112017456288739,
+      "F1": 0.14237152569486103,
+      "Precision": 0.08298368298368299,
+      "Recall": 0.5007032348804501,
+      "Accuracy": 0.5118449506528137,
+      "LogLoss": 0.6928510925726242
+    },
+    "Neural Network": {
+      "AUC": 0.4966293060451143,
+      "F1": 0.0,
+      "Precision": 0.0,
+      "Recall": 0.0,
+      "Accuracy": 0.9190771181893567,
+      "LogLoss": 0.28382254078342994
+    }
+  },
+  "ensemble_models": {
+    "Average": {
+      "AUC": 0.50161907780425,
+      "F1": 0.0004017677782241864,
+      "description": "Simple average of all 5 models"
+    },
+    "AUC-Weighted": {
+      "AUC": 0.5016405223785987,
+      "F1": 0.0004017677782241864,
+      "description": "Weighted average based on individual AUC scores"
+    }
+  },
+  "best_individual_model": {
+    "name": "Logistic Regression",
+    "metrics": {
+      "AUC": 0.5112017456288739,
+      "F1": 0.14237152569486103,
+      "Precision": 0.08298368298368299,
+      "Recall": 0.5007032348804501,
+      "Accuracy": 0.5118449506528137,
+      "LogLoss": 0.6928510925726242
+    }
+  },
+  "recommendation": "Logistic Regression"
+}

@@ -1,0 +1,22 @@
+{
+  "total_sops": 33,
+  "institutions": {
+    "JP Morgan": 7,
+    "Goldman Sachs": 7,
+    "Bank of America": 7,
+    "Wells Fargo": 6,
+    "Citigroup": 6
+  },
+  "sop_categories": {
+    "Risk Management": 7,
+    "Data Management": 7,
+    "Model Development": 7,
+    "Compliance & Regulatory": 7,
+    "Operations": 5
+  },
+  "compliance_tracking": {
+    "phase_1_coverage": "100%",
+    "compliance_status": "IN_PROGRESS",
+    "audit_ready": false
+  }
+}

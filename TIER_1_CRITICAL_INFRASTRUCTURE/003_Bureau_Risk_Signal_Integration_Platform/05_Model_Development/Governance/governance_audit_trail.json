@@ -1,0 +1,132 @@
+[
+  {
+    "timestamp": "2026-08-11T17:33:45.258044",
+    "execution_id": "CHUNK_05_20260811_173345_Problem 20: Bureau Risk Signal Integration",
+    "event_type": "CHUNK_START",
+    "description": "CHUNK 05: Model Development initiated",
+    "status": "SUCCESS",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-11T17:33:48.596985",
+    "execution_id": "CHUNK_05_20260811_173345_Problem 20: Bureau Risk Signal Integration",
+    "event_type": "DATA_LOADED",
+    "description": "Loaded 307,511 records from 04_Feature_Engineering/Engineered_Data/bureau_risk_engineered.csv",
+    "status": "SUCCESS",
+    "details": {
+      "file": "04_Feature_Engineering/Engineered_Data/bureau_risk_engineered.csv",
+      "records": 307511,
+      "features": 91
+    }
+  },
+  {
+    "timestamp": "2026-08-11T17:33:48.657301",
+    "execution_id": "CHUNK_05_20260811_173345_Problem 20: Bureau Risk Signal Integration",
+    "event_type": "PII_CLASSIFICATION",
+    "description": "Field 'SK_ID_CURR' classified as SENSITIVE",
+    "status": "SUCCESS",
+    "details": {
+      "field_name": "SK_ID_CURR",
+      "classification": "SENSITIVE",
+      "masking_rule": "ID_MASKING",
+      "timestamp": "2026-08-11T17:33:48.657288"
+    }
+  },
+  {
+    "timestamp": "2026-08-11T17:33:49.009083",
+    "execution_id": "CHUNK_05_20260811_173345_Problem 20: Bureau Risk Signal Integration",
+    "event_type": "DATA_SPLIT",
+    "description": "Train-test split completed (80-20, stratified)",
+    "status": "SUCCESS",
+    "details": {
+      "train_records": 246008,
+      "test_records": 61503,
+      "train_target_dist": {
+        "0": 226148,
+        "1": 19860
+      },
+      "test_target_dist": {
+        "0": 56538,
+        "1": 4965
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-11T17:33:49.301636",
+    "execution_id": "CHUNK_05_20260811_173345_Problem 20: Bureau Risk Signal Integration",
+    "event_type": "FEATURE_SCALING",
+    "description": "Features standardized using StandardScaler",
+    "status": "SUCCESS",
+    "details": {
+      "scaler": "StandardScaler",
+      "features": 89
+    }
+  },
+  {
+    "timestamp": "2026-08-11T17:33:50.166582",
+    "execution_id": "CHUNK_05_20260811_173345_Problem 20: Bureau Risk Signal Integration",
+    "event_type": "MODEL_TRAINING",
+    "description": "Logistic Regression model trained",
+    "status": "SUCCESS",
+    "details": {
+      "model": "LogisticRegression",
+      "train_auc": 0.7194044169775299,
+      "test_auc": 0.7221588902215755,
+      "train_f1": 0.00020126798832645668,
+      "test_f1": 0.0008048289738430583
+    }
+  },
+  {
+    "timestamp": "2026-08-11T17:33:58.536089",
+    "execution_id": "CHUNK_05_20260811_173345_Problem 20: Bureau Risk Signal Integration",
+    "event_type": "MODEL_TRAINING",
+    "description": "Random Forest model trained",
+    "status": "SUCCESS",
+    "details": {
+      "model": "RandomForestClassifier",
+      "n_estimators": 100,
+      "train_auc": 0.9588098092630337,
+      "test_auc": 0.7332445659358692,
+      "train_f1": 0.5010963767359299,
+      "test_f1": 0.27374270630730757
+    }
+  },
+  {
+    "timestamp": "2026-08-11T17:33:58.568925",
+    "execution_id": "CHUNK_05_20260811_173345_Problem 20: Bureau Risk Signal Integration",
+    "event_type": "MODEL_SELECTION",
+    "description": "Best model selected: Random Forest (Test AUC: 0.7332)",
+    "status": "SUCCESS",
+    "details": {
+      "comparison": {
+        "Logistic Regression": {
+          "train_auc": 0.7194044169775299,
+          "test_auc": 0.7221588902215755,
+          "train_f1": 0.00020126798832645668,
+          "test_f1": 0.0008048289738430583,
+          "precision": 0.4,
+          "recall": 0.0004028197381671702
+        },
+        "Random Forest": {
+          "train_auc": 0.9588098092630337,
+          "test_auc": 0.7332445659358692,
+          "train_f1": 0.5010963767359299,
+          "test_f1": 0.27374270630730757,
+          "precision": 0.18902532617037607,
+          "recall": 0.4960725075528701
+        }
+      }
+    }
+  },
+  {
+    "timestamp": "2026-08-11T17:33:58.614993",
+    "execution_id": "CHUNK_05_20260811_173345_Problem 20: Bureau Risk Signal Integration",
+    "event_type": "MODEL_SAVED",
+    "description": "Model and scaler saved successfully",
+    "status": "SUCCESS",
+    "details": {
+      "model_file": "05_Model_Development/Trained_Models/bureau_risk_random_forest_v1.pkl",
+      "scaler_file": "05_Model_Development/Trained_Models/feature_scaler_v1.pkl"
+    }
+  }
+]

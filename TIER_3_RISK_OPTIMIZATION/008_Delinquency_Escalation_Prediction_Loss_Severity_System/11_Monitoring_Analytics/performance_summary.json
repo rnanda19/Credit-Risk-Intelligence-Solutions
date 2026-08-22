@@ -1,0 +1,9 @@
+{
+  "current_roc_auc": 0.9448680218106561,
+  "current_accuracy": 0.9,
+  "baseline_roc_auc": 0.954692896616832,
+  "baseline_accuracy": 0.9569289302960832,
+  "roc_auc_change_percent": -1.0291136386363122,
+  "accuracy_change_percent": -5.949128351513918,
+  "alert_status": "OK"
+}

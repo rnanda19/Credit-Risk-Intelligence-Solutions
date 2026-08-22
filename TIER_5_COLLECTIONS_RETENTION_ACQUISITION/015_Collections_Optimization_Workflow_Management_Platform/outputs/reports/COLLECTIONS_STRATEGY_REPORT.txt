@@ -1,0 +1,24 @@
+================================================================================
+PROBLEM 7: COLLECTIONS STRATEGY OPTIMIZATION - FINAL REPORT
+================================================================================
+
+EXECUTIVE SUMMARY
+Best Model: Logistic Regression
+Test Accuracy: 0.9360
+Features Used: 24
+
+COLLECTION STRATEGIES DEFINED
+0 - No Action: Customer not overdue
+1 - Monitor: 1-30 days overdue
+2 - Escalate: 31-90 days overdue
+3 - Negotiate: 91-180 days overdue
+4 - Waive: 180+ days overdue (charge-off)
+
+FINANCIAL IMPACT
+Non-Defaulters (Good Risk): 936
+Defaulters (Default Risk): 64
+Default Rate: 6.40%
+
+COLLECTION STRATEGY EFFECTIVENESS
+No Action - Monitor                     :  1,000 (100.0%) - 98% recovery
+Proactive Collections                   :      0 (  0.0%) - 65% recovery

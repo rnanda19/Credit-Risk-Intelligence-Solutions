@@ -1,0 +1,85 @@
+{
+  "execution_id": "20260810_212019_494488",
+  "timestamp": "2026-08-10T21:20:19.494567",
+  "models_trained": 5,
+  "best_model": "XGBoost",
+  "best_model_roc_auc": 0.9324918687774341,
+  "dataset_info": {
+    "train_records": 246008,
+    "test_records": 61503,
+    "features": 75
+  },
+  "model_rankings": [
+    {
+      "model": "XGBoost",
+      "accuracy": 0.9510105198120417,
+      "precision": 0.8554260742898762,
+      "recall": 0.47311178247734137,
+      "f1_score": 0.6092594994164181,
+      "roc_auc": 0.9324918687774341,
+      "sensitivity": 0.47311178247734137,
+      "specificity": 0.9929781739714882,
+      "true_negatives": 56141,
+      "false_positives": 397,
+      "false_negatives": 2616,
+      "true_positives": 2349
+    },
+    {
+      "model": "LightGBM",
+      "accuracy": 0.9426694632782141,
+      "precision": 0.8765044479330194,
+      "recall": 0.337361530715005,
+      "f1_score": 0.4872018615474113,
+      "roc_auc": 0.9151093203736781,
+      "sensitivity": 0.337361530715005,
+      "specificity": 0.9958258162651668,
+      "true_negatives": 56302,
+      "false_positives": 236,
+      "false_negatives": 3290,
+      "true_positives": 1675
+    },
+    {
+      "model": "Gradient Boosting",
+      "accuracy": 0.9421003853470562,
+      "precision": 0.8603696098562629,
+      "recall": 0.33756294058408864,
+      "f1_score": 0.4848835527267467,
+      "roc_auc": 0.9087562814119581,
+      "sensitivity": 0.33756294058408864,
+      "specificity": 0.9951890763734126,
+      "true_negatives": 56266,
+      "false_positives": 272,
+      "false_negatives": 3289,
+      "true_positives": 1676
+    },
+    {
+      "model": "Random Forest",
+      "accuracy": 0.9317269076305221,
+      "precision": 0.9342403628117913,
+      "recall": 0.1659617321248741,
+      "f1_score": 0.28185394219257737,
+      "roc_auc": 0.8787126889179366,
+      "sensitivity": 0.1659617321248741,
+      "specificity": 0.9989741412855071,
+      "true_negatives": 56480,
+      "false_positives": 58,
+      "false_negatives": 4141,
+      "true_positives": 824
+    },
+    {
+      "model": "Logistic Regression",
+      "accuracy": 0.9193210087312814,
+      "precision": 0.5038759689922481,
+      "recall": 0.03927492447129909,
+      "f1_score": 0.07286995515695067,
+      "roc_auc": 0.79279501417774,
+      "sensitivity": 0.03927492447129909,
+      "specificity": 0.9966040539106442,
+      "true_negatives": 56346,
+      "false_positives": 192,
+      "false_negatives": 4770,
+      "true_positives": 195
+    }
+  ],
+  "note": "STEP 5 (Cross-Validation) skipped - run separately"
+}

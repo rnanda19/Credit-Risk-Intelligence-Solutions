@@ -1,0 +1,9 @@
+{
+  "Total_Records": 4000,
+  "Missing_Values": "332",
+  "Missing_Percent": 0.1596153846153846,
+  "Duplicates": "0",
+  "Complete_Records": 3678,
+  "Quality_Score": 0.9984038461538461,
+  "Quality_Status": "PASS"
+}

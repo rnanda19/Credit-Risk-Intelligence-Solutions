@@ -1,0 +1,12 @@
+{
+  "06_Model_Validation_Backtesting/Validation_Results/validation_predictions.csv": [
+    {
+      "source": "06_Model_Validation_Backtesting/Validation_Results/validation_predictions.csv",
+      "output": "07_Model_Calibration_Threshold/Calibration_Results/calibrated_output.csv",
+      "record_count": 307511,
+      "transformation_type": "PROBABILITY_CALIBRATION_AND_THRESHOLD_OPTIMIZATION",
+      "timestamp": "2026-08-11T17:43:12.884994",
+      "checksum": "N/A"
+    }
+  ]
+}

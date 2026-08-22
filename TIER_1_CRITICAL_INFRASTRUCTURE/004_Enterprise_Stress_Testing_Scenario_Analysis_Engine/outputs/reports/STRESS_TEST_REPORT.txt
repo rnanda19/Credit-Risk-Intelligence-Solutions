@@ -1,0 +1,14 @@
+================================================================================
+PROBLEM 10: STRESS TESTING & SCENARIO ANALYSIS
+================================================================================
+
+Base Case Expected Loss: $72,930,472
+Base Case Default Rate: 8.00%
+
+Scenario Results:
+          Scenario                       Description Default Rate Expected Loss Loss Change Capital Required
+         Base Case       Current economic conditions        8.00%   $72,930,472       +0.0%     $911,630,895
+    Mild Recession  5% income drop, 10% DTI increase        7.68%   $70,135,511       -3.8%     $876,693,882
+Moderate Recession 10% income drop, 20% DTI increase        7.71%   $70,197,695       -3.7%     $877,471,187
+  Severe Recession 15% income drop, 30% DTI increase        7.67%   $70,390,369       -3.5%     $879,879,615
+   Crisis Scenario 25% income drop, 50% DTI increase        7.79%   $71,750,431       -1.6%     $896,880,389

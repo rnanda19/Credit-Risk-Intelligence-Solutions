@@ -1,0 +1,81 @@
+{
+  "timestamp": "2026-08-11T17:43:22.361631",
+  "execution_id": "CHUNK_07_20260811_174312_Problem 20: Bureau Risk Signal Integration",
+  "chunk": "CHUNK_07",
+  "problem": "Problem 20: Bureau Risk Signal Integration",
+  "data_owner": "Model Calibration & Optimization Team",
+  "sensitivity": "CONFIDENTIAL",
+  "execution_duration_minutes": 0.16,
+  "quality_gates": {
+    "total": 3,
+    "passed": 2,
+    "failed": 1,
+    "pass_rate": "66.7%",
+    "details": {
+      "missing_percentage": {
+        "gate_name": "missing_percentage",
+        "threshold": 1.0,
+        "actual_value": 0.0,
+        "unit": "%",
+        "pass": true,
+        "status": "PASS",
+        "timestamp": "2026-08-11T17:43:12.882516"
+      },
+      "brier_score": {
+        "gate_name": "brier_score",
+        "threshold": 0.25,
+        "actual_value": 0.13897493899842564,
+        "unit": "Brier Score",
+        "pass": false,
+        "status": "FAIL",
+        "timestamp": "2026-08-11T17:43:21.408949"
+      },
+      "optimal_f1_score": {
+        "gate_name": "optimal_f1_score",
+        "threshold": 0.4,
+        "actual_value": 0.5644742239846848,
+        "unit": "F1 Score",
+        "pass": true,
+        "status": "PASS",
+        "timestamp": "2026-08-11T17:43:21.409003"
+      }
+    }
+  },
+  "reconciliation": {
+    "total": 2,
+    "passed": 2,
+    "failed": 0,
+    "pass_rate": "100.0%",
+    "details": {
+      "CALIBRATION_DATA_INTEGRITY": {
+        "reconciliation_name": "CALIBRATION_DATA_INTEGRITY",
+        "source_count": 307511,
+        "output_count": 307511,
+        "variance_percentage": 0.0,
+        "within_tolerance": true,
+        "timestamp": "2026-08-11T17:43:12.884006"
+      },
+      "CALIBRATION_OUTPUT_INTEGRITY": {
+        "reconciliation_name": "CALIBRATION_OUTPUT_INTEGRITY",
+        "source_count": 307511,
+        "output_count": 307511,
+        "variance_percentage": 0.0,
+        "within_tolerance": true,
+        "timestamp": "2026-08-11T17:43:22.347486"
+      }
+    }
+  },
+  "data_lineage": {
+    "sources": 1,
+    "transformations": 1
+  },
+  "pii_fields_identified": 3,
+  "pii_fields": [
+    "PREDICTION_PROBABILITY",
+    "SK_ID_CURR",
+    "DECISION_THRESHOLD"
+  ],
+  "governance_events": 8,
+  "access_audit_entries": 2,
+  "overall_status": "NON-COMPLIANT"
+}

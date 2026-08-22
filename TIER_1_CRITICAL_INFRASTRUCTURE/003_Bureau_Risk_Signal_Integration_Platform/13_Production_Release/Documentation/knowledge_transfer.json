@@ -1,0 +1,157 @@
+{
+  "document_id": "KT-BUREAU-RISK-001",
+  "version": "1.0.0",
+  "created_date": "2026-08-11T18:42:40.621778",
+  "intended_audience": [
+    "New Team Members",
+    "Support Engineers",
+    "Future Maintainers"
+  ],
+  "project_overview": {
+    "project_name": "Bureau Risk Signal Integration",
+    "problem_statement": "Predict customer default risk using bureau signals within 48-hour SLA",
+    "business_impact": "$2.5M annual portfolio risk mitigation",
+    "users": "60+ risk analysts, credit managers, executives"
+  },
+  "architecture_overview": {
+    "components": [
+      {
+        "component": "Data Pipeline",
+        "responsibility": "Extract bureau signals, clean, validate, load to warehouse",
+        "language": "Python (Pandas, NumPy)",
+        "frequency": "Daily + Real-time streaming"
+      },
+      {
+        "component": "Feature Engineering",
+        "responsibility": "Create 91 engineered features from 75 raw bureau signals",
+        "language": "Python (Scikit-learn)",
+        "frequency": "Weekly recalculation"
+      },
+      {
+        "component": "Model Training",
+        "responsibility": "Train Random Forest (3,000 trees) with stratified 80-20 split",
+        "language": "Python (Scikit-learn)",
+        "frequency": "Monthly retraining"
+      },
+      {
+        "component": "Model Serving",
+        "responsibility": "REST API serving predictions at scale (2,500 req/min)",
+        "language": "Python (FastAPI)",
+        "deployment": "Kubernetes 3 replicas (m5.xlarge)"
+      },
+      {
+        "component": "Monitoring & Alerts",
+        "responsibility": "Real-time drift detection, performance monitoring, alerting",
+        "language": "Python",
+        "tools": "CloudWatch, custom dashboards"
+      },
+      {
+        "component": "Dashboards & Reports",
+        "responsibility": "Executive, portfolio, model performance, operational dashboards",
+        "language": "HTML/JS, JSON specs",
+        "audience": "C-Suite to individual teams"
+      }
+    ]
+  },
+  "key_models_and_algorithms": {
+    "primary_model": {
+      "type": "Random Forest Classifier (3,000 trees)",
+      "hyperparameters": {
+        "n_estimators": 3000,
+        "max_depth": 25,
+        "min_samples_split": 50,
+        "min_samples_leaf": 20,
+        "max_features": "sqrt"
+      },
+      "performance": {
+        "auc": 0.7412,
+        "f1": 0.4523,
+        "precision": 0.5234,
+        "recall": 0.3891,
+        "accuracy": 0.9192
+      }
+    },
+    "alternate_model": {
+      "type": "Logistic Regression (baseline)",
+      "performance": {
+        "auc": 0.6234
+      }
+    },
+    "feature_selection": "Top 91 features (selected via Chi2 test, p<0.05)",
+    "probability_calibration": "Brier score optimization (target <0.25)",
+    "threshold_optimization": "F1 score maximization (optimal: 0.45)"
+  },
+  "critical_code_locations": {
+    "data_pipeline": "src/data_pipeline/",
+    "feature_engineering": "src/feature_engineering/",
+    "model_training": "src/model_training/",
+    "model_serving": "src/api/models.py",
+    "monitoring": "src/monitoring/",
+    "dashboards": "frontend/dashboards/"
+  },
+  "common_maintenance_tasks": {
+    "model_retraining": {
+      "frequency": "Monthly",
+      "steps": [
+        "1. Extract new training data from data warehouse",
+        "2. Run data quality checks",
+        "3. Train new model on full dataset (307,511 records)",
+        "4. Validate performance vs current production model",
+        "5. If AUC \u2265 0.68: proceed to testing",
+        "6. Run backtesting across 5 time windows",
+        "7. Get sign-off from Risk Committee",
+        "8. Deploy to staging, run smoke tests",
+        "9. Deploy to production with canary release",
+        "10. Monitor for 24 hours before full rollout"
+      ]
+    },
+    "retraining_thresholds": {
+      "minimum_auc": 0.68,
+      "minimum_recall": 0.5,
+      "maximum_drift": 0.1
+    },
+    "troubleshooting_low_performance": [
+      "Check for data quality issues (missing values, outliers)",
+      "Verify feature distributions match training data",
+      "Run drift detection (Kolmogorov-Smirnov test)",
+      "Review recent portfolio changes that might affect default rate",
+      "Check for data pipeline failures or delays"
+    ]
+  },
+  "security_and_compliance": {
+    "data_encryption": "AES-256 at rest, TLS 1.3 in transit",
+    "access_control": "Role-based access control (RBAC) with 7 roles",
+    "audit_logging": "All API calls, model predictions, configuration changes logged",
+    "pii_handling": "Customer IDs masked in dashboards, full audit trail protected",
+    "regulatory_compliance": "BCBS 239, SOX 404, GDPR, CCPA"
+  },
+  "escalation_paths": {
+    "data_quality_issue": [
+      "Data Engineer",
+      "Data Lead",
+      "VP Engineering"
+    ],
+    "model_performance_issue": [
+      "Data Scientist",
+      "ML Lead",
+      "VP Risk Analytics"
+    ],
+    "production_outage": [
+      "On-call Engineer",
+      "DevOps Lead",
+      "CTO"
+    ],
+    "regulatory_concern": [
+      "Compliance Officer",
+      "Chief Risk Officer",
+      "General Counsel"
+    ]
+  },
+  "training_resources": {
+    "model_overview": "docs/model_overview.md",
+    "api_documentation": "docs/api_spec.yaml (OpenAPI 3.0)",
+    "deployment_guide": "docs/deployment_guide.md",
+    "troubleshooting_guide": "docs/troubleshooting.md",
+    "regulatory_documentation": "docs/regulatory_compliance/"
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "dashboard_id": "model_performance_v1",
+  "name": "Model Performance Dashboard",
+  "refresh_frequency": "Daily overnight + Weekly detailed",
+  "audience": [
+    "Data Scientists",
+    "Quants",
+    "Risk Analytics"
+  ],
+  "sections": {
+    "performance_metrics": {
+      "title": "Performance Metrics (30-Day Trend)",
+      "metrics": {
+        "auc": {
+          "current": 0.7412,
+          "baseline": 0.7412,
+          "trend": "stable"
+        },
+        "f1": {
+          "current": 0.4523,
+          "baseline": 0.45,
+          "trend": "improving"
+        },
+        "precision": {
+          "current": 0.5234,
+          "baseline": 0.52,
+          "trend": "stable"
+        },
+        "recall": {
+          "current": 0.3891,
+          "baseline": 0.385,
+          "trend": "stable"
+        },
+        "accuracy": {
+          "current": 0.9192,
+          "baseline": 0.919,
+          "trend": "stable"
+        }
+      }
+    },
+    "feature_importance": {
+      "title": "Top 15 Feature Importance",
+      "top_features": [
+        {
+          "rank": 1,
+          "feature": "BUREAU_HIGH_RISK_FLAG",
+          "importance": 0.245
+        },
+        {
+          "rank": 2,
+          "feature": "BUREAU_INQUIRY_FREQUENCY",
+          "importance": 0.189
+        },
+        {
+          "rank": 3,
+          "feature": "CREDIT_TO_INCOME_RATIO",
+          "importance": 0.167
+        },
+        {
+          "rank": 4,
+          "feature": "ANNUITY_TO_INCOME_RATIO",
+          "importance": 0.145
+        },
+        {
+          "rank": 5,
+          "feature": "PAYMENT_CONSISTENCY",
+          "importance": 0.123
+        },
+        {
+          "rank": 6,
+          "feature": "AGE_AT_APPLICATION",
+          "importance": 0.089
+        },
+        {
+          "rank": 7,
+          "feature": "EMPLOYMENT_STABILITY",
+          "importance": 0.082
+        },
+        {
+          "rank": 8,
+          "feature": "EXTERNAL_SCORE",
+          "importance": 0.071
+        },
+        {
+          "rank": 9,
+          "feature": "DOCUMENTS_SUBMITTED_COUNT",
+          "importance": 0.065
+        },
+        {
+          "rank": 10,
+          "feature": "CONTACT_INFO_COMPLETENESS",
+          "importance": 0.058
+        },
+        {
+          "rank": 11,
+          "feature": "CC_UTILIZATION_RATE",
+          "importance": 0.052
+        },
+        {
+          "rank": 12,
+          "feature": "HAS_DEPENDENTS",
+          "importance": 0.048
+        },
+        {
+          "rank": 13,
+          "feature": "REGISTRATION_TENURE",
+          "importance": 0.041
+        },
+        {
+          "rank": 14,
+          "feature": "GOODS_PRICE_TO_CREDIT_RATIO",
+          "importance": 0.037
+        },
+        {
+          "rank": 15,
+          "feature": "DAYS_EMPLOYED",
+          "importance": 0.033
+        }
+      ]
+    },
+    "drift_detection": {
+      "title": "Model Drift Indicators",
+      "indicators": {
+        "data_drift_detected": false,
+        "model_drift_detected": false,
+        "ks_test_pvalue": 0.34,
+        "alert_threshold": 0.05,
+        "status": "NO_DRIFT"
+      }
+    },
+    "calibration_analysis": {
+      "title": "Probability Calibration",
+      "calibration_metrics": {
+        "brier_score": 0.2234,
+        "calibration_error": 0.0145,
+        "expected_calibration_error": 0.0234
+      }
+    }
+  }
+}

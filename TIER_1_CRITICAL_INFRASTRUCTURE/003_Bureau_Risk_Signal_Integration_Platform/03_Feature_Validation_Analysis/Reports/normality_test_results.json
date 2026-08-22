@@ -1,0 +1,92 @@
+{
+  "SK_ID_CURR": {
+    "statistic": 0.939935671155745,
+    "p_value": 5.093704321813507e-41,
+    "is_normal": false
+  },
+  "CNT_CHILDREN": {
+    "statistic": 0.8314967253329993,
+    "p_value": 2.1436578329798808e-58,
+    "is_normal": false
+  },
+  "AMT_INCOME_TOTAL": {
+    "statistic": 0.9067348324649047,
+    "p_value": 4.8109927177018654e-48,
+    "is_normal": false
+  },
+  "DAYS_BIRTH": {
+    "statistic": 0.9430788153277818,
+    "p_value": 3.3544581731363906e-40,
+    "is_normal": false
+  },
+  "DAYS_EMPLOYED": {
+    "statistic": 0.9410314049147599,
+    "p_value": 9.736476138289469e-41,
+    "is_normal": false
+  },
+  "AMT_CREDIT": {
+    "statistic": 0.8637147963884578,
+    "p_value": 1.4603925680917194e-54,
+    "is_normal": false
+  },
+  "AMT_ANNUITY": {
+    "statistic": 0.8589091291436789,
+    "p_value": 3.528818020599198e-55,
+    "is_normal": false
+  },
+  "AMT_GOODS_PRICE": {
+    "statistic": 0.8609694310680231,
+    "p_value": 6.4551551795420725e-55,
+    "is_normal": false
+  },
+  "BUREAU_INQUIRY_FREQUENCY": {
+    "statistic": 0.9228175658936602,
+    "p_value": 5.949549619395091e-45,
+    "is_normal": false
+  },
+  "CREDIT_TO_INCOME_RATIO": {
+    "statistic": 0.8757930269827542,
+    "p_value": 6.290527628804716e-53,
+    "is_normal": false
+  },
+  "ANNUITY_TO_INCOME_RATIO": {
+    "statistic": 0.9520055479355158,
+    "p_value": 1.1659936571996922e-37,
+    "is_normal": false
+  },
+  "EXTERNAL_SCORE": {
+    "statistic": 0.9738252950937708,
+    "p_value": 2.5037167246506362e-29,
+    "is_normal": false
+  },
+  "PAYMENT_CONSISTENCY": {
+    "statistic": 0.954304715760269,
+    "p_value": 6.052591736213132e-37,
+    "is_normal": false
+  },
+  "AGE_AT_APPLICATION": {
+    "statistic": 0.930056910208503,
+    "p_value": 2.1947545771303017e-43,
+    "is_normal": false
+  },
+  "EMPLOYMENT_STABILITY": {
+    "statistic": 0.9596502542088091,
+    "p_value": 3.6519124159073484e-35,
+    "is_normal": false
+  },
+  "DOCUMENTS_SUBMITTED_COUNT": {
+    "statistic": 0.9109144934260608,
+    "p_value": 2.761134005658932e-47,
+    "is_normal": false
+  },
+  "CONTACT_INFO_COMPLETENESS": {
+    "statistic": 0.9457448473034359,
+    "p_value": 1.773959948913376e-39,
+    "is_normal": false
+  },
+  "BUREAU_SIGNAL_001": {
+    "statistic": 0.9746738175867415,
+    "p_value": 6.609819399907939e-29,
+    "is_normal": false
+  }
+}

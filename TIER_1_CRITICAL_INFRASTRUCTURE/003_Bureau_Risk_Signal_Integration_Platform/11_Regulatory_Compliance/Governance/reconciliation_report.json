@@ -1,0 +1,18 @@
+{
+  "REGULATORY_PORTFOLIO_VERIFICATION": {
+    "reconciliation_name": "REGULATORY_PORTFOLIO_VERIFICATION",
+    "source_count": 307511,
+    "output_count": 307511,
+    "variance_percentage": 0.0,
+    "within_tolerance": true,
+    "timestamp": "2026-08-11T18:41:30.677851"
+  },
+  "STRESS_TEST_VALIDATION": {
+    "reconciliation_name": "STRESS_TEST_VALIDATION",
+    "source_count": 4,
+    "output_count": 4,
+    "variance_percentage": 0.0,
+    "within_tolerance": true,
+    "timestamp": "2026-08-11T18:41:30.685494"
+  }
+}

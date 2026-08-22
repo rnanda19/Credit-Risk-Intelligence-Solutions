@@ -1,0 +1,17 @@
+{
+  "missing_data": {
+    "threshold": 1.0,
+    "actual": 0.0,
+    "status": "PASS"
+  },
+  "variance": {
+    "threshold": 0.0,
+    "columns_with_variance": 84,
+    "total_numeric_columns": 84,
+    "status": "PASS"
+  },
+  "duplicates": {
+    "duplicate_rows": 0,
+    "status": "PASS"
+  }
+}

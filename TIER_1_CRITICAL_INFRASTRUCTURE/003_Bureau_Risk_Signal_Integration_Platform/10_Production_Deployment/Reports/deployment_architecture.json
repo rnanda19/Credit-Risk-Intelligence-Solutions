@@ -1,0 +1,58 @@
+{
+  "architecture_type": "Microservices with API Gateway",
+  "components": [
+    {
+      "name": "API Gateway",
+      "description": "REST API endpoint for model predictions",
+      "technology": "FastAPI / Flask",
+      "port": 8000,
+      "replicas": 3
+    },
+    {
+      "name": "Model Service",
+      "description": "Containerized Random Forest model inference",
+      "technology": "Docker + Python + scikit-learn",
+      "replicas": 5,
+      "resource_limits": {
+        "cpu": "2 cores",
+        "memory": "4GB",
+        "gpu": "None (CPU inference)"
+      }
+    },
+    {
+      "name": "Calibration Service",
+      "description": "Probability calibration (Isotonic Regression)",
+      "technology": "Docker + Python + scikit-learn",
+      "replicas": 3
+    },
+    {
+      "name": "Prediction Cache",
+      "description": "Cache for recent predictions (24hr TTL)",
+      "technology": "Redis",
+      "replicas": 2,
+      "cache_size": "100GB"
+    },
+    {
+      "name": "Monitoring Service",
+      "description": "Real-time drift detection and alerting",
+      "technology": "Prometheus + Grafana",
+      "replicas": 2
+    },
+    {
+      "name": "Database",
+      "description": "Store predictions, audit logs, monitoring data",
+      "technology": "PostgreSQL",
+      "replicas": 1,
+      "backup_frequency": "Hourly"
+    }
+  ],
+  "deployment_platform": "Kubernetes (K8s)",
+  "load_balancing": "Round-robin with health checks",
+  "auto_scaling": {
+    "enabled": true,
+    "min_replicas": 3,
+    "max_replicas": 20,
+    "target_cpu": "70%",
+    "target_latency": "100ms"
+  }
+}

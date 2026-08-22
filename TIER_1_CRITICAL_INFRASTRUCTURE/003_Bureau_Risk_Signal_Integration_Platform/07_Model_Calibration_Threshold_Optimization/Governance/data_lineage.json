@@ -1,0 +1,7 @@
+{
+  "framework": "SOP_04_Data_Lineage",
+  "input_source": "CHUNK_06_predictions",
+  "transformation": "Probability Calibration & Threshold Optimization",
+  "output_records": 307511,
+  "calibration_method": "Isotonic Regression"
+}

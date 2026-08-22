@@ -1,0 +1,20 @@
+{
+  "WORKING_DIR": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration",
+  "RAW_DATA_PATH": "C:/Users/rnand/OneDrive/Desktop(1)/home-credit-default-risk/data",
+  "CSV_FILES": {
+    "application_train": "C:/Users/rnand/OneDrive/Desktop(1)/home-credit-default-risk/data\\application_train.csv",
+    "bureau": "C:/Users/rnand/OneDrive/Desktop(1)/home-credit-default-risk/data\\bureau.csv",
+    "bureau_balance": "C:/Users/rnand/OneDrive/Desktop(1)/home-credit-default-risk/data\\bureau_balance.csv",
+    "previous_application": "C:/Users/rnand/OneDrive/Desktop(1)/home-credit-default-risk/data\\previous_application.csv",
+    "credit_card_balance": "C:/Users/rnand/OneDrive/Desktop(1)/home-credit-default-risk/data\\credit_card_balance.csv",
+    "installments_payments": "C:/Users/rnand/OneDrive/Desktop(1)/home-credit-default-risk/data\\installments_payments.csv"
+  },
+  "OUTPUT_PATHS": {
+    "integrated_data": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\01_Data_Ingestion\\Integrated_Data",
+    "metadata": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\01_Data_Ingestion\\Metadata",
+    "audit": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\01_Data_Ingestion\\Audit"
+  },
+  "CHUNK": "CHUNK_01",
+  "PROBLEM": "Problem 20: Bureau Risk Signal Integration",
+  "SELECTED_FILES": 6
+}

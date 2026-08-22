@@ -1,0 +1,20 @@
+{
+  "bureau_risk_validated": {
+    "dataset_name": "bureau_risk_validated",
+    "version": "v1.0",
+    "execution_id": "CHUNK_03_20260811_172122_Problem 20: Bureau Risk Signal Integration",
+    "timestamp": "2026-08-11T17:21:31.652031",
+    "record_count": 307511,
+    "column_count": 128,
+    "data_owner": "Risk Analytics & Data Governance Team",
+    "sensitivity_level": "CONFIDENTIAL",
+    "changes_summary": {
+      "features_analyzed": 110,
+      "features_with_high_correlation": 12,
+      "normal_features": 0,
+      "categorical_features_analyzed": 15,
+      "validation_status": "PASS"
+    },
+    "checksum": null
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "framework": "SOP_02_Quality_Gates",
+  "chunk": "CHUNK_07",
+  "gate_name": "calibration_quality",
+  "threshold_brier": 0.25,
+  "actual_brier": 0.015481928159936398,
+  "status": "PASS"
+}

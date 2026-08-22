@@ -1,0 +1,23 @@
+[
+  {
+    "user_id": "project_lead",
+    "action": "WRITE",
+    "resource": "final_compliance_summary.json",
+    "timestamp": "2026-08-11T18:42:40.632971",
+    "execution_id": "CHUNK_13_20260811_184240_Problem 20: Bureau Risk Signal Integration"
+  },
+  {
+    "user_id": "release_team",
+    "action": "READ",
+    "resource": "operational_runbook.json",
+    "timestamp": "2026-08-11T18:42:40.632993",
+    "execution_id": "CHUNK_13_20260811_184240_Problem 20: Bureau Risk Signal Integration"
+  },
+  {
+    "user_id": "knowledge_managers",
+    "action": "READ",
+    "resource": "knowledge_transfer.json",
+    "timestamp": "2026-08-11T18:42:40.633013",
+    "execution_id": "CHUNK_13_20260811_184240_Problem 20: Bureau Risk Signal Integration"
+  }
+]

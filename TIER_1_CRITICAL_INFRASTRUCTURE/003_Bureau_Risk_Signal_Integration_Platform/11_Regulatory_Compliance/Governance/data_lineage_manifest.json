@@ -1,0 +1,12 @@
+{
+  "Model Validation Results": [
+    {
+      "source": "Model Validation Results",
+      "output": "11_Regulatory_Compliance/Reports/regulatory_report.json",
+      "record_count": 307511,
+      "transformation_type": "REGULATORY_COMPLIANCE_REPORTING",
+      "timestamp": "2026-08-11T18:41:30.678433",
+      "checksum": "N/A"
+    }
+  ]
+}

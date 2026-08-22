@@ -1,0 +1,40 @@
+{
+  "rollback_procedures": [
+    {
+      "name": "Immediate Rollback",
+      "trigger": "Error rate exceeds 10% for 5 minutes",
+      "steps": [
+        "Alert team members",
+        "Identify issue",
+        "Revert to previous version",
+        "Verify rollback",
+        "Monitor metrics"
+      ],
+      "estimated_time_minutes": 5
+    },
+    {
+      "name": "Gradual Rollback",
+      "trigger": "Performance degradation detected",
+      "steps": [
+        "Reduce traffic to new version",
+        "Monitor metrics",
+        "If issues persist, complete rollback",
+        "Run incident analysis"
+      ],
+      "estimated_time_minutes": 15
+    }
+  ],
+  "previous_versions": [
+    {
+      "version": "0.9.0",
+      "release_date": "2024-08-01",
+      "status": "archived"
+    }
+  ],
+  "testing_before_rollback": [
+    "Verify model loads correctly",
+    "Test predictions work",
+    "Check API endpoints",
+    "Validate data processing"
+  ]
+}

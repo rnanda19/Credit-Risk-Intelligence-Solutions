@@ -1,0 +1,7 @@
+{
+  "framework": "SOP_04_Data_Lineage",
+  "source": "Synthetic Bureau Data",
+  "records": 307511,
+  "columns": 88,
+  "timestamp": "2026-08-11T20:10:34.348420"
+}

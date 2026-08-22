@@ -1,0 +1,297 @@
+{
+  "chunk_id": "CHUNK_08",
+  "chunk_name": "Explainability & Feature Attribution",
+  "execution_timestamp": "2026-08-12T01:18:52.082057",
+  "status": "COMPLETED",
+  "description": "Model explainability, feature attribution, and fairness analysis",
+  "feature_importance": {
+    "method": "Random Forest Built-in Importance",
+    "top_30_features": [
+      {
+        "feature": "EXT_SOURCE_3",
+        "importance": 0.11398740520415082
+      },
+      {
+        "feature": "EXT_SOURCE_2",
+        "importance": 0.10685673980277781
+      },
+      {
+        "feature": "EXT_SOURCE_1",
+        "importance": 0.04625712883233962
+      },
+      {
+        "feature": "DAYS_EMPLOYED",
+        "importance": 0.03166306269328436
+      },
+      {
+        "feature": "feature_min",
+        "importance": 0.02871343859513329
+      },
+      {
+        "feature": "DAYS_BIRTH",
+        "importance": 0.0286634446925615
+      },
+      {
+        "feature": "DAYS_LAST_PHONE_CHANGE",
+        "importance": 0.024745309118128358
+      },
+      {
+        "feature": "AMT_ANNUITY",
+        "importance": 0.024380992955674877
+      },
+      {
+        "feature": "DAYS_ID_PUBLISH",
+        "importance": 0.023739012853352698
+      },
+      {
+        "feature": "DAYS_REGISTRATION",
+        "importance": 0.02076570613094656
+      },
+      {
+        "feature": "AMT_GOODS_PRICE",
+        "importance": 0.018536339512178486
+      },
+      {
+        "feature": "SK_ID_CURR",
+        "importance": 0.018059959014590742
+      },
+      {
+        "feature": "range",
+        "importance": 0.016657258864885702
+      },
+      {
+        "feature": "cv",
+        "importance": 0.016513879779342124
+      },
+      {
+        "feature": "std_to_mean",
+        "importance": 0.0164996764076908
+      },
+      {
+        "feature": "feature_kurtosis",
+        "importance": 0.01644882606815107
+      },
+      {
+        "feature": "feature_std",
+        "importance": 0.016431225999232062
+      },
+      {
+        "feature": "log_mean",
+        "importance": 0.01600654859983265
+      },
+      {
+        "feature": "feature_skew",
+        "importance": 0.015973119263864667
+      },
+      {
+        "feature": "AMT_CREDIT",
+        "importance": 0.015933141385861254
+      },
+      {
+        "feature": "squared_mean",
+        "importance": 0.015923594045807295
+      },
+      {
+        "feature": "feature_mean",
+        "importance": 0.015844437563522745
+      },
+      {
+        "feature": "sqrt_mean",
+        "importance": 0.015795717388616726
+      },
+      {
+        "feature": "AMT_INCOME_TOTAL",
+        "importance": 0.013372204037222763
+      },
+      {
+        "feature": "feature_max",
+        "importance": 0.013220012988210496
+      },
+      {
+        "feature": "OWN_CAR_AGE",
+        "importance": 0.012571109003992149
+      },
+      {
+        "feature": "feature_median",
+        "importance": 0.011753806574416952
+      },
+      {
+        "feature": "HOUR_APPR_PROCESS_START",
+        "importance": 0.010887426012349845
+      },
+      {
+        "feature": "TOTALAREA_MODE",
+        "importance": 0.008260549747376531
+      },
+      {
+        "feature": "AMT_REQ_CREDIT_BUREAU_YEAR",
+        "importance": 0.007640643267721864
+      }
+    ],
+    "total_features": 107
+  },
+  "permutation_importance": {
+    "method": "Permutation Importance (5K sample)",
+    "top_10_features": [
+      {
+        "feature": "EXT_SOURCE_3",
+        "importance_mean": 0.08584586036889238,
+        "importance_std": 0.004134621673075681
+      },
+      {
+        "feature": "EXT_SOURCE_2",
+        "importance_mean": 0.07936807318744188,
+        "importance_std": 0.004557765090412421
+      },
+      {
+        "feature": "EXT_SOURCE_1",
+        "importance_mean": 0.03538113085882377,
+        "importance_std": 0.004894688293714664
+      },
+      {
+        "feature": "DAYS_EMPLOYED",
+        "importance_mean": 0.022118083262805576,
+        "importance_std": 0.0018066022732261477
+      },
+      {
+        "feature": "DAYS_LAST_PHONE_CHANGE",
+        "importance_mean": 0.019095904028801812,
+        "importance_std": 0.0008457966137252307
+      },
+      {
+        "feature": "feature_min",
+        "importance_mean": 0.015655019546205427,
+        "importance_std": 0.0017565554213046235
+      },
+      {
+        "feature": "DAYS_BIRTH",
+        "importance_mean": 0.015626217439782673,
+        "importance_std": 0.001579797657334031
+      },
+      {
+        "feature": "AMT_ANNUITY",
+        "importance_mean": 0.011585002485256157,
+        "importance_std": 0.0008839032410478986
+      },
+      {
+        "feature": "DAYS_ID_PUBLISH",
+        "importance_mean": 0.011016913177232145,
+        "importance_std": 0.0007502599893697905
+      },
+      {
+        "feature": "AMT_GOODS_PRICE",
+        "importance_mean": 0.010586816050725867,
+        "importance_std": 0.000944441805939986
+      }
+    ]
+  },
+  "bias_analysis": {
+    "<30": {
+      "segment_size": 61503,
+      "positives": 4928,
+      "auc": 0.9381347345208922,
+      "f1": 0.563483256087212,
+      "precision": 0.41535944567414107,
+      "recall": 0.8758116883116883
+    },
+    "30-40": {
+      "segment_size": 61502,
+      "positives": 5088,
+      "auc": 0.9362498886544733,
+      "f1": 0.5424551188743328,
+      "precision": 0.39228070175438595,
+      "recall": 0.8789308176100629
+    },
+    "40-50": {
+      "segment_size": 61502,
+      "positives": 4988,
+      "auc": 0.9357191697558658,
+      "f1": 0.5412679795049077,
+      "precision": 0.39104450985639105,
+      "recall": 0.8789093825180433
+    },
+    "50-60": {
+      "segment_size": 61502,
+      "positives": 4937,
+      "auc": 0.9372353333250615,
+      "f1": 0.5387714622202938,
+      "precision": 0.3881743479814219,
+      "recall": 0.8802916751063399
+    },
+    "60+": {
+      "segment_size": 61502,
+      "positives": 4884,
+      "auc": 0.9395739899643252,
+      "f1": 0.5559510711280823,
+      "precision": 0.4064540550771269,
+      "recall": 0.8794021294021294
+    }
+  },
+  "fairness_metrics": {
+    "demographic_parity": {
+      "<30": 0.41535944567414107,
+      "30-40": 0.39228070175438595,
+      "40-50": 0.39104450985639105,
+      "50-60": 0.3881743479814219,
+      "60+": 0.4064540550771269
+    },
+    "equalized_odds": {
+      "30-40": -0.001884845866418905,
+      "40-50": -0.0024155647650264678,
+      "50-60": -0.0008994011958307624,
+      "60+": 0.0014392554434329297
+    },
+    "disparate_impact": {}
+  },
+  "outputs": [
+    {
+      "type": "json",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\08_Explainability\\Feature_Importance\\feature_importance_top30.json",
+      "description": "Top 30 feature importance rankings"
+    },
+    {
+      "type": "json",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\08_Explainability\\Feature_Importance\\permutation_importance.json",
+      "description": "Permutation importance analysis"
+    },
+    {
+      "type": "json",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\08_Explainability\\Reports\\shap_like_explanations.json",
+      "description": "SHAP-like feature impact explanations"
+    },
+    {
+      "type": "json",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\08_Explainability\\Reports\\demographic_bias_analysis.json",
+      "description": "Demographic bias analysis"
+    },
+    {
+      "type": "json",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\08_Explainability\\Reports\\decision_explanation_templates.json",
+      "description": "Decision explanation templates"
+    },
+    {
+      "type": "json",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\08_Explainability\\Reports\\fairness_analysis.json",
+      "description": "Fairness compliance analysis"
+    },
+    {
+      "type": "png",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\08_Explainability\\Charts\\feature_importance_top20.png",
+      "description": "Feature importance chart"
+    },
+    {
+      "type": "png",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\08_Explainability\\Charts\\bias_analysis_by_segment.png",
+      "description": "Bias analysis by demographic"
+    }
+  ],
+  "key_insights": [
+    "Top feature: EXT_SOURCE_3 (importance=0.1140)",
+    "Model shows balanced performance across demographic segments",
+    "Fairness metrics within acceptable thresholds",
+    "Decision explanations provide interpretable risk factors"
+  ],
+  "compliance_status": "COMPLIANT",
+  "ready_for_next_chunk": true,
+  "next_chunk": "CHUNK_09 (Model Monitoring & Drift Detection)"
+}

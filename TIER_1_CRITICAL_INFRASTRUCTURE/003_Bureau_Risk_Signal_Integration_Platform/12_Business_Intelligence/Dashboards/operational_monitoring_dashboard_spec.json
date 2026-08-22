@@ -1,0 +1,59 @@
+{
+  "dashboard_id": "operational_monitoring_v1",
+  "name": "Operational Monitoring Dashboard",
+  "refresh_frequency": "Real-time (every 5 minutes)",
+  "audience": [
+    "Operations",
+    "DevOps",
+    "System Admins"
+  ],
+  "sections": {
+    "system_health": {
+      "title": "System Health",
+      "kpis": {
+        "uptime_percentage": 99.95,
+        "target_uptime": 99.9,
+        "status": "HEALTHY",
+        "last_incident": "7 days ago"
+      }
+    },
+    "api_performance": {
+      "title": "API Performance",
+      "metrics": {
+        "avg_latency_ms": 145,
+        "p95_latency_ms": 320,
+        "p99_latency_ms": 540,
+        "error_rate_percent": 0.23,
+        "requests_per_minute": 2543
+      }
+    },
+    "batch_pipeline": {
+      "title": "Batch Prediction Pipeline",
+      "metrics": {
+        "daily_records_processed": 50000,
+        "pipeline_status": "RUNNING",
+        "last_completion_time": "02:34 AM",
+        "avg_processing_time_minutes": 22
+      }
+    },
+    "resource_utilization": {
+      "title": "Resource Utilization",
+      "resources": {
+        "cpu_percentage": 42,
+        "memory_percentage": 58,
+        "disk_percentage": 34,
+        "network_bandwidth_percent": 28
+      }
+    },
+    "active_alerts": {
+      "title": "Active Alerts & Incidents",
+      "alerts": [
+        {
+          "severity": "INFO",
+          "message": "Daily model scoring completed",
+          "timestamp": "2026-08-11T18:42:03.047571"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "chunk_id": "CHUNK_01",
+  "chunk_name": "Data Ingestion",
+  "execution_timestamp": "2026-08-12T00:02:31.418185",
+  "status": "COMPLETED",
+  "description": "Raw data loading from Kaggle Home Credit dataset",
+  "outputs": [
+    {
+      "type": "csv",
+      "name": "home_credit_raw.csv",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\01_Data_Ingestion\\Raw_Data\\home_credit_raw.csv",
+      "size_mb": 157.78426837921143,
+      "records": 307511,
+      "features": 122
+    }
+  ],
+  "key_metrics": {
+    "total_records": 307511,
+    "total_features": 122,
+    "numeric_features": 106,
+    "categorical_features": 16,
+    "missing_values": 9152465,
+    "duplicates": 0
+  },
+  "quality_status": "PASS",
+  "ready_for_next_chunk": true,
+  "next_chunk": "CHUNK_02 (Data Cleaning)",
+  "target_info": {
+    "class_0": 282686,
+    "class_1": 24825,
+    "imbalance_ratio": 11.387150050352467
+  }
+}

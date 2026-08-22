@@ -1,0 +1,12 @@
+{
+  "VALIDATION_METRICS": [
+    {
+      "field": "VALIDATION_METRICS",
+      "change_type": "CALCULATED",
+      "before": "N/A",
+      "after": "AUC=0.9161, F1=0.4579",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:39:14.000469"
+    }
+  ]
+}

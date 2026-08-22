@@ -1,0 +1,29 @@
+{
+  "missing_percentage": {
+    "gate_name": "missing_percentage",
+    "threshold": 1.0,
+    "actual_value": 0.0,
+    "unit": "%",
+    "pass": true,
+    "status": "PASS",
+    "timestamp": "2026-08-11T17:39:12.190523"
+  },
+  "validation_auc": {
+    "gate_name": "validation_auc",
+    "threshold": 0.68,
+    "actual_value": 0.916115981464786,
+    "unit": "AUC",
+    "pass": true,
+    "status": "PASS",
+    "timestamp": "2026-08-11T17:39:14.004015"
+  },
+  "validation_recall": {
+    "gate_name": "validation_recall",
+    "threshold": 0.5,
+    "actual_value": 0.872467270896274,
+    "unit": "Recall",
+    "pass": true,
+    "status": "PASS",
+    "timestamp": "2026-08-11T17:39:14.004075"
+  }
+}

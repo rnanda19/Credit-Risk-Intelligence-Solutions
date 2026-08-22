@@ -1,0 +1,18 @@
+{
+  "DEPLOYMENT_ARTIFACTS_INTEGRITY": {
+    "reconciliation_name": "DEPLOYMENT_ARTIFACTS_INTEGRITY",
+    "source_count": 3,
+    "output_count": 3,
+    "variance_percentage": 0.0,
+    "within_tolerance": true,
+    "timestamp": "2026-08-11T18:33:47.899759"
+  },
+  "DEPLOYMENT_CONFIGURATION_INTEGRITY": {
+    "reconciliation_name": "DEPLOYMENT_CONFIGURATION_INTEGRITY",
+    "source_count": 10,
+    "output_count": 8,
+    "variance_percentage": 20.0,
+    "within_tolerance": false,
+    "timestamp": "2026-08-11T18:33:47.919493"
+  }
+}

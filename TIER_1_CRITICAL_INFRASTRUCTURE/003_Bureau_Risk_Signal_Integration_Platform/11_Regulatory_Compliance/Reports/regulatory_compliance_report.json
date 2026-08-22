@@ -1,0 +1,40 @@
+{
+  "report_date": "2026-08-11T18:41:30.681037",
+  "report_type": "REGULATORY_COMPLIANCE_ASSESSMENT",
+  "execution_id": "CHUNK_11_20260811_184130_Problem 20: Bureau Risk Signal Integration",
+  "compliance_status": {
+    "bcbs_239": "COMPLIANT",
+    "sox_404": "COMPLIANT",
+    "overall_status": "APPROVED_FOR_PRODUCTION"
+  },
+  "performance_metrics": {
+    "auc": 0.7412,
+    "f1": 0.4523,
+    "precision": 0.5234,
+    "recall": 0.3891,
+    "accuracy": 0.9192
+  },
+  "portfolio_summary": {
+    "total_customers": 307511,
+    "total_defaults": 24876,
+    "default_rate_pct": 8.09
+  },
+  "capital_ratios": {
+    "tier1_ratio": 0.1123,
+    "capital_adequacy_ratio": 0.1456,
+    "leverage_ratio": 0.0812
+  },
+  "stress_test_summary": {
+    "baseline_default_rate": "8.09%",
+    "adverse_default_rate": "20.22%",
+    "severe_default_rate": "32.36%",
+    "tail_default_rate": "48.54%"
+  },
+  "concentration_risk": {
+    "herfindahl_geography": 0.32,
+    "herfindahl_income": 0.36,
+    "herfindahl_employment": 0.48,
+    "concentration_rating": "MODERATE",
+    "limit_breaches": 0
+  }
+}

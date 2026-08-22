@@ -1,0 +1,21 @@
+{
+  "monitoring_status": "ACTIVE",
+  "metrics_configured": [
+    "model_accuracy",
+    "prediction_latency",
+    "error_rate",
+    "data_drift",
+    "feature_importance_drift",
+    "request_volume"
+  ],
+  "monitoring_frequency": "REAL_TIME",
+  "drift_detection": "WEEKLY",
+  "alert_channels": [
+    "email",
+    "dashboard",
+    "slack"
+  ],
+  "baseline_accuracy": 0.92,
+  "accuracy_threshold": 0.9,
+  "alert_status": "ACTIVE"
+}

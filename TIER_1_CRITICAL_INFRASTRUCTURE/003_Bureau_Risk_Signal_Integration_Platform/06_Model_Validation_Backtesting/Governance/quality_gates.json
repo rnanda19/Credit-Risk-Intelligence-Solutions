@@ -1,0 +1,8 @@
+{
+  "framework": "SOP_02_Quality_Gates",
+  "chunk": "CHUNK_06",
+  "gate_name": "validation_quality",
+  "threshold_auc": 0.7,
+  "actual_auc": 0.9619140036105553,
+  "status": "PASS"
+}

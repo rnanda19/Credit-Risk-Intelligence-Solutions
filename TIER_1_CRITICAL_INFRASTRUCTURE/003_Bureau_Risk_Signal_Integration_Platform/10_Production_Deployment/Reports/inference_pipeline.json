@@ -1,0 +1,84 @@
+{
+  "stages": [
+    {
+      "stage": 1,
+      "name": "Input Validation",
+      "steps": [
+        "Validate customer ID format",
+        "Check feature count (91 required)",
+        "Validate feature data types",
+        "Check for missing values"
+      ],
+      "error_handling": "Return 400 Bad Request if validation fails"
+    },
+    {
+      "stage": 2,
+      "name": "Feature Scaling",
+      "steps": [
+        "Load pre-trained StandardScaler",
+        "Apply scaling to input features",
+        "Handle out-of-distribution values"
+      ],
+      "latency_ms": 5
+    },
+    {
+      "stage": 3,
+      "name": "Model Prediction",
+      "steps": [
+        "Load Random Forest model",
+        "Generate probability predictions",
+        "Cache result (24hr TTL)"
+      ],
+      "latency_ms": 20,
+      "model_version": "1.0.0"
+    },
+    {
+      "stage": 4,
+      "name": "Probability Calibration",
+      "steps": [
+        "Load Isotonic Regressor",
+        "Apply calibration transformation",
+        "Ensure output in [0.0, 1.0]"
+      ],
+      "latency_ms": 3
+    },
+    {
+      "stage": 5,
+      "name": "Threshold Application",
+      "steps": [
+        "Select threshold based on scenario (conservative/balanced/aggressive)",
+        "Classify risk category (high/medium/low)",
+        "Generate decision explanation"
+      ],
+      "latency_ms": 2,
+      "thresholds": {
+        "conservative": 0.7,
+        "balanced": 0.45,
+        "aggressive": 0.3
+      }
+    },
+    {
+      "stage": 6,
+      "name": "Audit Logging",
+      "steps": [
+        "Log prediction to audit trail",
+        "Record customer ID, timestamp, features hash",
+        "Store for compliance review"
+      ],
+      "latency_ms": 10,
+      "retention_days": 2555
+    },
+    {
+      "stage": 7,
+      "name": "Monitoring",
+      "steps": [
+        "Check for data drift",
+        "Monitor prediction distribution",
+        "Update monitoring metrics"
+      ],
+      "latency_ms": 5
+    }
+  ],
+  "total_latency_budget_ms": 50,
+  "p95_actual_latency_ms": 35
+}

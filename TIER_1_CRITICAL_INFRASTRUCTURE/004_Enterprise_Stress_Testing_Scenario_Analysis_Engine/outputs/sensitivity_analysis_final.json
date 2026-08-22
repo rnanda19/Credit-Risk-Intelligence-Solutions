@@ -1,0 +1,178 @@
+{
+  "Income Elasticity": [
+    {
+      "shock": -0.2,
+      "shock_pct": "-20.0%",
+      "default_rate": 0.07763488939890963,
+      "change_pct": -2.7754435961204997
+    },
+    {
+      "shock": -0.15,
+      "shock_pct": "-15.0%",
+      "default_rate": 0.07763488939890963,
+      "change_pct": -2.7754435961204997
+    },
+    {
+      "shock": -0.1,
+      "shock_pct": "-10.0%",
+      "default_rate": 0.07763488939890963,
+      "change_pct": -2.7754435961204997
+    },
+    {
+      "shock": -0.05,
+      "shock_pct": "-5.0%",
+      "default_rate": 0.07763488939890963,
+      "change_pct": -2.7754435961204997
+    },
+    {
+      "shock": 0,
+      "shock_pct": "+0.0%",
+      "default_rate": 0.07985111200113044,
+      "change_pct": 0.0
+    },
+    {
+      "shock": 0.05,
+      "shock_pct": "+5.0%",
+      "default_rate": 0.07985709590617578,
+      "change_pct": 0.007493827976131909
+    },
+    {
+      "shock": 0.1,
+      "shock_pct": "+10.0%",
+      "default_rate": 0.07986053613709937,
+      "change_pct": 0.011802134766476124
+    }
+  ],
+  "DTI Elasticity": [
+    {
+      "shock": -0.2,
+      "shock_pct": "-20.0%",
+      "default_rate": 0.07964866149440761,
+      "change_pct": -0.25353498418985226
+    },
+    {
+      "shock": -0.1,
+      "shock_pct": "-10.0%",
+      "default_rate": 0.07799893020278696,
+      "change_pct": -2.319544122468602
+    },
+    {
+      "shock": 0,
+      "shock_pct": "+0.0%",
+      "default_rate": 0.07985111200113044,
+      "change_pct": 0.0
+    },
+    {
+      "shock": 0.1,
+      "shock_pct": "+10.0%",
+      "default_rate": 0.07730492930997607,
+      "change_pct": -3.1886627442729973
+    },
+    {
+      "shock": 0.2,
+      "shock_pct": "+20.0%",
+      "default_rate": 0.07669966697450406,
+      "change_pct": -3.9466513467154423
+    },
+    {
+      "shock": 0.3,
+      "shock_pct": "+30.0%",
+      "default_rate": 0.07614391627370268,
+      "change_pct": -4.642635009201794
+    },
+    {
+      "shock": 0.4,
+      "shock_pct": "+40.0%",
+      "default_rate": 0.07634846043684976,
+      "change_pct": -4.386478074802915
+    },
+    {
+      "shock": 0.5,
+      "shock_pct": "+50.0%",
+      "default_rate": 0.07639863977540813,
+      "change_pct": -4.323636948771694
+    }
+  ],
+  "Credit Score Elasticity": [
+    {
+      "shock": -0.3,
+      "shock_pct": "-30.0%",
+      "default_rate": 0.07556300577734919,
+      "change_pct": -5.370127055988
+    },
+    {
+      "shock": -0.2,
+      "shock_pct": "-20.0%",
+      "default_rate": 0.07488424320179317,
+      "change_pct": -6.220162265323666
+    },
+    {
+      "shock": -0.1,
+      "shock_pct": "-10.0%",
+      "default_rate": 0.07589167192450998,
+      "change_pct": -4.958528350837659
+    },
+    {
+      "shock": 0,
+      "shock_pct": "+0.0%",
+      "default_rate": 0.07985111200113044,
+      "change_pct": 0.0
+    },
+    {
+      "shock": 0.1,
+      "shock_pct": "+10.0%",
+      "default_rate": 0.07703819091409977,
+      "change_pct": -3.522707425494305
+    },
+    {
+      "shock": 0.2,
+      "shock_pct": "+20.0%",
+      "default_rate": 0.07624691937997995,
+      "change_pct": -4.513641057325618
+    },
+    {
+      "shock": 0.3,
+      "shock_pct": "+30.0%",
+      "default_rate": 0.07713353025038117,
+      "change_pct": -3.403311048038624
+    }
+  ],
+  "Employment Impact": [
+    {
+      "shock": -0.5,
+      "shock_pct": "-50.0%",
+      "default_rate": 0.07130850851966247,
+      "change_pct": -10.698164572041764
+    },
+    {
+      "shock": -0.3,
+      "shock_pct": "-30.0%",
+      "default_rate": 0.07397811833487063,
+      "change_pct": -7.354930251475237
+    },
+    {
+      "shock": -0.1,
+      "shock_pct": "-10.0%",
+      "default_rate": 0.07633778049444231,
+      "change_pct": -4.399852894521824
+    },
+    {
+      "shock": 0,
+      "shock_pct": "+0.0%",
+      "default_rate": 0.07985111200113044,
+      "change_pct": 0.0
+    },
+    {
+      "shock": 0.1,
+      "shock_pct": "+10.0%",
+      "default_rate": 0.07610118404665989,
+      "change_pct": -4.696149888878156
+    },
+    {
+      "shock": 0.2,
+      "shock_pct": "+20.0%",
+      "default_rate": 0.0752106857744096,
+      "change_pct": -5.81134821083226
+    }
+  ]
+}

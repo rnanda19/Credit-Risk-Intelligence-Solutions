@@ -1,0 +1,14 @@
+{
+  "framework": "SOP_04_Data_Lineage",
+  "input_source": "CHUNK_04_engineered_features",
+  "transformation": "5 ML Models Training",
+  "models_trained": [
+    "Random Forest",
+    "XGBoost",
+    "LightGBM",
+    "Logistic Regression",
+    "Neural Network"
+  ],
+  "records_trained": 246008,
+  "records_tested": 61503
+}

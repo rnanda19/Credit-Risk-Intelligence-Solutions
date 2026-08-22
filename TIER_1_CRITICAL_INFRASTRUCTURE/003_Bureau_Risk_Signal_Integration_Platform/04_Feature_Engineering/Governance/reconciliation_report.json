@@ -1,0 +1,18 @@
+{
+  "INPUT_DATA_INTEGRITY": {
+    "reconciliation_name": "INPUT_DATA_INTEGRITY",
+    "source_count": 307511,
+    "output_count": 307511,
+    "variance_percentage": 0.0,
+    "within_tolerance": true,
+    "timestamp": "2026-08-11T17:29:37.901957"
+  },
+  "ENGINEERED_DATA_INTEGRITY": {
+    "reconciliation_name": "ENGINEERED_DATA_INTEGRITY",
+    "source_count": 307511,
+    "output_count": 307511,
+    "variance_percentage": 0.0,
+    "within_tolerance": true,
+    "timestamp": "2026-08-11T17:29:39.402543"
+  }
+}

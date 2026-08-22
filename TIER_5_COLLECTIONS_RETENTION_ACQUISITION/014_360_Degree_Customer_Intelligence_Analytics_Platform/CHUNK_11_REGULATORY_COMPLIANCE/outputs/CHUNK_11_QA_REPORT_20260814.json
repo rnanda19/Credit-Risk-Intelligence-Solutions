@@ -1,0 +1,10 @@
+{
+  "qa_date": "2026-08-14T00:22:06.671997",
+  "chunk_number": 11,
+  "chunk_name": "REGULATORY_COMPLIANCE",
+  "qa_status": "FAILED",
+  "execution_status": "FAILED",
+  "metrics": {},
+  "recommendation": "REQUIRES_REMEDIATION",
+  "sign_off": false
+}

@@ -1,0 +1,7 @@
+{
+  "framework": "SOP_04_Data_Lineage",
+  "input_source": "CHUNK_05_Model",
+  "transformation": "Model Validation & Prediction",
+  "records_validated": 307511,
+  "predictions_generated": 307511
+}

@@ -1,0 +1,30 @@
+{
+  "execution_id": "20260810_204259_247113",
+  "timestamp": "2026-08-10T20:42:59.247223",
+  "feature_selection_summary": {
+    "original_features": 150,
+    "pca_components_95_var": 1,
+    "features_after_selection": 75,
+    "pca_reduction_percent": 99.33333333333333,
+    "selection_reduction_percent": 50.0,
+    "multicollinearity_issues": 55,
+    "high_vif_features": 33
+  },
+  "methods_applied": {
+    "correlation_analysis": 55,
+    "vif_analysis": 50,
+    "f_score": 150,
+    "mutual_information": 150,
+    "feature_importance": 150,
+    "pca": "1",
+    "rfe": 75
+  },
+  "final_features_selected": 75,
+  "key_findings": [
+    "Reduced features from 150 to 75 (50.0%)",
+    "PCA captures 95% variance with 1 components (99.3% reduction)",
+    "Detected 55 highly correlated feature pairs",
+    "Selected 75 consensus features (appearing in 2+ selection methods)",
+    "Removed 75 redundant features"
+  ]
+}

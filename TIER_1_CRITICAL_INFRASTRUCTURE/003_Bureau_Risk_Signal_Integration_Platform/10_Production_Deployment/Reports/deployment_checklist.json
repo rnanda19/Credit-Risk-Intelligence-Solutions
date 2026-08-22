@@ -1,0 +1,106 @@
+{
+  "pre_deployment": [
+    {
+      "item": "Model validation",
+      "status": "Complete",
+      "owner": "Data Science",
+      "evidence": "CHUNK_06_report.json"
+    },
+    {
+      "item": "Security review",
+      "status": "Ready",
+      "owner": "Security Team",
+      "evidence": "Security audit report"
+    },
+    {
+      "item": "Compliance review",
+      "status": "Ready",
+      "owner": "Compliance Team",
+      "evidence": "CHUNK_11_compliance_report.json"
+    },
+    {
+      "item": "Performance testing",
+      "status": "Scheduled",
+      "owner": "DevOps",
+      "evidence": "Load test results"
+    },
+    {
+      "item": "Disaster recovery plan",
+      "status": "Documented",
+      "owner": "Infrastructure",
+      "evidence": "DR_plan.md"
+    }
+  ],
+  "deployment": [
+    {
+      "step": 1,
+      "action": "Build Docker image",
+      "estimate_minutes": 10,
+      "owner": "DevOps"
+    },
+    {
+      "step": 2,
+      "action": "Push to registry",
+      "estimate_minutes": 5,
+      "owner": "DevOps"
+    },
+    {
+      "step": 3,
+      "action": "Deploy to staging",
+      "estimate_minutes": 15,
+      "owner": "DevOps"
+    },
+    {
+      "step": 4,
+      "action": "Run smoke tests",
+      "estimate_minutes": 10,
+      "owner": "QA"
+    },
+    {
+      "step": 5,
+      "action": "Deploy to production (canary)",
+      "estimate_minutes": 20,
+      "owner": "DevOps"
+    },
+    {
+      "step": 6,
+      "action": "Monitor canary (1 hour)",
+      "estimate_minutes": 60,
+      "owner": "DevOps + Monitoring"
+    },
+    {
+      "step": 7,
+      "action": "Full production rollout",
+      "estimate_minutes": 30,
+      "owner": "DevOps"
+    }
+  ],
+  "post_deployment": [
+    {
+      "item": "Monitor error rates",
+      "frequency": "Every 5 minutes",
+      "owner": "Monitoring"
+    },
+    {
+      "item": "Monitor latency",
+      "frequency": "Every 5 minutes",
+      "owner": "Monitoring"
+    },
+    {
+      "item": "Monitor prediction drift",
+      "frequency": "Every hour",
+      "owner": "Data Science"
+    },
+    {
+      "item": "Daily audit log review",
+      "frequency": "Daily",
+      "owner": "Compliance"
+    },
+    {
+      "item": "Weekly performance report",
+      "frequency": "Weekly",
+      "owner": "DevOps"
+    }
+  ],
+  "estimated_total_time_hours": 3
+}

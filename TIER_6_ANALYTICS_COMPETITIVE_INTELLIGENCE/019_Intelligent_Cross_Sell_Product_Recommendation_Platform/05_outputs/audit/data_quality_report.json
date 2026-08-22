@@ -1,0 +1,9 @@
+{
+    "Total_Customers": 3918,
+    "Missing_Values": 0,
+    "Duplicates": 0,
+    "Avg_Payment_Score": 77.53494090134787,
+    "Avg_Customer_Value": 63.00209662563577,
+    "Avg_Churn_Risk": 0.4557269290734937,
+    "Data_Quality_Score": "99.5%"
+}

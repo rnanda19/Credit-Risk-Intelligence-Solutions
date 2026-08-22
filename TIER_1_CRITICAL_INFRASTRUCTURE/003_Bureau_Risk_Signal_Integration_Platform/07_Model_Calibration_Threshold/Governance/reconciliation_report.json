@@ -1,0 +1,18 @@
+{
+  "CALIBRATION_DATA_INTEGRITY": {
+    "reconciliation_name": "CALIBRATION_DATA_INTEGRITY",
+    "source_count": 307511,
+    "output_count": 307511,
+    "variance_percentage": 0.0,
+    "within_tolerance": true,
+    "timestamp": "2026-08-11T17:43:12.884006"
+  },
+  "CALIBRATION_OUTPUT_INTEGRITY": {
+    "reconciliation_name": "CALIBRATION_OUTPUT_INTEGRITY",
+    "source_count": 307511,
+    "output_count": 307511,
+    "variance_percentage": 0.0,
+    "within_tolerance": true,
+    "timestamp": "2026-08-11T17:43:22.347486"
+  }
+}

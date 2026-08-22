@@ -1,0 +1,12 @@
+{
+  "04_Feature_Engineering/Engineered_Data/bureau_risk_engineered.csv": [
+    {
+      "source": "04_Feature_Engineering/Engineered_Data/bureau_risk_engineered.csv",
+      "output": "05_Model_Development/Processed_Data/model_training_data.csv",
+      "record_count": 307511,
+      "transformation_type": "FEATURE_ENGINEERING_TO_MODELING",
+      "timestamp": "2026-08-11T17:33:48.630434",
+      "checksum": "N/A"
+    }
+  ]
+}

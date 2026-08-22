@@ -1,0 +1,8 @@
+{
+  "framework": "SOP_04_Data_Lineage",
+  "input_source": "CHUNK_02_Output",
+  "analysis_type": "Exploratory Data Analysis",
+  "records_analyzed": 307511,
+  "features_analyzed": 88,
+  "visualizations_created": 5
+}

@@ -1,0 +1,105 @@
+[
+  {
+    "timestamp": "2026-08-11T17:29:33.350620",
+    "execution_id": "CHUNK_04_20260811_172933_Problem 20: Bureau Risk Signal Integration",
+    "event_type": "CHUNK_04_INITIALIZATION",
+    "description": "Feature Engineering & Selection initiated with full SOP compliance",
+    "status": "SUCCESS",
+    "details": {
+      "framework": "Enterprise SOP v1.0",
+      "standards": 10,
+      "compliance_level": "BCBS 239 + SOX 404 + JP Morgan + Goldman Sachs"
+    }
+  },
+  {
+    "timestamp": "2026-08-11T17:29:37.678894",
+    "execution_id": "CHUNK_04_20260811_172933_Problem 20: Bureau Risk Signal Integration",
+    "event_type": "DATA_LOADED",
+    "description": "Loaded 307,511 records for feature engineering",
+    "status": "SUCCESS",
+    "details": {
+      "file": "02_Data_Cleaning_Preprocessing/Cleaned_Data/bureau_risk_cleaned.csv",
+      "records": 307511,
+      "features": 128,
+      "size_mb": 204.28400135040283
+    }
+  },
+  {
+    "timestamp": "2026-08-11T17:29:37.741948",
+    "execution_id": "CHUNK_04_20260811_172933_Problem 20: Bureau Risk Signal Integration",
+    "event_type": "COLUMN_IDENTIFICATION",
+    "description": "Identified 112 numeric and 16 categorical columns",
+    "status": "SUCCESS",
+    "details": {
+      "numeric_columns": 112,
+      "categorical_columns": 16
+    }
+  },
+  {
+    "timestamp": "2026-08-11T17:29:38.130579",
+    "execution_id": "CHUNK_04_20260811_172933_Problem 20: Bureau Risk Signal Integration",
+    "event_type": "PII_CLASSIFICATION",
+    "description": "Field 'SK_ID_CURR' classified as SENSITIVE",
+    "status": "SUCCESS",
+    "details": {
+      "field_name": "SK_ID_CURR",
+      "classification": "SENSITIVE",
+      "masking_rule": "ID_HASH_MASKING",
+      "timestamp": "2026-08-11T17:29:38.130573"
+    }
+  },
+  {
+    "timestamp": "2026-08-11T17:29:38.130619",
+    "execution_id": "CHUNK_04_20260811_172933_Problem 20: Bureau Risk Signal Integration",
+    "event_type": "PII_CLASSIFICATION",
+    "description": "Field 'TARGET' classified as CONFIDENTIAL",
+    "status": "SUCCESS",
+    "details": {
+      "field_name": "TARGET",
+      "classification": "CONFIDENTIAL",
+      "masking_rule": "AGGREGATION_ONLY",
+      "timestamp": "2026-08-11T17:29:38.130617"
+    }
+  },
+  {
+    "timestamp": "2026-08-11T17:29:39.401134",
+    "execution_id": "CHUNK_04_20260811_172933_Problem 20: Bureau Risk Signal Integration",
+    "event_type": "FINAL_FEATURE_SET_CREATED",
+    "description": "Final feature set created: 91 features",
+    "status": "SUCCESS",
+    "details": {
+      "total_features": 91,
+      "original_features": 128,
+      "new_features_created": 14,
+      "new_features": [
+        "BUREAU_HIGH_RISK_FLAG",
+        "BUREAU_INQUIRY_FREQUENCY",
+        "BUREAU_URGENT_INQUIRY",
+        "CREDIT_TO_INCOME_RATIO",
+        "ANNUITY_TO_INCOME_RATIO",
+        "GOODS_PRICE_TO_CREDIT_RATIO",
+        "EMPLOYMENT_STABILITY",
+        "AGE_AT_APPLICATION",
+        "REGISTRATION_TENURE",
+        "HAS_DEPENDENTS",
+        "DOCUMENTS_SUBMITTED_COUNT",
+        "CONTACT_INFO_COMPLETENESS",
+        "PAYMENT_CONSISTENCY",
+        "CC_UTILIZATION_RATE"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-11T17:29:49.514058",
+    "execution_id": "CHUNK_04_20260811_172933_Problem 20: Bureau Risk Signal Integration",
+    "event_type": "ENGINEERED_DATA_SAVED",
+    "description": "Engineered dataset saved: 04_Feature_Engineering/Engineered_Data/bureau_risk_engineered.csv",
+    "status": "SUCCESS",
+    "details": {
+      "file": "04_Feature_Engineering/Engineered_Data/bureau_risk_engineered.csv",
+      "records": 307511,
+      "features": 91,
+      "size_mb": 167.06
+    }
+  }
+]

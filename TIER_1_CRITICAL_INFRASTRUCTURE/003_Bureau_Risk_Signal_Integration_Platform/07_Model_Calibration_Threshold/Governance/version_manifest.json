@@ -1,0 +1,20 @@
+{
+  "calibration_results": {
+    "dataset_name": "calibration_results",
+    "version": "v1.0",
+    "execution_id": "CHUNK_07_20260811_174312_Problem 20: Bureau Risk Signal Integration",
+    "timestamp": "2026-08-11T17:43:22.348060",
+    "record_count": 307511,
+    "column_count": 7,
+    "data_owner": "Model Calibration & Optimization Team",
+    "sensitivity_level": "CONFIDENTIAL",
+    "changes_summary": {
+      "optimal_threshold": 0.6171717171717171,
+      "optimal_f1": 0.5644742239846848,
+      "calibration_method": "Threshold optimization",
+      "business_thresholds_defined": 3,
+      "calibration_status": "WELL_CALIBRATED"
+    },
+    "checksum": null
+  }
+}

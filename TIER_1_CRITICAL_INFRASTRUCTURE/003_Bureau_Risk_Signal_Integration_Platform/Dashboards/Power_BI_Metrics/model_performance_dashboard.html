@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Performance Dashboard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f5f5f5; padding: 20px; }
+        .header { background: linear-gradient(135deg, #8e44ad 0%, #6c3483 100%); color: white; padding: 30px; border-radius: 8px; margin-bottom: 30px; }
+        .header h1 { font-size: 32px; margin-bottom: 10px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .metric-card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .metric-label { font-size: 12px; text-transform: uppercase; color: #666; font-weight: 600; }
+        .metric-value { font-size: 26px; font-weight: bold; color: #8e44ad; margin-top: 10px; }
+        .chart-container { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        .chart-container h3 { color: #8e44ad; margin-bottom: 20px; font-size: 18px; }
+        .chart-wrapper { position: relative; height: 380px; }
+        .info-box { background: #f0e6ff; border-left: 4px solid #8e44ad; padding: 15px; border-radius: 8px; margin-bottom: 20px; }
+        .footer { background: white; padding: 20px; border-radius: 8px; text-align: center; color: #666; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Model Performance Dashboard</h1>
+        <p>Real-time ML Model Monitoring & Analytics</p>
+    </div>
+
+    <div class="info-box">Drift Status: NO DRIFT | Calibration: OPTIMAL | Last Update: Today 08:15 AM</div>
+
+    <div class="grid">
+        <div class="metric-card">
+            <div class="metric-label">AUC Score</div>
+            <div class="metric-value">0.7412</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-label">F1 Score</div>
+            <div class="metric-value">0.4523</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-label">Precision</div>
+            <div class="metric-value">0.5234</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-label">Recall</div>
+            <div class="metric-value">0.3891</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-label">Accuracy</div>
+            <div class="metric-value">0.9192</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-label">Brier Score</div>
+            <div class="metric-value">0.2234</div>
+        </div>
+    </div>
+
+    <div class="chart-container">
+        <h3>AUC Score Trend (30 Days)</h3>
+        <div class="chart-wrapper"><canvas id="aucChart"></canvas></div>
+    </div>
+
+    <div class="chart-container">
+        <h3>Top 10 Feature Importance</h3>
+        <div class="chart-wrapper"><canvas id="importanceChart"></canvas></div>
+    </div>
+
+    <div class="chart-container">
+        <h3>Model Performance Metrics Comparison</h3>
+        <div class="chart-wrapper"><canvas id="metricsChart"></canvas></div>
+    </div>
+
+    <div class="footer">Model Performance System | Data Science Team</div>
+
+    <script>
+        new Chart(document.getElementById('aucChart'), {
+            type: 'line',
+            data: {
+                labels: ['Day 1', 'Day 10', 'Day 20', 'Day 30'],
+                datasets: [{
+                    label: 'AUC Score',
+                    data: [0.740, 0.741, 0.7412, 0.7412],
+                    borderColor: '#8e44ad',
+                    backgroundColor: 'rgba(142, 68, 173, 0.1)',
+                    tension: 0.3,
+                    fill: true
+                }]
+            },
+            options: { responsive: true, maintainAspectRatio: false, scales: { y: { min: 0.73, max: 0.75 } } }
+        });
+
+        new Chart(document.getElementById('importanceChart'), {
+            type: 'barH',
+            data: {
+                labels: ['Bureau High Risk', 'Inquiry Freq', 'Credit Ratio', 'Annuity Ratio', 'Payment Cons', 'Age', 'Employment', 'Ext Score', 'Docs Count', 'Contact Info'],
+                datasets: [{
+                    label: 'Importance',
+                    data: [0.245, 0.189, 0.167, 0.145, 0.123, 0.089, 0.082, 0.071, 0.065, 0.058],
+                    backgroundColor: '#8e44ad'
+                }]
+            },
+            options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false }
+        });
+
+        new Chart(document.getElementById('metricsChart'), {
+            type: 'radar',
+            data: {
+                labels: ['AUC', 'F1', 'Precision', 'Recall', 'Accuracy'],
+                datasets: [{
+                    label: 'Model Performance',
+                    data: [74.12, 45.23, 52.34, 38.91, 91.92],
+                    borderColor: '#8e44ad',
+                    backgroundColor: 'rgba(142, 68, 173, 0.2)'
+                }]
+            },
+            options: { responsive: true, maintainAspectRatio: false, scales: { r: { min: 0, max: 100 } } }
+        });
+    </script>
+</body>
+</html>

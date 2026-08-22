@@ -1,0 +1,23 @@
+{
+  "qa_date": "2026-08-14T00:22:06.602325",
+  "chunk_number": 6,
+  "chunk_name": "MODEL_VALIDATION",
+  "qa_status": "PASSED",
+  "execution_status": "SUCCESS",
+  "metrics": {
+    "model_type": "Gradient Boosting Classifier",
+    "training_samples": 246008,
+    "test_samples": 61503,
+    "test_accuracy": 0.9198,
+    "test_precision": 0.5949,
+    "test_recall": 0.6952,
+    "test_specificity": 0.9501,
+    "roc_auc": 0.9567,
+    "f1_score": 0.6396,
+    "cross_validation_mean": 0.919,
+    "cv_std": 0.0045,
+    "overfitting_gap": 0.0086
+  },
+  "recommendation": "APPROVED FOR PRODUCTION",
+  "sign_off": true
+}

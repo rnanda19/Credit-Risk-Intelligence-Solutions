@@ -1,0 +1,110 @@
+[
+  {
+    "timestamp": "2026-08-11T17:43:12.787731",
+    "execution_id": "CHUNK_07_20260811_174312_Problem 20: Bureau Risk Signal Integration",
+    "event_type": "CHUNK_07_INITIALIZATION",
+    "description": "Model Calibration & Threshold Optimization initiated with full SOP compliance",
+    "status": "SUCCESS",
+    "details": {
+      "framework": "Enterprise SOP v1.0",
+      "standards": 10,
+      "compliance_level": "BCBS 239 + SOX 404 + JP Morgan + Goldman Sachs"
+    }
+  },
+  {
+    "timestamp": "2026-08-11T17:43:12.875383",
+    "execution_id": "CHUNK_07_20260811_174312_Problem 20: Bureau Risk Signal Integration",
+    "event_type": "DATA_LOADED",
+    "description": "Loaded 307,511 predictions for calibration",
+    "status": "SUCCESS",
+    "details": {
+      "file": "06_Model_Validation_Backtesting/Validation_Results/validation_predictions.csv",
+      "records": 307511,
+      "columns": 4,
+      "size_mb": 9.201594352722168
+    }
+  },
+  {
+    "timestamp": "2026-08-11T17:43:12.877457",
+    "execution_id": "CHUNK_07_20260811_174312_Problem 20: Bureau Risk Signal Integration",
+    "event_type": "DATA_EXTRACTED",
+    "description": "Extracted targets and probabilities: 307,511 samples",
+    "status": "SUCCESS",
+    "details": {
+      "targets": 307511,
+      "default_rate": 0.08072881945686496,
+      "probability_range": [
+        0.0164337435900795,
+        0.8995337592214493
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-08-11T17:43:12.885837",
+    "execution_id": "CHUNK_07_20260811_174312_Problem 20: Bureau Risk Signal Integration",
+    "event_type": "PII_CLASSIFICATION",
+    "description": "Field 'SK_ID_CURR' classified as SENSITIVE",
+    "status": "SUCCESS",
+    "details": {
+      "field_name": "SK_ID_CURR",
+      "classification": "SENSITIVE",
+      "masking_rule": "ID_HASH_MASKING",
+      "timestamp": "2026-08-11T17:43:12.885828"
+    }
+  },
+  {
+    "timestamp": "2026-08-11T17:43:12.885882",
+    "execution_id": "CHUNK_07_20260811_174312_Problem 20: Bureau Risk Signal Integration",
+    "event_type": "PII_CLASSIFICATION",
+    "description": "Field 'PREDICTION_PROBABILITY' classified as CONFIDENTIAL",
+    "status": "SUCCESS",
+    "details": {
+      "field_name": "PREDICTION_PROBABILITY",
+      "classification": "CONFIDENTIAL",
+      "masking_rule": "AUDIT_ACCESS_ONLY",
+      "timestamp": "2026-08-11T17:43:12.885879"
+    }
+  },
+  {
+    "timestamp": "2026-08-11T17:43:12.885922",
+    "execution_id": "CHUNK_07_20260811_174312_Problem 20: Bureau Risk Signal Integration",
+    "event_type": "PII_CLASSIFICATION",
+    "description": "Field 'DECISION_THRESHOLD' classified as CONFIDENTIAL",
+    "status": "SUCCESS",
+    "details": {
+      "field_name": "DECISION_THRESHOLD",
+      "classification": "CONFIDENTIAL",
+      "masking_rule": "EXECUTIVE_ONLY",
+      "timestamp": "2026-08-11T17:43:12.885919"
+    }
+  },
+  {
+    "timestamp": "2026-08-11T17:43:21.408964",
+    "execution_id": "CHUNK_07_20260811_174312_Problem 20: Bureau Risk Signal Integration",
+    "event_type": "QUALITY_GATE_FAILURE",
+    "description": "Quality gate 'brier_score' failed: 0.13897493899842564 Brier Score",
+    "status": "WARNING",
+    "details": {
+      "gate_name": "brier_score",
+      "threshold": 0.25,
+      "actual_value": 0.13897493899842564,
+      "unit": "Brier Score",
+      "pass": false,
+      "status": "FAIL",
+      "timestamp": "2026-08-11T17:43:21.408949"
+    }
+  },
+  {
+    "timestamp": "2026-08-11T17:43:22.338849",
+    "execution_id": "CHUNK_07_20260811_174312_Problem 20: Bureau Risk Signal Integration",
+    "event_type": "CALIBRATION_RESULTS_SAVED",
+    "description": "Calibration results saved: 07_Model_Calibration_Threshold/Calibration_Results/calibrated_predictions.csv",
+    "status": "SUCCESS",
+    "details": {
+      "file": "07_Model_Calibration_Threshold/Calibration_Results/calibrated_predictions.csv",
+      "records": 307511,
+      "optimal_threshold": 0.6171717171717171,
+      "size_mb": 20.75551700592041
+    }
+  }
+]

@@ -1,0 +1,93 @@
+[
+  {
+    "timestamp": "2026-08-11T18:41:30.675396",
+    "execution_id": "CHUNK_11_20260811_184130_Problem 20: Bureau Risk Signal Integration",
+    "event_type": "CHUNK_11_INITIALIZATION",
+    "description": "Regulatory Compliance & Stress Testing initiated",
+    "status": "SUCCESS",
+    "details": {
+      "framework": "Enterprise SOP v1.0",
+      "standards": 10,
+      "compliance_level": "BCBS 239 + SOX 404 + JP Morgan + Goldman Sachs"
+    }
+  },
+  {
+    "timestamp": "2026-08-11T18:41:30.676192",
+    "execution_id": "CHUNK_11_20260811_184130_Problem 20: Bureau Risk Signal Integration",
+    "event_type": "BASELINE_METRICS_ESTABLISHED",
+    "description": "Baseline established for 307,511 customers",
+    "status": "SUCCESS",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-11T18:41:30.676915",
+    "execution_id": "CHUNK_11_20260811_184130_Problem 20: Bureau Risk Signal Integration",
+    "event_type": "QUALITY_GATE_FAILURE",
+    "description": "Quality gate 'regulatory_compliance' failed: 7 checks",
+    "status": "WARNING",
+    "details": {
+      "gate_name": "regulatory_compliance",
+      "threshold": 8,
+      "actual_value": 7,
+      "unit": "checks",
+      "pass": false,
+      "status": "FAIL",
+      "timestamp": "2026-08-11T18:41:30.676909"
+    }
+  },
+  {
+    "timestamp": "2026-08-11T18:41:30.679041",
+    "execution_id": "CHUNK_11_20260811_184130_Problem 20: Bureau Risk Signal Integration",
+    "event_type": "PII_CLASSIFICATION",
+    "description": "Field 'CUSTOMER_IDENTIFIERS' classified as CONFIDENTIAL",
+    "status": "SUCCESS",
+    "details": {
+      "field_name": "CUSTOMER_IDENTIFIERS",
+      "classification": "CONFIDENTIAL",
+      "masking_rule": "REGULATORY_ONLY",
+      "timestamp": "2026-08-11T18:41:30.679037"
+    }
+  },
+  {
+    "timestamp": "2026-08-11T18:41:30.679062",
+    "execution_id": "CHUNK_11_20260811_184130_Problem 20: Bureau Risk Signal Integration",
+    "event_type": "PII_CLASSIFICATION",
+    "description": "Field 'PORTFOLIO_DATA' classified as SENSITIVE",
+    "status": "SUCCESS",
+    "details": {
+      "field_name": "PORTFOLIO_DATA",
+      "classification": "SENSITIVE",
+      "masking_rule": "ENCRYPTED_VAULT",
+      "timestamp": "2026-08-11T18:41:30.679060"
+    }
+  },
+  {
+    "timestamp": "2026-08-11T18:41:30.679078",
+    "execution_id": "CHUNK_11_20260811_184130_Problem 20: Bureau Risk Signal Integration",
+    "event_type": "PII_CLASSIFICATION",
+    "description": "Field 'STRESS_TEST_RESULTS' classified as SENSITIVE",
+    "status": "SUCCESS",
+    "details": {
+      "field_name": "STRESS_TEST_RESULTS",
+      "classification": "SENSITIVE",
+      "masking_rule": "REGULATORY_APPROVAL_REQUIRED",
+      "timestamp": "2026-08-11T18:41:30.679078"
+    }
+  },
+  {
+    "timestamp": "2026-08-11T18:41:30.679726",
+    "execution_id": "CHUNK_11_20260811_184130_Problem 20: Bureau Risk Signal Integration",
+    "event_type": "STRESS_TESTING_COMPLETED",
+    "description": "Stress testing completed: 4 scenarios",
+    "status": "SUCCESS",
+    "details": {}
+  },
+  {
+    "timestamp": "2026-08-11T18:41:30.680456",
+    "execution_id": "CHUNK_11_20260811_184130_Problem 20: Bureau Risk Signal Integration",
+    "event_type": "CONCENTRATION_RISK_ANALYSIS_COMPLETED",
+    "description": "Concentration risk analysis completed",
+    "status": "SUCCESS",
+    "details": {}
+  }
+]

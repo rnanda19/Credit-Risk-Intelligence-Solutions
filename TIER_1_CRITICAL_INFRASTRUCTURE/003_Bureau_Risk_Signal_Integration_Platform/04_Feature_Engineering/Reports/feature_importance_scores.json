@@ -1,0 +1,306 @@
+{
+  "timestamp": "2026-08-11T17:29:49.518503",
+  "method": "Point-biserial correlation with TARGET",
+  "features": {
+    "DAYS_BIRTH": {
+      "correlation": 0.07823930830982696,
+      "p_value": 0.0,
+      "importance_rank": 1
+    },
+    "DAYS_ID_PUBLISH": {
+      "correlation": 0.05145717260705747,
+      "p_value": 2.5275238143681347e-179,
+      "importance_rank": 2
+    },
+    "DAYS_REGISTRATION": {
+      "correlation": 0.04198070472599637,
+      "p_value": 5.596554201094581e-120,
+      "importance_rank": 3
+    },
+    "FLAG_MOBIL": {
+      "correlation": NaN,
+      "p_value": NaN,
+      "importance_rank": 4
+    },
+    "FLAG_EMP_PHONE": {
+      "correlation": NaN,
+      "p_value": NaN,
+      "importance_rank": 5
+    },
+    "FLAG_WORK_PHONE": {
+      "correlation": NaN,
+      "p_value": NaN,
+      "importance_rank": 6
+    },
+    "FLAG_CONT_MOBILE": {
+      "correlation": NaN,
+      "p_value": NaN,
+      "importance_rank": 7
+    },
+    "FLAG_EMAIL": {
+      "correlation": NaN,
+      "p_value": NaN,
+      "importance_rank": 8
+    },
+    "REGION_RATING_CLIENT": {
+      "correlation": NaN,
+      "p_value": NaN,
+      "importance_rank": 9
+    },
+    "REGION_RATING_CLIENT_W_CITY": {
+      "correlation": NaN,
+      "p_value": NaN,
+      "importance_rank": 10
+    },
+    "REG_REGION_NOT_LIVE_REGION": {
+      "correlation": NaN,
+      "p_value": NaN,
+      "importance_rank": 11
+    },
+    "REG_REGION_NOT_WORK_REGION": {
+      "correlation": NaN,
+      "p_value": NaN,
+      "importance_rank": 12
+    },
+    "LIVE_REGION_NOT_WORK_REGION": {
+      "correlation": NaN,
+      "p_value": NaN,
+      "importance_rank": 13
+    },
+    "REG_CITY_NOT_LIVE_CITY": {
+      "correlation": NaN,
+      "p_value": NaN,
+      "importance_rank": 14
+    },
+    "REG_CITY_NOT_WORK_CITY": {
+      "correlation": NaN,
+      "p_value": NaN,
+      "importance_rank": 15
+    },
+    "LIVE_CITY_NOT_WORK_CITY": {
+      "correlation": NaN,
+      "p_value": NaN,
+      "importance_rank": 16
+    },
+    "EXT_SOURCE_2": {
+      "correlation": 0.15902967651017436,
+      "p_value": 0.0,
+      "importance_rank": 17
+    },
+    "EXT_SOURCE_3": {
+      "correlation": 0.1195719284871247,
+      "p_value": 0.0,
+      "importance_rank": 18
+    },
+    "EXT_SOURCE_1": {
+      "correlation": 0.06469813333590493,
+      "p_value": 1.783408207392271e-282,
+      "importance_rank": 19
+    },
+    "ELEVATORS_AVG": {
+      "correlation": NaN,
+      "p_value": NaN,
+      "importance_rank": 20
+    },
+    "FLOORSMAX_AVG": {
+      "correlation": 0.050645166450973174,
+      "p_value": 9.124189424439046e-174,
+      "importance_rank": 21
+    },
+    "LIVINGAREA_AVG": {
+      "correlation": 0.04704970577279325,
+      "p_value": 3.1873355749966074e-150,
+      "importance_rank": 22
+    },
+    "APARTMENTS_AVG": {
+      "correlation": 0.04508889427344033,
+      "p_value": 4.087721483708789e-138,
+      "importance_rank": 23
+    },
+    "NONLIVINGAPARTMENTS_AVG": {
+      "correlation": NaN,
+      "p_value": NaN,
+      "importance_rank": 24
+    },
+    "ELEVATORS_MODE": {
+      "correlation": NaN,
+      "p_value": NaN,
+      "importance_rank": 25
+    },
+    "FLOORSMAX_MODE": {
+      "correlation": 0.05026424276778013,
+      "p_value": 3.441558326888597e-171,
+      "importance_rank": 26
+    },
+    "LIVINGAREA_MODE": {
+      "correlation": 0.04585343161113588,
+      "p_value": 8.949826016177954e-143,
+      "importance_rank": 27
+    },
+    "APARTMENTS_MODE": {
+      "correlation": 0.0440229248239586,
+      "p_value": 9.493379397851218e-132,
+      "importance_rank": 28
+    },
+    "ENTRANCES_AVG": {
+      "correlation": 0.04109913095103833,
+      "p_value": 4.531128805804328e-115,
+      "importance_rank": 29
+    },
+    "YEARS_BEGINEXPLUATATION_AVG": {
+      "correlation": 0.04096505474972012,
+      "p_value": 2.474980530796926e-114,
+      "importance_rank": 30
+    },
+    "YEARS_BEGINEXPLUATATION_MODE": {
+      "correlation": 0.04094359760421233,
+      "p_value": 3.2460405464358244e-114,
+      "importance_rank": 31
+    },
+    "NONLIVINGAPARTMENTS_MODE": {
+      "correlation": NaN,
+      "p_value": NaN,
+      "importance_rank": 32
+    },
+    "NONLIVINGAREA_MODE": {
+      "correlation": NaN,
+      "p_value": NaN,
+      "importance_rank": 33
+    },
+    "APARTMENTS_MEDI": {
+      "correlation": 0.04489972590341887,
+      "p_value": 5.65345037797881e-137,
+      "importance_rank": 34
+    },
+    "YEARS_BEGINEXPLUATATION_MEDI": {
+      "correlation": 0.04098349913679703,
+      "p_value": 1.9600985716429582e-114,
+      "importance_rank": 35
+    },
+    "ENTRANCES_MODE": {
+      "correlation": 0.0398993142659351,
+      "p_value": 1.4759596731397075e-108,
+      "importance_rank": 36
+    },
+    "AMT_GOODS_PRICE": {
+      "correlation": 0.03853054185873276,
+      "p_value": 2.3102442409035602e-101,
+      "importance_rank": 37
+    },
+    "BASEMENTAREA_AVG": {
+      "correlation": 0.03729918564865861,
+      "p_value": 4.184685998373546e-95,
+      "importance_rank": 38
+    },
+    "BASEMENTAREA_MEDI": {
+      "correlation": 0.0370357814839487,
+      "p_value": 8.590009364943794e-94,
+      "importance_rank": 39
+    },
+    "REGION_POPULATION_RELATIVE": {
+      "correlation": 0.036322827354189714,
+      "p_value": 2.75110590920519e-90,
+      "importance_rank": 40
+    },
+    "BASEMENTAREA_MODE": {
+      "correlation": 0.03550698954522261,
+      "p_value": 2.3306478210439222e-86,
+      "importance_rank": 41
+    },
+    "LIVINGAPARTMENTS_AVG": {
+      "correlation": 0.033860909467626314,
+      "p_value": 1.051600501348283e-78,
+      "importance_rank": 42
+    },
+    "LIVINGAPARTMENTS_MODE": {
+      "correlation": 0.0334452926093233,
+      "p_value": 7.892799942821663e-77,
+      "importance_rank": 43
+    },
+    "YEARS_BUILD_MEDI": {
+      "correlation": 0.03307356242093086,
+      "p_value": 3.5894570259890685e-75,
+      "importance_rank": 44
+    },
+    "YEARS_BUILD_AVG": {
+      "correlation": 0.033072766760840755,
+      "p_value": 3.61873971784493e-75,
+      "importance_rank": 45
+    },
+    "YEARS_BUILD_MODE": {
+      "correlation": 0.03302460317823523,
+      "p_value": 5.915553913046939e-75,
+      "importance_rank": 46
+    },
+    "FLOORSMIN_AVG": {
+      "correlation": 0.031021531093741766,
+      "p_value": 2.3673759677383205e-66,
+      "importance_rank": 47
+    },
+    "FLOORSMIN_MODE": {
+      "correlation": 0.030855509116450047,
+      "p_value": 1.1566788432315402e-65,
+      "importance_rank": 48
+    },
+    "NONLIVINGAREA_AVG": {
+      "correlation": 0.03058298819931392,
+      "p_value": 1.5350526552914254e-64,
+      "importance_rank": 49
+    },
+    "LANDAREA_AVG": {
+      "correlation": 0.03039960480811668,
+      "p_value": 8.633105290057202e-64,
+      "importance_rank": 50
+    },
+    "AMT_CREDIT": {
+      "correlation": 0.029467184422696188,
+      "p_value": 4.790454059234955e-60,
+      "importance_rank": 51
+    },
+    "LANDAREA_MODE": {
+      "correlation": 0.029439243584012252,
+      "p_value": 6.17710894412135e-60,
+      "importance_rank": 52
+    },
+    "COMMONAREA_AVG": {
+      "correlation": 0.027414692073386315,
+      "p_value": 3.263832112803215e-52,
+      "importance_rank": 53
+    },
+    "COMMONAREA_MODE": {
+      "correlation": 0.026632624338969978,
+      "p_value": 2.2424839161293037e-49,
+      "importance_rank": 54
+    },
+    "HOUR_APPR_PROCESS_START": {
+      "correlation": 0.024272395215721443,
+      "p_value": 2.62218973759535e-41,
+      "importance_rank": 55
+    },
+    "FLAG_PHONE": {
+      "correlation": 0.023806272330357526,
+      "p_value": 8.400750521057592e-40,
+      "importance_rank": 56
+    },
+    "AMT_INCOME_TOTAL": {
+      "correlation": 0.022463450468059018,
+      "p_value": 1.259812788635105e-35,
+      "importance_rank": 57
+    },
+    "CNT_CHILDREN": {
+      "correlation": 0.018810349860316728,
+      "p_value": 1.7728702702455735e-25,
+      "importance_rank": 58
+    },
+    "AMT_ANNUITY": {
+      "correlation": 0.0095722696015941,
+      "p_value": 1.1066744256741115e-07,
+      "importance_rank": 59
+    },
+    "DAYS_EMPLOYED": {
+      "correlation": 0.008980829165131661,
+      "p_value": 6.349236303698644e-07,
+      "importance_rank": 60
+    }
+  }
+}

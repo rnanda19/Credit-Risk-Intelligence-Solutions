@@ -1,0 +1,61 @@
+{
+  "framework": "FCRA, ECOA, FHA, DFPI Guidelines",
+  "protected_classes": [
+    "Race/Color",
+    "Religion",
+    "National Origin",
+    "Sex",
+    "Age (40+)",
+    "Disability",
+    "Sexual Orientation",
+    "Familial Status"
+  ],
+  "bias_testing_methods": [
+    {
+      "method": "Demographic Parity",
+      "description": "Approval rates equal across groups",
+      "standard_threshold": 0.8,
+      "result": "PASSED",
+      "evidence": "CHUNK_08 - Demographic parity analysis"
+    },
+    {
+      "method": "Equalized Odds",
+      "description": "TPR and FPR equal across groups",
+      "standard_threshold": 0.05,
+      "result": "PASSED",
+      "evidence": "CHUNK_08 - Equalized odds analysis"
+    },
+    {
+      "method": "Disparate Impact",
+      "description": "4/5 rule: approval rate ratio >= 0.80",
+      "standard_threshold": 0.8,
+      "result": "PASSED",
+      "evidence": "CHUNK_08 - Disparate impact calculations"
+    },
+    {
+      "method": "Adverse Action Analysis",
+      "description": "Detailed explanation for adverse decisions",
+      "standard_requirement": "Top 3 reasons provided",
+      "result": "PASSED",
+      "evidence": "CHUNK_08 - Decision explanation templates"
+    }
+  ],
+  "regular_testing": {
+    "frequency": "Monthly",
+    "scope": "All protected classes",
+    "retention": "7 years",
+    "responsible_party": "Compliance Officer"
+  },
+  "remediation_procedures": {
+    "process": "If any test fails, immediate escalation to Compliance",
+    "actions": [
+      "Issue adverse action notice",
+      "Conduct root cause analysis",
+      "Develop remediation plan",
+      "Adjust model/thresholds if needed",
+      "Document all findings"
+    ],
+    "escalation_path": "Compliance \u2192 Legal \u2192 Executive Sponsor"
+  },
+  "compliance_status": "FULL"
+}

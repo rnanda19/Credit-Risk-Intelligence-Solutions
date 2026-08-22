@@ -1,0 +1,96 @@
+{
+  "chunk_name": "CHUNK_02_DATA_CLEANING",
+  "phase": "CRISP-DM Phase 3 - Data Preparation",
+  "sprint": "AGILE Sprint 1 - Days 4-5",
+  "version": "1.0.0",
+  "objectives": [
+    "Remove missing values",
+    "Eliminate duplicate records",
+    "Optimize data types",
+    "Handle outliers",
+    "Prepare data for feature engineering"
+  ],
+  "quality_gates": {
+    "qg1_missing_values": {
+      "name": "Handle Missing Values",
+      "expected_status": "PASSED",
+      "criteria": "Missing values reduced to <5% or handled appropriately"
+    },
+    "qg2_duplicates": {
+      "name": "Remove Duplicates",
+      "expected_status": "PASSED",
+      "criteria": "All duplicate records removed"
+    },
+    "qg3_data_validation": {
+      "name": "Validate Cleaned Data",
+      "expected_status": "PASSED",
+      "criteria": "Data quality meets standards"
+    }
+  },
+  "cleaning_operations": {
+    "missing_values": {
+      "numeric_method": "median",
+      "categorical_method": "mode",
+      "high_missing_threshold": 50.0
+    },
+    "duplicates": {
+      "keep_strategy": "first",
+      "check_subset": null
+    },
+    "outliers": {
+      "detection_method": "iqr",
+      "multiplier": 1.5,
+      "handling": "cap"
+    },
+    "data_types": {
+      "optimize_numeric": true,
+      "convert_to_category": true,
+      "category_threshold": 50
+    }
+  },
+  "input_source": {
+    "chunk": "CHUNK_01_DATA_INGESTION",
+    "datasets": [
+      "application_train.csv",
+      "application_test.csv",
+      "bureau.csv",
+      "bureau_balance.csv",
+      "credit_card_balance.csv",
+      "installments_payments.csv",
+      "POS_CASH_balance.csv",
+      "previous_application.csv"
+    ]
+  },
+  "output_files": {
+    "cleaned_datasets": "data/cleaned_*.parquet",
+    "cleaning_summary": "documentation/CHUNK_02_CLEANING_SUMMARY.txt",
+    "validation_report": "documentation/CHUNK_02_VALIDATION_REPORT.txt",
+    "metadata": "config/chunk_02_metadata.json",
+    "execution_log": "logs/chunk_02_execution.log"
+  },
+  "utility_library": {
+    "location": "lib/data_cleaning.py",
+    "classes": [
+      "MissingValueHandler",
+      "DuplicateHandler",
+      "OutlierHandler",
+      "DataTypeConverter",
+      "CategoricalEncoder",
+      "DataQualityValidator"
+    ],
+    "functions": [
+      "generate_cleaning_report"
+    ]
+  },
+  "next_chunk": "CHUNK_03_FEATURE_VALIDATION",
+  "dependencies": {
+    "python_packages": [
+      "pandas>=1.3.0",
+      "numpy>=1.21.0",
+      "scikit-learn>=0.24.0"
+    ],
+    "input_data": [
+      "All 8 datasets from CHUNK_01"
+    ]
+  }
+}

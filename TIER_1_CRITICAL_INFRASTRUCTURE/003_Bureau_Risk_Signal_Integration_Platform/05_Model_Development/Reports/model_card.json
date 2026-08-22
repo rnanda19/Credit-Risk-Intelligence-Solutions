@@ -1,0 +1,47 @@
+{
+  "model_type": "Random Forest Classifier",
+  "version": "1.0.0",
+  "training_date": "2026-08-11T20:35:04.592991",
+  "hyperparameters": {
+    "n_estimators": 3000,
+    "max_depth": 25,
+    "min_samples_split": 50,
+    "min_samples_leaf": 20,
+    "max_features": "sqrt",
+    "class_weight": "balanced",
+    "random_state": 42
+  },
+  "dataset": {
+    "total_records": 307511,
+    "training_records": 246008,
+    "test_records": 61503,
+    "features": 90,
+    "target_distribution_train": {
+      "negative": 226099,
+      "positive": 19909
+    },
+    "target_distribution_test": {
+      "negative": 56526,
+      "positive": 4977
+    }
+  },
+  "performance_metrics": {
+    "AUC": 0.5018570866313387,
+    "F1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "accuracy": 0.9190771181893567
+  },
+  "feature_importance_top_10": {
+    "BUREAU_SIGNAL_005": 0.012199879934379843,
+    "SK_ID_CURR": 0.012148592147125995,
+    "BUREAU_SIGNAL_014": 0.012110756362954583,
+    "BUREAU_SIGNAL_044": 0.012110580611705887,
+    "BUREAU_SIGNAL_021": 0.012102821415171605,
+    "PAYMENT_CONSISTENCY": 0.012085671753982348,
+    "BUREAU_SIGNAL_026": 0.01208088201627397,
+    "BUREAU_SIGNAL_053": 0.012046069490751614,
+    "BUREAU_SIGNAL_046": 0.012034207726726061,
+    "BUREAU_SIGNAL_032": 0.012016835998333388
+  }
+}

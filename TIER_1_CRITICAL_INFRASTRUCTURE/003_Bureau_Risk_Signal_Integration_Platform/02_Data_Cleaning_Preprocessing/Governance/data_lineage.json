@@ -1,0 +1,7 @@
+{
+  "framework": "SOP_04_Data_Lineage",
+  "input_source": "CHUNK_01_Output",
+  "input_records": 307511,
+  "output_records": 307511,
+  "transformation": "Imputation + Outlier Capping"
+}

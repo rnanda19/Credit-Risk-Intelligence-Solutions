@@ -1,0 +1,19 @@
+{
+  "from_version": "PRODUCTION_RELEASE_1.0.0",
+  "to_version": "STAGING_ENVIRONMENT",
+  "generated_timestamp": "2026-08-11T18:42:40.633595",
+  "restoration_steps": [
+    "Step 1: Immediately scale down production deployment to 0 replicas",
+    "Step 2: Activate hot standby database from backup (point-in-time recovery)",
+    "Step 3: Restore previous model version from container registry",
+    "Step 4: Route all traffic back to previous production version",
+    "Step 5: Verify health checks passing on restored production",
+    "Step 6: Enable read-only mode for data team to investigate issue",
+    "Step 7: Activate incident response protocol: Brief CRO and Board",
+    "Step 8: Document incident: root cause, impact, resolution",
+    "Step 9: Schedule post-incident review within 48 hours",
+    "Step 10: Update runbook with learnings"
+  ],
+  "estimated_duration_minutes": 20,
+  "risk_level": "MEDIUM"
+}

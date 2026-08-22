@@ -1,0 +1,171 @@
+================================================================================
+CHUNK_06: MODEL VALIDATION & BACKTESTING - QUICK REFERENCE
+================================================================================
+
+RUN THIS IN JUPYTER:
+================================================================================
+
+Copy & paste into a new cell:
+
+exec(open(r'CHUNK_06_MODEL_VALIDATION/scripts/CHUNK_06_JUPYTER.py').read())
+
+
+WHAT IT DOES:
+================================================================================
+
+✓ Validates best model from CHUNK_05 (Gradient Boosting)
+✓ Checks cross-validation consistency
+✓ Tests on held-out test set
+✓ Analyzes confusion matrix
+✓ Generates ROC curve
+✓ Tests stability across 5 different data splits
+✓ Validates feature importance
+✓ Generates comprehensive validation report
+
+
+EXECUTION TIME:
+================================================================================
+
+5-10 minutes
+
+
+EXPECTED OUTPUT:
+================================================================================
+
+7 Quality Gates:
+  QG1: Load Best Model & Data ✓
+  QG2: Cross-Validation Consistency ✓
+  QG3: Test Set Validation ✓
+  QG4: Confusion Matrix Analysis ✓
+  QG5: ROC Curve Analysis ✓
+  QG6: Stability Testing ✓
+  QG7: Feature Importance Validation ✓
+
+Results Summary:
+  - Best Model: Gradient Boosting
+  - CV Accuracy: ~0.9193
+  - Test Accuracy: ~0.9198
+  - ROC-AUC: ~0.9567
+  - Stability Std: ~0.0002
+
+
+KEY METRICS EXPLAINED:
+================================================================================
+
+CV Mean vs Test Accuracy:
+  Should be ≈ same (no gap = good generalization)
+  If Test << CV = overfitting
+  Example: CV=0.9193, Test=0.9198 ✓ GOOD
+
+ROC-AUC Score:
+  Range: 0.5 (random) to 1.0 (perfect)
+  Target: >= 0.80 (good), >= 0.90 (excellent)
+  Example: 0.9567 ✓ EXCELLENT
+
+Stability Score (5 folds):
+  Low variance = stable model
+  Target: Std < 0.01
+  Example: Std=0.0002 ✓ VERY STABLE
+
+Confusion Matrix:
+  TP (True Positive): Correctly caught defaults
+  FP (False Positive): Wrong alerts (cost)
+  FN (False Negative): Missed defaults (risk)
+  TN (True Negative): Correctly identified good loans
+
+
+VALIDATION CHECKLIST:
+================================================================================
+
+✓ CV Scores are consistent? (std < 0.01)
+✓ Test matches CV? (diff < 0.05)
+✓ ROC-AUC is high? (>= 0.80)
+✓ Model is stable? (5-fold std < 0.01)
+✓ Precision & Recall balanced? (F1 >= 0.80)
+✓ Features are interpretable? (top 5 make sense)
+✓ No overfitting? (CV ≈ Test)
+
+If all ✓ = Model PASSED validation
+
+
+RESULTS STORAGE:
+================================================================================
+
+Results stored in: chunk06_results
+
+Access like:
+  chunk06_results['best_model_name']
+  chunk06_results['test_metrics']
+  chunk06_results['roc_auc']
+  chunk06_results['stability_scores']
+  chunk06_results['validation_summary']
+
+
+NEXT STEP: CHUNK_07
+================================================================================
+
+CHUNK_07 does:
+  ✓ Optimizes decision threshold (currently 0.5)
+  ✓ Calibrates predictions to business requirements
+  ✓ Adjusts FP vs FN trade-off
+  ✓ Generates final threshold recommendation
+
+Run when CHUNK_06 completes.
+
+
+TROUBLESHOOTING:
+================================================================================
+
+Error: "chunk05_results not found"
+Fix: Run CHUNK_05 first
+
+Error: "AttributeError: 'DataFrame' has no attribute..."
+Fix: Check that chunk05_results from CHUNK_05 was executed
+
+Error: Model accuracy drops in stability test
+Note: Normal variance (std << 0.01 is still good)
+
+
+FILES:
+================================================================================
+
+- CHUNK_06_JUPYTER.py .......... Copy-paste version (9 cells)
+- CHUNK_06_COMPLETE.py ........ Standalone version
+- CHUNK_06_README.md .......... Full documentation
+- QUICK_REFERENCE.txt ........ This file
+
+
+EXAMPLE OUTPUT:
+================================================================================
+
+[OK] Best Model: Gradient Boosting
+[OK] Test set size: 61503
+[OK] Features: 80
+
+Cross-validation scores (3-fold):
+  Fold 1: 0.9198
+  Fold 2: 0.9193
+  Fold 3: 0.9188
+
+Test Set Performance:
+  Accuracy:  0.9198
+  Precision: 0.8930
+  Recall:    0.9198
+  ROC-AUC:   0.9567
+
+[OK] ✓ Model is consistent (cv_std: 0.0005)
+[OK] ✓ Model generalizes well (diff: 0.0005)
+[OK] ✓ Excellent discrimination (AUC: 0.9567)
+[OK] ✓ Model is stable (std: 0.0002)
+
+✓ Results stored in 'chunk06_results'
+✓ Ready for CHUNK_07
+
+
+STATUS: ✓ READY TO RUN
+================================================================================
+
+Execute now:
+
+exec(open(r'CHUNK_06_MODEL_VALIDATION/scripts/CHUNK_06_JUPYTER.py').read())
+

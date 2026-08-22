@@ -1,0 +1,47 @@
+{
+  "report_date": "2026-08-02T21:18:23.693759",
+  "data_sources": {
+    "application_train": "Base customer demographics & credit data",
+    "previous_application": "Historical application records",
+    "credit_card_balance": "Credit card usage & payment behavior",
+    "bureau": "Credit bureau accounts & debt",
+    "bureau_balance": "Credit bureau payment history",
+    "installments_payments": "Installment payment compliance",
+    "POS_CASH_balance": "POS/ATM transaction patterns"
+  },
+  "total_records_in_merged_dataset": 4000,
+  "merge_logic": "Left join on SK_ID_CURR (primary key)",
+  "total_features": 94,
+  "feature_categories": {
+    "customer_profile": [
+      "CUSTOMER_AGE",
+      "INCOME_LEVEL",
+      "EMPLOYMENT_YEARS"
+    ],
+    "credit_behavior": [
+      "CREDIT_UTILIZATION",
+      "PAYMENT_RELIABILITY_SCORE",
+      "DEBT_TO_INCOME_RATIO"
+    ],
+    "product_affinity": [
+      "PRODUCT_MIX_DIVERSITY",
+      "PRIMARY_PRODUCT_AFFINITY"
+    ],
+    "propensity_scoring": [
+      "CROSSSELL_PROPENSITY_SCORE",
+      "PROPENSITY_RISK_ADJUSTED"
+    ],
+    "segmentation": [
+      "SEGMENT",
+      "LIFECYCLE_STAGE"
+    ],
+    "risk_assessment": [
+      "PROBABILITY_OF_DEFAULT_PROXY"
+    ],
+    "campaign_execution": [
+      "CAMPAIGN_WAVE",
+      "PRIORITY_RANK",
+      "NEXT_BEST_ACTION"
+    ]
+  }
+}

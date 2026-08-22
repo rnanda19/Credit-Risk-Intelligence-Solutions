@@ -1,0 +1,95 @@
+{
+  "execution_id": "20260811_115654_724405",
+  "timestamp": "2026-08-11T11:56:54.724520",
+  "report_type": "Model Retraining & Continuous Improvement",
+  "retraining_assessment": {
+    "recommendation": "RETRAIN_NOW",
+    "triggers": [
+      {
+        "criterion": "Time-Based Retraining",
+        "status": "NO_TRIGGER",
+        "reason": "Model trained 15 days ago (threshold: 30)"
+      },
+      {
+        "criterion": "Performance Degradation",
+        "status": "NO_TRIGGER",
+        "reason": "ROC-AUC degradation 2.09% (threshold: 5.0%)"
+      },
+      {
+        "criterion": "Data Drift Detection",
+        "status": "NO_TRIGGER",
+        "reason": "No significant data drift detected"
+      },
+      {
+        "criterion": "Feature Importance Changes",
+        "status": "NO_TRIGGER",
+        "reason": "Feature importance distribution stable"
+      }
+    ]
+  },
+  "feature_analysis": {
+    "total_features": 75,
+    "top_10_importance_percent": 31.823291778564453,
+    "top_features": [
+      {
+        "feature": "AMT_REQ_CREDIT_BUREAU_DAY",
+        "importance": 0.053572025150060654,
+        "importance_rank": 23
+      },
+      {
+        "feature": "AMT_BALANCE_max",
+        "importance": 0.05217309668660164,
+        "importance_rank": 47
+      },
+      {
+        "feature": "AMT_REQ_CREDIT_BUREAU_HOUR",
+        "importance": 0.04150697588920593,
+        "importance_rank": 49
+      },
+      {
+        "feature": "EXT_SOURCE_3",
+        "importance": 0.03157980367541313,
+        "importance_rank": 64
+      },
+      {
+        "feature": "SK_ID_PREV_count",
+        "importance": 0.02529149129986763,
+        "importance_rank": 53
+      }
+    ]
+  },
+  "model_performance": {
+    "current_model": {
+      "roc_auc": 0.954692896616832,
+      "accuracy": 0.9569289302960832
+    },
+    "new_model": {
+      "accuracy": 0.9510105198120417,
+      "precision": 0.8554260742898762,
+      "recall": 0.47311178247734137,
+      "f1_score": 0.6092594994164181,
+      "roc_auc": 0.9324918687774341
+    },
+    "improvements": {
+      "roc_auc_change": -0.022201027839397924,
+      "roc_auc_change_percent": -2.3254627658875684,
+      "accuracy_change": -0.005918410484041514,
+      "accuracy_change_percent": -0.6184796275529364
+    }
+  },
+  "deployment_plan": {
+    "recommendation": "HOLD",
+    "phase_1_traffic_percent": 10,
+    "phase_2_traffic_percent": 50,
+    "phase_3_traffic_percent": 100,
+    "phase_1_duration_days": 7
+  },
+  "key_findings": [
+    "Current model performance: ROC-AUC=0.9547",
+    "New model performance: ROC-AUC=0.9325",
+    "Performance improvement: -2.33%",
+    "Top feature: AMT_REQ_CREDIT_BUREAU_DAY",
+    "Models trained and evaluated: 4",
+    "Recommendation: HOLD"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "from_version": "CHUNK_12_dashboards",
+  "to_version": "CHUNK_11_compliance",
+  "generated_timestamp": "2026-08-11T18:42:03.061537",
+  "restoration_steps": [
+    "Step 1: Pause all dashboard refreshes",
+    "Step 2: Disable real-time data connections",
+    "Step 3: Restore previous dashboard configuration from version control",
+    "Step 4: Verify data connectivity on previous version",
+    "Step 5: Resume dashboard refresh on previous version",
+    "Step 6: Notify all dashboard users of rollback",
+    "Step 7: Document incident in audit trail"
+  ],
+  "estimated_duration_minutes": 14,
+  "risk_level": "MEDIUM"
+}

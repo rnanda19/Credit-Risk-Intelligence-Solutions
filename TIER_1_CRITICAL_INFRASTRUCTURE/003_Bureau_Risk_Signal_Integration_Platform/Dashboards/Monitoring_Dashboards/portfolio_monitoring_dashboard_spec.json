@@ -1,0 +1,115 @@
+{
+  "dashboard_id": "portfolio_monitoring_v1",
+  "name": "Portfolio Monitoring Dashboard",
+  "refresh_frequency": "Real-time (every 15 minutes)",
+  "audience": [
+    "Risk Team",
+    "Credit Management"
+  ],
+  "sections": {
+    "portfolio_overview": {
+      "title": "Portfolio Overview",
+      "metrics": {
+        "total_customers": 307511,
+        "customers_at_risk": 24876,
+        "at_risk_percentage": 8.09,
+        "new_defaults_today": 15,
+        "cured_accounts": 8
+      }
+    },
+    "risk_by_segment": {
+      "title": "Risk by Segment",
+      "segments": {
+        "geography": {
+          "North": {
+            "portfolio_pct": 35,
+            "default_rate": 9.5
+          },
+          "South": {
+            "portfolio_pct": 25,
+            "default_rate": 7.2
+          },
+          "East": {
+            "portfolio_pct": 22,
+            "default_rate": 8.1
+          },
+          "West": {
+            "portfolio_pct": 18,
+            "default_rate": 8.8
+          }
+        },
+        "income_level": {
+          "High": {
+            "portfolio_pct": 20,
+            "default_rate": 3.2
+          },
+          "Middle": {
+            "portfolio_pct": 55,
+            "default_rate": 7.8
+          },
+          "Low": {
+            "portfolio_pct": 25,
+            "default_rate": 14.5
+          }
+        },
+        "employment": {
+          "Salaried": {
+            "portfolio_pct": 65,
+            "default_rate": 6.5
+          },
+          "Self-Employed": {
+            "portfolio_pct": 20,
+            "default_rate": 12.5
+          },
+          "Unemployed": {
+            "portfolio_pct": 15,
+            "default_rate": 16.0
+          }
+        }
+      }
+    },
+    "early_warning_indicators": {
+      "title": "Early Warning Indicators",
+      "indicators": [
+        {
+          "indicator": "Payment Delinquency",
+          "accounts_flagged": 3247,
+          "risk_increase": "+12% vs last month",
+          "action_required": "Review outreach program"
+        },
+        {
+          "indicator": "Bureau Inquiry Spike",
+          "accounts_flagged": 1543,
+          "risk_increase": "+8% vs last month",
+          "action_required": "Monitor for credit-seeking behavior"
+        },
+        {
+          "indicator": "Income Verification Expired",
+          "accounts_flagged": 2104,
+          "risk_increase": "+5% vs last month",
+          "action_required": "Request re-verification"
+        }
+      ]
+    },
+    "recent_activity": {
+      "title": "Recent Activity (Last 24 Hours)",
+      "activity_log": [
+        {
+          "time": "08:15",
+          "event": "Daily model scoring completed",
+          "status": "SUCCESS"
+        },
+        {
+          "time": "07:45",
+          "event": "Portfolio risk assessment",
+          "status": "SUCCESS"
+        },
+        {
+          "time": "07:30",
+          "event": "Data pipeline validation",
+          "status": "SUCCESS"
+        }
+      ]
+    }
+  }
+}

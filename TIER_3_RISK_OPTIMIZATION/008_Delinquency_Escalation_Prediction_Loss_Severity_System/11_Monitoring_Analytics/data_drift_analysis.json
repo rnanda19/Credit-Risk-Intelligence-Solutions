@@ -1,0 +1,70 @@
+{
+  "drift_detection_timestamp": "2026-08-11T10:53:18.428727",
+  "drift_detection_method": "Kolmogorov-Smirnov Test",
+  "features_analyzed": 75,
+  "drift_threshold_pvalue": 0.05,
+  "features_with_drift": [],
+  "features_normal": [
+    {
+      "feature": "EXT_SOURCE_3",
+      "ks_statistic": 0.003479931363666089,
+      "p_value": 0.5892072971674813,
+      "drift_status": "NORMAL"
+    },
+    {
+      "feature": "EXT_SOURCE_1",
+      "ks_statistic": 0.006039508378593822,
+      "p_value": 0.05500870301360972,
+      "drift_status": "NORMAL"
+    },
+    {
+      "feature": "EXT_SOURCE_2",
+      "ks_statistic": 0.003192970954398411,
+      "p_value": 0.6962064292484333,
+      "drift_status": "NORMAL"
+    },
+    {
+      "feature": "AMT_BALANCE_mean",
+      "ks_statistic": 0.004240292837467408,
+      "p_value": 0.338269537651398,
+      "drift_status": "NORMAL"
+    },
+    {
+      "feature": "AMT_BALANCE_max",
+      "ks_statistic": 0.0033351104325550357,
+      "p_value": 0.6431287217485134,
+      "drift_status": "NORMAL"
+    },
+    {
+      "feature": "OWN_CAR_AGE",
+      "ks_statistic": 0.00592002526451485,
+      "p_value": 0.06331848766245929,
+      "drift_status": "NORMAL"
+    },
+    {
+      "feature": "AMT_CREDIT_x_AMT_GOODS_PRICE",
+      "ks_statistic": 0.0032608908074589493,
+      "p_value": 0.6708903696669599,
+      "drift_status": "NORMAL"
+    },
+    {
+      "feature": "AMT_ANNUITY_x_AMT_GOODS_PRICE",
+      "ks_statistic": 0.003958567378354094,
+      "p_value": 0.4226271399109608,
+      "drift_status": "NORMAL"
+    },
+    {
+      "feature": "AMT_CREDIT_squared",
+      "ks_statistic": 0.0040169434240982516,
+      "p_value": 0.4041941274320844,
+      "drift_status": "NORMAL"
+    },
+    {
+      "feature": "CNT_DRAWINGS_CURRENT_sum",
+      "ks_statistic": 0.003376713170847978,
+      "p_value": 0.6275772681266834,
+      "drift_status": "NORMAL"
+    }
+  ],
+  "overall_drift_status": "OK"
+}

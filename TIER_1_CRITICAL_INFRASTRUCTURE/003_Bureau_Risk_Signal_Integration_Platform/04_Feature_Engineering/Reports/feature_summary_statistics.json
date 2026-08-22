@@ -1,0 +1,629 @@
+{
+  "timestamp": "2026-08-11T16:59:13.816472",
+  "total_features": 89,
+  "features": {
+    "AGE_AT_APPLICATION": {
+      "mean": 43.93697278587162,
+      "std": 11.956133237768656,
+      "min": 20.517808219178082,
+      "max": 69.12054794520547,
+      "missing_count": 0
+    },
+    "AMT_ANNUITY": {
+      "mean": 26796.685360848882,
+      "std": 13282.335293319586,
+      "min": 0.0,
+      "max": 61704.0,
+      "missing_count": 0
+    },
+    "AMT_CREDIT": {
+      "mean": 592313.0370539591,
+      "std": 380316.2405369236,
+      "min": 45000.0,
+      "max": 1616625.0,
+      "missing_count": 0
+    },
+    "AMT_GOODS_PRICE": {
+      "mean": 527448.5103134522,
+      "std": 337375.50585761695,
+      "min": 0.0,
+      "max": 1341000.0,
+      "missing_count": 0
+    },
+    "AMT_INCOME_TOTAL": {
+      "mean": 162626.94787742555,
+      "std": 73303.15092696987,
+      "min": 25650.0,
+      "max": 337500.0,
+      "missing_count": 0
+    },
+    "AMT_REQ_CREDIT_BUREAU_YEAR": {
+      "mean": 1.6321497442367916,
+      "std": 1.8122901747338251,
+      "min": 0.0,
+      "max": 7.5,
+      "missing_count": 0
+    },
+    "ANNUITY_TO_INCOME_RATIO": {
+      "mean": 0.18111116750287012,
+      "std": 0.09214903006862712,
+      "min": 0.0,
+      "max": 1.0,
+      "missing_count": 0
+    },
+    "APARTMENTS_AVG": {
+      "mean": 0.05008798904754625,
+      "std": 0.06823038058324156,
+      "min": 0.0,
+      "max": 0.2139999999999999,
+      "missing_count": 0
+    },
+    "APARTMENTS_MEDI": {
+      "mean": 0.0498994179070017,
+      "std": 0.06773830863107792,
+      "min": 0.0,
+      "max": 0.21075,
+      "missing_count": 0
+    },
+    "APARTMENTS_MODE": {
+      "mean": 0.04844978033306126,
+      "std": 0.06647733154728284,
+      "min": 0.0,
+      "max": 0.21,
+      "missing_count": 0
+    },
+    "BASEMENTAREA_AVG": {
+      "mean": 0.032255106971783104,
+      "std": 0.04967715073929498,
+      "min": 0.0,
+      "max": 0.15875,
+      "missing_count": 0
+    },
+    "BASEMENTAREA_MEDI": {
+      "mean": 0.032046885314671675,
+      "std": 0.049417834616712904,
+      "min": 0.0,
+      "max": 0.15775,
+      "missing_count": 0
+    },
+    "BASEMENTAREA_MODE": {
+      "mean": 0.03156015427090414,
+      "std": 0.049218135625603315,
+      "min": 0.0,
+      "max": 0.15575,
+      "missing_count": 0
+    },
+    "BUREAU_INQUIRY_FREQUENCY": {
+      "mean": 1.6321497442367916,
+      "std": 1.8122901747338251,
+      "min": 0.0,
+      "max": 7.5,
+      "missing_count": 0
+    },
+    "CC_CREDIT_LIMIT_MEAN": {
+      "mean": 26549.007715453714,
+      "std": 45325.04229156292,
+      "min": 0.0,
+      "max": 112500.0,
+      "missing_count": 0
+    },
+    "CNT_CHILDREN": {
+      "mean": 0.40745534306089864,
+      "std": 0.6837424343740005,
+      "min": 0.0,
+      "max": 2.5,
+      "missing_count": 0
+    },
+    "CNT_FAM_MEMBERS": {
+      "mean": 2.1436127488122376,
+      "std": 0.8796418603868801,
+      "min": 0.5,
+      "max": 4.5,
+      "missing_count": 0
+    },
+    "COMMONAREA_AVG": {
+      "mean": 0.0024351815057022342,
+      "std": 0.004163202609188411,
+      "min": 0.0,
+      "max": 0.01,
+      "missing_count": 0
+    },
+    "COMMONAREA_MEDI": {
+      "mean": 0.0023781196445005,
+      "std": 0.004066407099521702,
+      "min": 0.0,
+      "max": 0.0097499999999999,
+      "missing_count": 0
+    },
+    "COMMONAREA_MODE": {
+      "mean": 0.0019106971783123205,
+      "std": 0.0032679882348261766,
+      "min": 0.0,
+      "max": 0.00775,
+      "missing_count": 0
+    },
+    "CONTACT_INFO_COMPLETENESS": {
+      "mean": 2.2810663683575547,
+      "std": 0.44952054685675835,
+      "min": 2.0,
+      "max": 3.0,
+      "missing_count": 0
+    },
+    "CREDIT_TO_INCOME_RATIO": {
+      "mean": 3.960560890671664,
+      "std": 2.63478285478444,
+      "min": 0.13333293827277548,
+      "max": 63.02385871895832,
+      "missing_count": 0
+    },
+    "DAYS_BIRTH": {
+      "mean": -16036.995066843137,
+      "std": 4363.98863178556,
+      "min": -25229.0,
+      "max": -7489.0,
+      "missing_count": 0
+    },
+    "DAYS_EMPLOYED": {
+      "mean": -1203.542427750552,
+      "std": 2732.404968862785,
+      "min": -6466.5,
+      "max": 3417.5,
+      "missing_count": 0
+    },
+    "DAYS_ID_PUBLISH": {
+      "mean": -2994.2023732484367,
+      "std": 1509.4504190030234,
+      "min": -7197.0,
+      "max": 0.0,
+      "missing_count": 0
+    },
+    "DAYS_LAST_PHONE_CHANGE": {
+      "mean": -962.6035068664211,
+      "std": 825.9826142629609,
+      "min": -3514.0,
+      "max": 0.0,
+      "missing_count": 0
+    },
+    "DAYS_REGISTRATION": {
+      "mean": -4983.512525703688,
+      "std": 3513.9341170764733,
+      "min": -15683.75,
+      "max": 0.0,
+      "missing_count": 0
+    },
+    "DOCUMENTS_SUBMITTED_COUNT": {
+      "mean": 0.7100233812774177,
+      "std": 0.4537519684327393,
+      "min": 0.0,
+      "max": 1.0,
+      "missing_count": 0
+    },
+    "ELEVATORS_AVG": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "missing_count": 0
+    },
+    "ELEVATORS_MODE": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "missing_count": 0
+    },
+    "EMPLOYMENT_STABILITY": {
+      "mean": 4.983389439281891,
+      "std": 5.127677128795966,
+      "min": 0.0,
+      "max": 17.716438356164385,
+      "missing_count": 0
+    },
+    "ENTRANCES_AVG": {
+      "mean": 0.07182136639014539,
+      "std": 0.09197112417284968,
+      "min": 0.0,
+      "max": 0.34475,
+      "missing_count": 0
+    },
+    "ENTRANCES_MEDI": {
+      "mean": 0.07156415737973602,
+      "std": 0.09191543421111856,
+      "min": 0.0,
+      "max": 0.34475,
+      "missing_count": 0
+    },
+    "ENTRANCES_MODE": {
+      "mean": 0.06960208496606622,
+      "std": 0.0907058424789263,
+      "min": 0.0,
+      "max": 0.34475,
+      "missing_count": 0
+    },
+    "EXT_SOURCE_1": {
+      "mean": 0.21902363564927793,
+      "std": 0.28537362407504313,
+      "min": 0.0,
+      "max": 0.962692770561306,
+      "missing_count": 0
+    },
+    "EXT_SOURCE_2": {
+      "mean": 0.5132886512993822,
+      "std": 0.19233387531013893,
+      "min": 0.0,
+      "max": 0.8549996664047012,
+      "missing_count": 0
+    },
+    "EXT_SOURCE_3": {
+      "mean": 0.4095747488936846,
+      "std": 0.26817693477243615,
+      "min": 0.0,
+      "max": 0.8960095494948396,
+      "missing_count": 0
+    },
+    "FLAG_CONT_MOBILE": {
+      "mean": 1.0,
+      "std": 0.0,
+      "min": 1.0,
+      "max": 1.0,
+      "missing_count": 0
+    },
+    "FLAG_DOCUMENT_3": {
+      "mean": 0.7100233812774177,
+      "std": 0.4537519684327393,
+      "min": 0.0,
+      "max": 1.0,
+      "missing_count": 0
+    },
+    "FLAG_EMAIL": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "missing_count": 0
+    },
+    "FLAG_EMP_PHONE": {
+      "mean": 1.0,
+      "std": 0.0,
+      "min": 1.0,
+      "max": 1.0,
+      "missing_count": 0
+    },
+    "FLAG_MOBIL": {
+      "mean": 1.0,
+      "std": 0.0,
+      "min": 1.0,
+      "max": 1.0,
+      "missing_count": 0
+    },
+    "FLAG_PHONE": {
+      "mean": 0.28106636835755466,
+      "std": 0.44952054685675835,
+      "min": 0.0,
+      "max": 1.0,
+      "missing_count": 0
+    },
+    "FLAG_WORK_PHONE": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "missing_count": 0
+    },
+    "FLOORSMAX_AVG": {
+      "mean": 0.10786472857881507,
+      "std": 0.1353070780354688,
+      "min": 0.0,
+      "max": 0.4167499999999999,
+      "missing_count": 0
+    },
+    "FLOORSMAX_MEDI": {
+      "mean": 0.10760657049666514,
+      "std": 0.13512469034895913,
+      "min": 0.0,
+      "max": 0.4167499999999999,
+      "missing_count": 0
+    },
+    "FLOORSMAX_MODE": {
+      "mean": 0.10614878817343121,
+      "std": 0.13391211109610066,
+      "min": 0.0,
+      "max": 0.4167499999999999,
+      "missing_count": 0
+    },
+    "FLOORSMIN_AVG": {
+      "mean": 0.05200952144801323,
+      "std": 0.08561611708509603,
+      "min": 0.0,
+      "max": 0.20825,
+      "missing_count": 0
+    },
+    "FLOORSMIN_MEDI": {
+      "mean": 0.051947262049162474,
+      "std": 0.08561258149904513,
+      "min": 0.0,
+      "max": 0.20825,
+      "missing_count": 0
+    },
+    "FLOORSMIN_MODE": {
+      "mean": 0.051482196734425764,
+      "std": 0.08528373480793983,
+      "min": 0.0,
+      "max": 0.20825,
+      "missing_count": 0
+    },
+    "GOODS_PRICE_TO_CREDIT_RATIO": {
+      "mean": 0.8970390318911017,
+      "std": 0.09705489112459802,
+      "min": 0.0,
+      "max": 2.0,
+      "missing_count": 0
+    },
+    "HAS_DEPENDENTS": {
+      "mean": 0.2996315578954899,
+      "std": 0.4580973366365847,
+      "min": 0.0,
+      "max": 1.0,
+      "missing_count": 0
+    },
+    "HOUR_APPR_PROCESS_START": {
+      "mean": 12.068069109722904,
+      "std": 3.2384329759248294,
+      "min": 4.0,
+      "max": 20.0,
+      "missing_count": 0
+    },
+    "INST_AMT_PAYMENT_MEAN": {
+      "mean": 17333.931176149712,
+      "std": 13970.217071648318,
+      "min": 0.0,
+      "max": 47760.18398317884,
+      "missing_count": 0
+    },
+    "INST_AMT_PAYMENT_SUM": {
+      "mean": 177914.72898319564,
+      "std": 152768.58984052617,
+      "min": 0.0,
+      "max": 522272.6859375,
+      "missing_count": 0
+    },
+    "LANDAREA_AVG": {
+      "mean": 0.01913664291683874,
+      "std": 0.030437672085762688,
+      "min": 0.0,
+      "max": 0.0844999999999999,
+      "missing_count": 0
+    },
+    "LANDAREA_MEDI": {
+      "mean": 0.019284283163854308,
+      "std": 0.03069612774108746,
+      "min": 0.0,
+      "max": 0.085,
+      "missing_count": 0
+    },
+    "LANDAREA_MODE": {
+      "mean": 0.0178907713870398,
+      "std": 0.028607130451229,
+      "min": 0.0,
+      "max": 0.0779999999999999,
+      "missing_count": 0
+    },
+    "LIVE_CITY_NOT_WORK_CITY": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "missing_count": 0
+    },
+    "LIVE_REGION_NOT_WORK_REGION": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "missing_count": 0
+    },
+    "LIVINGAPARTMENTS_AVG": {
+      "mean": 0.023389448832724678,
+      "std": 0.03959999595749689,
+      "min": 0.0,
+      "max": 0.1135,
+      "missing_count": 0
+    },
+    "LIVINGAPARTMENTS_MEDI": {
+      "mean": 0.023706530498096002,
+      "std": 0.040171161442670876,
+      "min": 0.0,
+      "max": 0.1154999999999999,
+      "missing_count": 0
+    },
+    "LIVINGAPARTMENTS_MODE": {
+      "mean": 0.023814612485407026,
+      "std": 0.040093305004751306,
+      "min": 0.0,
+      "max": 0.1125,
+      "missing_count": 0
+    },
+    "LIVINGAREA_AVG": {
+      "mean": 0.04377552933065809,
+      "std": 0.06006772157902937,
+      "min": 0.0,
+      "max": 0.18525,
+      "missing_count": 0
+    },
+    "LIVINGAREA_MEDI": {
+      "mean": 0.044099078081759675,
+      "std": 0.06046890110683921,
+      "min": 0.0,
+      "max": 0.1865,
+      "missing_count": 0
+    },
+    "LIVINGAREA_MODE": {
+      "mean": 0.042724758789116496,
+      "std": 0.05885206929852421,
+      "min": 0.0,
+      "max": 0.18225,
+      "missing_count": 0
+    },
+    "NONLIVINGAPARTMENTS_AVG": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "missing_count": 0
+    },
+    "NONLIVINGAPARTMENTS_MODE": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "missing_count": 0
+    },
+    "NONLIVINGAREA_AVG": {
+      "mean": 0.0006780372084250645,
+      "std": 0.001171660956820491,
+      "min": 0.0,
+      "max": 0.00275,
+      "missing_count": 0
+    },
+    "NONLIVINGAREA_MODE": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "missing_count": 0
+    },
+    "OBS_30_CNT_SOCIAL_CIRCLE": {
+      "mean": 1.2147760567914643,
+      "std": 1.6737911641205228,
+      "min": 0.0,
+      "max": 5.0,
+      "missing_count": 0
+    },
+    "OBS_60_CNT_SOCIAL_CIRCLE": {
+      "mean": 1.2030984257473716,
+      "std": 1.666061740823683,
+      "min": 0.0,
+      "max": 5.0,
+      "missing_count": 0
+    },
+    "OWN_CAR_AGE": {
+      "mean": 2.851802049357584,
+      "std": 4.651368238820035,
+      "min": 0.0,
+      "max": 12.5,
+      "missing_count": 0
+    },
+    "PAYMENT_CONSISTENCY": {
+      "mean": 0.509363782746748,
+      "std": 0.3624239060778722,
+      "min": 0.0,
+      "max": 1.0,
+      "missing_count": 0
+    },
+    "REGION_POPULATION_RELATIVE": {
+      "mean": 0.02043427354793811,
+      "std": 0.012376982177205903,
+      "min": 0.00029,
+      "max": 0.0566485,
+      "missing_count": 0
+    },
+    "REGION_RATING_CLIENT": {
+      "mean": 2.0,
+      "std": 0.0,
+      "min": 2.0,
+      "max": 2.0,
+      "missing_count": 0
+    },
+    "REGION_RATING_CLIENT_W_CITY": {
+      "mean": 2.0,
+      "std": 0.0,
+      "min": 2.0,
+      "max": 2.0,
+      "missing_count": 0
+    },
+    "REGISTRATION_TENURE": {
+      "mean": 13.653458974530652,
+      "std": 9.627216759113626,
+      "min": -0.0,
+      "max": 42.96917808219178,
+      "missing_count": 0
+    },
+    "REG_CITY_NOT_LIVE_CITY": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "missing_count": 0
+    },
+    "REG_CITY_NOT_WORK_CITY": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "missing_count": 0
+    },
+    "REG_REGION_NOT_LIVE_REGION": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "missing_count": 0
+    },
+    "REG_REGION_NOT_WORK_REGION": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "missing_count": 0
+    },
+    "TOTALAREA_MODE": {
+      "mean": 0.04303973630211603,
+      "std": 0.058247777370486205,
+      "min": 0.0,
+      "max": 0.17575,
+      "missing_count": 0
+    },
+    "YEARS_BEGINEXPLUATATION_AVG": {
+      "mean": 0.5007858291248118,
+      "std": 0.490557378029331,
+      "min": 0.0,
+      "max": 1.0,
+      "missing_count": 0
+    },
+    "YEARS_BEGINEXPLUATATION_MEDI": {
+      "mean": 0.500794744253051,
+      "std": 0.49060795736681,
+      "min": 0.0,
+      "max": 1.0,
+      "missing_count": 0
+    },
+    "YEARS_BEGINEXPLUATATION_MODE": {
+      "mean": 0.5004429256189209,
+      "std": 0.4905700009936302,
+      "min": 0.0,
+      "max": 1.0,
+      "missing_count": 0
+    },
+    "YEARS_BUILD_AVG": {
+      "mean": 0.25209460604661293,
+      "std": 0.36116727468386334,
+      "min": 0.0,
+      "max": 1.0,
+      "missing_count": 0
+    },
+    "YEARS_BUILD_MEDI": {
+      "mean": 0.2531917498886218,
+      "std": 0.36256108618798616,
+      "min": 0.0,
+      "max": 1.0,
+      "missing_count": 0
+    },
+    "YEARS_BUILD_MODE": {
+      "mean": 0.25449533805294766,
+      "std": 0.3641684054626923,
+      "min": 0.0,
+      "max": 1.0,
+      "missing_count": 0
+    }
+  }
+}

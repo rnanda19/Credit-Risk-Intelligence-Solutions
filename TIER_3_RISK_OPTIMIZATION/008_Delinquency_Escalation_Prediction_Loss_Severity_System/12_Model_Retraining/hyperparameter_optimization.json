@@ -1,0 +1,59 @@
+{
+  "optimization_id": "af196dd3-5896-4003-a606-b0cbc005b0a4",
+  "timestamp": "2026-08-11T11:56:54.724520",
+  "method": "Random Search",
+  "iterations": 50,
+  "cv_folds": 3,
+  "optimization_results": [
+    {
+      "iteration": 1,
+      "hyperparameters": {
+        "n_estimators": 100,
+        "max_depth": 5,
+        "learning_rate": 0.1
+      },
+      "cv_roc_auc": 0.955714771307274,
+      "rank": 1
+    },
+    {
+      "iteration": 2,
+      "hyperparameters": {
+        "n_estimators": 150,
+        "max_depth": 6,
+        "learning_rate": 0.09000000000000001
+      },
+      "cv_roc_auc": 0.9610120863291121,
+      "rank": 2
+    },
+    {
+      "iteration": 3,
+      "hyperparameters": {
+        "n_estimators": 200,
+        "max_depth": 7,
+        "learning_rate": 0.08
+      },
+      "cv_roc_auc": 0.9773749747975157,
+      "rank": 3
+    },
+    {
+      "iteration": 4,
+      "hyperparameters": {
+        "n_estimators": 250,
+        "max_depth": 8,
+        "learning_rate": 0.07
+      },
+      "cv_roc_auc": 0.9334831649417515,
+      "rank": 4
+    },
+    {
+      "iteration": 5,
+      "hyperparameters": {
+        "n_estimators": 300,
+        "max_depth": 9,
+        "learning_rate": 0.060000000000000005
+      },
+      "cv_roc_auc": 0.9629403365353478,
+      "rank": 5
+    }
+  ]
+}

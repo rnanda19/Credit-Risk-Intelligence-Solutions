@@ -1,0 +1,253 @@
+{
+  "timestamp": "2026-08-12T01:20:44.611364",
+  "baseline_period": {
+    "records": 246008,
+    "metrics": {
+      "auc": 0.9368814840735586,
+      "f1": 0.5462511108685822,
+      "precision": 0.3963527761437169,
+      "recall": 0.8784915500727145,
+      "accuracy": 0.881698969139215
+    }
+  },
+  "monitoring_period": {
+    "records": 61503,
+    "metrics": {
+      "auc": 0.9395746811102081,
+      "f1": 0.5559510711280823,
+      "precision": 0.4064540550771269,
+      "recall": 0.8794021294021294,
+      "accuracy": 0.8884444661236037
+    },
+    "metric_changes": {
+      "auc_change": 0.0026931970366494973,
+      "f1_change": 0.00969996025950004,
+      "precision_change": 0.010101278933410007,
+      "recall_change": 0.0009105793294148512
+    }
+  },
+  "data_drift": {
+    "SK_ID_CURR": {
+      "ks_statistic": 1.0,
+      "p_value": 0.0,
+      "drift_detected": true,
+      "baseline_mean": 242588.41519787975,
+      "monitoring_mean": 420546.61727070226,
+      "mean_shift_percent": 73.35807933270614
+    },
+    "CNT_CHILDREN": {
+      "ks_statistic": 0.0005032351119528267,
+      "p_value": 1.0,
+      "drift_detected": false,
+      "baseline_mean": 0.4171043218106728,
+      "monitoring_mean": 0.4168414548883794,
+      "mean_shift_percent": 0.0630218634153861
+    },
+    "AMT_INCOME_TOTAL": {
+      "ks_statistic": 0.001735299328453871,
+      "p_value": 0.9983759181751934,
+      "drift_detected": false,
+      "baseline_mean": 168833.29454910004,
+      "monitoring_mean": 168656.42058923954,
+      "mean_shift_percent": 0.1047624879517195
+    },
+    "AMT_CREDIT": {
+      "ks_statistic": 0.0044425474624892325,
+      "p_value": 0.28511445895049814,
+      "drift_detected": false,
+      "baseline_mean": 598498.0374052876,
+      "monitoring_mean": 601137.814570021,
+      "mean_shift_percent": 0.4410669709424214
+    },
+    "AMT_ANNUITY": {
+      "ks_statistic": 0.002379230186381698,
+      "p_value": 0.9427481678646172,
+      "drift_detected": false,
+      "baseline_mean": 27107.566258007868,
+      "monitoring_mean": 27112.17411345788,
+      "mean_shift_percent": 0.016998410724717167
+    },
+    "AMT_GOODS_PRICE": {
+      "ks_statistic": 0.004387495887022197,
+      "p_value": 0.2989600237149498,
+      "drift_detected": false,
+      "baseline_mean": 537802.0778856785,
+      "monitoring_mean": 540373.1268474709,
+      "mean_shift_percent": 0.4780660148990459
+    },
+    "DAYS_BIRTH": {
+      "ks_statistic": 0.004383049953292639,
+      "p_value": 0.3000984896715043,
+      "drift_detected": false,
+      "baseline_mean": -16037.354228317778,
+      "monitoring_mean": -16035.55844430353,
+      "mean_shift_percent": 0.011197507947265086
+    },
+    "DAYS_EMPLOYED": {
+      "ks_statistic": 0.0031667432632549453,
+      "p_value": 0.7059323784912215,
+      "drift_detected": false,
+      "baseline_mean": 63844.14753178758,
+      "monitoring_mean": 63698.64128579094,
+      "mean_shift_percent": 0.22790851099417309
+    },
+    "DAYS_REGISTRATION": {
+      "ks_statistic": 0.00446486404323293,
+      "p_value": 0.2796340679598901,
+      "drift_detected": false,
+      "baseline_mean": -4986.469480667295,
+      "monitoring_mean": -4984.72373773095,
+      "mean_shift_percent": 0.03500959833625112
+    },
+    "DAYS_ID_PUBLISH": {
+      "ks_statistic": 0.005277154337597567,
+      "p_value": 0.12860219516115168,
+      "drift_detected": false,
+      "baseline_mean": -2992.6099069948946,
+      "monitoring_mean": -3000.5721346926166,
+      "mean_shift_percent": 0.26606300002832295
+    },
+    "OWN_CAR_AGE": {
+      "ks_statistic": 0.002802303595698441,
+      "p_value": 0.8333894634693054,
+      "drift_detected": false,
+      "baseline_mean": 10.038693863614192,
+      "monitoring_mean": 10.05048534217843,
+      "mean_shift_percent": 0.11746028629511776
+    },
+    "FLAG_EMP_PHONE": {
+      "ks_statistic": 0.0004134789087856805,
+      "p_value": 1.0,
+      "drift_detected": false,
+      "baseline_mean": 0.8198066729537251,
+      "monitoring_mean": 0.8202201518625107,
+      "mean_shift_percent": 0.050436147616640524
+    },
+    "FLAG_WORK_PHONE": {
+      "ks_statistic": 0.001082074824641177,
+      "p_value": 0.9999999940473187,
+      "drift_detected": false,
+      "baseline_mean": 0.19915206009560665,
+      "monitoring_mean": 0.2002341349202478,
+      "mean_shift_percent": 0.543340987679254
+    },
+    "FLAG_CONT_MOBILE": {
+      "ks_statistic": 4.034505747974298e-06,
+      "p_value": 1.0,
+      "drift_detected": false,
+      "baseline_mean": 0.998134207017658,
+      "monitoring_mean": 0.9981301725119099,
+      "mean_shift_percent": 0.0004042047331164959
+    },
+    "FLAG_PHONE": {
+      "ks_statistic": 0.000618363169968994,
+      "p_value": 1.0,
+      "drift_detected": false,
+      "baseline_mean": 0.28119004260024066,
+      "monitoring_mean": 0.28057167943027167,
+      "mean_shift_percent": 0.21990933329640294
+    },
+    "FLAG_EMAIL": {
+      "ks_statistic": 0.0024886138505676447,
+      "p_value": 0.9200164690946392,
+      "drift_detected": false,
+      "baseline_mean": 0.05721765145848916,
+      "monitoring_mean": 0.05472903760792156,
+      "mean_shift_percent": 4.349380570845351
+    },
+    "CNT_FAM_MEMBERS": {
+      "ks_statistic": 0.0007494511307504226,
+      "p_value": 1.0,
+      "drift_detected": false,
+      "baseline_mean": 2.1531169718057948,
+      "monitoring_mean": 2.15085442986521,
+      "mean_shift_percent": 0.10508216505204798
+    },
+    "REGION_RATING_CLIENT": {
+      "ks_statistic": 0.00047795056575671013,
+      "p_value": 1.0,
+      "drift_detected": false,
+      "baseline_mean": 2.052612110175279,
+      "monitoring_mean": 2.0518673885826706,
+      "mean_shift_percent": 0.03628165230481132
+    },
+    "REGION_RATING_CLIENT_W_CITY": {
+      "ks_statistic": 0.00037622501382798823,
+      "p_value": 1.0,
+      "drift_detected": false,
+      "baseline_mean": 2.0315802738122337,
+      "monitoring_mean": 2.031283026844219,
+      "mean_shift_percent": 0.014631317816144443
+    },
+    "HOUR_APPR_PROCESS_START": {
+      "ks_statistic": 0.0014647705266109812,
+      "p_value": 0.9999317391642787,
+      "drift_detected": false,
+      "baseline_mean": 12.063538584111086,
+      "monitoring_mean": 12.062940019186057,
+      "mean_shift_percent": 0.0049617690560688
+    }
+  },
+  "prediction_drift": {
+    "baseline_prediction_mean": 0.3399939021694569,
+    "monitoring_prediction_mean": 0.3369376282105059,
+    "prediction_shift": 0.003056273958951028,
+    "ks_statistic": 0.011353357069094128,
+    "p_value": 6.15111370680506e-06,
+    "drift_detected": true
+  },
+  "performance_drift": {
+    "auc": {
+      "baseline": 0.9368814840735586,
+      "current": 0.9395746811102081,
+      "degradation": -0.0026931970366494973,
+      "degradation_percent": -0.2874640019773987,
+      "alert_triggered": false,
+      "recommendation": "Monitor normally"
+    },
+    "f1": {
+      "baseline": 0.5462511108685822,
+      "current": 0.5559510711280823,
+      "degradation": -0.00969996025950004,
+      "degradation_percent": -1.7757327882597915,
+      "alert_triggered": false,
+      "recommendation": "Monitor normally"
+    },
+    "precision": {
+      "baseline": 0.3963527761437169,
+      "current": 0.4064540550771269,
+      "degradation": -0.010101278933410007,
+      "degradation_percent": -2.5485575695555474,
+      "alert_triggered": false,
+      "recommendation": "Monitor normally"
+    },
+    "recall": {
+      "baseline": 0.8784915500727145,
+      "current": 0.8794021294021294,
+      "degradation": -0.0009105793294148512,
+      "degradation_percent": -0.10365259847681185,
+      "alert_triggered": false,
+      "recommendation": "Monitor normally"
+    },
+    "accuracy": {
+      "baseline": 0.881698969139215,
+      "current": 0.8884444661236037,
+      "degradation": -0.006745496984388755,
+      "degradation_percent": -0.7650566853297537,
+      "alert_triggered": false,
+      "recommendation": "Monitor normally"
+    }
+  },
+  "alerts": {
+    "critical": 0,
+    "data_drift_features": 1,
+    "prediction_drift_detected": true,
+    "overall_status": "HEALTHY"
+  },
+  "recommendations": [
+    "Monitor 1 features with data drift",
+    "Model performance stable",
+    "Check prediction distribution for shifts",
+    "Increase monitoring frequency for high-drift features"
+  ]
+}

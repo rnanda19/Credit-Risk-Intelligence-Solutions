@@ -1,0 +1,218 @@
+{
+  "extraction_date": "2026-08-10T10:55:48.733265",
+  "total_models": 5,
+  "total_test_samples": 61503,
+  "best_performing_models": {
+    "Best Accuracy": {
+      "Model": "XGBoost",
+      "Accuracy": 0.919662455489976
+    },
+    "Best Precision": {
+      "Model": "XGBoost",
+      "Precision": 0.581081081081081
+    },
+    "Best Recall": {
+      "Model": "Gradient Boosting",
+      "Recall": 0.027391742195367573
+    },
+    "Best F1-Score": {
+      "Model": "Gradient Boosting",
+      "F1-Score": 0.05216724204065976
+    },
+    "Best AUC-ROC": {
+      "Model": "Gradient Boosting",
+      "AUC-ROC": 0.763391574335998
+    },
+    "Best AUC-PR": {
+      "Model": "XGBoost",
+      "AUC-PR": 0.25236022176070344
+    }
+  },
+  "all_metrics": {
+    "Logistic Regression": {
+      "basic_metrics": {
+        "accuracy": 0.9192722306228964,
+        "precision": 0.5,
+        "recall": 0.008459214501510574,
+        "f1_score": 0.016636957813428402,
+        "f2_score": 0.0105294825511432,
+        "auc_roc": 0.7427259271513847,
+        "auc_pr": 0.2234777273352405
+      },
+      "confusion_matrix": {
+        "true_negatives": 56496,
+        "false_positives": 42,
+        "false_negatives": 4923,
+        "true_positives": 42,
+        "total_samples": 61503
+      },
+      "derived_metrics": {
+        "sensitivity_recall": 0.008459214501510574,
+        "specificity": 0.9992571367929534,
+        "false_positive_rate": 0.0007428632070465882,
+        "false_negative_rate": 0.9915407854984895,
+        "positive_predictive_value": 0.5,
+        "negative_predictive_value": 0.9198456503687784
+      },
+      "advanced_metrics": {
+        "matthews_correlation_coefficient": 0.056918156397569634,
+        "cohen_kappa": 0.013988403482506406,
+        "jaccard_score": 0.008388256440982624,
+        "hamming_loss": 0.08072776937710356,
+        "f2_score": 0.0105294825511432
+      },
+      "threshold_metrics": {
+        "optimal_threshold": 0.07757695720541014,
+        "youden_index_at_optimal": 0.36366862423037893
+      }
+    },
+    "Random Forest": {
+      "basic_metrics": {
+        "accuracy": 0.9192722306228964,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "f2_score": 0.0,
+        "auc_roc": 0.7401340994018869,
+        "auc_pr": 0.22840234831375045
+      },
+      "confusion_matrix": {
+        "true_negatives": 56538,
+        "false_positives": 0,
+        "false_negatives": 4965,
+        "true_positives": 0,
+        "total_samples": 61503
+      },
+      "derived_metrics": {
+        "sensitivity_recall": 0.0,
+        "specificity": 1.0,
+        "false_positive_rate": 0.0,
+        "false_negative_rate": 1.0,
+        "positive_predictive_value": 0.0,
+        "negative_predictive_value": 0.9192722306228964
+      },
+      "advanced_metrics": {
+        "matthews_correlation_coefficient": 0.0,
+        "cohen_kappa": 0.0,
+        "jaccard_score": 0.0,
+        "hamming_loss": 0.08072776937710356,
+        "f2_score": 0.0
+      },
+      "threshold_metrics": {
+        "optimal_threshold": 0.082497438963692,
+        "youden_index_at_optimal": 0.3555145810549683
+      }
+    },
+    "Gradient Boosting": {
+      "basic_metrics": {
+        "accuracy": 0.9196461961205145,
+        "precision": 0.5461847389558233,
+        "recall": 0.027391742195367573,
+        "f1_score": 0.05216724204065976,
+        "f2_score": 0.03381570441096027,
+        "auc_roc": 0.763391574335998,
+        "auc_pr": 0.25138102477265467
+      },
+      "confusion_matrix": {
+        "true_negatives": 56425,
+        "false_positives": 113,
+        "false_negatives": 4829,
+        "true_positives": 136,
+        "total_samples": 61503
+      },
+      "derived_metrics": {
+        "sensitivity_recall": 0.027391742195367573,
+        "specificity": 0.9980013442286604,
+        "false_positive_rate": 0.00199865577133963,
+        "false_negative_rate": 0.9726082578046324,
+        "positive_predictive_value": 0.5461847389558233,
+        "negative_predictive_value": 0.921164332125249
+      },
+      "advanced_metrics": {
+        "matthews_correlation_coefficient": 0.10893775907439461,
+        "cohen_kappa": 0.04480221107918425,
+        "jaccard_score": 0.02678219771563608,
+        "hamming_loss": 0.08035380387948556,
+        "f2_score": 0.03381570441096027
+      },
+      "threshold_metrics": {
+        "optimal_threshold": 0.07937257883632981,
+        "youden_index_at_optimal": 0.3871141714809567
+      }
+    },
+    "XGBoost": {
+      "basic_metrics": {
+        "accuracy": 0.919662455489976,
+        "precision": 0.581081081081081,
+        "recall": 0.01732124874118832,
+        "f1_score": 0.03363974183453941,
+        "f2_score": 0.02149140343862455,
+        "auc_roc": 0.7628149816767177,
+        "auc_pr": 0.25236022176070344
+      },
+      "confusion_matrix": {
+        "true_negatives": 56476,
+        "false_positives": 62,
+        "false_negatives": 4879,
+        "true_positives": 86,
+        "total_samples": 61503
+      },
+      "derived_metrics": {
+        "sensitivity_recall": 0.01732124874118832,
+        "specificity": 0.9989033924086456,
+        "false_positive_rate": 0.0010966075913544872,
+        "false_negative_rate": 0.9826787512588117,
+        "positive_predictive_value": 0.581081081081081,
+        "negative_predictive_value": 0.9204791785510553
+      },
+      "advanced_metrics": {
+        "matthews_correlation_coefficient": 0.09020884229136798,
+        "cohen_kappa": 0.029102286645617093,
+        "jaccard_score": 0.017107618858165904,
+        "hamming_loss": 0.0803375445100239,
+        "f2_score": 0.02149140343862455
+      },
+      "threshold_metrics": {
+        "optimal_threshold": 0.07714825123548508,
+        "youden_index_at_optimal": 0.3891446856211671
+      }
+    },
+    "LightGBM": {
+      "basic_metrics": {
+        "accuracy": 0.9196461961205145,
+        "precision": 0.5793103448275863,
+        "recall": 0.016918429003021148,
+        "f1_score": 0.03287671232876712,
+        "f2_score": 0.020994751312171957,
+        "auc_roc": 0.7627268341334618,
+        "auc_pr": 0.25179817930970333
+      },
+      "confusion_matrix": {
+        "true_negatives": 56477,
+        "false_positives": 61,
+        "false_negatives": 4881,
+        "true_positives": 84,
+        "total_samples": 61503
+      },
+      "derived_metrics": {
+        "sensitivity_recall": 0.016918429003021148,
+        "specificity": 0.9989210796278609,
+        "false_positive_rate": 0.0010789203721390923,
+        "false_negative_rate": 0.9830815709969789,
+        "positive_predictive_value": 0.5793103448275863,
+        "negative_predictive_value": 0.9204504710062258
+      },
+      "advanced_metrics": {
+        "matthews_correlation_coefficient": 0.08897171323390554,
+        "cohen_kappa": 0.028425522170276718,
+        "jaccard_score": 0.016713091922005572,
+        "hamming_loss": 0.08035380387948556,
+        "f2_score": 0.020994751312171957
+      },
+      "threshold_metrics": {
+        "optimal_threshold": 0.07570877560276747,
+        "youden_index_at_optimal": 0.3888555770687714
+      }
+    }
+  }
+}

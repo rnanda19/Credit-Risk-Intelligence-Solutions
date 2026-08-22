@@ -1,0 +1,45 @@
+{
+  "Project": "NEW_PROBLEM_06_Regulatory_Capital_CCAR_DFAST",
+  "Status": "COMPLETED",
+  "Execution_Date": "2026-08-02T15:28:59.270600",
+  "Total_Records": 4000,
+  "Features_Engineered": 10,
+  "CSV_Files_Integrated": 3,
+  "Outputs": {
+    "CSV": [
+      "regulatory_capital_features.csv",
+      "capital_ratios.csv",
+      "stress_test_results.csv"
+    ],
+    "Excel": "Feature_Engineered_Data.xlsx (5 sheets)",
+    "Word": "SMART_Recommendations.docx",
+    "HTML": "FULL_REPORT.html",
+    "Chart": "01_regulatory_capital_analysis.png"
+  },
+  "Capital_Ratios": {
+    "CET1": {
+      "Current": 0.9564334297726831,
+      "Required": 0.0625,
+      "Status": "PASS"
+    },
+    "TIER1": {
+      "Current": 1.161383450438258,
+      "Required": 0.06999999999999999,
+      "Status": "PASS"
+    },
+    "TOTAL": {
+      "Current": 1.366333471103833,
+      "Required": 0.0875,
+      "Status": "PASS"
+    }
+  },
+  "Data_Quality": {
+    "Total_Records": 4000,
+    "Missing_Values": "332",
+    "Missing_Percent": 0.1596153846153846,
+    "Duplicates": "0",
+    "Complete_Records": 3678,
+    "Quality_Score": 0.9984038461538461,
+    "Quality_Status": "PASS"
+  }
+}

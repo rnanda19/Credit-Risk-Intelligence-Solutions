@@ -1,0 +1,85 @@
+{
+  "timestamp": "2026-08-11T17:39:14.803493",
+  "chunk": "CHUNK_06",
+  "problem": "Problem 20: Bureau Risk Signal Integration",
+  "execution_id": "CHUNK_06_20260811_173908_Problem 20: Bureau Risk Signal Integration",
+  "data_owner": "Model Validation & Risk Analytics Team",
+  "validation_metrics": {
+    "auc": 0.916115981464786,
+    "f1": 0.45785373793744916,
+    "precision": 0.31036311007938555,
+    "recall": 0.872467270896274,
+    "accuracy": 0.8331994627834451,
+    "logloss": 0.44756731030142605,
+    "confusion_matrix": {
+      "true_negatives": 234559,
+      "false_positives": 48127,
+      "false_negatives": 3166,
+      "true_positives": 21659
+    }
+  },
+  "backtesting_results": {
+    "window_1": {
+      "records": 61502,
+      "auc": 0.9142442417677067,
+      "f1": 0.4550332005312085,
+      "default_rate": 0.08012747552925108
+    },
+    "window_2": {
+      "records": 61502,
+      "auc": 0.9149995844400994,
+      "f1": 0.4569423662349724,
+      "default_rate": 0.08272901694253845
+    },
+    "window_3": {
+      "records": 61502,
+      "auc": 0.9162228758724731,
+      "f1": 0.46140797285835455,
+      "default_rate": 0.08110305355923385
+    },
+    "window_4": {
+      "records": 61502,
+      "auc": 0.9172610371991791,
+      "f1": 0.45766493147774356,
+      "default_rate": 0.08027381223374849
+    },
+    "window_5": {
+      "records": 61503,
+      "auc": 0.917836005540663,
+      "f1": 0.4582420518300828,
+      "default_rate": 0.07941076045070972
+    }
+  },
+  "segment_performance": {
+    "age_<30": {
+      "records": 45021,
+      "auc": 0.8861881072179778,
+      "default_rate": 0.11456875680238111
+    },
+    "age_30-40": {
+      "records": 82308,
+      "auc": 0.913625713632347,
+      "default_rate": 0.09583515575642708
+    },
+    "age_40-50": {
+      "records": 76541,
+      "auc": 0.9244204111522258,
+      "default_rate": 0.07650801531205498
+    },
+    "age_50-60": {
+      "records": 68062,
+      "auc": 0.9303720613104348,
+      "default_rate": 0.061297052687255736
+    },
+    "age_60+": {
+      "records": 35579,
+      "auc": 0.9385198018909379,
+      "default_rate": 0.049214424239017396
+    }
+  },
+  "stability_assessment": {
+    "auc_stability": 0.0013439316527192535,
+    "f1_stability": 0.002078699388241694,
+    "assessment": "STABLE"
+  }
+}

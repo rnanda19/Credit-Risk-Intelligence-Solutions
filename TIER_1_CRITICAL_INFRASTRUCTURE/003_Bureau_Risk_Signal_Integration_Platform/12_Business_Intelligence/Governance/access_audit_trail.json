@@ -1,0 +1,30 @@
+[
+  {
+    "user_id": "risk_analytics_team",
+    "action": "READ",
+    "resource": "executive_dashboard_spec.json",
+    "timestamp": "2026-08-11T18:42:03.060014",
+    "execution_id": "CHUNK_12_20260811_184203_Problem 20: Bureau Risk Signal Integration"
+  },
+  {
+    "user_id": "credit_mgmt_team",
+    "action": "READ",
+    "resource": "portfolio_monitoring_dashboard_spec.json",
+    "timestamp": "2026-08-11T18:42:03.060058",
+    "execution_id": "CHUNK_12_20260811_184203_Problem 20: Bureau Risk Signal Integration"
+  },
+  {
+    "user_id": "data_science_team",
+    "action": "READ",
+    "resource": "model_performance_dashboard_spec.json",
+    "timestamp": "2026-08-11T18:42:03.060094",
+    "execution_id": "CHUNK_12_20260811_184203_Problem 20: Bureau Risk Signal Integration"
+  },
+  {
+    "user_id": "ops_team",
+    "action": "READ",
+    "resource": "operational_monitoring_dashboard_spec.json",
+    "timestamp": "2026-08-11T18:42:03.060126",
+    "execution_id": "CHUNK_12_20260811_184203_Problem 20: Bureau Risk Signal Integration"
+  }
+]

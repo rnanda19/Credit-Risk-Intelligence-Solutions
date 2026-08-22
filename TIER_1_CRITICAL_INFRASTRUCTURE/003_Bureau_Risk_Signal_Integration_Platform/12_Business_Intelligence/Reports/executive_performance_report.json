@@ -1,0 +1,46 @@
+{
+  "report_date": "2026-08-11T18:42:03.056114",
+  "reporting_period": "Q3 2024",
+  "execution_id": "CHUNK_12_20260811_184203_Problem 20: Bureau Risk Signal Integration",
+  "key_metrics_summary": {
+    "portfolio_default_rate": 8.09,
+    "customers_monitored": 307511,
+    "high_risk_customers": 24876,
+    "model_auc_score": 0.7412,
+    "capital_adequacy_ratio": 14.56
+  },
+  "risk_highlights": {
+    "portfolio_health": "STABLE",
+    "trend": "Default rate stable vs last month",
+    "concentration_risk": "MODERATE",
+    "capital_position": "STRONG"
+  },
+  "model_performance": {
+    "auc_score": 0.7412,
+    "f1_score": 0.4523,
+    "regulatory_threshold": 0.68,
+    "regulatory_status": "EXCEEDS_MINIMUM",
+    "drift_status": "NO_DRIFT_DETECTED"
+  },
+  "operational_metrics": {
+    "system_uptime": 99.95,
+    "api_latency_p95_ms": 320,
+    "daily_predictions": 50000,
+    "error_rate": 0.23
+  },
+  "dashboard_status": {
+    "dashboards_online": 4,
+    "dashboards_monitored": 4,
+    "last_refresh": "2026-08-11T18:42:03.056122",
+    "next_refresh": "08:00 AM next business day"
+  },
+  "recommendations": {
+    "continue_monitoring": "Monitor concentration in North Region (35% of portfolio)",
+    "action_items": [
+      "Review credit policy for low-income segment (14.5% default rate)",
+      "Enhance early warning system for payment delinquency",
+      "Schedule quarterly model revalidation"
+    ],
+    "forecast": "Portfolio expected to remain stable over next quarter"
+  }
+}

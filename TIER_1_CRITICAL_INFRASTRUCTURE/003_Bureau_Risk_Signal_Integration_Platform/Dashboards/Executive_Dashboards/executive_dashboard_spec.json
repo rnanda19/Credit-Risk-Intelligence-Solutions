@@ -1,0 +1,155 @@
+{
+  "dashboard_id": "executive_risk_dashboard_v1",
+  "name": "Executive Risk Dashboard",
+  "refresh_frequency": "Daily 8am + Real-time alerts",
+  "audience": [
+    "C-Suite",
+    "Board Risk Committee"
+  ],
+  "data_security": "SOC 2 Type II compliant",
+  "sections": {
+    "portfolio_health": {
+      "title": "Portfolio Health Snapshot",
+      "position": "top_left",
+      "charts": [
+        {
+          "type": "kpi_card",
+          "metric": "Default Rate",
+          "value": "8.09%",
+          "target": "\u2264 10%",
+          "status": "HEALTHY",
+          "trend": "stable"
+        },
+        {
+          "type": "kpi_card",
+          "metric": "Capital Adequacy Ratio",
+          "value": "14.56%",
+          "target": "\u2265 10%",
+          "status": "HEALTHY",
+          "trend": "improving"
+        },
+        {
+          "type": "kpi_card",
+          "metric": "Total Customers at Risk",
+          "value": "24,876",
+          "target": "\u2264 28,000",
+          "status": "HEALTHY",
+          "trend": "improving"
+        }
+      ]
+    },
+    "risk_concentration": {
+      "title": "Risk Concentration Analysis",
+      "position": "top_right",
+      "charts": [
+        {
+          "type": "pie_chart",
+          "title": "Portfolio by Geography",
+          "segments": [
+            {
+              "label": "North",
+              "value": 35,
+              "risk_level": "HIGH"
+            },
+            {
+              "label": "South",
+              "value": 25,
+              "risk_level": "MEDIUM"
+            },
+            {
+              "label": "East",
+              "value": 22,
+              "risk_level": "MEDIUM"
+            },
+            {
+              "label": "West",
+              "value": 18,
+              "risk_level": "LOW"
+            }
+          ]
+        },
+        {
+          "type": "bar_chart",
+          "title": "Default Rate by Income Level",
+          "data": [
+            {
+              "income": "High",
+              "rate": 3.2
+            },
+            {
+              "income": "Middle",
+              "rate": 7.8
+            },
+            {
+              "income": "Low",
+              "rate": 14.5
+            }
+          ]
+        }
+      ]
+    },
+    "model_performance": {
+      "title": "Model Performance Metrics",
+      "position": "middle_left",
+      "charts": [
+        {
+          "type": "gauge_chart",
+          "metric": "AUC Score",
+          "value": 0.7412,
+          "minimum_threshold": 0.68,
+          "status": "PASSING"
+        },
+        {
+          "type": "line_chart",
+          "title": "AUC Trend (90 days)",
+          "data_points": 90,
+          "current": 0.7412,
+          "trend": "stable"
+        }
+      ]
+    },
+    "stress_test_results": {
+      "title": "Stress Testing Results",
+      "position": "middle_right",
+      "charts": [
+        {
+          "type": "waterfall_chart",
+          "title": "Default Rate Under Stress Scenarios",
+          "baseline": 8.09,
+          "scenarios": [
+            {
+              "name": "Adverse",
+              "rate": 20.2
+            },
+            {
+              "name": "Severe",
+              "rate": 32.4
+            },
+            {
+              "name": "Tail Risk",
+              "rate": 48.5
+            }
+          ]
+        }
+      ]
+    },
+    "real_time_alerts": {
+      "title": "Active Alerts",
+      "position": "bottom",
+      "items": [
+        {
+          "alert_type": "INFO",
+          "message": "Daily model validation completed successfully",
+          "timestamp": "2026-08-11T18:42:03.045365"
+        }
+      ]
+    }
+  },
+  "export_formats": [
+    "PDF (daily)",
+    "Email (daily 8am)",
+    "API (real-time)"
+  ],
+  "viewers_last_30_days": 47,
+  "avg_session_duration_minutes": 12
+}

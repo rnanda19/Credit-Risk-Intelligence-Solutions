@@ -1,0 +1,58 @@
+{
+  "by_geography": {
+    "North_Region": {
+      "portfolio_pct": 35,
+      "default_rate": 9.5,
+      "rwa_pct": 38
+    },
+    "South_Region": {
+      "portfolio_pct": 25,
+      "default_rate": 7.2,
+      "rwa_pct": 22
+    },
+    "East_Region": {
+      "portfolio_pct": 22,
+      "default_rate": 8.1,
+      "rwa_pct": 25
+    },
+    "West_Region": {
+      "portfolio_pct": 18,
+      "default_rate": 8.8,
+      "rwa_pct": 15
+    }
+  },
+  "by_income_level": {
+    "High_Income": {
+      "portfolio_pct": 20,
+      "default_rate": 3.2,
+      "rwa_pct": 12
+    },
+    "Middle_Income": {
+      "portfolio_pct": 55,
+      "default_rate": 7.8,
+      "rwa_pct": 58
+    },
+    "Low_Income": {
+      "portfolio_pct": 25,
+      "default_rate": 14.5,
+      "rwa_pct": 30
+    }
+  },
+  "by_employment": {
+    "Salaried": {
+      "portfolio_pct": 65,
+      "default_rate": 6.5,
+      "rwa_pct": 62
+    },
+    "Self_Employed": {
+      "portfolio_pct": 20,
+      "default_rate": 12.5,
+      "rwa_pct": 25
+    },
+    "Unemployed": {
+      "portfolio_pct": 15,
+      "default_rate": 16.0,
+      "rwa_pct": 13
+    }
+  }
+}

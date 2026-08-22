@@ -1,0 +1,38 @@
+{
+  "release_date": "2026-08-14T12:31:32.586831",
+  "model_version": "v2.1.0",
+  "model_type": "XGBoost",
+  "training_samples": 307511,
+  "test_samples": 48744,
+  "features_used": 80,
+  "baseline_accuracy": 0.92,
+  "deployment_status": "APPROVED_FOR_PRODUCTION",
+  "approval_authority": "ML_Engineering_Lead",
+  "go_live_approval": "APPROVED",
+  "deployment_phases": {
+    "phase_1_canary": {
+      "traffic_percentage": 5,
+      "duration_hours": 24,
+      "status": "READY"
+    },
+    "phase_2_gradual": {
+      "traffic_percentage": 25,
+      "duration_hours": 48,
+      "status": "READY"
+    },
+    "phase_3_full": {
+      "traffic_percentage": 100,
+      "duration_hours": 0,
+      "status": "READY"
+    }
+  },
+  "rollback_plan": {
+    "auto_rollback_triggers": [
+      "error_rate > 5%",
+      "response_time > 500ms",
+      "model_accuracy < 85%"
+    ],
+    "rollback_time_minutes": 5,
+    "backup_model": "v2.0.1"
+  }
+}

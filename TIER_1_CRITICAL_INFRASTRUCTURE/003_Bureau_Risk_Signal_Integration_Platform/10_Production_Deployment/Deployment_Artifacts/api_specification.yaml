@@ -1,0 +1,102 @@
+components:
+  securitySchemes:
+    bearer:
+      bearerFormat: JWT
+      scheme: bearer
+      type: http
+info:
+  contact:
+    email: risk@company.com
+    name: Risk Analytics Team
+  description: Production API for bureau risk default prediction
+  title: Bureau Risk Signal Integration API
+  version: 1.0.0
+openapi: 3.0.0
+paths:
+  /health:
+    get:
+      operationId: health_check
+      responses:
+        '200':
+          description: Model is healthy
+      summary: Health check endpoint
+  /metrics:
+    get:
+      operationId: get_metrics
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  auc:
+                    type: number
+                  f1:
+                    type: number
+                  predictions_served:
+                    type: integer
+                  uptime_minutes:
+                    type: integer
+                type: object
+          description: Current model metrics
+      summary: Get model performance metrics
+  /predict:
+    post:
+      operationId: predict_default_risk
+      requestBody:
+        content:
+          application/json:
+            schema:
+              properties:
+                features:
+                  description: 75 engineered features
+                  type: object
+                sk_id_curr:
+                  description: Customer ID
+                  type: integer
+              required:
+              - sk_id_curr
+              - features
+              type: object
+        required: true
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  confidence:
+                    type: number
+                  default_prediction:
+                    type: boolean
+                  default_probability:
+                    maximum: 1
+                    minimum: 0
+                    type: number
+                  risk_category:
+                    enum:
+                    - LOW
+                    - MEDIUM
+                    - HIGH
+                    type: string
+                  sk_id_curr:
+                    type: integer
+                  timestamp:
+                    format: date-time
+                    type: string
+                type: object
+          description: Successful prediction
+        '400':
+          description: Invalid input
+        '500':
+          description: Server error
+      summary: Get default risk prediction
+security:
+- bearer: []
+servers:
+- description: Production
+  url: https://api.prod.company.com/v1
+- description: Staging
+  url: https://api.staging.company.com/v1
+- description: Local
+  url: http://localhost:8000/v1

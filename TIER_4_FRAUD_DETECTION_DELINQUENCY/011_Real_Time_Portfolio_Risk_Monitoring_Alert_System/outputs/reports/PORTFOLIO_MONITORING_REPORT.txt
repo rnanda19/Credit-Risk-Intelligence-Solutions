@@ -1,0 +1,32 @@
+================================================================================
+PROBLEM 9: PORTFOLIO PERFORMANCE MONITORING - FINAL REPORT
+================================================================================
+
+EXECUTIVE SUMMARY
+Portfolio Size: 4,000 customers
+Total Exposure: $2,089,397,766
+Actual Default Rate: 7.95%
+Predicted Default Rate: 8.00%
+Expected Credit Loss: $105,210,469
+ECL as % of Exposure: 5.04%
+
+MODEL PERFORMANCE
+Training AUC: 0.9415
+
+SEGMENT PERFORMANCE
+                               TARGET  default_probability  credit_amount  SK_ID_CURR
+portfolio_segment                                                                    
+High Income / Low Risk       0.200000             0.195434   3.327943e+05           5
+Medium Income / Medium Risk  0.200000             0.096974   4.318022e+05           5
+Low Income / High Risk       0.085606             0.081921   6.937164e+08        1320
+High Income / High Risk      0.077340             0.081476   6.867262e+08        1293
+Medium Income / High Risk    0.075332             0.076542   7.055112e+08        1354
+High Income / Medium Risk    0.045455             0.068801   2.625506e+06          22
+Medium Income / Low Risk     0.000000             0.062809   5.382401e+04           1
+
+STRESS TEST RESULTS
+Base Case                     : $    105,210,469 ( 5.04%)
+Mild Stress (+20% defaults)   : $    126,252,563 ( 6.04%)
+Moderate Stress (+40% defaults): $    147,294,657 ( 7.05%)
+Severe Stress (+60% defaults) : $    168,336,751 ( 8.06%)
+Crisis Scenario (+100% defaults): $    210,420,939 (10.07%)

@@ -1,0 +1,29 @@
+{
+  "analysis_timestamp": "2026-08-11T20:57:38.641582",
+  "dataset_overview": {
+    "total_records": 307511,
+    "total_columns": 88,
+    "numeric_columns": 84,
+    "categorical_columns": 4,
+    "memory_usage_mb": 259.0996961593628,
+    "duplicate_rows": 0,
+    "total_missing_values": 0
+  },
+  "data_quality": {
+    "completeness_percentage": 100.0,
+    "duplicate_percentage": 0.0
+  },
+  "target_distribution": {
+    "negative_count": 282625,
+    "positive_count": 24886,
+    "negative_percentage": 91.90728136554465,
+    "positive_percentage": 8.092718634455354
+  },
+  "visualizations_generated": [
+    "01_distributions_top12.png",
+    "02_boxplots_outliers.png",
+    "03_correlation_heatmap.png",
+    "04_target_analysis.png",
+    "05_feature_importance_target.png"
+  ]
+}

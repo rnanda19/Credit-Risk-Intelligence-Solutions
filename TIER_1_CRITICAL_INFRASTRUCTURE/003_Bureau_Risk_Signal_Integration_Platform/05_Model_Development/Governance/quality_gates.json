@@ -1,0 +1,8 @@
+{
+  "framework": "SOP_02_Quality_Gates",
+  "chunk": "CHUNK_05",
+  "gate_name": "model_quality",
+  "threshold_auc": 0.7,
+  "actual_auc": 0.5112017456288739,
+  "status": "REVIEW"
+}

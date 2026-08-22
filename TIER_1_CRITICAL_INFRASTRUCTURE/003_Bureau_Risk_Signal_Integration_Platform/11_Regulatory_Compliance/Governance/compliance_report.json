@@ -1,0 +1,72 @@
+{
+  "timestamp": "2026-08-11T18:41:30.701873",
+  "execution_id": "CHUNK_11_20260811_184130_Problem 20: Bureau Risk Signal Integration",
+  "chunk": "CHUNK_11",
+  "problem": "Problem 20: Bureau Risk Signal Integration",
+  "data_owner": "Regulatory Compliance & Risk Team",
+  "sensitivity": "CONFIDENTIAL_REGULATORY",
+  "execution_duration_minutes": 0.0,
+  "quality_gates": {
+    "total": 2,
+    "passed": 1,
+    "failed": 1,
+    "pass_rate": "50.0%",
+    "details": {
+      "regulatory_compliance": {
+        "gate_name": "regulatory_compliance",
+        "threshold": 8,
+        "actual_value": 7,
+        "unit": "checks",
+        "pass": false,
+        "status": "FAIL",
+        "timestamp": "2026-08-11T18:41:30.676909"
+      },
+      "stress_test_adequacy": {
+        "gate_name": "stress_test_adequacy",
+        "threshold": 4,
+        "actual_value": 4,
+        "unit": "checks",
+        "pass": true,
+        "status": "PASS",
+        "timestamp": "2026-08-11T18:41:30.684945"
+      }
+    }
+  },
+  "reconciliation": {
+    "total": 2,
+    "passed": 2,
+    "failed": 0,
+    "pass_rate": "100.0%",
+    "details": {
+      "REGULATORY_PORTFOLIO_VERIFICATION": {
+        "reconciliation_name": "REGULATORY_PORTFOLIO_VERIFICATION",
+        "source_count": 307511,
+        "output_count": 307511,
+        "variance_percentage": 0.0,
+        "within_tolerance": true,
+        "timestamp": "2026-08-11T18:41:30.677851"
+      },
+      "STRESS_TEST_VALIDATION": {
+        "reconciliation_name": "STRESS_TEST_VALIDATION",
+        "source_count": 4,
+        "output_count": 4,
+        "variance_percentage": 0.0,
+        "within_tolerance": true,
+        "timestamp": "2026-08-11T18:41:30.685494"
+      }
+    }
+  },
+  "data_lineage": {
+    "sources": 1,
+    "transformations": 1
+  },
+  "pii_fields_identified": 3,
+  "pii_fields": [
+    "PORTFOLIO_DATA",
+    "CUSTOMER_IDENTIFIERS",
+    "STRESS_TEST_RESULTS"
+  ],
+  "governance_events": 8,
+  "access_audit_entries": 3,
+  "overall_status": "NON-COMPLIANT"
+}

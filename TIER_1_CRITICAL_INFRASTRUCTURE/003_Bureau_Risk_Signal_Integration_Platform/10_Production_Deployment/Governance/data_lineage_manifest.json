@@ -1,0 +1,12 @@
+{
+  "Training Pipeline": [
+    {
+      "source": "Training Pipeline",
+      "output": "10_Production_Deployment/Deployment_Artifacts/deployment_manifest.json",
+      "record_count": 3,
+      "transformation_type": "MODEL_TO_PRODUCTION_DEPLOYMENT",
+      "timestamp": "2026-08-11T18:33:47.900669",
+      "checksum": "N/A"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "baseline": {
+    "description": "Current economic conditions",
+    "baseline_default_rate": 0.0809,
+    "stressed_default_rate": 0.0809,
+    "baseline_defaults": 24876,
+    "stressed_defaults": 24876,
+    "incremental_defaults": 0,
+    "economic_assumptions": {
+      "gdp_growth": 2.5,
+      "unemployment_rate": 4.0
+    }
+  },
+  "adverse": {
+    "description": "Adverse downturn",
+    "baseline_default_rate": 0.0809,
+    "stressed_default_rate": 0.2022,
+    "baseline_defaults": 24876,
+    "stressed_defaults": 62190,
+    "incremental_defaults": 37314,
+    "economic_assumptions": {
+      "gdp_growth": -2.0,
+      "unemployment_rate": 8.5
+    }
+  },
+  "severe": {
+    "description": "Severe crisis",
+    "baseline_default_rate": 0.0809,
+    "stressed_default_rate": 0.3236,
+    "baseline_defaults": 24876,
+    "stressed_defaults": 99504,
+    "incremental_defaults": 74628,
+    "economic_assumptions": {
+      "gdp_growth": -5.0,
+      "unemployment_rate": 12.0
+    }
+  },
+  "tail_risk": {
+    "description": "Extreme tail risk",
+    "baseline_default_rate": 0.0809,
+    "stressed_default_rate": 0.4854,
+    "baseline_defaults": 24876,
+    "stressed_defaults": 149256,
+    "incremental_defaults": 124380,
+    "economic_assumptions": {
+      "gdp_growth": -8.0,
+      "unemployment_rate": 15.0
+    }
+  }
+}

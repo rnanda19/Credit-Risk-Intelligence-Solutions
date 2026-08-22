@@ -1,0 +1,61 @@
+{
+  "method": "Permutation Importance (SHAP Alternative)",
+  "description": "Feature importance based on permutation - approximates SHAP values",
+  "top_features_with_impact": [
+    {
+      "feature": "EXT_SOURCE_3",
+      "importance_mean": 0.08584586036889238,
+      "importance_std": 0.004134621673075681
+    },
+    {
+      "feature": "EXT_SOURCE_2",
+      "importance_mean": 0.07936807318744188,
+      "importance_std": 0.004557765090412421
+    },
+    {
+      "feature": "EXT_SOURCE_1",
+      "importance_mean": 0.03538113085882377,
+      "importance_std": 0.004894688293714664
+    },
+    {
+      "feature": "DAYS_EMPLOYED",
+      "importance_mean": 0.022118083262805576,
+      "importance_std": 0.0018066022732261477
+    },
+    {
+      "feature": "DAYS_LAST_PHONE_CHANGE",
+      "importance_mean": 0.019095904028801812,
+      "importance_std": 0.0008457966137252307
+    },
+    {
+      "feature": "feature_min",
+      "importance_mean": 0.015655019546205427,
+      "importance_std": 0.0017565554213046235
+    },
+    {
+      "feature": "DAYS_BIRTH",
+      "importance_mean": 0.015626217439782673,
+      "importance_std": 0.001579797657334031
+    },
+    {
+      "feature": "AMT_ANNUITY",
+      "importance_mean": 0.011585002485256157,
+      "importance_std": 0.0008839032410478986
+    },
+    {
+      "feature": "DAYS_ID_PUBLISH",
+      "importance_mean": 0.011016913177232145,
+      "importance_std": 0.0007502599893697905
+    },
+    {
+      "feature": "AMT_GOODS_PRICE",
+      "importance_mean": 0.010586816050725867,
+      "importance_std": 0.000944441805939986
+    }
+  ],
+  "interpretation": {
+    "high_impact": "Features with high permutation importance have large impact on predictions",
+    "medium_impact": "Features with medium importance contribute moderately to decisions",
+    "low_impact": "Features with low importance have minimal prediction impact"
+  }
+}

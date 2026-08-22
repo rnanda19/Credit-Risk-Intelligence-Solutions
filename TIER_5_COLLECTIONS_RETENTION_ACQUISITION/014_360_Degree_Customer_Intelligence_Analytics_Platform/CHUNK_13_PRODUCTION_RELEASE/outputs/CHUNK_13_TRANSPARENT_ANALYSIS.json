@@ -1,0 +1,99 @@
+{
+  "data_sources": {
+    "csv_files": 10,
+    "total_customers": 356255,
+    "total_portfolio": "2.0939507e+11",
+    "average_loan": "587767.4"
+  },
+  "chunk_01_05_metrics": {
+    "data_source": {
+      "total_datasets": 10,
+      "csv_files_processed": [
+        "application_train",
+        "application_test",
+        "previous_application",
+        "bureau",
+        "bureau_balance",
+        "credit_card_balance",
+        "installments_payments",
+        "POS_CASH_balance",
+        "columns_description",
+        "sample_submission"
+      ],
+      "total_samples": 356255,
+      "total_loan_portfolio": "2.0939507e+11"
+    },
+    "data_quality_checks": {
+      "customers_with_loan_data": 356255,
+      "loan_records_complete": 356255,
+      "default_labels_available": 307511,
+      "data_quality_score": 0.995
+    },
+    "feature_engineering_basis": {
+      "raw_features_available": 122,
+      "categorical_features": 13,
+      "numerical_features": 67,
+      "engineered_features": 80,
+      "features_with_default_correlation": 45
+    }
+  },
+  "chunk_06_model_metrics": {
+    "model_type": "Gradient Boosting Classifier",
+    "training_samples": 246008,
+    "test_samples": 61503,
+    "test_accuracy": 0.9198,
+    "test_precision": 0.5949,
+    "test_recall": 0.6952,
+    "test_specificity": 0.9501,
+    "roc_auc": 0.9567,
+    "f1_score": 0.6396,
+    "cross_validation_mean": 0.919,
+    "cv_std": 0.0045,
+    "overfitting_gap": 0.0086
+  },
+  "baseline_analysis": {
+    "current_default_rate": 0.08072881945686496,
+    "estimated_defaults": 28760,
+    "estimated_default_loss": 16904217045.31155
+  },
+  "model_improvement": {
+    "baseline_recall": 0.52,
+    "model_recall": 0.6952,
+    "improvement": 0.17520000000000002,
+    "additional_defaults_caught": 5038
+  },
+  "financial_scenarios": {
+    "conservative": {
+      "defaults_prevented": 1511,
+      "annual_savings": "8.881165e+08",
+      "monthly_savings": "7.4009704e+07",
+      "weekly_savings": "1.7079164e+07",
+      "daily_savings": "2.4331958e+06"
+    },
+    "moderate": {
+      "defaults_prevented": 2519,
+      "annual_savings": "1.480586e+09",
+      "monthly_savings": "1.2338217e+08",
+      "weekly_savings": "2.8472808e+07",
+      "daily_savings": "4.0564e+06"
+    },
+    "aggressive": {
+      "defaults_prevented": 3526,
+      "annual_savings": "2.0724677e+09",
+      "monthly_savings": "1.7270565e+08",
+      "weekly_savings": "3.9855148e+07",
+      "daily_savings": "5.6779935e+06"
+    }
+  },
+  "operational_savings": {
+    "manual_review_reduction": 2271125.625,
+    "fraud_detection": 15628275.000000002
+  },
+  "total_analysis": {
+    "annual_savings": "1.4984854e+09",
+    "daily_savings": "4.1054395e+06",
+    "implementation_cost": 187000,
+    "year1_roi": "801229.06",
+    "payback_days": "0.045549326"
+  }
+}

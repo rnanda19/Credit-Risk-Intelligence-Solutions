@@ -1,0 +1,45 @@
+{
+  "execution_id": "20260811_105318_428600",
+  "timestamp": "2026-08-11T10:53:18.428727",
+  "report_type": "Model Monitoring & Performance Tracking",
+  "baseline_metrics": {
+    "roc_auc": 0.954692896616832,
+    "accuracy": 0.9569289302960832
+  },
+  "current_metrics": {
+    "roc_auc": 0.9448680218106561,
+    "accuracy": 0.9,
+    "roc_auc_change_percent": -1.0291136386363122,
+    "accuracy_change_percent": -5.949128351513918
+  },
+  "data_drift_analysis": {
+    "drift_status": "OK",
+    "features_with_drift": 0,
+    "features_normal": 10
+  },
+  "prediction_analysis": {
+    "total_predictions": 61503,
+    "high_risk_percentage": 3.5103978667707265,
+    "accuracy": 0.9569289302960832,
+    "average_confidence": 0.9770607352256775
+  },
+  "anomaly_detection": {
+    "anomalies_detected": 511,
+    "anomaly_percentage": 0.8308537794904314,
+    "alert_status": "OK"
+  },
+  "alert_configuration": {
+    "total_alert_rules": 5,
+    "critical_alerts": 2,
+    "high_alerts": 2
+  },
+  "monitoring_status": "HEALTHY",
+  "recommendations": [
+    "Continue monitoring model performance daily",
+    "Investigate features with data drift",
+    "Review high-risk predictions for accuracy",
+    "Check for anomalous prediction patterns",
+    "Maintain 90-day prediction logs",
+    "Schedule weekly performance reviews"
+  ]
+}

@@ -1,0 +1,802 @@
+{
+  "before": {
+    "total_records": 307511,
+    "total_columns": 138,
+    "total_nulls": 12778090,
+    "null_percent": 30.11107084704735,
+    "duplicates": 0,
+    "memory_mb": 542.523289680481
+  },
+  "after": {
+    "total_records": 307511,
+    "total_columns": 138,
+    "total_nulls": 11162024,
+    "duplicates": 0,
+    "memory_mb": 370.6604461669922
+  },
+  "missing_handling": {
+    "AMT_ANNUITY": {
+      "method": "median",
+      "fill_value": 24903.0,
+      "null_pct_before": 0.003902299429939092,
+      "null_pct_after": 0.0
+    },
+    "AMT_GOODS_PRICE": {
+      "method": "median",
+      "fill_value": 450000.0,
+      "null_pct_before": 0.09040327012692229,
+      "null_pct_after": 0.0
+    },
+    "NAME_TYPE_SUITE": {
+      "method": "mode",
+      "fill_value": "Unaccompanied",
+      "null_pct_before": 0.42014757195677555,
+      "null_pct_after": 0.0
+    },
+    "OCCUPATION_TYPE": {
+      "method": "mode",
+      "fill_value": "Laborers",
+      "null_pct_before": 31.345545362604916,
+      "null_pct_after": 0.0
+    },
+    "CNT_FAM_MEMBERS": {
+      "method": "median",
+      "fill_value": 2.0,
+      "null_pct_before": 0.0006503832383231819,
+      "null_pct_after": 0.0
+    },
+    "EXT_SOURCE_2": {
+      "method": "median",
+      "fill_value": 0.5659614260608526,
+      "null_pct_before": 0.21462646864665005,
+      "null_pct_after": 0.0
+    },
+    "EXT_SOURCE_3": {
+      "method": "median",
+      "fill_value": 0.5352762504724826,
+      "null_pct_before": 19.825307062186393,
+      "null_pct_after": 0.0
+    },
+    "YEARS_BEGINEXPLUATATION_AVG": {
+      "method": "median",
+      "fill_value": 0.9816,
+      "null_pct_before": 48.781019215572776,
+      "null_pct_after": 0.0
+    },
+    "FLOORSMAX_AVG": {
+      "method": "median",
+      "fill_value": 0.1667,
+      "null_pct_before": 49.76082156410665,
+      "null_pct_after": 0.0
+    },
+    "YEARS_BEGINEXPLUATATION_MODE": {
+      "method": "median",
+      "fill_value": 0.9816,
+      "null_pct_before": 48.781019215572776,
+      "null_pct_after": 0.0
+    },
+    "FLOORSMAX_MODE": {
+      "method": "median",
+      "fill_value": 0.1667,
+      "null_pct_before": 49.76082156410665,
+      "null_pct_after": 0.0
+    },
+    "YEARS_BEGINEXPLUATATION_MEDI": {
+      "method": "median",
+      "fill_value": 0.9816,
+      "null_pct_before": 48.781019215572776,
+      "null_pct_after": 0.0
+    },
+    "FLOORSMAX_MEDI": {
+      "method": "median",
+      "fill_value": 0.1667,
+      "null_pct_before": 49.76082156410665,
+      "null_pct_after": 0.0
+    },
+    "TOTALAREA_MODE": {
+      "method": "median",
+      "fill_value": 0.0688,
+      "null_pct_before": 48.26851722377411,
+      "null_pct_after": 0.0
+    },
+    "EMERGENCYSTATE_MODE": {
+      "method": "mode",
+      "fill_value": "No",
+      "null_pct_before": 47.39830445089769,
+      "null_pct_after": 0.0
+    },
+    "OBS_30_CNT_SOCIAL_CIRCLE": {
+      "method": "median",
+      "fill_value": 0.0,
+      "null_pct_before": 0.3320206431639844,
+      "null_pct_after": 0.0
+    },
+    "DEF_30_CNT_SOCIAL_CIRCLE": {
+      "method": "median",
+      "fill_value": 0.0,
+      "null_pct_before": 0.3320206431639844,
+      "null_pct_after": 0.0
+    },
+    "OBS_60_CNT_SOCIAL_CIRCLE": {
+      "method": "median",
+      "fill_value": 0.0,
+      "null_pct_before": 0.3320206431639844,
+      "null_pct_after": 0.0
+    },
+    "DEF_60_CNT_SOCIAL_CIRCLE": {
+      "method": "median",
+      "fill_value": 0.0,
+      "null_pct_before": 0.3320206431639844,
+      "null_pct_after": 0.0
+    },
+    "DAYS_LAST_PHONE_CHANGE": {
+      "method": "median",
+      "fill_value": -757.0,
+      "null_pct_before": 0.00032519161916159093,
+      "null_pct_after": 0.0
+    },
+    "AMT_REQ_CREDIT_BUREAU_HOUR": {
+      "method": "median",
+      "fill_value": 0.0,
+      "null_pct_before": 13.501630835970097,
+      "null_pct_after": 0.0
+    },
+    "AMT_REQ_CREDIT_BUREAU_DAY": {
+      "method": "median",
+      "fill_value": 0.0,
+      "null_pct_before": 13.501630835970097,
+      "null_pct_after": 0.0
+    },
+    "AMT_REQ_CREDIT_BUREAU_WEEK": {
+      "method": "median",
+      "fill_value": 0.0,
+      "null_pct_before": 13.501630835970097,
+      "null_pct_after": 0.0
+    },
+    "AMT_REQ_CREDIT_BUREAU_MON": {
+      "method": "median",
+      "fill_value": 0.0,
+      "null_pct_before": 13.501630835970097,
+      "null_pct_after": 0.0
+    },
+    "AMT_REQ_CREDIT_BUREAU_QRT": {
+      "method": "median",
+      "fill_value": 0.0,
+      "null_pct_before": 13.501630835970097,
+      "null_pct_after": 0.0
+    },
+    "AMT_REQ_CREDIT_BUREAU_YEAR": {
+      "method": "median",
+      "fill_value": 1.0,
+      "null_pct_before": 13.501630835970097,
+      "null_pct_after": 0.0
+    }
+  },
+  "outlier_summary": {
+    "TARGET": {
+      "outlier_count": 24825,
+      "outlier_percent": 8.072881945686495,
+      "lower_bound": 0.0,
+      "upper_bound": 0.0
+    },
+    "CNT_CHILDREN": {
+      "outlier_count": 4272,
+      "outlier_percent": 1.3892185970583166,
+      "lower_bound": -1.5,
+      "upper_bound": 2.5
+    },
+    "AMT_INCOME_TOTAL": {
+      "outlier_count": 14035,
+      "outlier_percent": 4.564064374932929,
+      "lower_bound": -22500.0,
+      "upper_bound": 337500.0
+    },
+    "AMT_CREDIT": {
+      "outlier_count": 6562,
+      "outlier_percent": 2.13390740493836,
+      "lower_bound": -537975.0,
+      "upper_bound": 1616625.0
+    },
+    "AMT_ANNUITY": {
+      "outlier_count": 7504,
+      "outlier_percent": 2.4402379101885785,
+      "lower_bound": -10584.0,
+      "upper_bound": 61704.0
+    },
+    "AMT_GOODS_PRICE": {
+      "outlier_count": 14728,
+      "outlier_percent": 4.789422167011912,
+      "lower_bound": -423000.0,
+      "upper_bound": 1341000.0
+    },
+    "REGION_POPULATION_RELATIVE": {
+      "outlier_count": 8412,
+      "outlier_percent": 2.735511900387303,
+      "lower_bound": -0.01797949941828847,
+      "upper_bound": 0.05664849979802966
+    },
+    "DAYS_EMPLOYED": {
+      "outlier_count": 72217,
+      "outlier_percent": 23.484363160992615,
+      "lower_bound": -6466.5,
+      "upper_bound": 3417.5
+    },
+    "DAYS_REGISTRATION": {
+      "outlier_count": 659,
+      "outlier_percent": 0.21430127702748844,
+      "lower_bound": -15683.75,
+      "upper_bound": 6194.25
+    },
+    "OWN_CAR_AGE": {
+      "outlier_count": 4932,
+      "outlier_percent": 1.6038450657049668,
+      "lower_bound": -10.0,
+      "upper_bound": 30.0
+    },
+    "FLAG_EMP_PHONE": {
+      "outlier_count": 55386,
+      "outlier_percent": 18.011063018883878,
+      "lower_bound": 1.0,
+      "upper_bound": 1.0
+    },
+    "FLAG_WORK_PHONE": {
+      "outlier_count": 61308,
+      "outlier_percent": 19.93684778755882,
+      "lower_bound": 0.0,
+      "upper_bound": 0.0
+    },
+    "FLAG_CONT_MOBILE": {
+      "outlier_count": 574,
+      "outlier_percent": 0.18665998939875322,
+      "lower_bound": 1.0,
+      "upper_bound": 1.0
+    },
+    "FLAG_EMAIL": {
+      "outlier_count": 17442,
+      "outlier_percent": 5.6719922214164695,
+      "lower_bound": 0.0,
+      "upper_bound": 0.0
+    },
+    "CNT_FAM_MEMBERS": {
+      "outlier_count": 4007,
+      "outlier_percent": 1.3030428179804951,
+      "lower_bound": 0.5,
+      "upper_bound": 4.5
+    },
+    "REGION_RATING_CLIENT": {
+      "outlier_count": 80527,
+      "outlier_percent": 26.186705516225434,
+      "lower_bound": 2.0,
+      "upper_bound": 2.0
+    },
+    "REGION_RATING_CLIENT_W_CITY": {
+      "outlier_count": 78027,
+      "outlier_percent": 25.373726468321458,
+      "lower_bound": 2.0,
+      "upper_bound": 2.0
+    },
+    "HOUR_APPR_PROCESS_START": {
+      "outlier_count": 2257,
+      "outlier_percent": 0.7339574844477108,
+      "lower_bound": 4.0,
+      "upper_bound": 20.0
+    },
+    "REG_REGION_NOT_LIVE_REGION": {
+      "outlier_count": 4657,
+      "outlier_percent": 1.514417370435529,
+      "lower_bound": 0.0,
+      "upper_bound": 0.0
+    },
+    "REG_REGION_NOT_WORK_REGION": {
+      "outlier_count": 15612,
+      "outlier_percent": 5.076891558350758,
+      "lower_bound": 0.0,
+      "upper_bound": 0.0
+    },
+    "LIVE_REGION_NOT_WORK_REGION": {
+      "outlier_count": 12503,
+      "outlier_percent": 4.065870814377372,
+      "lower_bound": 0.0,
+      "upper_bound": 0.0
+    },
+    "REG_CITY_NOT_LIVE_CITY": {
+      "outlier_count": 24039,
+      "outlier_percent": 7.817281333025486,
+      "lower_bound": 0.0,
+      "upper_bound": 0.0
+    },
+    "REG_CITY_NOT_WORK_CITY": {
+      "outlier_count": 70867,
+      "outlier_percent": 23.045354475124466,
+      "lower_bound": 0.0,
+      "upper_bound": 0.0
+    },
+    "LIVE_CITY_NOT_WORK_CITY": {
+      "outlier_count": 55215,
+      "outlier_percent": 17.955455252007248,
+      "lower_bound": 0.0,
+      "upper_bound": 0.0
+    },
+    "EXT_SOURCE_3": {
+      "outlier_count": 4313,
+      "outlier_percent": 1.4025514534439418,
+      "lower_bound": 0.08818492293357849,
+      "upper_bound": 0.9652908742427826
+    },
+    "APARTMENTS_AVG": {
+      "outlier_count": 10655,
+      "outlier_percent": 3.4649167021667515,
+      "lower_bound": -0.07849999517202377,
+      "upper_bound": 0.2846999764442444
+    },
+    "BASEMENTAREA_AVG": {
+      "outlier_count": 7189,
+      "outlier_percent": 2.3378025501526776,
+      "lower_bound": -0.05780000612139702,
+      "upper_bound": 0.2142000049352646
+    },
+    "YEARS_BEGINEXPLUATATION_AVG": {
+      "outlier_count": 142016,
+      "outlier_percent": 46.1824129868525,
+      "lower_bound": 0.980849951505661,
+      "upper_bound": 0.982850044965744
+    },
+    "YEARS_BUILD_AVG": {
+      "outlier_count": 2271,
+      "outlier_percent": 0.7385101671159731,
+      "lower_bound": 0.4832000434398651,
+      "upper_bound": 1.0271999835968018
+    },
+    "COMMONAREA_AVG": {
+      "outlier_count": 7942,
+      "outlier_percent": 2.5826718393813555,
+      "lower_bound": -0.057750001549720764,
+      "upper_bound": 0.11704999953508377
+    },
+    "ELEVATORS_AVG": {
+      "outlier_count": 10527,
+      "outlier_percent": 3.423292174914068,
+      "lower_bound": -0.17999999225139618,
+      "upper_bound": 0.29999998211860657
+    },
+    "ENTRANCES_AVG": {
+      "outlier_count": 3882,
+      "outlier_percent": 1.2623938655852962,
+      "lower_bound": -0.13784998655319214,
+      "upper_bound": 0.4137499928474426
+    },
+    "FLOORSMAX_AVG": {
+      "outlier_count": 92616,
+      "outlier_percent": 30.117947000269908,
+      "lower_bound": 0.16670000553131104,
+      "upper_bound": 0.16670000553131104
+    },
+    "FLOORSMIN_AVG": {
+      "outlier_count": 343,
+      "outlier_percent": 0.1115407253724257,
+      "lower_bound": -0.3542500138282776,
+      "upper_bound": 0.8125500082969666
+    },
+    "LANDAREA_AVG": {
+      "outlier_count": 6888,
+      "outlier_percent": 2.2399198727850385,
+      "lower_bound": -0.08165000379085541,
+      "upper_bound": 0.18595001101493835
+    },
+    "LIVINGAPARTMENTS_AVG": {
+      "outlier_count": 7881,
+      "outlier_percent": 2.5628351506124982,
+      "lower_bound": -0.055500004440546036,
+      "upper_bound": 0.22690001130104065
+    },
+    "LIVINGAREA_AVG": {
+      "outlier_count": 12506,
+      "outlier_percent": 4.066846389234857,
+      "lower_bound": -0.08159998804330826,
+      "upper_bound": 0.25679999589920044
+    },
+    "NONLIVINGAPARTMENTS_AVG": {
+      "outlier_count": 15580,
+      "outlier_percent": 5.066485426537587,
+      "lower_bound": -0.005849999841302633,
+      "upper_bound": 0.009749999269843102
+    },
+    "NONLIVINGAREA_AVG": {
+      "outlier_count": 16546,
+      "outlier_percent": 5.380620530647684,
+      "lower_bound": -0.04154999926686287,
+      "upper_bound": 0.06925000250339508
+    },
+    "APARTMENTS_MODE": {
+      "outlier_count": 10397,
+      "outlier_percent": 3.381017264423061,
+      "lower_bound": -0.08460001647472382,
+      "upper_bound": 0.281000018119812
+    },
+    "BASEMENTAREA_MODE": {
+      "outlier_count": 6910,
+      "outlier_percent": 2.2470740884065936,
+      "lower_bound": -0.06685000658035278,
+      "upper_bound": 0.21995002031326294
+    },
+    "YEARS_BEGINEXPLUATATION_MODE": {
+      "outlier_count": 141861,
+      "outlier_percent": 46.132008285882456,
+      "lower_bound": 0.9803500771522522,
+      "upper_bound": 0.9823499321937561
+    },
+    "YEARS_BUILD_MODE": {
+      "outlier_count": 2537,
+      "outlier_percent": 0.8250111378129563,
+      "lower_bound": 0.5131000280380249,
+      "upper_bound": 1.0098999738693237
+    },
+    "COMMONAREA_MODE": {
+      "outlier_count": 7938,
+      "outlier_percent": 2.581371072904709,
+      "lower_bound": -0.055500004440546036,
+      "upper_bound": 0.11169999837875366
+    },
+    "ELEVATORS_MODE": {
+      "outlier_count": 9732,
+      "outlier_percent": 3.164764837680603,
+      "lower_bound": -0.18119999766349792,
+      "upper_bound": 0.3019999861717224
+    },
+    "ENTRANCES_MODE": {
+      "outlier_count": 3840,
+      "outlier_percent": 1.2487358175805092,
+      "lower_bound": -0.13784998655319214,
+      "upper_bound": 0.4137499928474426
+    },
+    "FLOORSMAX_MODE": {
+      "outlier_count": 88941,
+      "outlier_percent": 28.92286779985106,
+      "lower_bound": 0.16670000553131104,
+      "upper_bound": 0.16670000553131104
+    },
+    "FLOORSMIN_MODE": {
+      "outlier_count": 320,
+      "outlier_percent": 0.1040613181317091,
+      "lower_bound": -0.3542500138282776,
+      "upper_bound": 0.8125500082969666
+    },
+    "LANDAREA_MODE": {
+      "outlier_count": 7033,
+      "outlier_percent": 2.2870726575634692,
+      "lower_bound": -0.08465000987052917,
+      "upper_bound": 0.18535000085830688
+    },
+    "LIVINGAPARTMENTS_MODE": {
+      "outlier_count": 7469,
+      "outlier_percent": 2.428856203517923,
+      "lower_bound": -0.06144999712705612,
+      "upper_bound": 0.24695000052452087
+    },
+    "LIVINGAREA_MODE": {
+      "outlier_count": 13105,
+      "outlier_percent": 4.261636169112649,
+      "lower_bound": -0.08105000108480453,
+      "upper_bound": 0.24895000457763672
+    },
+    "NONLIVINGAPARTMENTS_MODE": {
+      "outlier_count": 14224,
+      "outlier_percent": 4.62552559095447,
+      "lower_bound": -0.005849999841302633,
+      "upper_bound": 0.009749999269843102
+    },
+    "NONLIVINGAREA_MODE": {
+      "outlier_count": 18817,
+      "outlier_percent": 6.119130697763657,
+      "lower_bound": -0.03464999794960022,
+      "upper_bound": 0.057749997824430466
+    },
+    "APARTMENTS_MEDI": {
+      "outlier_count": 10728,
+      "outlier_percent": 3.4886556903655475,
+      "lower_bound": -0.07759998738765717,
+      "upper_bound": 0.2847999930381775
+    },
+    "BASEMENTAREA_MEDI": {
+      "outlier_count": 7188,
+      "outlier_percent": 2.337477358533516,
+      "lower_bound": -0.05815000459551811,
+      "upper_bound": 0.21344999969005585
+    },
+    "YEARS_BEGINEXPLUATATION_MEDI": {
+      "outlier_count": 142141,
+      "outlier_percent": 46.2230619392477,
+      "lower_bound": 0.980849951505661,
+      "upper_bound": 0.982850044965744
+    },
+    "YEARS_BUILD_MEDI": {
+      "outlier_count": 2159,
+      "outlier_percent": 0.7020887057698749,
+      "lower_bound": 0.4900999367237091,
+      "upper_bound": 1.026900053024292
+    },
+    "COMMONAREA_MEDI": {
+      "outlier_count": 7992,
+      "outlier_percent": 2.598931420339435,
+      "lower_bound": -0.05719999969005585,
+      "upper_bound": 0.11640000343322754
+    },
+    "ELEVATORS_MEDI": {
+      "outlier_count": 10477,
+      "outlier_percent": 3.4070325939559885,
+      "lower_bound": -0.17999999225139618,
+      "upper_bound": 0.29999998211860657
+    },
+    "ENTRANCES_MEDI": {
+      "outlier_count": 3893,
+      "outlier_percent": 1.2659709733960736,
+      "lower_bound": -0.13784998655319214,
+      "upper_bound": 0.4137499928474426
+    },
+    "FLOORSMAX_MEDI": {
+      "outlier_count": 90884,
+      "outlier_percent": 29.554715115882036,
+      "lower_bound": 0.16670000553131104,
+      "upper_bound": 0.16670000553131104
+    },
+    "FLOORSMIN_MEDI": {
+      "outlier_count": 344,
+      "outlier_percent": 0.1118659169915873,
+      "lower_bound": -0.3542500138282776,
+      "upper_bound": 0.8125500082969666
+    },
+    "LANDAREA_MEDI": {
+      "outlier_count": 6873,
+      "outlier_percent": 2.2350419984976146,
+      "lower_bound": -0.08345000445842743,
+      "upper_bound": 0.18895000219345093
+    },
+    "LIVINGAPARTMENTS_MEDI": {
+      "outlier_count": 7927,
+      "outlier_percent": 2.5777939650939317,
+      "lower_bound": -0.05639998987317085,
+      "upper_bound": 0.23079998791217804
+    },
+    "LIVINGAREA_MEDI": {
+      "outlier_count": 12907,
+      "outlier_percent": 4.197248228518655,
+      "lower_bound": -0.0812000036239624,
+      "upper_bound": 0.2572000026702881
+    },
+    "NONLIVINGAPARTMENTS_MEDI": {
+      "outlier_count": 15215,
+      "outlier_percent": 4.947790485543607,
+      "lower_bound": -0.005849999841302633,
+      "upper_bound": 0.009749999269843102
+    },
+    "NONLIVINGAREA_MEDI": {
+      "outlier_count": 17284,
+      "outlier_percent": 5.620611945588938,
+      "lower_bound": -0.03989999741315842,
+      "upper_bound": 0.0664999932050705
+    },
+    "TOTALAREA_MODE": {
+      "outlier_count": 141917,
+      "outlier_percent": 46.1502190165555,
+      "lower_bound": 0.06205000728368759,
+      "upper_bound": 0.07524999231100082
+    },
+    "OBS_30_CNT_SOCIAL_CIRCLE": {
+      "outlier_count": 19971,
+      "outlier_percent": 6.494401826276134,
+      "lower_bound": -3.0,
+      "upper_bound": 5.0
+    },
+    "DEF_30_CNT_SOCIAL_CIRCLE": {
+      "outlier_count": 35166,
+      "outlier_percent": 11.435688479436507,
+      "lower_bound": 0.0,
+      "upper_bound": 0.0
+    },
+    "OBS_60_CNT_SOCIAL_CIRCLE": {
+      "outlier_count": 19564,
+      "outlier_percent": 6.362048837277366,
+      "lower_bound": -3.0,
+      "upper_bound": 5.0
+    },
+    "DEF_60_CNT_SOCIAL_CIRCLE": {
+      "outlier_count": 25769,
+      "outlier_percent": 8.379862834175038,
+      "lower_bound": 0.0,
+      "upper_bound": 0.0
+    },
+    "DAYS_LAST_PHONE_CHANGE": {
+      "outlier_count": 435,
+      "outlier_percent": 0.14145835433529208,
+      "lower_bound": -3514.0,
+      "upper_bound": 1670.0
+    },
+    "FLAG_DOCUMENT_5": {
+      "outlier_count": 4648,
+      "outlier_percent": 1.5114906458630748,
+      "lower_bound": 0.0,
+      "upper_bound": 0.0
+    },
+    "FLAG_DOCUMENT_6": {
+      "outlier_count": 27078,
+      "outlier_percent": 8.80553866365756,
+      "lower_bound": 0.0,
+      "upper_bound": 0.0
+    },
+    "FLAG_DOCUMENT_8": {
+      "outlier_count": 25024,
+      "outlier_percent": 8.137595077899652,
+      "lower_bound": 0.0,
+      "upper_bound": 0.0
+    },
+    "FLAG_DOCUMENT_9": {
+      "outlier_count": 1198,
+      "outlier_percent": 0.389579559755586,
+      "lower_bound": 0.0,
+      "upper_bound": 0.0
+    },
+    "FLAG_DOCUMENT_11": {
+      "outlier_count": 1203,
+      "outlier_percent": 0.3912055178513939,
+      "lower_bound": 0.0,
+      "upper_bound": 0.0
+    },
+    "FLAG_DOCUMENT_13": {
+      "outlier_count": 1084,
+      "outlier_percent": 0.3525077151711646,
+      "lower_bound": 0.0,
+      "upper_bound": 0.0
+    },
+    "FLAG_DOCUMENT_14": {
+      "outlier_count": 903,
+      "outlier_percent": 0.2936480321029166,
+      "lower_bound": 0.0,
+      "upper_bound": 0.0
+    },
+    "FLAG_DOCUMENT_15": {
+      "outlier_count": 372,
+      "outlier_percent": 0.12097128232811183,
+      "lower_bound": 0.0,
+      "upper_bound": 0.0
+    },
+    "FLAG_DOCUMENT_16": {
+      "outlier_count": 3053,
+      "outlier_percent": 0.9928100133003372,
+      "lower_bound": 0.0,
+      "upper_bound": 0.0
+    },
+    "FLAG_DOCUMENT_18": {
+      "outlier_count": 2500,
+      "outlier_percent": 0.8129790479039775,
+      "lower_bound": 0.0,
+      "upper_bound": 0.0
+    },
+    "AMT_REQ_CREDIT_BUREAU_HOUR": {
+      "outlier_count": 1626,
+      "outlier_percent": 0.5287615727567468,
+      "lower_bound": 0.0,
+      "upper_bound": 0.0
+    },
+    "AMT_REQ_CREDIT_BUREAU_DAY": {
+      "outlier_count": 1489,
+      "outlier_percent": 0.48421032093160893,
+      "lower_bound": 0.0,
+      "upper_bound": 0.0
+    },
+    "AMT_REQ_CREDIT_BUREAU_WEEK": {
+      "outlier_count": 8536,
+      "outlier_percent": 2.7758356611633404,
+      "lower_bound": 0.0,
+      "upper_bound": 0.0
+    },
+    "AMT_REQ_CREDIT_BUREAU_MON": {
+      "outlier_count": 43759,
+      "outlier_percent": 14.230060062892058,
+      "lower_bound": 0.0,
+      "upper_bound": 0.0
+    },
+    "AMT_REQ_CREDIT_BUREAU_QRT": {
+      "outlier_count": 50575,
+      "outlier_percent": 16.446566139097463,
+      "lower_bound": 0.0,
+      "upper_bound": 0.0
+    },
+    "AMT_REQ_CREDIT_BUREAU_YEAR": {
+      "outlier_count": 7233,
+      "outlier_percent": 2.3521109813957874,
+      "lower_bound": -2.0,
+      "upper_bound": 6.0
+    },
+    "AMT_BALANCE_sum": {
+      "outlier_count": 6944,
+      "outlier_percent": 2.2581306034580875,
+      "lower_bound": -1205766.0,
+      "upper_bound": 2009610.0
+    },
+    "AMT_BALANCE_mean": {
+      "outlier_count": 6458,
+      "outlier_percent": 2.1000874765455544,
+      "lower_bound": -141038.28125,
+      "upper_bound": 235063.8125
+    },
+    "AMT_BALANCE_max": {
+      "outlier_count": 3984,
+      "outlier_percent": 1.2955634107397784,
+      "lower_bound": -277299.40625,
+      "upper_bound": 462165.6875
+    },
+    "AMT_CREDIT_LIMIT_ACTUAL_mean": {
+      "outlier_count": 6144,
+      "outlier_percent": 1.997977308128815,
+      "lower_bound": -193125.0,
+      "upper_bound": 529875.0
+    },
+    "CNT_DRAWINGS_CURRENT_sum": {
+      "outlier_count": 8666,
+      "outlier_percent": 2.8181105716543473,
+      "lower_bound": -10.5,
+      "upper_bound": 17.5
+    },
+    "CNT_DRAWINGS_ATM_CURRENT_sum": {
+      "outlier_count": 9458,
+      "outlier_percent": 3.0756623340303277,
+      "lower_bound": -4.5,
+      "upper_bound": 7.5
+    },
+    "SK_ID_PREV_count": {
+      "outlier_count": 6374,
+      "outlier_percent": 2.072771380535981,
+      "lower_bound": -13.5,
+      "upper_bound": 30.5
+    },
+    "DAYS_INSTALMENT_mean": {
+      "outlier_count": 622,
+      "outlier_percent": 0.20226918711850958,
+      "lower_bound": -2686.59521484375,
+      "upper_bound": 954.3570556640625
+    },
+    "DAYS_INSTALMENT_max": {
+      "outlier_count": 8733,
+      "outlier_percent": 2.839898410138174,
+      "lower_bound": -1139.5,
+      "upper_bound": 600.5
+    },
+    "DAYS_ENTRY_PAYMENT_mean": {
+      "outlier_count": 617,
+      "outlier_percent": 0.20064322902270162,
+      "lower_bound": -2690.02978515625,
+      "upper_bound": 935.1608276367188
+    },
+    "DAYS_ENTRY_PAYMENT_max": {
+      "outlier_count": 8675,
+      "outlier_percent": 2.8210372962268018,
+      "lower_bound": -1156.0,
+      "upper_bound": 596.0
+    },
+    "AMT_INSTALMENT_sum": {
+      "outlier_count": 7818,
+      "outlier_percent": 2.5423480786053183,
+      "lower_bound": -243095.8125,
+      "upper_bound": 495566.0
+    },
+    "AMT_INSTALMENT_mean": {
+      "outlier_count": 6534,
+      "outlier_percent": 2.1248020396018354,
+      "lower_bound": -11544.63671875,
+      "upper_bound": 38131.58203125
+    },
+    "AMT_PAYMENT_sum": {
+      "outlier_count": 8116,
+      "outlier_percent": 2.6392551811154723,
+      "lower_bound": -235489.15625,
+      "upper_bound": 479079.9375
+    },
+    "AMT_PAYMENT_mean": {
+      "outlier_count": 6957,
+      "outlier_percent": 2.262358094507188,
+      "lower_bound": -11733.912109375,
+      "upper_bound": 37496.16015625
+    }
+  },
+  "timestamp": "2026-08-10T11:47:31.058977"
+}

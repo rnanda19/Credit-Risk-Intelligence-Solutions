@@ -1,0 +1,20 @@
+{
+  "high_risk": {
+    "description": "High Risk - Requires Investigation",
+    "criteria": "Predicted probability \u2265 0.70",
+    "template": "Customer classified as HIGH RISK. Top contributing factors: [FEATURES]. Recommended action: Review credit history and recent transactions. Consider enhanced due diligence.",
+    "example": "Customer classified as HIGH RISK based on bureau signals. Top factors include: high number of recent inquiries, payment history issues, and recent delinquency. Recommend enhanced due diligence review."
+  },
+  "medium_risk": {
+    "description": "Medium Risk - Standard Review",
+    "criteria": "Predicted probability 0.45 - 0.70",
+    "template": "Customer classified as MEDIUM RISK. Risk factors: [FEATURES]. Recommended action: Standard review with focus on specific areas.",
+    "example": "Customer classified as MEDIUM RISK with mixed indicators. Some concerns in bureau data but stable employment and income. Standard review recommended."
+  },
+  "low_risk": {
+    "description": "Low Risk - Approved",
+    "criteria": "Predicted probability < 0.45",
+    "template": "Customer classified as LOW RISK. Favorable indicators: [FEATURES]. Recommended action: Standard approval process.",
+    "example": "Customer classified as LOW RISK with clean bureau history, stable employment, and low credit utilization. Standard approval recommended."
+  }
+}

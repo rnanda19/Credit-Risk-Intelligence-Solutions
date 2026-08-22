@@ -1,0 +1,19 @@
+{
+  "business_intelligence_dashboards": {
+    "dataset_name": "business_intelligence_dashboards",
+    "version": "1.0.0",
+    "execution_id": "CHUNK_12_20260811_184203_Problem 20: Bureau Risk Signal Integration",
+    "timestamp": "2026-08-11T18:42:03.058926",
+    "record_count": 4,
+    "column_count": 25,
+    "data_owner": "Business Intelligence & Risk Analytics Team",
+    "sensitivity_level": "CONFIDENTIAL",
+    "changes_summary": {
+      "dashboards_created": 4,
+      "kpis_tracked": 35,
+      "dashboard_audience": "60+ users",
+      "refresh_frequency": "Real-time to Daily"
+    },
+    "checksum": null
+  }
+}

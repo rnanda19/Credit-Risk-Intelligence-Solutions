@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-08-11T22:57:29.154588",
+  "key_findings": [
+    "Model probabilities successfully calibrated with Brier score improvement of 89.2%",
+    "Optimal balanced threshold identified at 1.0000 maximizing F1-score",
+    "Calibrated probabilities now more reliable for risk assessment and decision-making",
+    "Cost-benefit analysis shows trade-offs between precision (false positives) and recall (false negatives)"
+  ],
+  "recommended_threshold_selection": {
+    "default": {
+      "strategy": "Balanced",
+      "threshold": 1.0,
+      "reason": "Maximizes F1-score, best overall performance"
+    },
+    "risk_averse": {
+      "strategy": "Conservative",
+      "threshold": 0.7,
+      "reason": "Reduce false positives, higher precision, safer lending"
+    },
+    "growth_focused": {
+      "strategy": "Aggressive",
+      "threshold": 0.3,
+      "reason": "Maximize approvals, higher recall, capture more opportunities"
+    }
+  },
+  "business_recommendations": [
+    "Use balanced threshold (0.45) as default for most lending decisions",
+    "Apply conservative threshold (0.70) for high-value loans or risk-sensitive portfolios",
+    "Consider aggressive threshold (0.30) for market expansion or acquisition strategies",
+    "Monitor cost implications: balanced strategy offers best cost-benefit balance",
+    "Implement A/B testing to validate threshold selection with real business outcomes"
+  ],
+  "risk_mitigation": [
+    "Calibration improves probability reliability but does not change underlying model quality",
+    "Monitor model drift to ensure calibration remains valid over time",
+    "Re-calibrate model periodically (quarterly/semi-annually) with fresh data",
+    "Validate threshold effectiveness against actual default rates in production",
+    "Consider alternative strategies if business costs change (e.g., FP cost < FN cost)"
+  ]
+}

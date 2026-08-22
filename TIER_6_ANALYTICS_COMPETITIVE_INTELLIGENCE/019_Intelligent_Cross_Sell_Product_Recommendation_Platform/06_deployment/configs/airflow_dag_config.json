@@ -1,0 +1,195 @@
+{
+  "metadata": {
+    "dag_id": "deep_crosssell_production_v1_0",
+    "description": "Deep Cross-Sell & Recommendations | Enterprise Production Pipeline",
+    "owner": "data-science-team",
+    "owner_email": "data-science@enterprise.com",
+    "version": "1.0.0",
+    "created_date": "2026-08-02T21:36:14.428028",
+    "environment": "production"
+  },
+  "scheduling": {
+    "schedule_interval": "0 2 1 * *",
+    "start_date": "2024-01-01",
+    "end_date": null,
+    "catchup": false,
+    "max_active_runs": 1,
+    "concurrency": 1
+  },
+  "tags": [
+    "production",
+    "financial",
+    "cross-sell",
+    "customer-analytics",
+    "compliance"
+  ],
+  "default_view": "graph",
+  "doc_md": "\n# Deep Cross-Sell Analytics Pipeline\n\n## Purpose\nAnalyze customer propensity for cross-sell products using integrated data from 10 CSV sources.\nGenerate risk-adjusted propensity scores, segment customers into 4 cohorts, and produce\nactionable personalized recommendations with full compliance validation.\n\n## Data Sources (7 Core Files)\n- **application_train.csv** (1.03 MB) - Customer demographics, credit profile, income\n- **previous_application.csv** (386.21 MB) - Historical application records, approval rates\n- **credit_card_balance.csv** (404.91 MB) - Credit card usage, spending patterns, utilization\n- **bureau.csv** (162.14 MB) - Credit bureau accounts, debt, delinquency status\n- **bureau_balance.csv** (358.45 MB) - Payment history, delinquency patterns, payment status\n- **installments_payments.csv** (689.12 MB) - Installment payment compliance, on-time rates\n- **POS_CASH_balance.csv** (374.32 MB) - Point-of-sale transactions, ATM withdrawals\n\n**Total Data Volume**: 2.8 GB integrated dataset\n\n## Processing Phases\n1. **PHASE 1**: Load 7 CSV files with adaptive path discovery\n2. **PHASE 2**: Aggregate by SK_ID_CURR (primary key)\n3. **PHASE 3**: Engineer 10 deep cross-sell features\n4. **PHASE 4**: Segment into 4 customer cohorts, risk-adjust propensity\n5. **PHASE 5**: Validate compliance (Fair Lending, CECL, Data Governance)\n6. **PHASE 6**: Generate outputs (CSV, Excel, Word, HTML, PNG, JSON)\n7. **PHASE 7**: Deploy with orchestration & monitoring\n\n## Compliance Frameworks\n- **Basel III**: Capital adequacy ratios, risk weighting\n- **CECL**: Expected Credit Loss (PD/LGD/EAD calculation)\n- **Fair Lending**: 80% disparate impact rule, demographic parity\n- **KYC/AML**: Transaction monitoring, suspicious activity detection\n- **Data Governance**: 99.5% quality threshold, outlier detection\n\n## Output Deliverables\n- CSV: 5 datasets\n- Excel: 6-sheet workbook\n- Word: SMART recommendations report\n- HTML: Interactive web dashboard\n- PNG: 4-panel visualization\n- JSON: Audit trail files\n- Logs: Full execution logs\n            ",
+  "tasks": {
+    "task_1_preflight_validation": {
+      "task_id": "preflight_validation",
+      "operator": "PythonOperator",
+      "description": "Pre-flight validation: check CSV files exist, folder permissions, system resources",
+      "timeout_minutes": 10,
+      "retry_limit": 3,
+      "retry_delay_minutes": 5,
+      "sla_minutes": 10
+    },
+    "task_2_load_and_aggregate": {
+      "task_id": "load_and_aggregate_data",
+      "operator": "PythonOperator",
+      "description": "Load 7 CSV files with adaptive path discovery, aggregate by SK_ID_CURR",
+      "timeout_minutes": 60,
+      "retry_limit": 2,
+      "retry_delay_minutes": 10,
+      "sla_minutes": 60
+    },
+    "task_3_feature_engineering": {
+      "task_id": "feature_engineering_and_scoring",
+      "operator": "PythonOperator",
+      "description": "Engineer 10 cross-sell features, calculate base propensity",
+      "timeout_minutes": 45,
+      "retry_limit": 2,
+      "retry_delay_minutes": 10,
+      "sla_minutes": 45
+    },
+    "task_4_segmentation_and_scoring": {
+      "task_id": "customer_segmentation",
+      "operator": "PythonOperator",
+      "description": "Segment customers into 4 groups, assign lifecycle stages, risk-adjust propensity",
+      "timeout_minutes": 30,
+      "retry_limit": 2,
+      "retry_delay_minutes": 10,
+      "sla_minutes": 30
+    },
+    "task_5_compliance_validation": {
+      "task_id": "compliance_validation",
+      "operator": "PythonOperator",
+      "description": "Validate Fair Lending parity, CECL components, Data Governance standards",
+      "timeout_minutes": 30,
+      "retry_limit": 1,
+      "retry_delay_minutes": 5,
+      "sla_minutes": 30,
+      "critical": true
+    },
+    "task_6_output_generation": {
+      "task_id": "generate_outputs",
+      "operator": "PythonOperator",
+      "description": "Export to CSV, Excel, Word, HTML, PNG, JSON with audit trails",
+      "timeout_minutes": 45,
+      "retry_limit": 2,
+      "retry_delay_minutes": 10,
+      "sla_minutes": 45
+    },
+    "task_7_quality_assurance": {
+      "task_id": "quality_assurance",
+      "operator": "PythonOperator",
+      "description": "Validate output files, check data integrity, confirm all deliverables present",
+      "timeout_minutes": 20,
+      "retry_limit": 1,
+      "retry_delay_minutes": 5,
+      "sla_minutes": 20
+    },
+    "task_8_send_notification": {
+      "task_id": "send_completion_notification",
+      "operator": "EmailOperator",
+      "description": "Send email notification on success with outputs summary and metrics",
+      "timeout_minutes": 5,
+      "retry_limit": 2,
+      "sla_minutes": 5
+    }
+  },
+  "task_dependencies": [
+    [
+      "preflight_validation",
+      "load_and_aggregate_data"
+    ],
+    [
+      "load_and_aggregate_data",
+      "feature_engineering_and_scoring"
+    ],
+    [
+      "feature_engineering_and_scoring",
+      "customer_segmentation"
+    ],
+    [
+      "customer_segmentation",
+      "compliance_validation"
+    ],
+    [
+      "compliance_validation",
+      "generate_outputs"
+    ],
+    [
+      "generate_outputs",
+      "quality_assurance"
+    ],
+    [
+      "quality_assurance",
+      "send_completion_notification"
+    ]
+  ],
+  "monitoring": {
+    "alert_on_failure": true,
+    "alert_on_sla_miss": true,
+    "alert_email": "data-science-alerts@enterprise.com",
+    "slack_channel": "#data-science-alerts",
+    "log_retention_days": 90,
+    "metrics_tracking": [
+      "execution_time_minutes",
+      "data_quality_score_pct",
+      "compliance_status",
+      "task_duration_breakdown"
+    ]
+  },
+  "sla": {
+    "total_pipeline_timeout_minutes": 240,
+    "execution_target_minutes": 150,
+    "execution_p95_minutes": 180,
+    "success_rate_target_pct": 99.0,
+    "availability_target_pct": 99.9,
+    "data_quality_target_pct": 99.5
+  },
+  "resource_limits": {
+    "cpu_cores": 8,
+    "memory_gb": 16,
+    "disk_gb": 500,
+    "network_bandwidth_mbps": 1000,
+    "database_connections": 5
+  },
+  "notifications": {
+    "success": {
+      "type": [
+        "email",
+        "slack"
+      ],
+      "recipients": [
+        "data-science@enterprise.com"
+      ],
+      "slack_channel": "#data-science-alerts"
+    },
+    "failure": {
+      "type": [
+        "email",
+        "slack"
+      ],
+      "recipients": [
+        "data-science@enterprise.com",
+        "compliance@enterprise.com"
+      ],
+      "slack_channel": "#data-science-alerts"
+    }
+  },
+  "deployment_checklist": [
+    "\u2713 CSV data files accessible at required paths",
+    "\u2713 Output folders have write permissions",
+    "\u2713 Sufficient disk space available (min 50 GB)",
+    "\u2713 System memory adequate (min 8 GB)",
+    "\u2713 Database connectivity verified",
+    "\u2713 Airflow environment configured",
+    "\u2713 Email/Slack notifications enabled",
+    "\u2713 Monitoring dashboards deployed",
+    "\u2713 Backup systems configured",
+    "\u2713 Documentation reviewed"
+  ]
+}
