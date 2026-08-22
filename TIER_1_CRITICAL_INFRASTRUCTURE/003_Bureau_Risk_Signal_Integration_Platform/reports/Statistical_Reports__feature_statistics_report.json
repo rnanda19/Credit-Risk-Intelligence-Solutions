@@ -1,0 +1,876 @@
+{
+  "timestamp": "2026-08-11T17:21:31.640395",
+  "chunk": "CHUNK_03",
+  "problem": "Problem 20: Bureau Risk Signal Integration",
+  "execution_id": "CHUNK_03_20260811_172122_Problem 20: Bureau Risk Signal Integration",
+  "data_owner": "Risk Analytics & Data Governance Team",
+  "data_quality": {
+    "records": 307511,
+    "columns": 128,
+    "numeric_features": 110,
+    "categorical_features": 16,
+    "missing_values_total": 0,
+    "missing_percentage": 0.0,
+    "duplicate_rows": 0,
+    "memory_usage_mb": 536.557126045227
+  },
+  "descriptive_statistics": {
+    "CNT_CHILDREN": {
+      "count": 307511,
+      "mean": 0.40745534306089864,
+      "std": 0.6837424343740005,
+      "min": 0.0,
+      "q25": 0.0,
+      "q50": 0.0,
+      "q75": 1.0,
+      "max": 2.5,
+      "skewness": 1.4784858360440718,
+      "kurtosis": 0.9791821993752254,
+      "variance": 0.4675037165636844
+    },
+    "AMT_INCOME_TOTAL": {
+      "count": 307511,
+      "mean": 162626.94787742553,
+      "std": 73303.15092696987,
+      "min": 25650.0,
+      "q25": 112500.0,
+      "q50": 147150.0,
+      "q75": 202500.0,
+      "max": 337500.0,
+      "skewness": 0.7836841620733194,
+      "kurtosis": -0.037127894234834535,
+      "variance": 5373351935.8221245
+    },
+    "AMT_CREDIT": {
+      "count": 307511,
+      "mean": 592313.0370539591,
+      "std": 380316.2405369237,
+      "min": 45000.0,
+      "q25": 270000.0,
+      "q50": 513531.0,
+      "q75": 808650.0,
+      "max": 1616625.0,
+      "skewness": 0.8807113463530722,
+      "kurtosis": 0.068393371885481,
+      "variance": 144640442816.1392
+    },
+    "AMT_ANNUITY": {
+      "count": 307511,
+      "mean": 26796.685360848882,
+      "std": 13282.335293319586,
+      "min": 0.0,
+      "q25": 16524.0,
+      "q50": 24903.0,
+      "q75": 34596.0,
+      "max": 61704.0,
+      "skewness": 0.7050240636500983,
+      "kurtosis": -0.014945279719880578,
+      "variance": 176420430.8441631
+    },
+    "AMT_GOODS_PRICE": {
+      "count": 307511,
+      "mean": 527448.5103134522,
+      "std": 337375.50585761695,
+      "min": 0.0,
+      "q25": 238500.0,
+      "q50": 450000.0,
+      "q75": 679500.0,
+      "max": 1341000.0,
+      "skewness": 0.8431589019674097,
+      "kurtosis": -0.12384209822230785,
+      "variance": 113822231952.68294
+    },
+    "REGION_POPULATION_RELATIVE": {
+      "count": 307511,
+      "mean": 0.020434273547938114,
+      "std": 0.012376982177205904,
+      "min": 0.00029,
+      "q25": 0.010006,
+      "q50": 0.01885,
+      "q75": 0.028663,
+      "max": 0.0566485,
+      "skewness": 0.8558693378049254,
+      "kurtosis": 0.49635921322328214,
+      "variance": 0.0001531896878148726
+    },
+    "DAYS_BIRTH": {
+      "count": 307511,
+      "mean": -16036.995066843137,
+      "std": 4363.98863178556,
+      "min": -25229.0,
+      "q25": -19682.0,
+      "q50": -15750.0,
+      "q75": -12413.0,
+      "max": -7489.0,
+      "skewness": -0.11567274746102392,
+      "kurtosis": -1.0491282231120045,
+      "variance": 19044396.7783536
+    },
+    "DAYS_EMPLOYED": {
+      "count": 307511,
+      "mean": -1203.542427750552,
+      "std": 2732.404968862785,
+      "min": -6466.5,
+      "q25": -2760.0,
+      "q50": -1213.0,
+      "q75": -289.0,
+      "max": 3417.5,
+      "skewness": 0.16648552966279961,
+      "kurtosis": -0.3336125657374702,
+      "variance": 7466036.9138660375
+    },
+    "DAYS_REGISTRATION": {
+      "count": 307511,
+      "mean": -4983.512525703687,
+      "std": 3513.9341170764733,
+      "min": -15683.75,
+      "q25": -7479.5,
+      "q50": -4504.0,
+      "q75": -2010.0,
+      "max": 0.0,
+      "skewness": -0.5709579747872473,
+      "kurtosis": -0.41816130881797964,
+      "variance": 12347732.979154015
+    },
+    "DAYS_ID_PUBLISH": {
+      "count": 307511,
+      "mean": -2994.2023732484367,
+      "std": 1509.4504190030232,
+      "min": -7197.0,
+      "q25": -4299.0,
+      "q50": -3254.0,
+      "q75": -1720.0,
+      "max": 0.0,
+      "skewness": 0.34932578922509205,
+      "kurtosis": -1.1068094092801724,
+      "variance": 2278440.567428402
+    },
+    "OWN_CAR_AGE": {
+      "count": 307511,
+      "mean": 2.851802049357584,
+      "std": 4.6513682388200355,
+      "min": 0.0,
+      "q25": 0.0,
+      "q50": 0.0,
+      "q75": 5.0,
+      "max": 12.5,
+      "skewness": 1.2672496352426708,
+      "kurtosis": -0.10575553112015612,
+      "variance": 21.635226493103797
+    },
+    "FLAG_MOBIL": {
+      "count": 307511,
+      "mean": 1.0,
+      "std": 0.0,
+      "min": 1.0,
+      "q25": 1.0,
+      "q50": 1.0,
+      "q75": 1.0,
+      "max": 1.0,
+      "skewness": NaN,
+      "kurtosis": NaN,
+      "variance": 0.0
+    },
+    "FLAG_EMP_PHONE": {
+      "count": 307511,
+      "mean": 1.0,
+      "std": 0.0,
+      "min": 1.0,
+      "q25": 1.0,
+      "q50": 1.0,
+      "q75": 1.0,
+      "max": 1.0,
+      "skewness": NaN,
+      "kurtosis": NaN,
+      "variance": 0.0
+    },
+    "FLAG_WORK_PHONE": {
+      "count": 307511,
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "q25": 0.0,
+      "q50": 0.0,
+      "q75": 0.0,
+      "max": 0.0,
+      "skewness": NaN,
+      "kurtosis": NaN,
+      "variance": 0.0
+    },
+    "FLAG_CONT_MOBILE": {
+      "count": 307511,
+      "mean": 1.0,
+      "std": 0.0,
+      "min": 1.0,
+      "q25": 1.0,
+      "q50": 1.0,
+      "q75": 1.0,
+      "max": 1.0,
+      "skewness": NaN,
+      "kurtosis": NaN,
+      "variance": 0.0
+    },
+    "FLAG_PHONE": {
+      "count": 307511,
+      "mean": 0.28106636835755466,
+      "std": 0.44952054685675835,
+      "min": 0.0,
+      "q25": 0.0,
+      "q50": 0.0,
+      "q75": 1.0,
+      "max": 1.0,
+      "skewness": 0.9740777775392258,
+      "kurtosis": -1.0511724833042426,
+      "variance": 0.20206872204639909
+    },
+    "FLAG_EMAIL": {
+      "count": 307511,
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "q25": 0.0,
+      "q50": 0.0,
+      "q75": 0.0,
+      "max": 0.0,
+      "skewness": NaN,
+      "kurtosis": NaN,
+      "variance": 0.0
+    },
+    "CNT_FAM_MEMBERS": {
+      "count": 307511,
+      "mean": 2.1436127488122376,
+      "std": 0.8796418603868801,
+      "min": 0.5,
+      "q25": 2.0,
+      "q50": 2.0,
+      "q75": 3.0,
+      "max": 4.5,
+      "skewness": 0.6760870735027166,
+      "kurtosis": 0.04852421534612095,
+      "variance": 0.7737698025448914
+    },
+    "REGION_RATING_CLIENT": {
+      "count": 307511,
+      "mean": 2.0,
+      "std": 0.0,
+      "min": 2.0,
+      "q25": 2.0,
+      "q50": 2.0,
+      "q75": 2.0,
+      "max": 2.0,
+      "skewness": NaN,
+      "kurtosis": NaN,
+      "variance": 0.0
+    },
+    "REGION_RATING_CLIENT_W_CITY": {
+      "count": 307511,
+      "mean": 2.0,
+      "std": 0.0,
+      "min": 2.0,
+      "q25": 2.0,
+      "q50": 2.0,
+      "q75": 2.0,
+      "max": 2.0,
+      "skewness": NaN,
+      "kurtosis": NaN,
+      "variance": 0.0
+    },
+    "HOUR_APPR_PROCESS_START": {
+      "count": 307511,
+      "mean": 12.068069109722904,
+      "std": 3.23843297592483,
+      "min": 4.0,
+      "q25": 10.0,
+      "q50": 12.0,
+      "q75": 14.0,
+      "max": 20.0,
+      "skewness": 0.0005171779436432524,
+      "kurtosis": -0.35849006134389727,
+      "variance": 10.48744813955735
+    },
+    "REG_REGION_NOT_LIVE_REGION": {
+      "count": 307511,
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "q25": 0.0,
+      "q50": 0.0,
+      "q75": 0.0,
+      "max": 0.0,
+      "skewness": NaN,
+      "kurtosis": NaN,
+      "variance": 0.0
+    },
+    "REG_REGION_NOT_WORK_REGION": {
+      "count": 307511,
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "q25": 0.0,
+      "q50": 0.0,
+      "q75": 0.0,
+      "max": 0.0,
+      "skewness": NaN,
+      "kurtosis": NaN,
+      "variance": 0.0
+    },
+    "LIVE_REGION_NOT_WORK_REGION": {
+      "count": 307511,
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "q25": 0.0,
+      "q50": 0.0,
+      "q75": 0.0,
+      "max": 0.0,
+      "skewness": NaN,
+      "kurtosis": NaN,
+      "variance": 0.0
+    },
+    "REG_CITY_NOT_LIVE_CITY": {
+      "count": 307511,
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "q25": 0.0,
+      "q50": 0.0,
+      "q75": 0.0,
+      "max": 0.0,
+      "skewness": NaN,
+      "kurtosis": NaN,
+      "variance": 0.0
+    }
+  },
+  "normality_tests": {
+    "CNT_CHILDREN": {
+      "statistic": 0.6367197412845088,
+      "p_value": 2.147572461562772e-73,
+      "is_normal": false,
+      "test_method": "Shapiro-Wilk",
+      "sample_size": 5000
+    },
+    "AMT_INCOME_TOTAL": {
+      "statistic": 0.9384047444830251,
+      "p_value": 2.092964311205681e-41,
+      "is_normal": false,
+      "test_method": "Shapiro-Wilk",
+      "sample_size": 5000
+    },
+    "AMT_CREDIT": {
+      "statistic": 0.92029623334517,
+      "p_value": 1.8064894229299844e-45,
+      "is_normal": false,
+      "test_method": "Shapiro-Wilk",
+      "sample_size": 5000
+    },
+    "AMT_ANNUITY": {
+      "statistic": 0.955818408263549,
+      "p_value": 1.8561581467429448e-36,
+      "is_normal": false,
+      "test_method": "Shapiro-Wilk",
+      "sample_size": 5000
+    },
+    "AMT_GOODS_PRICE": {
+      "statistic": 0.9120213821817718,
+      "p_value": 4.435407033217276e-47,
+      "is_normal": false,
+      "test_method": "Shapiro-Wilk",
+      "sample_size": 5000
+    },
+    "REGION_POPULATION_RELATIVE": {
+      "statistic": 0.9301958259171274,
+      "p_value": 2.3589460775051547e-43,
+      "is_normal": false,
+      "test_method": "Shapiro-Wilk",
+      "sample_size": 5000
+    },
+    "DAYS_BIRTH": {
+      "statistic": 0.9670128381819136,
+      "p_value": 2.2306265928649233e-32,
+      "is_normal": false,
+      "test_method": "Shapiro-Wilk",
+      "sample_size": 5000
+    },
+    "DAYS_EMPLOYED": {
+      "statistic": 0.9215377380263264,
+      "p_value": 3.236165770010963e-45,
+      "is_normal": false,
+      "test_method": "Shapiro-Wilk",
+      "sample_size": 5000
+    },
+    "DAYS_REGISTRATION": {
+      "statistic": 0.9515163661649052,
+      "p_value": 8.280397856434468e-38,
+      "is_normal": false,
+      "test_method": "Shapiro-Wilk",
+      "sample_size": 5000
+    },
+    "DAYS_ID_PUBLISH": {
+      "statistic": 0.940405306136423,
+      "p_value": 6.716120500901721e-41,
+      "is_normal": false,
+      "test_method": "Shapiro-Wilk",
+      "sample_size": 5000
+    },
+    "OWN_CAR_AGE": {
+      "statistic": 0.6266634738388934,
+      "p_value": 5.8404412660187704e-74,
+      "is_normal": false,
+      "test_method": "Shapiro-Wilk",
+      "sample_size": 5000
+    },
+    "FLAG_MOBIL": {
+      "statistic": NaN,
+      "p_value": NaN,
+      "is_normal": false,
+      "test_method": "Shapiro-Wilk",
+      "sample_size": 5000
+    },
+    "FLAG_EMP_PHONE": {
+      "statistic": NaN,
+      "p_value": NaN,
+      "is_normal": false,
+      "test_method": "Shapiro-Wilk",
+      "sample_size": 5000
+    },
+    "FLAG_WORK_PHONE": {
+      "statistic": NaN,
+      "p_value": NaN,
+      "is_normal": false,
+      "test_method": "Shapiro-Wilk",
+      "sample_size": 5000
+    },
+    "FLAG_CONT_MOBILE": {
+      "statistic": NaN,
+      "p_value": NaN,
+      "is_normal": false,
+      "test_method": "Shapiro-Wilk",
+      "sample_size": 5000
+    },
+    "FLAG_PHONE": {
+      "statistic": 0.5642129052038173,
+      "p_value": 3.3203588460550882e-77,
+      "is_normal": false,
+      "test_method": "Shapiro-Wilk",
+      "sample_size": 5000
+    },
+    "FLAG_EMAIL": {
+      "statistic": NaN,
+      "p_value": NaN,
+      "is_normal": false,
+      "test_method": "Shapiro-Wilk",
+      "sample_size": 5000
+    },
+    "CNT_FAM_MEMBERS": {
+      "statistic": 0.8469978340284352,
+      "p_value": 1.233192657084996e-56,
+      "is_normal": false,
+      "test_method": "Shapiro-Wilk",
+      "sample_size": 5000
+    },
+    "REGION_RATING_CLIENT": {
+      "statistic": NaN,
+      "p_value": NaN,
+      "is_normal": false,
+      "test_method": "Shapiro-Wilk",
+      "sample_size": 5000
+    },
+    "REGION_RATING_CLIENT_W_CITY": {
+      "statistic": NaN,
+      "p_value": NaN,
+      "is_normal": false,
+      "test_method": "Shapiro-Wilk",
+      "sample_size": 5000
+    }
+  },
+  "target_analysis": {
+    "total_records": 307511,
+    "class_distribution": {
+      "0": 282686,
+      "1": 24825
+    },
+    "class_balance": {
+      "0": 91.92711805431351,
+      "1": 8.072881945686495
+    },
+    "target_mean": 0.08072881945686496,
+    "target_std": 0.27241864564839396,
+    "imbalance_ratio": 11.387150050352467
+  },
+  "feature_importance": {
+    "CNT_CHILDREN": {
+      "correlation": 0.018810349860316728,
+      "p_value": 1.7728702702455735e-25,
+      "significant": true,
+      "importance_rank": 8
+    },
+    "AMT_INCOME_TOTAL": {
+      "correlation": 0.022463450468059018,
+      "p_value": 1.259812788635105e-35,
+      "significant": true,
+      "importance_rank": 7
+    },
+    "AMT_CREDIT": {
+      "correlation": 0.029467184422696188,
+      "p_value": 4.790454059234955e-60,
+      "significant": true,
+      "importance_rank": 6
+    },
+    "AMT_ANNUITY": {
+      "correlation": 0.0095722696015941,
+      "p_value": 1.1066744256741115e-07,
+      "significant": true,
+      "importance_rank": 9
+    },
+    "AMT_GOODS_PRICE": {
+      "correlation": 0.03853054185873276,
+      "p_value": 2.3102442409035602e-101,
+      "significant": true,
+      "importance_rank": 4
+    },
+    "REGION_POPULATION_RELATIVE": {
+      "correlation": 0.036322827354189714,
+      "p_value": 2.75110590920519e-90,
+      "significant": true,
+      "importance_rank": 5
+    },
+    "DAYS_BIRTH": {
+      "correlation": 0.07823930830982696,
+      "p_value": 0.0,
+      "significant": true,
+      "importance_rank": 1
+    },
+    "DAYS_EMPLOYED": {
+      "correlation": 0.008980829165131661,
+      "p_value": 6.349236303698644e-07,
+      "significant": true,
+      "importance_rank": 19
+    },
+    "DAYS_REGISTRATION": {
+      "correlation": 0.04198070472599637,
+      "p_value": 5.596554201094581e-120,
+      "significant": true,
+      "importance_rank": 3
+    },
+    "DAYS_ID_PUBLISH": {
+      "correlation": 0.05145717260705747,
+      "p_value": 2.5275238143681347e-179,
+      "significant": true,
+      "importance_rank": 2
+    },
+    "OWN_CAR_AGE": {
+      "correlation": 0.0041241577019960965,
+      "p_value": 0.022195974241882636,
+      "significant": true,
+      "importance_rank": 21
+    },
+    "FLAG_MOBIL": {
+      "correlation": NaN,
+      "p_value": NaN,
+      "significant": false,
+      "importance_rank": 10
+    },
+    "FLAG_EMP_PHONE": {
+      "correlation": NaN,
+      "p_value": NaN,
+      "significant": false,
+      "importance_rank": 11
+    },
+    "FLAG_WORK_PHONE": {
+      "correlation": NaN,
+      "p_value": NaN,
+      "significant": false,
+      "importance_rank": 12
+    },
+    "FLAG_CONT_MOBILE": {
+      "correlation": NaN,
+      "p_value": NaN,
+      "significant": false,
+      "importance_rank": 13
+    },
+    "FLAG_PHONE": {
+      "correlation": 0.023806272330357526,
+      "p_value": 8.400750521057592e-40,
+      "significant": true,
+      "importance_rank": 14
+    },
+    "FLAG_EMAIL": {
+      "correlation": NaN,
+      "p_value": NaN,
+      "significant": false,
+      "importance_rank": 15
+    },
+    "CNT_FAM_MEMBERS": {
+      "correlation": 0.00858085375771373,
+      "p_value": 1.9506882132778646e-06,
+      "significant": true,
+      "importance_rank": 20
+    },
+    "REGION_RATING_CLIENT": {
+      "correlation": NaN,
+      "p_value": NaN,
+      "significant": false,
+      "importance_rank": 16
+    },
+    "REGION_RATING_CLIENT_W_CITY": {
+      "correlation": NaN,
+      "p_value": NaN,
+      "significant": false,
+      "importance_rank": 17
+    },
+    "HOUR_APPR_PROCESS_START": {
+      "correlation": 0.024272395215721443,
+      "p_value": 2.62218973759535e-41,
+      "significant": true,
+      "importance_rank": 18
+    },
+    "REG_REGION_NOT_LIVE_REGION": {
+      "correlation": NaN,
+      "p_value": NaN,
+      "significant": false,
+      "importance_rank": 22
+    },
+    "REG_REGION_NOT_WORK_REGION": {
+      "correlation": NaN,
+      "p_value": NaN,
+      "significant": false,
+      "importance_rank": 23
+    },
+    "LIVE_REGION_NOT_WORK_REGION": {
+      "correlation": NaN,
+      "p_value": NaN,
+      "significant": false,
+      "importance_rank": 24
+    },
+    "REG_CITY_NOT_LIVE_CITY": {
+      "correlation": NaN,
+      "p_value": NaN,
+      "significant": false,
+      "importance_rank": 25
+    },
+    "REG_CITY_NOT_WORK_CITY": {
+      "correlation": NaN,
+      "p_value": NaN,
+      "significant": false,
+      "importance_rank": 26
+    },
+    "LIVE_CITY_NOT_WORK_CITY": {
+      "correlation": NaN,
+      "p_value": NaN,
+      "significant": false,
+      "importance_rank": 27
+    },
+    "EXT_SOURCE_1": {
+      "correlation": 0.06469813333590493,
+      "p_value": 1.783408207392271e-282,
+      "significant": true,
+      "importance_rank": 30
+    },
+    "EXT_SOURCE_2": {
+      "correlation": 0.15902967651017436,
+      "p_value": 0.0,
+      "significant": true,
+      "importance_rank": 28
+    },
+    "EXT_SOURCE_3": {
+      "correlation": 0.1195719284871247,
+      "p_value": 0.0,
+      "significant": true,
+      "importance_rank": 29
+    }
+  },
+  "missing_analysis": {
+    "total_missing": 0,
+    "missing_by_column": {},
+    "missing_percentage": 0.0,
+    "columns_with_missing": 0,
+    "validation": "PASS"
+  },
+  "categorical_analysis": {
+    "NAME_CONTRACT_TYPE": {
+      "unique_values": 2,
+      "top_5_values": {
+        "Cash loans": 278232,
+        "Revolving loans": 29279
+      },
+      "most_common": "Cash loans",
+      "entropy": 0.31443537258433596
+    },
+    "CODE_GENDER": {
+      "unique_values": 3,
+      "top_5_values": {
+        "F": 202448,
+        "M": 105059,
+        "XNA": 4
+      },
+      "most_common": "F",
+      "entropy": 0.6422732076761885
+    },
+    "FLAG_OWN_CAR": {
+      "unique_values": 2,
+      "top_5_values": {
+        "N": 202924,
+        "Y": 104587
+      },
+      "most_common": "N",
+      "entropy": 0.6411071928785907
+    },
+    "FLAG_OWN_REALTY": {
+      "unique_values": 2,
+      "top_5_values": {
+        "Y": 213312,
+        "N": 94199
+      },
+      "most_common": "Y",
+      "entropy": 0.6161304285488471
+    },
+    "NAME_TYPE_SUITE": {
+      "unique_values": 8,
+      "top_5_values": {
+        "Unaccompanied": 248526,
+        "Family": 40149,
+        "Spouse, partner": 11370,
+        "Children": 3267,
+        "Other_B": 1770
+      },
+      "most_common": "Unaccompanied",
+      "entropy": 0.6835459768935163
+    },
+    "NAME_INCOME_TYPE": {
+      "unique_values": 8,
+      "top_5_values": {
+        "Working": 158774,
+        "Commercial associate": 71617,
+        "Pensioner": 55362,
+        "State servant": 21703,
+        "Unemployed": 22
+      },
+      "most_common": "Working",
+      "entropy": 1.178226065071942
+    },
+    "NAME_EDUCATION_TYPE": {
+      "unique_values": 5,
+      "top_5_values": {
+        "Secondary / secondary special": 218391,
+        "Higher education": 74863,
+        "Incomplete higher": 10277,
+        "Lower secondary": 3816,
+        "Academic degree": 164
+      },
+      "most_common": "Secondary / secondary special",
+      "entropy": 0.7590683935392101
+    },
+    "NAME_FAMILY_STATUS": {
+      "unique_values": 6,
+      "top_5_values": {
+        "Married": 196432,
+        "Single / not married": 45444,
+        "Civil marriage": 29775,
+        "Separated": 19770,
+        "Widow": 16088
+      },
+      "most_common": "Married",
+      "entropy": 1.1258009716796697
+    },
+    "NAME_HOUSING_TYPE": {
+      "unique_values": 6,
+      "top_5_values": {
+        "House / apartment": 272868,
+        "With parents": 14840,
+        "Municipal apartment": 11183,
+        "Rented apartment": 4881,
+        "Office apartment": 2617
+      },
+      "most_common": "House / apartment",
+      "entropy": 0.4996677958451887
+    },
+    "OCCUPATION_TYPE": {
+      "unique_values": 19,
+      "top_5_values": {
+        "Unknown": 96391,
+        "Laborers": 55186,
+        "Sales staff": 32102,
+        "Core staff": 27570,
+        "Managers": 21371
+      },
+      "most_common": "Unknown",
+      "entropy": 2.19280597230523
+    },
+    "WEEKDAY_APPR_PROCESS_START": {
+      "unique_values": 7,
+      "top_5_values": {
+        "TUESDAY": 53901,
+        "WEDNESDAY": 51934,
+        "MONDAY": 50714,
+        "THURSDAY": 50591,
+        "FRIDAY": 50338
+      },
+      "most_common": "TUESDAY",
+      "entropy": 1.8938356516191364
+    },
+    "ORGANIZATION_TYPE": {
+      "unique_values": 58,
+      "top_5_values": {
+        "Business Entity Type 3": 67992,
+        "XNA": 55374,
+        "Self-employed": 38412,
+        "Other": 16683,
+        "Medicine": 11193
+      },
+      "most_common": "Business Entity Type 3",
+      "entropy": 2.843498789266491
+    },
+    "FONDKAPREMONT_MODE": {
+      "unique_values": 5,
+      "top_5_values": {
+        "Unknown": 210295,
+        "reg oper account": 73830,
+        "reg oper spec account": 12080,
+        "not specified": 5687,
+        "org spec account": 5619
+      },
+      "most_common": "Unknown",
+      "entropy": 0.8764998784955058
+    },
+    "HOUSETYPE_MODE": {
+      "unique_values": 4,
+      "top_5_values": {
+        "Unknown": 154297,
+        "block of flats": 150503,
+        "specific housing": 1499,
+        "terraced house": 1212
+      },
+      "most_common": "Unknown",
+      "entropy": 0.7435078052479726
+    },
+    "WALLSMATERIAL_MODE": {
+      "unique_values": 8,
+      "top_5_values": {
+        "Unknown": 156341,
+        "Panel": 66040,
+        "Stone, brick": 64815,
+        "Block": 9253,
+        "Wooden": 5362
+      },
+      "most_common": "Unknown",
+      "entropy": 1.2725465128016356
+    }
+  },
+  "correlation_summary": {
+    "high_correlations_count": 12,
+    "high_correlations": {
+      "AMT_CREDIT_vs_AMT_GOODS_PRICE": 0.9852495378978496,
+      "AMT_CREDIT_vs_AMT_ANNUITY": 0.792407103685314,
+      "AMT_GOODS_PRICE_vs_AMT_ANNUITY": 0.7949165816827267,
+      "INST_AMT_PAYMENT_SUM_vs_INST_AMT_PAYMENT_MEAN": 0.7484844760159315,
+      "OBS_30_CNT_SOCIAL_CIRCLE_vs_OBS_60_CNT_SOCIAL_CIRCLE": 0.9978632383192897,
+      "CNT_FAM_MEMBERS_vs_CNT_CHILDREN": 0.8706097259371368,
+      "YEARS_BEGINEXPLUATATION_MEDI_vs_YEARS_BEGINEXPLUATATION_MODE": 0.9996763473391281,
+      "YEARS_BEGINEXPLUATATION_MEDI_vs_YEARS_BEGINEXPLUATATION_AVG": 0.9999529081385428,
+      "YEARS_BEGINEXPLUATATION_MODE_vs_YEARS_BEGINEXPLUATATION_AVG": 0.9997405099080586,
+      "YEARS_BUILD_MODE_vs_YEARS_BUILD_MEDI": 0.9996622238219474,
+      "YEARS_BUILD_MODE_vs_YEARS_BUILD_AVG": 0.9996425739321305,
+      "YEARS_BUILD_MEDI_vs_YEARS_BUILD_AVG": 0.9999475182092991
+    }
+  }
+}

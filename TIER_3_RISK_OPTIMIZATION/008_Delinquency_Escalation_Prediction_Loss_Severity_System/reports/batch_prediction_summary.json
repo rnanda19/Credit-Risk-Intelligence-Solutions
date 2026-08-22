@@ -1,0 +1,10 @@
+{
+  "total_samples": 61503,
+  "high_risk_count": 2159,
+  "medium_risk_count": 1132,
+  "low_risk_count": 58212,
+  "high_risk_percentage": 3.5103978667707265,
+  "average_probability": 0.054268717765808105,
+  "probability_std": 0.18195150792598724,
+  "median_probability": 0.002311502117663622
+}

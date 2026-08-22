@@ -1,0 +1,55 @@
+{
+  "chunk_id": "CHUNK_03.5",
+  "chunk_name": "Exploratory Data Analysis (EDA)",
+  "execution_timestamp": "2026-08-12T00:11:08.064020",
+  "status": "COMPLETED",
+  "description": "Comprehensive EDA with visualizations and statistical analysis",
+  "inputs": {
+    "file": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\03_Feature_Validation\\Validated_Features\\bureau_risk_validated.csv",
+    "records": 307511,
+    "features": 106
+  },
+  "outputs": [
+    {
+      "type": "json",
+      "name": "eda_report.json",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\03_Feature_Validation\\EDA_Analysis\\Reports\\eda_report.json",
+      "description": "Comprehensive EDA report with statistics"
+    },
+    {
+      "type": "png",
+      "name": "feature_distributions.png",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\03_Feature_Validation\\EDA_Analysis\\Charts\\feature_distributions.png",
+      "description": "Feature distribution plots"
+    },
+    {
+      "type": "png",
+      "name": "correlation_heatmap.png",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\03_Feature_Validation\\EDA_Analysis\\Charts\\correlation_heatmap.png",
+      "description": "Feature correlation matrix"
+    }
+  ],
+  "eda_summary": {
+    "total_records": 307511,
+    "total_features": 106,
+    "numeric_features": 105,
+    "missing_percent": 0.0,
+    "duplicates": 0,
+    "top_correlated_features": {
+      "EXT_SOURCE_2": -0.1602947532099665,
+      "EXT_SOURCE_3": -0.15589168562406402,
+      "EXT_SOURCE_1": -0.09888661450126426,
+      "DAYS_BIRTH": 0.07823930830982692,
+      "REGION_RATING_CLIENT_W_CITY": 0.06089266756482358
+    }
+  },
+  "visualizations_generated": [
+    "distribution_plots",
+    "correlation_heatmap",
+    "boxplots_by_target",
+    "missing_values_plot"
+  ],
+  "quality_status": "PASS",
+  "ready_for_next_chunk": true,
+  "next_chunk": "CHUNK_04 (Feature Engineering)"
+}

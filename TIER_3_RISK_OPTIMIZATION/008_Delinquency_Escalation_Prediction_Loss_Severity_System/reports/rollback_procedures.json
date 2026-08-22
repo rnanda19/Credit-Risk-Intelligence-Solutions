@@ -1,0 +1,66 @@
+{
+  "procedure_id": "7ce38760-453c-4413-8e3b-2453b7e791db",
+  "timestamp": "2026-08-11T10:48:11.699413",
+  "rollback_types": {
+    "immediate_rollback": {
+      "trigger": "Critical failure detected (accuracy < 70%)",
+      "action": "Automatic immediate rollback",
+      "max_time_minutes": 1,
+      "notify": [
+        "ML_Team",
+        "Ops_Team",
+        "Leadership"
+      ]
+    },
+    "staged_rollback": {
+      "trigger": "Gradual performance degradation",
+      "action": "Reduce traffic to model gradually",
+      "phase_1_reduction": "50% traffic reduction",
+      "phase_2_reduction": "100% traffic reduction (full rollback)",
+      "duration_minutes": 30
+    }
+  },
+  "pre_rollback_checklist": [
+    "Verify previous model artifact availability",
+    "Confirm previous model performance metrics",
+    "Test rollback script in staging",
+    "Set up monitoring alerts",
+    "Have on-call engineer available"
+  ],
+  "rollback_steps": [
+    {
+      "step": 1,
+      "action": "Detect issue (monitoring alert)"
+    },
+    {
+      "step": 2,
+      "action": "Page on-call engineer"
+    },
+    {
+      "step": 3,
+      "action": "Verify issue (check metrics & logs)"
+    },
+    {
+      "step": 4,
+      "action": "Initiate rollback (execute rollback script)"
+    },
+    {
+      "step": 5,
+      "action": "Reduce traffic to previous model"
+    },
+    {
+      "step": 6,
+      "action": "Monitor for stability (30 minutes)"
+    },
+    {
+      "step": 7,
+      "action": "Post-incident review"
+    }
+  ],
+  "post_rollback_analysis": {
+    "root_cause_analysis": "Required",
+    "timeline": "24 hours",
+    "documentation": "Post-incident report",
+    "action_items": "Prevent recurrence"
+  }
+}

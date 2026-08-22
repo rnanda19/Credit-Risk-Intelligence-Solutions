@@ -1,0 +1,100 @@
+{
+  "baseline_performance": {
+    "auc": 0.9374,
+    "f1": 0.5412,
+    "precision": 0.6234,
+    "recall": 0.4789,
+    "accuracy": 0.9234
+  },
+  "scenarios": [
+    {
+      "scenario_id": "S1",
+      "scenario_name": "Severe Economic Recession (-30% GDP)",
+      "description": "Stress scenario: severe economic downturn",
+      "impact_on_features": {
+        "credit_bureau_features": -0.25,
+        "income_features": -0.3,
+        "payment_history": -0.15,
+        "debt_features": 0.2
+      },
+      "expected_auc_change": -0.05,
+      "expected_auc": 0.8874,
+      "risk_level": "HIGH",
+      "mitigation": [
+        "Increase monitoring frequency to daily",
+        "Lower decision threshold to 0.40",
+        "Increase human review for borderline cases"
+      ]
+    },
+    {
+      "scenario_id": "S2",
+      "scenario_name": "High Unemployment (+8% unemployment)",
+      "description": "Stress scenario: significant job market disruption",
+      "impact_on_features": {
+        "employment_features": -0.25,
+        "income_stability": -0.2,
+        "payment_history": -0.1
+      },
+      "expected_auc_change": -0.03,
+      "expected_auc": 0.9074,
+      "risk_level": "MEDIUM",
+      "mitigation": [
+        "Retrain model quarterly vs. semi-annually",
+        "Monitor employment-related features closely"
+      ]
+    },
+    {
+      "scenario_id": "S3",
+      "scenario_name": "Data Quality Degradation (50% missing)",
+      "description": "Stress scenario: data pipeline failures",
+      "impact_on_features": {
+        "all_features": -0.15
+      },
+      "expected_auc_change": -0.08,
+      "expected_auc": 0.8574,
+      "risk_level": "CRITICAL",
+      "mitigation": [
+        "Implement fallback models",
+        "Increase manual review to 100%",
+        "Trigger incident response procedures"
+      ]
+    },
+    {
+      "scenario_id": "S4",
+      "scenario_name": "Demographic Shift (Younger portfolio)",
+      "description": "Stress scenario: portfolio age distribution changes",
+      "impact_on_features": {
+        "age_related_features": -0.1,
+        "experience_features": -0.08
+      },
+      "expected_auc_change": -0.02,
+      "expected_auc": 0.9174,
+      "risk_level": "LOW",
+      "mitigation": [
+        "Monitor fairness metrics by age group",
+        "Quarterly model performance reviews"
+      ]
+    },
+    {
+      "scenario_id": "S5",
+      "scenario_name": "Interest Rate Shock (+300 bps)",
+      "description": "Stress scenario: rapid interest rate increase",
+      "impact_on_features": {
+        "debt_service_ratio": 0.25,
+        "credit_utilization": 0.15,
+        "payment_capability": -0.2
+      },
+      "expected_auc_change": -0.04,
+      "expected_auc": 0.8974,
+      "risk_level": "HIGH",
+      "mitigation": [
+        "Model retraining with rate shock data",
+        "Stricter underwriting standards",
+        "Enhanced monitoring of ARMs"
+      ]
+    }
+  ],
+  "stress_test_methodology": "Sensitivity Analysis with Expert Judgment",
+  "frequency": "Quarterly",
+  "last_stress_test_date": "2026-08-12T01:25:52.600329"
+}

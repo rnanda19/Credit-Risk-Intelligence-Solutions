@@ -1,0 +1,20 @@
+{
+  "total_records": 307511,
+  "total_features": 148,
+  "target_distribution": {
+    "0": 282686,
+    "1": 24825
+  },
+  "default_rate": 0.08072881945686496,
+  "age_mean": 43.906899566990106,
+  "age_std": 11.947949710569638,
+  "income_mean": 168797.921875,
+  "credit_mean": 599026.0,
+  "top_correlated_features": {
+    "TARGET": 0.9999999999999998,
+    "DAYS_BIRTH": 0.07823930830982691,
+    "REGION_RATING_CLIENT_W_CITY": 0.060892667564823574,
+    "REGION_RATING_CLIENT": 0.05889901494571249,
+    "DAYS_LAST_PHONE_CHANGE": 0.05521823012584423
+  }
+}

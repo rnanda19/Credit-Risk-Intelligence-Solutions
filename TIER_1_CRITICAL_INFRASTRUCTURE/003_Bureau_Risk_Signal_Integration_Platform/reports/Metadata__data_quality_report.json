@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-08-11T16:49:21.554107",
+  "total_records": 307511,
+  "total_features": 128,
+  "missing_%": 1.9419300244544098,
+  "target_distribution": {
+    "no_default_0": 282686,
+    "default_1": 24825,
+    "default_rate_%": 8.072881945686495
+  },
+  "csv_files_used": 6
+}

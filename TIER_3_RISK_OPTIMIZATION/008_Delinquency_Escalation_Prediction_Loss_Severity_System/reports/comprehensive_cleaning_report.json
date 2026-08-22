@@ -1,0 +1,2960 @@
+{
+  "pre_cleaning_metrics": {
+    "total_records": 307511,
+    "total_columns": 138,
+    "total_cells": 42436518,
+    "total_nulls": 12778090,
+    "null_percent": 30.11107084704735,
+    "duplicates": 0,
+    "memory_mb": 542.523289680481,
+    "numeric_cols": 122,
+    "categorical_cols": 16
+  },
+  "post_cleaning_metrics": {
+    "total_records": 307511,
+    "total_columns": 138,
+    "total_nulls": 0,
+    "duplicates": 0,
+    "memory_mb": 418.8459939956665
+  },
+  "imputation_report": {
+    "AMT_ANNUITY": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 12,
+      "imputed_nulls": 0
+    },
+    "AMT_GOODS_PRICE": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 278,
+      "imputed_nulls": 0
+    },
+    "OWN_CAR_AGE": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 202929,
+      "imputed_nulls": 0
+    },
+    "CNT_FAM_MEMBERS": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 2,
+      "imputed_nulls": 0
+    },
+    "EXT_SOURCE_1": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 173378,
+      "imputed_nulls": 0
+    },
+    "EXT_SOURCE_2": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 660,
+      "imputed_nulls": 0
+    },
+    "EXT_SOURCE_3": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 60965,
+      "imputed_nulls": 0
+    },
+    "APARTMENTS_AVG": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 156061,
+      "imputed_nulls": 0
+    },
+    "BASEMENTAREA_AVG": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 179943,
+      "imputed_nulls": 0
+    },
+    "YEARS_BEGINEXPLUATATION_AVG": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 150007,
+      "imputed_nulls": 0
+    },
+    "YEARS_BUILD_AVG": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 204488,
+      "imputed_nulls": 0
+    },
+    "COMMONAREA_AVG": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 214865,
+      "imputed_nulls": 0
+    },
+    "ELEVATORS_AVG": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 163891,
+      "imputed_nulls": 0
+    },
+    "ENTRANCES_AVG": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 154828,
+      "imputed_nulls": 0
+    },
+    "FLOORSMAX_AVG": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 153020,
+      "imputed_nulls": 0
+    },
+    "FLOORSMIN_AVG": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 208642,
+      "imputed_nulls": 0
+    },
+    "LANDAREA_AVG": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 182590,
+      "imputed_nulls": 0
+    },
+    "LIVINGAPARTMENTS_AVG": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 210199,
+      "imputed_nulls": 0
+    },
+    "LIVINGAREA_AVG": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 154350,
+      "imputed_nulls": 0
+    },
+    "NONLIVINGAPARTMENTS_AVG": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 213514,
+      "imputed_nulls": 0
+    },
+    "NONLIVINGAREA_AVG": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 169682,
+      "imputed_nulls": 0
+    },
+    "APARTMENTS_MODE": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 156061,
+      "imputed_nulls": 0
+    },
+    "BASEMENTAREA_MODE": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 179943,
+      "imputed_nulls": 0
+    },
+    "YEARS_BEGINEXPLUATATION_MODE": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 150007,
+      "imputed_nulls": 0
+    },
+    "YEARS_BUILD_MODE": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 204488,
+      "imputed_nulls": 0
+    },
+    "COMMONAREA_MODE": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 214865,
+      "imputed_nulls": 0
+    },
+    "ELEVATORS_MODE": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 163891,
+      "imputed_nulls": 0
+    },
+    "ENTRANCES_MODE": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 154828,
+      "imputed_nulls": 0
+    },
+    "FLOORSMAX_MODE": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 153020,
+      "imputed_nulls": 0
+    },
+    "FLOORSMIN_MODE": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 208642,
+      "imputed_nulls": 0
+    },
+    "LANDAREA_MODE": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 182590,
+      "imputed_nulls": 0
+    },
+    "LIVINGAPARTMENTS_MODE": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 210199,
+      "imputed_nulls": 0
+    },
+    "LIVINGAREA_MODE": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 154350,
+      "imputed_nulls": 0
+    },
+    "NONLIVINGAPARTMENTS_MODE": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 213514,
+      "imputed_nulls": 0
+    },
+    "NONLIVINGAREA_MODE": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 169682,
+      "imputed_nulls": 0
+    },
+    "APARTMENTS_MEDI": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 156061,
+      "imputed_nulls": 0
+    },
+    "BASEMENTAREA_MEDI": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 179943,
+      "imputed_nulls": 0
+    },
+    "YEARS_BEGINEXPLUATATION_MEDI": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 150007,
+      "imputed_nulls": 0
+    },
+    "YEARS_BUILD_MEDI": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 204488,
+      "imputed_nulls": 0
+    },
+    "COMMONAREA_MEDI": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 214865,
+      "imputed_nulls": 0
+    },
+    "ELEVATORS_MEDI": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 163891,
+      "imputed_nulls": 0
+    },
+    "ENTRANCES_MEDI": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 154828,
+      "imputed_nulls": 0
+    },
+    "FLOORSMAX_MEDI": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 153020,
+      "imputed_nulls": 0
+    },
+    "FLOORSMIN_MEDI": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 208642,
+      "imputed_nulls": 0
+    },
+    "LANDAREA_MEDI": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 182590,
+      "imputed_nulls": 0
+    },
+    "LIVINGAPARTMENTS_MEDI": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 210199,
+      "imputed_nulls": 0
+    },
+    "LIVINGAREA_MEDI": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 154350,
+      "imputed_nulls": 0
+    },
+    "NONLIVINGAPARTMENTS_MEDI": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 213514,
+      "imputed_nulls": 0
+    },
+    "NONLIVINGAREA_MEDI": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 169682,
+      "imputed_nulls": 0
+    },
+    "TOTALAREA_MODE": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 148431,
+      "imputed_nulls": 0
+    },
+    "OBS_30_CNT_SOCIAL_CIRCLE": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 1021,
+      "imputed_nulls": 0
+    },
+    "DEF_30_CNT_SOCIAL_CIRCLE": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 1021,
+      "imputed_nulls": 0
+    },
+    "OBS_60_CNT_SOCIAL_CIRCLE": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 1021,
+      "imputed_nulls": 0
+    },
+    "DEF_60_CNT_SOCIAL_CIRCLE": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 1021,
+      "imputed_nulls": 0
+    },
+    "DAYS_LAST_PHONE_CHANGE": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 1,
+      "imputed_nulls": 0
+    },
+    "AMT_REQ_CREDIT_BUREAU_HOUR": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 41519,
+      "imputed_nulls": 0
+    },
+    "AMT_REQ_CREDIT_BUREAU_DAY": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 41519,
+      "imputed_nulls": 0
+    },
+    "AMT_REQ_CREDIT_BUREAU_WEEK": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 41519,
+      "imputed_nulls": 0
+    },
+    "AMT_REQ_CREDIT_BUREAU_MON": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 41519,
+      "imputed_nulls": 0
+    },
+    "AMT_REQ_CREDIT_BUREAU_QRT": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 41519,
+      "imputed_nulls": 0
+    },
+    "AMT_REQ_CREDIT_BUREAU_YEAR": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 41519,
+      "imputed_nulls": 0
+    },
+    "MONTHS_BALANCE_count": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 224369,
+      "imputed_nulls": 0
+    },
+    "AMT_BALANCE_sum": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 224369,
+      "imputed_nulls": 0
+    },
+    "AMT_BALANCE_mean": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 224369,
+      "imputed_nulls": 0
+    },
+    "AMT_BALANCE_max": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 224369,
+      "imputed_nulls": 0
+    },
+    "AMT_CREDIT_LIMIT_ACTUAL_mean": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 224369,
+      "imputed_nulls": 0
+    },
+    "CNT_DRAWINGS_CURRENT_sum": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 224369,
+      "imputed_nulls": 0
+    },
+    "CNT_DRAWINGS_ATM_CURRENT_sum": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 224369,
+      "imputed_nulls": 0
+    },
+    "SK_ID_PREV_count": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 228338,
+      "imputed_nulls": 0
+    },
+    "DAYS_INSTALMENT_mean": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 228338,
+      "imputed_nulls": 0
+    },
+    "DAYS_INSTALMENT_max": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 228338,
+      "imputed_nulls": 0
+    },
+    "DAYS_ENTRY_PAYMENT_mean": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 228338,
+      "imputed_nulls": 0
+    },
+    "DAYS_ENTRY_PAYMENT_max": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 228338,
+      "imputed_nulls": 0
+    },
+    "AMT_INSTALMENT_sum": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 228338,
+      "imputed_nulls": 0
+    },
+    "AMT_INSTALMENT_mean": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 228338,
+      "imputed_nulls": 0
+    },
+    "AMT_PAYMENT_sum": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 228338,
+      "imputed_nulls": 0
+    },
+    "AMT_PAYMENT_mean": {
+      "method": "IterativeImputer (BayesianRidge)",
+      "type": "numeric",
+      "original_nulls": 228338,
+      "imputed_nulls": 0
+    },
+    "NAME_TYPE_SUITE": {
+      "method": "Mode Imputation",
+      "type": "categorical",
+      "fill_value": "Unaccompanied",
+      "original_nulls": 1292,
+      "imputed_nulls": 0
+    },
+    "OCCUPATION_TYPE": {
+      "method": "Mode Imputation",
+      "type": "categorical",
+      "fill_value": "Laborers",
+      "original_nulls": 96391,
+      "imputed_nulls": 0
+    },
+    "FONDKAPREMONT_MODE": {
+      "method": "Mode Imputation",
+      "type": "categorical",
+      "fill_value": "reg oper account",
+      "original_nulls": 210295,
+      "imputed_nulls": 0
+    },
+    "HOUSETYPE_MODE": {
+      "method": "Mode Imputation",
+      "type": "categorical",
+      "fill_value": "block of flats",
+      "original_nulls": 154297,
+      "imputed_nulls": 0
+    },
+    "WALLSMATERIAL_MODE": {
+      "method": "Mode Imputation",
+      "type": "categorical",
+      "fill_value": "Panel",
+      "original_nulls": 156341,
+      "imputed_nulls": 0
+    },
+    "EMERGENCYSTATE_MODE": {
+      "method": "Mode Imputation",
+      "type": "categorical",
+      "fill_value": "No",
+      "original_nulls": 145755,
+      "imputed_nulls": 0
+    }
+  },
+  "outlier_detection": {
+    "TARGET": {
+      "outlier_count": 24825,
+      "outlier_percent": 8.072881945686495,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "CNT_CHILDREN": {
+      "outlier_count": 4272,
+      "outlier_percent": 1.3892185970583166,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Documented (Not Removed)"
+    },
+    "AMT_INCOME_TOTAL": {
+      "outlier_count": 14035,
+      "outlier_percent": 4.564064374932929,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Documented (Not Removed)"
+    },
+    "AMT_CREDIT": {
+      "outlier_count": 6562,
+      "outlier_percent": 2.13390740493836,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Documented (Not Removed)"
+    },
+    "AMT_ANNUITY": {
+      "outlier_count": 7504,
+      "outlier_percent": 2.4402379101885785,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Documented (Not Removed)"
+    },
+    "AMT_GOODS_PRICE": {
+      "outlier_count": 14728,
+      "outlier_percent": 4.789422167011912,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Documented (Not Removed)"
+    },
+    "REGION_POPULATION_RELATIVE": {
+      "outlier_count": 8412,
+      "outlier_percent": 2.735511900387303,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Documented (Not Removed)"
+    },
+    "DAYS_EMPLOYED": {
+      "outlier_count": 72217,
+      "outlier_percent": 23.484363160992615,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "DAYS_REGISTRATION": {
+      "outlier_count": 749,
+      "outlier_percent": 0.24356852275203164,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Documented (Not Removed)"
+    },
+    "OWN_CAR_AGE": {
+      "outlier_count": 12881,
+      "outlier_percent": 4.188793246420453,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Documented (Not Removed)"
+    },
+    "FLAG_EMP_PHONE": {
+      "outlier_count": 55386,
+      "outlier_percent": 18.011063018883878,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "FLAG_WORK_PHONE": {
+      "outlier_count": 61308,
+      "outlier_percent": 19.93684778755882,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "FLAG_CONT_MOBILE": {
+      "outlier_count": 574,
+      "outlier_percent": 0.18665998939875322,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Documented (Not Removed)"
+    },
+    "FLAG_EMAIL": {
+      "outlier_count": 17442,
+      "outlier_percent": 5.6719922214164695,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "CNT_FAM_MEMBERS": {
+      "outlier_count": 4007,
+      "outlier_percent": 1.3030428179804951,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Documented (Not Removed)"
+    },
+    "REGION_RATING_CLIENT": {
+      "outlier_count": 80527,
+      "outlier_percent": 26.186705516225434,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "REGION_RATING_CLIENT_W_CITY": {
+      "outlier_count": 78027,
+      "outlier_percent": 25.373726468321458,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "HOUR_APPR_PROCESS_START": {
+      "outlier_count": 2257,
+      "outlier_percent": 0.7339574844477108,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Documented (Not Removed)"
+    },
+    "REG_REGION_NOT_LIVE_REGION": {
+      "outlier_count": 4657,
+      "outlier_percent": 1.514417370435529,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Documented (Not Removed)"
+    },
+    "REG_REGION_NOT_WORK_REGION": {
+      "outlier_count": 15612,
+      "outlier_percent": 5.076891558350758,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "LIVE_REGION_NOT_WORK_REGION": {
+      "outlier_count": 12503,
+      "outlier_percent": 4.065870814377372,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Documented (Not Removed)"
+    },
+    "REG_CITY_NOT_LIVE_CITY": {
+      "outlier_count": 24039,
+      "outlier_percent": 7.817281333025486,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "REG_CITY_NOT_WORK_CITY": {
+      "outlier_count": 70867,
+      "outlier_percent": 23.045354475124466,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "LIVE_CITY_NOT_WORK_CITY": {
+      "outlier_count": 55215,
+      "outlier_percent": 17.955455252007248,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "EXT_SOURCE_1": {
+      "outlier_count": 701,
+      "outlier_percent": 0.22795932503227528,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Documented (Not Removed)"
+    },
+    "EXT_SOURCE_3": {
+      "outlier_count": 1374,
+      "outlier_percent": 0.44681328472802595,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Documented (Not Removed)"
+    },
+    "APARTMENTS_AVG": {
+      "outlier_count": 64781,
+      "outlier_percent": 21.066238280907022,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "BASEMENTAREA_AVG": {
+      "outlier_count": 98799,
+      "outlier_percent": 32.128606781546026,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "YEARS_BEGINEXPLUATATION_AVG": {
+      "outlier_count": 31679,
+      "outlier_percent": 10.30174530342004,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "YEARS_BUILD_AVG": {
+      "outlier_count": 112696,
+      "outlier_percent": 36.647794713034656,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "COMMONAREA_AVG": {
+      "outlier_count": 91744,
+      "outlier_percent": 29.834379908361004,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "ELEVATORS_AVG": {
+      "outlier_count": 23856,
+      "outlier_percent": 7.7577712667189145,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "ENTRANCES_AVG": {
+      "outlier_count": 114723,
+      "outlier_percent": 37.3069581250752,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "FLOORSMAX_AVG": {
+      "outlier_count": 71065,
+      "outlier_percent": 23.10974241571846,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "FLOORSMIN_AVG": {
+      "outlier_count": 102588,
+      "outlier_percent": 33.36075782654929,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "LANDAREA_AVG": {
+      "outlier_count": 95500,
+      "outlier_percent": 31.055799629931936,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "LIVINGAPARTMENTS_AVG": {
+      "outlier_count": 78728,
+      "outlier_percent": 25.601685793353735,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "LIVINGAREA_AVG": {
+      "outlier_count": 52595,
+      "outlier_percent": 17.103453209803877,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "NONLIVINGAPARTMENTS_AVG": {
+      "outlier_count": 11486,
+      "outlier_percent": 3.7351509376900336,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Documented (Not Removed)"
+    },
+    "NONLIVINGAREA_AVG": {
+      "outlier_count": 18568,
+      "outlier_percent": 6.038157984592421,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "APARTMENTS_MODE": {
+      "outlier_count": 57633,
+      "outlier_percent": 18.741768587139973,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "BASEMENTAREA_MODE": {
+      "outlier_count": 96184,
+      "outlier_percent": 31.278230697438463,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "YEARS_BEGINEXPLUATATION_MODE": {
+      "outlier_count": 25359,
+      "outlier_percent": 8.246534270318785,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "YEARS_BUILD_MODE": {
+      "outlier_count": 101595,
+      "outlier_percent": 33.037842548721834,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "COMMONAREA_MODE": {
+      "outlier_count": 89613,
+      "outlier_percent": 29.141396567927654,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "ELEVATORS_MODE": {
+      "outlier_count": 22212,
+      "outlier_percent": 7.223156244817258,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "ENTRANCES_MODE": {
+      "outlier_count": 116831,
+      "outlier_percent": 37.99246205826783,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "FLOORSMAX_MODE": {
+      "outlier_count": 72302,
+      "outlier_percent": 23.51200444862135,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "FLOORSMIN_MODE": {
+      "outlier_count": 104555,
+      "outlier_percent": 34.000409741440144,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "LANDAREA_MODE": {
+      "outlier_count": 95143,
+      "outlier_percent": 30.93970622189125,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "LIVINGAPARTMENTS_MODE": {
+      "outlier_count": 68831,
+      "outlier_percent": 22.38326433851147,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "LIVINGAREA_MODE": {
+      "outlier_count": 50084,
+      "outlier_percent": 16.286897054089124,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "NONLIVINGAPARTMENTS_MODE": {
+      "outlier_count": 10228,
+      "outlier_percent": 3.3260598807847526,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Documented (Not Removed)"
+    },
+    "NONLIVINGAREA_MODE": {
+      "outlier_count": 16979,
+      "outlier_percent": 5.521428501744653,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "APARTMENTS_MEDI": {
+      "outlier_count": 62894,
+      "outlier_percent": 20.452601695549102,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "BASEMENTAREA_MEDI": {
+      "outlier_count": 99410,
+      "outlier_percent": 32.32729886085376,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "YEARS_BEGINEXPLUATATION_MEDI": {
+      "outlier_count": 31771,
+      "outlier_percent": 10.331662932382907,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "YEARS_BUILD_MEDI": {
+      "outlier_count": 111162,
+      "outlier_percent": 36.14895076924077,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "COMMONAREA_MEDI": {
+      "outlier_count": 92275,
+      "outlier_percent": 30.007056658135806,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "ELEVATORS_MEDI": {
+      "outlier_count": 23721,
+      "outlier_percent": 7.7138703981321,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "ENTRANCES_MEDI": {
+      "outlier_count": 115173,
+      "outlier_percent": 37.45329435369792,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "FLOORSMAX_MEDI": {
+      "outlier_count": 71777,
+      "outlier_percent": 23.341278848561515,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "FLOORSMIN_MEDI": {
+      "outlier_count": 100860,
+      "outlier_percent": 32.79882670863806,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "LANDAREA_MEDI": {
+      "outlier_count": 101642,
+      "outlier_percent": 33.053126554822434,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "LIVINGAPARTMENTS_MEDI": {
+      "outlier_count": 78897,
+      "outlier_percent": 25.656643176992045,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "LIVINGAREA_MEDI": {
+      "outlier_count": 51734,
+      "outlier_percent": 16.823463225705748,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "NONLIVINGAPARTMENTS_MEDI": {
+      "outlier_count": 90023,
+      "outlier_percent": 29.274725131783903,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "NONLIVINGAREA_MEDI": {
+      "outlier_count": 18326,
+      "outlier_percent": 5.959461612755316,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "TOTALAREA_MODE": {
+      "outlier_count": 41626,
+      "outlier_percent": 13.536426339220387,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "OBS_30_CNT_SOCIAL_CIRCLE": {
+      "outlier_count": 19971,
+      "outlier_percent": 6.494401826276134,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "DEF_30_CNT_SOCIAL_CIRCLE": {
+      "outlier_count": 36187,
+      "outlier_percent": 11.767709122600492,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "OBS_60_CNT_SOCIAL_CIRCLE": {
+      "outlier_count": 19564,
+      "outlier_percent": 6.362048837277366,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "DEF_60_CNT_SOCIAL_CIRCLE": {
+      "outlier_count": 26790,
+      "outlier_percent": 8.711883477339022,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "DAYS_LAST_PHONE_CHANGE": {
+      "outlier_count": 640,
+      "outlier_percent": 0.2081226362634182,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Documented (Not Removed)"
+    },
+    "FLAG_DOCUMENT_5": {
+      "outlier_count": 4648,
+      "outlier_percent": 1.5114906458630748,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Documented (Not Removed)"
+    },
+    "FLAG_DOCUMENT_6": {
+      "outlier_count": 27078,
+      "outlier_percent": 8.80553866365756,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "FLAG_DOCUMENT_8": {
+      "outlier_count": 25024,
+      "outlier_percent": 8.137595077899652,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "FLAG_DOCUMENT_9": {
+      "outlier_count": 1198,
+      "outlier_percent": 0.389579559755586,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Documented (Not Removed)"
+    },
+    "FLAG_DOCUMENT_11": {
+      "outlier_count": 1203,
+      "outlier_percent": 0.3912055178513939,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Documented (Not Removed)"
+    },
+    "FLAG_DOCUMENT_13": {
+      "outlier_count": 1084,
+      "outlier_percent": 0.3525077151711646,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Documented (Not Removed)"
+    },
+    "FLAG_DOCUMENT_14": {
+      "outlier_count": 903,
+      "outlier_percent": 0.2936480321029166,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Documented (Not Removed)"
+    },
+    "FLAG_DOCUMENT_15": {
+      "outlier_count": 372,
+      "outlier_percent": 0.12097128232811183,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Documented (Not Removed)"
+    },
+    "FLAG_DOCUMENT_16": {
+      "outlier_count": 3053,
+      "outlier_percent": 0.9928100133003372,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Documented (Not Removed)"
+    },
+    "FLAG_DOCUMENT_18": {
+      "outlier_count": 2500,
+      "outlier_percent": 0.8129790479039775,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Documented (Not Removed)"
+    },
+    "AMT_REQ_CREDIT_BUREAU_HOUR": {
+      "outlier_count": 43145,
+      "outlier_percent": 14.030392408726842,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "AMT_REQ_CREDIT_BUREAU_DAY": {
+      "outlier_count": 43008,
+      "outlier_percent": 13.985841156901705,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "AMT_REQ_CREDIT_BUREAU_WEEK": {
+      "outlier_count": 50055,
+      "outlier_percent": 16.277466497133435,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "AMT_REQ_CREDIT_BUREAU_MON": {
+      "outlier_count": 50568,
+      "outlier_percent": 16.444289797763332,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "AMT_REQ_CREDIT_BUREAU_QRT": {
+      "outlier_count": 52045,
+      "outlier_percent": 16.924597819265003,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "AMT_REQ_CREDIT_BUREAU_YEAR": {
+      "outlier_count": 7690,
+      "outlier_percent": 2.5007235513526345,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Documented (Not Removed)"
+    },
+    "MONTHS_BALANCE_count": {
+      "outlier_count": 22773,
+      "outlier_percent": 7.405588743166912,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "AMT_BALANCE_sum": {
+      "outlier_count": 19785,
+      "outlier_percent": 6.433916185112078,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "AMT_BALANCE_mean": {
+      "outlier_count": 20691,
+      "outlier_percent": 6.728539792072478,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "AMT_BALANCE_max": {
+      "outlier_count": 56396,
+      "outlier_percent": 18.339506554237083,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "AMT_CREDIT_LIMIT_ACTUAL_mean": {
+      "outlier_count": 24129,
+      "outlier_percent": 7.846548578750029,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "CNT_DRAWINGS_CURRENT_sum": {
+      "outlier_count": 18359,
+      "outlier_percent": 5.970192936187649,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "CNT_DRAWINGS_ATM_CURRENT_sum": {
+      "outlier_count": 18823,
+      "outlier_percent": 6.121081847478626,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "SK_ID_PREV_count": {
+      "outlier_count": 30287,
+      "outlier_percent": 9.849078569547105,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "DAYS_INSTALMENT_mean": {
+      "outlier_count": 93601,
+      "outlier_percent": 30.438260745144074,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "DAYS_INSTALMENT_max": {
+      "outlier_count": 93766,
+      "outlier_percent": 30.49191736230574,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "DAYS_ENTRY_PAYMENT_mean": {
+      "outlier_count": 91355,
+      "outlier_percent": 29.707880368507144,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "DAYS_ENTRY_PAYMENT_max": {
+      "outlier_count": 82195,
+      "outlier_percent": 26.72912513698697,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "AMT_INSTALMENT_sum": {
+      "outlier_count": 74054,
+      "outlier_percent": 24.081740165392457,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "AMT_INSTALMENT_mean": {
+      "outlier_count": 71646,
+      "outlier_percent": 23.298678746451344,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "AMT_PAYMENT_sum": {
+      "outlier_count": 81345,
+      "outlier_percent": 26.452712260699617,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    },
+    "AMT_PAYMENT_mean": {
+      "outlier_count": 73033,
+      "outlier_percent": 23.749719522228474,
+      "methods": [
+        "IQR",
+        "Z-Score"
+      ],
+      "action": "Review Recommended"
+    }
+  },
+  "missing_mechanism_analysis": {
+    "AMT_ANNUITY": {
+      "null_count": 12,
+      "null_percent": 0.003902299429939092,
+      "mechanism": "MAR",
+      "target_corr_diff": 0.08073196986006459
+    },
+    "AMT_GOODS_PRICE": {
+      "null_count": 278,
+      "null_percent": 0.09040327012692229,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.005193946609124506
+    },
+    "NAME_TYPE_SUITE": {
+      "null_count": 1292,
+      "null_percent": 0.42014757195677555,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.026661269570149304
+    },
+    "OWN_CAR_AGE": {
+      "null_count": 202929,
+      "null_percent": 65.9908100848425,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.01255940828907516
+    },
+    "OCCUPATION_TYPE": {
+      "null_count": 96391,
+      "null_percent": 31.345545362604916,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.022719949575480333
+    },
+    "CNT_FAM_MEMBERS": {
+      "null_count": 2,
+      "null_percent": 0.0006503832383231819,
+      "mechanism": "MAR",
+      "target_corr_diff": 0.08072934450699004
+    },
+    "EXT_SOURCE_1": {
+      "null_count": 173378,
+      "null_percent": 56.381072546998325,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.010239898844385698
+    },
+    "EXT_SOURCE_2": {
+      "null_count": 660,
+      "null_percent": 0.21462646864665005,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.0019451154014834826
+    },
+    "EXT_SOURCE_3": {
+      "null_count": 60965,
+      "null_percent": 19.825307062186393,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.015453982791323248
+    },
+    "APARTMENTS_AVG": {
+      "null_count": 156061,
+      "null_percent": 50.74972927797705,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.021940795009876363
+    },
+    "BASEMENTAREA_AVG": {
+      "null_count": 179943,
+      "null_percent": 58.51595552679416,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.020247313364395725
+    },
+    "YEARS_BEGINEXPLUATATION_AVG": {
+      "null_count": 150007,
+      "null_percent": 48.781019215572776,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.022101607805031398
+    },
+    "YEARS_BUILD_AVG": {
+      "null_count": 204488,
+      "null_percent": 66.49778381911543,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.018142770952079584
+    },
+    "COMMONAREA_AVG": {
+      "null_count": 214865,
+      "null_percent": 69.87229725115525,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.01664046810987703
+    },
+    "ELEVATORS_AVG": {
+      "null_count": 163891,
+      "null_percent": 53.29597965601231,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.022004075565315626
+    },
+    "ENTRANCES_AVG": {
+      "null_count": 154828,
+      "null_percent": 50.3487680115508,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.022269143408667605
+    },
+    "FLOORSMAX_AVG": {
+      "null_count": 153020,
+      "null_percent": 49.76082156410665,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.0222550113235402
+    },
+    "FLOORSMIN_AVG": {
+      "null_count": 208642,
+      "null_percent": 67.84862980511267,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.017360699837726784
+    },
+    "LANDAREA_AVG": {
+      "null_count": 182590,
+      "null_percent": 59.376737742714894,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.018385479922341533
+    },
+    "LIVINGAPARTMENTS_AVG": {
+      "null_count": 210199,
+      "null_percent": 68.35495315614726,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.017332004823042688
+    },
+    "LIVINGAREA_AVG": {
+      "null_count": 154350,
+      "null_percent": 50.193326417591564,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.02146955903815731
+    },
+    "NONLIVINGAPARTMENTS_AVG": {
+      "null_count": 213514,
+      "null_percent": 69.43296337366793,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.016705255035220717
+    },
+    "NONLIVINGAREA_AVG": {
+      "null_count": 169682,
+      "null_percent": 55.17916432257708,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.02145575859724906
+    },
+    "APARTMENTS_MODE": {
+      "null_count": 156061,
+      "null_percent": 50.74972927797705,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.021940795009876363
+    },
+    "BASEMENTAREA_MODE": {
+      "null_count": 179943,
+      "null_percent": 58.51595552679416,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.020247313364395725
+    },
+    "YEARS_BEGINEXPLUATATION_MODE": {
+      "null_count": 150007,
+      "null_percent": 48.781019215572776,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.022101607805031398
+    },
+    "YEARS_BUILD_MODE": {
+      "null_count": 204488,
+      "null_percent": 66.49778381911543,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.018142770952079584
+    },
+    "COMMONAREA_MODE": {
+      "null_count": 214865,
+      "null_percent": 69.87229725115525,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.01664046810987703
+    },
+    "ELEVATORS_MODE": {
+      "null_count": 163891,
+      "null_percent": 53.29597965601231,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.022004075565315626
+    },
+    "ENTRANCES_MODE": {
+      "null_count": 154828,
+      "null_percent": 50.3487680115508,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.022269143408667605
+    },
+    "FLOORSMAX_MODE": {
+      "null_count": 153020,
+      "null_percent": 49.76082156410665,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.0222550113235402
+    },
+    "FLOORSMIN_MODE": {
+      "null_count": 208642,
+      "null_percent": 67.84862980511267,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.017360699837726784
+    },
+    "LANDAREA_MODE": {
+      "null_count": 182590,
+      "null_percent": 59.376737742714894,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.018385479922341533
+    },
+    "LIVINGAPARTMENTS_MODE": {
+      "null_count": 210199,
+      "null_percent": 68.35495315614726,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.017332004823042688
+    },
+    "LIVINGAREA_MODE": {
+      "null_count": 154350,
+      "null_percent": 50.193326417591564,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.02146955903815731
+    },
+    "NONLIVINGAPARTMENTS_MODE": {
+      "null_count": 213514,
+      "null_percent": 69.43296337366793,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.016705255035220717
+    },
+    "NONLIVINGAREA_MODE": {
+      "null_count": 169682,
+      "null_percent": 55.17916432257708,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.02145575859724906
+    },
+    "APARTMENTS_MEDI": {
+      "null_count": 156061,
+      "null_percent": 50.74972927797705,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.021940795009876363
+    },
+    "BASEMENTAREA_MEDI": {
+      "null_count": 179943,
+      "null_percent": 58.51595552679416,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.020247313364395725
+    },
+    "YEARS_BEGINEXPLUATATION_MEDI": {
+      "null_count": 150007,
+      "null_percent": 48.781019215572776,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.022101607805031398
+    },
+    "YEARS_BUILD_MEDI": {
+      "null_count": 204488,
+      "null_percent": 66.49778381911543,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.018142770952079584
+    },
+    "COMMONAREA_MEDI": {
+      "null_count": 214865,
+      "null_percent": 69.87229725115525,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.01664046810987703
+    },
+    "ELEVATORS_MEDI": {
+      "null_count": 163891,
+      "null_percent": 53.29597965601231,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.022004075565315626
+    },
+    "ENTRANCES_MEDI": {
+      "null_count": 154828,
+      "null_percent": 50.3487680115508,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.022269143408667605
+    },
+    "FLOORSMAX_MEDI": {
+      "null_count": 153020,
+      "null_percent": 49.76082156410665,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.0222550113235402
+    },
+    "FLOORSMIN_MEDI": {
+      "null_count": 208642,
+      "null_percent": 67.84862980511267,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.017360699837726784
+    },
+    "LANDAREA_MEDI": {
+      "null_count": 182590,
+      "null_percent": 59.376737742714894,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.018385479922341533
+    },
+    "LIVINGAPARTMENTS_MEDI": {
+      "null_count": 210199,
+      "null_percent": 68.35495315614726,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.017332004823042688
+    },
+    "LIVINGAREA_MEDI": {
+      "null_count": 154350,
+      "null_percent": 50.193326417591564,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.02146955903815731
+    },
+    "NONLIVINGAPARTMENTS_MEDI": {
+      "null_count": 213514,
+      "null_percent": 69.43296337366793,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.016705255035220717
+    },
+    "NONLIVINGAREA_MEDI": {
+      "null_count": 169682,
+      "null_percent": 55.17916432257708,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.02145575859724906
+    },
+    "FONDKAPREMONT_MODE": {
+      "null_count": 210295,
+      "null_percent": 68.38617155158677,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.01726975304809049
+    },
+    "HOUSETYPE_MODE": {
+      "null_count": 154297,
+      "null_percent": 50.176091261776,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.021642230435602164
+    },
+    "TOTALAREA_MODE": {
+      "null_count": 148431,
+      "null_percent": 48.26851722377411,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.022443551392337974
+    },
+    "WALLSMATERIAL_MODE": {
+      "null_count": 156341,
+      "null_percent": 50.8407829313423,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.02146579823575763
+    },
+    "EMERGENCYSTATE_MODE": {
+      "null_count": 145755,
+      "null_percent": 47.39830445089769,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.02258223454449955
+    },
+    "OBS_30_CNT_SOCIAL_CIRCLE": {
+      "null_count": 1021,
+      "null_percent": 0.3320206431639844,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.045620740270815856
+    },
+    "DEF_30_CNT_SOCIAL_CIRCLE": {
+      "null_count": 1021,
+      "null_percent": 0.3320206431639844,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.045620740270815856
+    },
+    "OBS_60_CNT_SOCIAL_CIRCLE": {
+      "null_count": 1021,
+      "null_percent": 0.3320206431639844,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.045620740270815856
+    },
+    "DEF_60_CNT_SOCIAL_CIRCLE": {
+      "null_count": 1021,
+      "null_percent": 0.3320206431639844,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.045620740270815856
+    },
+    "DAYS_LAST_PHONE_CHANGE": {
+      "null_count": 1,
+      "null_percent": 0.00032519161916159093,
+      "mechanism": "MAR",
+      "target_corr_diff": 0.08072908198107379
+    },
+    "AMT_REQ_CREDIT_BUREAU_HOUR": {
+      "null_count": 41519,
+      "null_percent": 13.501630835970097,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.026180307778428932
+    },
+    "AMT_REQ_CREDIT_BUREAU_DAY": {
+      "null_count": 41519,
+      "null_percent": 13.501630835970097,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.026180307778428932
+    },
+    "AMT_REQ_CREDIT_BUREAU_WEEK": {
+      "null_count": 41519,
+      "null_percent": 13.501630835970097,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.026180307778428932
+    },
+    "AMT_REQ_CREDIT_BUREAU_MON": {
+      "null_count": 41519,
+      "null_percent": 13.501630835970097,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.026180307778428932
+    },
+    "AMT_REQ_CREDIT_BUREAU_QRT": {
+      "null_count": 41519,
+      "null_percent": 13.501630835970097,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.026180307778428932
+    },
+    "AMT_REQ_CREDIT_BUREAU_YEAR": {
+      "null_count": 41519,
+      "null_percent": 13.501630835970097,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.026180307778428932
+    },
+    "MONTHS_BALANCE_count": {
+      "null_count": 224369,
+      "null_percent": 72.962918399667,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.006050566632675267
+    },
+    "AMT_BALANCE_sum": {
+      "null_count": 224369,
+      "null_percent": 72.962918399667,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.006050566632675267
+    },
+    "AMT_BALANCE_mean": {
+      "null_count": 224369,
+      "null_percent": 72.962918399667,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.006050566632675267
+    },
+    "AMT_BALANCE_max": {
+      "null_count": 224369,
+      "null_percent": 72.962918399667,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.006050566632675267
+    },
+    "AMT_CREDIT_LIMIT_ACTUAL_mean": {
+      "null_count": 224369,
+      "null_percent": 72.962918399667,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.006050566632675267
+    },
+    "CNT_DRAWINGS_CURRENT_sum": {
+      "null_count": 224369,
+      "null_percent": 72.962918399667,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.006050566632675267
+    },
+    "CNT_DRAWINGS_ATM_CURRENT_sum": {
+      "null_count": 224369,
+      "null_percent": 72.962918399667,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.006050566632675267
+    },
+    "SK_ID_PREV_count": {
+      "null_count": 228338,
+      "null_percent": 74.25360393611936,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.0012324995566924263
+    },
+    "DAYS_INSTALMENT_mean": {
+      "null_count": 228338,
+      "null_percent": 74.25360393611936,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.0012324995566924263
+    },
+    "DAYS_INSTALMENT_max": {
+      "null_count": 228338,
+      "null_percent": 74.25360393611936,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.0012324995566924263
+    },
+    "DAYS_ENTRY_PAYMENT_mean": {
+      "null_count": 228338,
+      "null_percent": 74.25360393611936,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.0012324995566924263
+    },
+    "DAYS_ENTRY_PAYMENT_max": {
+      "null_count": 228338,
+      "null_percent": 74.25360393611936,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.0012324995566924263
+    },
+    "AMT_INSTALMENT_sum": {
+      "null_count": 228338,
+      "null_percent": 74.25360393611936,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.0012324995566924263
+    },
+    "AMT_INSTALMENT_mean": {
+      "null_count": 228338,
+      "null_percent": 74.25360393611936,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.0012324995566924263
+    },
+    "AMT_PAYMENT_sum": {
+      "null_count": 228338,
+      "null_percent": 74.25360393611936,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.0012324995566924263
+    },
+    "AMT_PAYMENT_mean": {
+      "null_count": 228338,
+      "null_percent": 74.25360393611936,
+      "mechanism": "MCAR",
+      "target_corr_diff": 0.0012324995566924263
+    }
+  },
+  "validation_rules": {
+    "Age": {
+      "rule": "18 <= age <= 100 years",
+      "violations": 0,
+      "action": "Flagged for review"
+    },
+    "Income": {
+      "rule": "AMT_INCOME_TOTAL >= 0",
+      "violations": 0,
+      "action": "Verified - No violations"
+    },
+    "Target": {
+      "rule": "TARGET in [0, 1]",
+      "violations": 0,
+      "action": "Verified - No violations"
+    }
+  },
+  "sensitivity_analysis": {
+    "AMT_ANNUITY": {
+      "skewness_before": 1.5797773638612502,
+      "skewness_after": 1.5797677040100098,
+      "skewness_diff": 9.659851240462203e-06,
+      "distribution_stable": "Yes"
+    },
+    "AMT_GOODS_PRICE": {
+      "skewness_before": 1.349000341474745,
+      "skewness_after": 1.3496553897857666,
+      "skewness_diff": 0.0006550483110216998,
+      "distribution_stable": "Yes"
+    },
+    "OWN_CAR_AGE": {
+      "skewness_before": 2.745422130868457,
+      "skewness_after": 2.2812137603759766,
+      "skewness_diff": 0.4642083704924804,
+      "distribution_stable": "Yes"
+    },
+    "CNT_FAM_MEMBERS": {
+      "skewness_before": 0.987542813719218,
+      "skewness_after": 0.9875524640083313,
+      "skewness_diff": 9.650289113261046e-06,
+      "distribution_stable": "Yes"
+    },
+    "EXT_SOURCE_1": {
+      "skewness_before": -0.06875505870176253,
+      "skewness_after": 1.3255780935287476,
+      "skewness_diff": 1.39433315223051,
+      "distribution_stable": "Review"
+    },
+    "EXT_SOURCE_2": {
+      "skewness_before": -0.7935760449637028,
+      "skewness_after": -0.7938188314437866,
+      "skewness_diff": 0.00024278648008380088,
+      "distribution_stable": "Yes"
+    },
+    "EXT_SOURCE_3": {
+      "skewness_before": -0.4093904596160252,
+      "skewness_after": -0.45324471592903137,
+      "skewness_diff": 0.04385425631300616,
+      "distribution_stable": "Yes"
+    },
+    "APARTMENTS_AVG": {
+      "skewness_before": 2.6418357858312778,
+      "skewness_after": 3.7755134105682373,
+      "skewness_diff": 1.1336776247369595,
+      "distribution_stable": "Review"
+    },
+    "BASEMENTAREA_AVG": {
+      "skewness_before": 3.5663061258664546,
+      "skewness_after": 5.553899765014648,
+      "skewness_diff": 1.9875936391481939,
+      "distribution_stable": "Review"
+    },
+    "YEARS_BEGINEXPLUATATION_AVG": {
+      "skewness_before": -15.515264466273848,
+      "skewness_after": -21.665172576904297,
+      "skewness_diff": 6.149908110630449,
+      "distribution_stable": "Review"
+    },
+    "YEARS_BUILD_AVG": {
+      "skewness_before": -0.9624852035905682,
+      "skewness_after": -2.5359303951263428,
+      "skewness_diff": 1.5734451915357746,
+      "distribution_stable": "Review"
+    },
+    "COMMONAREA_AVG": {
+      "skewness_before": 5.457305396120232,
+      "skewness_after": 9.943222045898438,
+      "skewness_diff": 4.485916649778206,
+      "distribution_stable": "Review"
+    },
+    "ELEVATORS_AVG": {
+      "skewness_before": 2.4394286685624373,
+      "skewness_after": 3.603900671005249,
+      "skewness_diff": 1.1644720024428117,
+      "distribution_stable": "Review"
+    },
+    "ENTRANCES_AVG": {
+      "skewness_before": 2.3997166974042456,
+      "skewness_after": 3.4166507720947266,
+      "skewness_diff": 1.016934074690481,
+      "distribution_stable": "Review"
+    },
+    "FLOORSMAX_AVG": {
+      "skewness_before": 1.226453556015356,
+      "skewness_after": 1.7504271268844604,
+      "skewness_diff": 0.5239735708691045,
+      "distribution_stable": "Review"
+    },
+    "FLOORSMIN_AVG": {
+      "skewness_before": 0.9541972815367739,
+      "skewness_after": 1.6994318962097168,
+      "skewness_diff": 0.7452346146729429,
+      "distribution_stable": "Review"
+    },
+    "LANDAREA_AVG": {
+      "skewness_before": 4.458676640750081,
+      "skewness_after": 6.967262268066406,
+      "skewness_diff": 2.508585627316325,
+      "distribution_stable": "Review"
+    },
+    "LIVINGAPARTMENTS_AVG": {
+      "skewness_before": 3.042198061393282,
+      "skewness_after": 5.257387161254883,
+      "skewness_diff": 2.215189099861601,
+      "distribution_stable": "Review"
+    },
+    "LIVINGAREA_AVG": {
+      "skewness_before": 2.85473644632105,
+      "skewness_after": 4.052337169647217,
+      "skewness_diff": 1.197600723326167,
+      "distribution_stable": "Review"
+    },
+    "NONLIVINGAPARTMENTS_AVG": {
+      "skewness_before": 15.54118547681354,
+      "skewness_after": 27.886474609375,
+      "skewness_diff": 12.34528913256146,
+      "distribution_stable": "Review"
+    },
+    "NONLIVINGAREA_AVG": {
+      "skewness_before": 6.559011647197607,
+      "skewness_after": 9.785101890563965,
+      "skewness_diff": 3.2260902433663574,
+      "distribution_stable": "Review"
+    },
+    "APARTMENTS_MODE": {
+      "skewness_before": 2.703051653589444,
+      "skewness_after": 3.8359262943267822,
+      "skewness_diff": 1.132874640737338,
+      "distribution_stable": "Review"
+    },
+    "BASEMENTAREA_MODE": {
+      "skewness_before": 3.4815328531579337,
+      "skewness_after": 5.359301567077637,
+      "skewness_diff": 1.877768713919703,
+      "distribution_stable": "Review"
+    },
+    "YEARS_BEGINEXPLUATATION_MODE": {
+      "skewness_before": -14.755317839129784,
+      "skewness_after": -20.59375762939453,
+      "skewness_diff": 5.838439790264747,
+      "distribution_stable": "Review"
+    },
+    "YEARS_BUILD_MODE": {
+      "skewness_before": -1.0023049025556343,
+      "skewness_after": -1.7205619812011719,
+      "skewness_diff": 0.7182570786455376,
+      "distribution_stable": "Review"
+    },
+    "COMMONAREA_MODE": {
+      "skewness_before": 5.620589225272556,
+      "skewness_after": 10.057147979736328,
+      "skewness_diff": 4.436558754463772,
+      "distribution_stable": "Review"
+    },
+    "ELEVATORS_MODE": {
+      "skewness_before": 2.5522810986823834,
+      "skewness_after": 3.735896587371826,
+      "skewness_diff": 1.1836154886894428,
+      "distribution_stable": "Review"
+    },
+    "ENTRANCES_MODE": {
+      "skewness_before": 2.3923433156059963,
+      "skewness_after": 3.3842074871063232,
+      "skewness_diff": 0.9918641715003269,
+      "distribution_stable": "Review"
+    },
+    "FLOORSMAX_MODE": {
+      "skewness_before": 1.2443425001895434,
+      "skewness_after": 1.7577790021896362,
+      "skewness_diff": 0.5134365020000928,
+      "distribution_stable": "Review"
+    },
+    "FLOORSMIN_MODE": {
+      "skewness_before": 0.963834755018831,
+      "skewness_after": 1.6572283506393433,
+      "skewness_diff": 0.6933935956205123,
+      "distribution_stable": "Review"
+    },
+    "LANDAREA_MODE": {
+      "skewness_before": 4.377026549681161,
+      "skewness_after": 6.827502727508545,
+      "skewness_diff": 2.450476177827384,
+      "distribution_stable": "Review"
+    },
+    "LIVINGAPARTMENTS_MODE": {
+      "skewness_before": 2.902671828936423,
+      "skewness_after": 4.871818542480469,
+      "skewness_diff": 1.969146713544046,
+      "distribution_stable": "Review"
+    },
+    "LIVINGAREA_MODE": {
+      "skewness_before": 2.9024911269667686,
+      "skewness_after": 4.092485427856445,
+      "skewness_diff": 1.1899943008896767,
+      "distribution_stable": "Review"
+    },
+    "NONLIVINGAPARTMENTS_MODE": {
+      "skewness_before": 16.251819241589054,
+      "skewness_after": 29.14165687561035,
+      "skewness_diff": 12.889837634021298,
+      "distribution_stable": "Review"
+    },
+    "NONLIVINGAREA_MODE": {
+      "skewness_before": 6.522450898549667,
+      "skewness_after": 9.684001922607422,
+      "skewness_diff": 3.161551024057755,
+      "distribution_stable": "Review"
+    },
+    "APARTMENTS_MEDI": {
+      "skewness_before": 2.639255506647989,
+      "skewness_after": 3.767275333404541,
+      "skewness_diff": 1.1280198267565522,
+      "distribution_stable": "Review"
+    },
+    "BASEMENTAREA_MEDI": {
+      "skewness_before": 3.5530395271669417,
+      "skewness_after": 5.530673503875732,
+      "skewness_diff": 1.9776339767087907,
+      "distribution_stable": "Review"
+    },
+    "YEARS_BEGINEXPLUATATION_MEDI": {
+      "skewness_before": -15.573124273878927,
+      "skewness_after": -21.743715286254883,
+      "skewness_diff": 6.170591012375956,
+      "distribution_stable": "Review"
+    },
+    "YEARS_BUILD_MEDI": {
+      "skewness_before": -0.9627843224572195,
+      "skewness_after": -2.229875087738037,
+      "skewness_diff": 1.2670907652808177,
+      "distribution_stable": "Review"
+    },
+    "COMMONAREA_MEDI": {
+      "skewness_before": 5.419238452233025,
+      "skewness_after": 9.876778602600098,
+      "skewness_diff": 4.457540150367072,
+      "distribution_stable": "Review"
+    },
+    "ELEVATORS_MEDI": {
+      "skewness_before": 2.4578240835827048,
+      "skewness_after": 3.6247706413269043,
+      "skewness_diff": 1.1669465577441995,
+      "distribution_stable": "Review"
+    },
+    "ENTRANCES_MEDI": {
+      "skewness_before": 2.3877109978106588,
+      "skewness_after": 3.396961212158203,
+      "skewness_diff": 1.0092502143475444,
+      "distribution_stable": "Review"
+    },
+    "FLOORSMAX_MEDI": {
+      "skewness_before": 1.2401854976388538,
+      "skewness_after": 1.7651599645614624,
+      "skewness_diff": 0.5249744669226086,
+      "distribution_stable": "Review"
+    },
+    "FLOORSMIN_MEDI": {
+      "skewness_before": 0.9602264549841373,
+      "skewness_after": 1.710476040840149,
+      "skewness_diff": 0.7502495858560116,
+      "distribution_stable": "Review"
+    },
+    "LANDAREA_MEDI": {
+      "skewness_before": 4.3682923191800445,
+      "skewness_after": 6.851218223571777,
+      "skewness_diff": 2.482925904391733,
+      "distribution_stable": "Review"
+    },
+    "LIVINGAPARTMENTS_MEDI": {
+      "skewness_before": 2.9882914448561615,
+      "skewness_after": 5.150710105895996,
+      "skewness_diff": 2.1624186610398346,
+      "distribution_stable": "Review"
+    },
+    "LIVINGAREA_MEDI": {
+      "skewness_before": 2.84893537121163,
+      "skewness_after": 4.039149284362793,
+      "skewness_diff": 1.190213913151163,
+      "distribution_stable": "Review"
+    },
+    "NONLIVINGAPARTMENTS_MEDI": {
+      "skewness_before": 15.671995157824549,
+      "skewness_after": 28.31247329711914,
+      "skewness_diff": 12.640478139294592,
+      "distribution_stable": "Review"
+    },
+    "NONLIVINGAREA_MEDI": {
+      "skewness_before": 6.508830983416643,
+      "skewness_after": 9.727133750915527,
+      "skewness_diff": 3.2183027674988844,
+      "distribution_stable": "Review"
+    },
+    "TOTALAREA_MODE": {
+      "skewness_before": 2.7975715203286953,
+      "skewness_after": 3.8700642585754395,
+      "skewness_diff": 1.0724927382467442,
+      "distribution_stable": "Review"
+    },
+    "OBS_30_CNT_SOCIAL_CIRCLE": {
+      "skewness_before": 12.13959776486944,
+      "skewness_after": 12.15981388092041,
+      "skewness_diff": 0.02021611605096929,
+      "distribution_stable": "Yes"
+    },
+    "DEF_30_CNT_SOCIAL_CIRCLE": {
+      "skewness_before": 5.1835179524202655,
+      "skewness_after": 5.192076206207275,
+      "skewness_diff": 0.008558253787009917,
+      "distribution_stable": "Yes"
+    },
+    "OBS_60_CNT_SOCIAL_CIRCLE": {
+      "skewness_before": 12.070828697697406,
+      "skewness_after": 12.090932846069336,
+      "skewness_diff": 0.020104148371929753,
+      "distribution_stable": "Yes"
+    },
+    "DEF_60_CNT_SOCIAL_CIRCLE": {
+      "skewness_before": 5.277878292698042,
+      "skewness_after": 5.286576271057129,
+      "skewness_diff": 0.008697978359086811,
+      "distribution_stable": "Yes"
+    },
+    "DAYS_LAST_PHONE_CHANGE": {
+      "skewness_before": -0.7136056678591619,
+      "skewness_after": -0.7136107087135315,
+      "skewness_diff": 5.040854369586789e-06,
+      "distribution_stable": "Yes"
+    },
+    "AMT_REQ_CREDIT_BUREAU_HOUR": {
+      "skewness_before": 14.534062061826713,
+      "skewness_after": 15.579541206359863,
+      "skewness_diff": 1.0454791445331502,
+      "distribution_stable": "Review"
+    },
+    "AMT_REQ_CREDIT_BUREAU_DAY": {
+      "skewness_before": 27.043504708921247,
+      "skewness_after": 27.708736419677734,
+      "skewness_diff": 0.6652317107564869,
+      "distribution_stable": "Review"
+    },
+    "AMT_REQ_CREDIT_BUREAU_WEEK": {
+      "skewness_before": 9.293572551814961,
+      "skewness_after": 9.939805030822754,
+      "skewness_diff": 0.6462324790077929,
+      "distribution_stable": "Review"
+    },
+    "AMT_REQ_CREDIT_BUREAU_MON": {
+      "skewness_before": 7.804848087437465,
+      "skewness_after": 8.322745323181152,
+      "skewness_diff": 0.5178972357436873,
+      "distribution_stable": "Review"
+    },
+    "AMT_REQ_CREDIT_BUREAU_QRT": {
+      "skewness_before": 134.3657760491255,
+      "skewness_after": 133.4720001220703,
+      "skewness_diff": 0.8937759270551737,
+      "distribution_stable": "Review"
+    },
+    "AMT_REQ_CREDIT_BUREAU_YEAR": {
+      "skewness_before": 1.2435900041416597,
+      "skewness_after": 1.4299921989440918,
+      "skewness_diff": 0.18640219480243214,
+      "distribution_stable": "Yes"
+    },
+    "MONTHS_BALANCE_count": {
+      "skewness_before": 0.866166177410432,
+      "skewness_after": 3.85121750831604,
+      "skewness_diff": 2.985051330905608,
+      "distribution_stable": "Review"
+    },
+    "AMT_BALANCE_sum": {
+      "skewness_before": 2.477707188115907,
+      "skewness_after": -1.4782567024230957,
+      "skewness_diff": 3.9559638905390027,
+      "distribution_stable": "Review"
+    },
+    "AMT_BALANCE_mean": {
+      "skewness_before": 2.8271600521283426,
+      "skewness_after": 3.10007905960083,
+      "skewness_diff": 0.27291900747248743,
+      "distribution_stable": "Yes"
+    },
+    "AMT_BALANCE_max": {
+      "skewness_before": 1.9195859477939372,
+      "skewness_after": 6.439795970916748,
+      "skewness_diff": 4.520210023122811,
+      "distribution_stable": "Review"
+    },
+    "AMT_CREDIT_LIMIT_ACTUAL_mean": {
+      "skewness_before": 1.7991833561562058,
+      "skewness_after": -5.912732124328613,
+      "skewness_diff": 7.711915480484819,
+      "distribution_stable": "Review"
+    },
+    "CNT_DRAWINGS_CURRENT_sum": {
+      "skewness_before": 8.615892252895968,
+      "skewness_after": 10.810600280761719,
+      "skewness_diff": 2.194708027865751,
+      "distribution_stable": "Review"
+    },
+    "CNT_DRAWINGS_ATM_CURRENT_sum": {
+      "skewness_before": 3.629185422075089,
+      "skewness_after": 6.183132648468018,
+      "skewness_diff": 2.5539472263929284,
+      "distribution_stable": "Review"
+    },
+    "SK_ID_PREV_count": {
+      "skewness_before": 2.016918546825517,
+      "skewness_after": 2.2274177074432373,
+      "skewness_diff": 0.21049916061772045,
+      "distribution_stable": "Yes"
+    },
+    "DAYS_INSTALMENT_mean": {
+      "skewness_before": -0.7839367318487955,
+      "skewness_after": -1.531379222869873,
+      "skewness_diff": 0.7474424910210775,
+      "distribution_stable": "Review"
+    },
+    "DAYS_INSTALMENT_max": {
+      "skewness_before": -2.1452251619737113,
+      "skewness_after": -4.214548587799072,
+      "skewness_diff": 2.069323425825361,
+      "distribution_stable": "Review"
+    },
+    "DAYS_ENTRY_PAYMENT_mean": {
+      "skewness_before": -0.7835799716591875,
+      "skewness_after": -1.544808030128479,
+      "skewness_diff": 0.7612280584692915,
+      "distribution_stable": "Review"
+    },
+    "DAYS_ENTRY_PAYMENT_max": {
+      "skewness_before": -2.135108075552739,
+      "skewness_after": -4.208244800567627,
+      "skewness_diff": 2.073136725014888,
+      "distribution_stable": "Review"
+    },
+    "AMT_INSTALMENT_sum": {
+      "skewness_before": 3.6554140259902237,
+      "skewness_after": 6.840164661407471,
+      "skewness_diff": 3.184750635417247,
+      "distribution_stable": "Review"
+    },
+    "AMT_INSTALMENT_mean": {
+      "skewness_before": 30.116780959862542,
+      "skewness_after": 57.68290710449219,
+      "skewness_diff": 27.566126144629646,
+      "distribution_stable": "Review"
+    },
+    "AMT_PAYMENT_sum": {
+      "skewness_before": 4.167217674100805,
+      "skewness_after": 7.883158206939697,
+      "skewness_diff": 3.715940532838892,
+      "distribution_stable": "Review"
+    },
+    "AMT_PAYMENT_mean": {
+      "skewness_before": 25.781668569468,
+      "skewness_after": 50.425758361816406,
+      "skewness_diff": 24.644089792348407,
+      "distribution_stable": "Review"
+    }
+  },
+  "dtype_optimizations": {
+    "SK_ID_CURR": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "TARGET": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "CNT_CHILDREN": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "AMT_INCOME_TOTAL": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "AMT_CREDIT": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "AMT_ANNUITY": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "AMT_GOODS_PRICE": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "REGION_POPULATION_RELATIVE": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "DAYS_BIRTH": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "DAYS_EMPLOYED": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "DAYS_REGISTRATION": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "DAYS_ID_PUBLISH": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "OWN_CAR_AGE": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "FLAG_MOBIL": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "FLAG_EMP_PHONE": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "FLAG_WORK_PHONE": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "FLAG_CONT_MOBILE": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "FLAG_PHONE": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "FLAG_EMAIL": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "CNT_FAM_MEMBERS": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "REGION_RATING_CLIENT": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "REGION_RATING_CLIENT_W_CITY": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "HOUR_APPR_PROCESS_START": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "REG_REGION_NOT_LIVE_REGION": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "REG_REGION_NOT_WORK_REGION": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "LIVE_REGION_NOT_WORK_REGION": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "REG_CITY_NOT_LIVE_CITY": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "REG_CITY_NOT_WORK_CITY": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "LIVE_CITY_NOT_WORK_CITY": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "EXT_SOURCE_1": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "EXT_SOURCE_2": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "EXT_SOURCE_3": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "APARTMENTS_AVG": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "BASEMENTAREA_AVG": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "YEARS_BEGINEXPLUATATION_AVG": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "YEARS_BUILD_AVG": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "COMMONAREA_AVG": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "ELEVATORS_AVG": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "ENTRANCES_AVG": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "FLOORSMAX_AVG": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "FLOORSMIN_AVG": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "LANDAREA_AVG": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "LIVINGAPARTMENTS_AVG": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "LIVINGAREA_AVG": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "NONLIVINGAPARTMENTS_AVG": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "NONLIVINGAREA_AVG": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "APARTMENTS_MODE": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "BASEMENTAREA_MODE": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "YEARS_BEGINEXPLUATATION_MODE": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "YEARS_BUILD_MODE": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "COMMONAREA_MODE": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "ELEVATORS_MODE": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "ENTRANCES_MODE": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "FLOORSMAX_MODE": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "FLOORSMIN_MODE": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "LANDAREA_MODE": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "LIVINGAPARTMENTS_MODE": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "LIVINGAREA_MODE": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "NONLIVINGAPARTMENTS_MODE": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "NONLIVINGAREA_MODE": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "APARTMENTS_MEDI": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "BASEMENTAREA_MEDI": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "YEARS_BEGINEXPLUATATION_MEDI": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "YEARS_BUILD_MEDI": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "COMMONAREA_MEDI": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "ELEVATORS_MEDI": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "ENTRANCES_MEDI": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "FLOORSMAX_MEDI": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "FLOORSMIN_MEDI": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "LANDAREA_MEDI": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "LIVINGAPARTMENTS_MEDI": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "LIVINGAREA_MEDI": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "NONLIVINGAPARTMENTS_MEDI": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "NONLIVINGAREA_MEDI": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "TOTALAREA_MODE": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "OBS_30_CNT_SOCIAL_CIRCLE": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "DEF_30_CNT_SOCIAL_CIRCLE": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "OBS_60_CNT_SOCIAL_CIRCLE": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "DEF_60_CNT_SOCIAL_CIRCLE": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "DAYS_LAST_PHONE_CHANGE": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "FLAG_DOCUMENT_2": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "FLAG_DOCUMENT_3": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "FLAG_DOCUMENT_4": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "FLAG_DOCUMENT_5": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "FLAG_DOCUMENT_6": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "FLAG_DOCUMENT_7": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "FLAG_DOCUMENT_8": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "FLAG_DOCUMENT_9": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "FLAG_DOCUMENT_10": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "FLAG_DOCUMENT_11": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "FLAG_DOCUMENT_12": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "FLAG_DOCUMENT_13": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "FLAG_DOCUMENT_14": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "FLAG_DOCUMENT_15": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "FLAG_DOCUMENT_16": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "FLAG_DOCUMENT_17": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "FLAG_DOCUMENT_18": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "FLAG_DOCUMENT_19": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "FLAG_DOCUMENT_20": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "FLAG_DOCUMENT_21": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "AMT_REQ_CREDIT_BUREAU_HOUR": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "AMT_REQ_CREDIT_BUREAU_DAY": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "AMT_REQ_CREDIT_BUREAU_WEEK": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "AMT_REQ_CREDIT_BUREAU_MON": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "AMT_REQ_CREDIT_BUREAU_QRT": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "AMT_REQ_CREDIT_BUREAU_YEAR": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "MONTHS_BALANCE_count": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "AMT_BALANCE_sum": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "AMT_BALANCE_mean": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "AMT_BALANCE_max": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "AMT_CREDIT_LIMIT_ACTUAL_mean": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "CNT_DRAWINGS_CURRENT_sum": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "CNT_DRAWINGS_ATM_CURRENT_sum": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "SK_ID_PREV_count": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "DAYS_INSTALMENT_mean": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "DAYS_INSTALMENT_max": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "DAYS_ENTRY_PAYMENT_mean": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "DAYS_ENTRY_PAYMENT_max": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "AMT_INSTALMENT_sum": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "AMT_INSTALMENT_mean": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "AMT_PAYMENT_sum": {
+      "original": "float64",
+      "optimized": "float32"
+    },
+    "AMT_PAYMENT_mean": {
+      "original": "float64",
+      "optimized": "float32"
+    }
+  },
+  "summary": {
+    "records_removed": 0,
+    "nulls_removed": 12778090,
+    "memory_reduction_percent": 25.466869413438246,
+    "columns_imputed": 83,
+    "outlier_columns": 106
+  }
+}

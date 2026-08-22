@@ -1,0 +1,124 @@
+{
+  "chunk_id": "CHUNK_06",
+  "chunk_name": "Model Validation - Top 2 Models, 5-Fold CV",
+  "execution_timestamp": "2026-08-12T00:27:16.969329",
+  "status": "COMPLETED",
+  "description": "5-Fold stratified cross-validation on auto-selected top 2 models",
+  "selected_models": [
+    "Logistic Regression",
+    "Random Forest"
+  ],
+  "cross_validation": {
+    "method": "5-Fold Stratified",
+    "folds": 5
+  },
+  "validation_results": {
+    "Logistic Regression": {
+      "mean_auc": 0.7174548451544303,
+      "std_auc": 0.04119091520586865,
+      "mean_f1": 0.24229441437273733,
+      "mean_precision": 0.14977522339962426,
+      "mean_recall": 0.6338368580060423,
+      "mean_accuracy": 0.6801480165520581,
+      "fold_scores": {
+        "auc_scores": [
+          0.7342979226654928,
+          0.6355146834035963,
+          0.7383906529604501,
+          0.7455421835081985,
+          0.7335287832344141
+        ],
+        "f1_scores": [
+          0.25092336103416435,
+          0.19498737128424326,
+          0.25382765071971286,
+          0.2592878063819948,
+          0.25244588244357136
+        ],
+        "precision_scores": [
+          0.15508631759166785,
+          0.12079922965816081,
+          0.15660039574107226,
+          0.16032025925749416,
+          0.15606991474972615
+        ],
+        "recall_scores": [
+          0.656797583081571,
+          0.505337361530715,
+          0.6694864048338368,
+          0.6775427995971802,
+          0.6600201409869083
+        ],
+        "accuracy_scores": [
+          0.6834300765816301,
+          0.6631491658807843,
+          0.6822379760007805,
+          0.6874898377288543,
+          0.6844330265682417
+        ]
+      }
+    },
+    "Random Forest": {
+      "mean_auc": 0.937423324048145,
+      "std_auc": 0.0018237860472954436,
+      "mean_f1": 0.5481456359908646,
+      "mean_precision": 0.39831995724398456,
+      "mean_recall": 0.8786706948640483,
+      "mean_accuracy": 0.8830480811730453,
+      "fold_scores": {
+        "auc_scores": [
+          0.9383967371159474,
+          0.9396302336815104,
+          0.9357293722808869,
+          0.9385293103869935,
+          0.9348309667753869
+        ],
+        "f1_scores": [
+          0.5506329113924051,
+          0.5530923290086913,
+          0.544615000623986,
+          0.5478353486623645,
+          0.544552590266876
+        ],
+        "precision_scores": [
+          0.40147669589293955,
+          0.40236415284523047,
+          0.39453937257029204,
+          0.39759912695525645,
+          0.3956204379562044
+        ],
+        "recall_scores": [
+          0.8761329305135952,
+          0.8843907351460222,
+          0.8789526686807654,
+          0.880563947633434,
+          0.873313192346425
+        ],
+        "accuracy_scores": [
+          0.8845584768222688,
+          0.8846216383207051,
+          0.8813371922864297,
+          0.8826542226269064,
+          0.8820688758089168
+        ]
+      }
+    }
+  },
+  "best_model": {
+    "name": "Random Forest",
+    "mean_cv_auc": 0.937423324048145,
+    "cv_auc_std": 0.0018237860472954436,
+    "mean_f1": 0.5481456359908646,
+    "quality_gate_passed": true
+  },
+  "outputs": [
+    {
+      "type": "json",
+      "name": "validation_report.json",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\06_Model_Validation\\Reports\\validation_report.json",
+      "description": "Comprehensive validation results"
+    }
+  ],
+  "ready_for_next_chunk": true,
+  "next_chunk": "CHUNK_07 (Model Calibration)"
+}

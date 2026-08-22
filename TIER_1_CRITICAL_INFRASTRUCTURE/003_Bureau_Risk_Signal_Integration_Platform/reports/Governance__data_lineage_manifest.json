@@ -1,0 +1,12 @@
+{
+  "02_Data_Cleaning_Preprocessing/Cleaned_Data/bureau_risk_cleaned.csv": [
+    {
+      "source": "02_Data_Cleaning_Preprocessing/Cleaned_Data/bureau_risk_cleaned.csv",
+      "output": "03_Feature_Validation_Analysis/Processed_Data/validation_output.csv",
+      "record_count": 307511,
+      "transformation_type": "FEATURE_VALIDATION_AND_ANALYSIS",
+      "timestamp": "2026-08-11T17:21:27.509579",
+      "checksum": "N/A"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "chunk_id": "CHUNK_02",
+  "chunk_name": "Data Cleaning & Preprocessing",
+  "execution_timestamp": "2026-08-12T00:03:57.025073",
+  "status": "COMPLETED",
+  "description": "Data cleaning and preprocessing with signal preservation",
+  "inputs": {
+    "file": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\01_Data_Ingestion\\Raw_Data\\home_credit_raw.csv",
+    "records": 307511,
+    "features": 122
+  },
+  "outputs": [
+    {
+      "type": "csv",
+      "name": "home_credit_cleaned.csv",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\02_Data_Cleaning_Preprocessing\\Cleaned_Data\\home_credit_cleaned.csv",
+      "size_mb": 210.6170883178711,
+      "records": 307511,
+      "features": 122
+    }
+  ],
+  "cleaning_operations": {
+    "duplicates_removed": 0,
+    "missing_values_handled": "median/mode imputation",
+    "outliers_preserved": true,
+    "data_loss_percent": 0.0
+  },
+  "quality_status": "PASS",
+  "ready_for_next_chunk": true,
+  "next_chunk": "CHUNK_03 (Feature Validation)"
+}

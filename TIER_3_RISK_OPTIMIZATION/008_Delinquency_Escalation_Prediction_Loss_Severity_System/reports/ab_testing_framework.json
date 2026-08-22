@@ -1,0 +1,50 @@
+{
+  "framework_id": "4506bc39-f885-467a-a596-5a270cfb801c",
+  "timestamp": "2026-08-11T10:48:11.699413",
+  "ab_test_config": {
+    "test_name": "Delinquency_Predictor_v1_vs_Baseline",
+    "hypothesis": "Model v1.0.0 improves early detection by 10%+",
+    "control_model": "Baseline/Previous Model",
+    "treatment_model": "Delinquency_Escalation_Predictor_v1",
+    "traffic_split": "50-50",
+    "test_duration_days": 14,
+    "minimum_sample_size": 1000,
+    "statistical_significance": 0.95
+  },
+  "success_metrics": {
+    "primary": {
+      "metric": "Early Detection Rate",
+      "current_baseline": 0.65,
+      "target": 0.75,
+      "required_improvement": 0.1
+    },
+    "secondary": [
+      {
+        "metric": "False Positive Rate",
+        "current_baseline": 0.2,
+        "target": 0.15,
+        "direction": "down"
+      },
+      {
+        "metric": "Model Latency (ms)",
+        "current_baseline": 150,
+        "target": 100,
+        "direction": "down"
+      }
+    ]
+  },
+  "rollout_plan": {
+    "phase_1_duration_days": 7,
+    "phase_1_traffic_percentage": 10,
+    "phase_2_duration_days": 7,
+    "phase_2_traffic_percentage": 50,
+    "phase_3_duration_days": 30,
+    "phase_3_traffic_percentage": 100
+  },
+  "rollback_criteria": {
+    "condition_1": "ROC-AUC drops below 0.75",
+    "condition_2": "Error rate exceeds 5%",
+    "condition_3": "Data drift detected (KS p-value < 0.05)",
+    "action": "Automatic rollback to previous model"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "chunk_id": "CHUNK_12",
+  "chunk_name": "Business Intelligence & Dashboards",
+  "execution_timestamp": "2026-08-12T01:32:27.906692",
+  "status": "COMPLETED",
+  "description": "Comprehensive BI dashboards and visualizations for CHUNK_13 final report",
+  "dashboards_created": {
+    "executive_summary": "Comprehensive 9-panel executive dashboard",
+    "model_performance": "4-panel model performance and validation",
+    "fairness_bias": "6-panel fairness and bias analysis",
+    "monitoring_drift": "4-panel monitoring and drift detection"
+  },
+  "charts": {
+    "total_charts": 4,
+    "visualizations": [
+      "Executive Summary (9 KPIs)",
+      "Model Performance (ROC, CM, FI, Calibration)",
+      "Fairness & Bias (5 demographic groups)",
+      "Monitoring & Drift (30-day trend)"
+    ]
+  },
+  "tables": {
+    "performance_metrics": "CSV with 10 metrics (train/test/CV)",
+    "feature_importance": "CSV with top 20 features ranked"
+  },
+  "outputs": [
+    {
+      "type": "png",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\12_Business_Intelligence\\Dashboards\\executive_summary_dashboard.png",
+      "description": "Executive Summary Dashboard"
+    },
+    {
+      "type": "png",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\12_Business_Intelligence\\Charts\\model_performance_dashboard.png",
+      "description": "Model Performance Dashboard"
+    },
+    {
+      "type": "png",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\12_Business_Intelligence\\Charts\\fairness_bias_dashboard.png",
+      "description": "Fairness & Bias Dashboard"
+    },
+    {
+      "type": "png",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\12_Business_Intelligence\\Charts\\monitoring_drift_dashboard.png",
+      "description": "Monitoring & Drift Dashboard"
+    },
+    {
+      "type": "csv",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\12_Business_Intelligence\\Reports\\performance_metrics_table.csv",
+      "description": "Performance Metrics"
+    },
+    {
+      "type": "csv",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\12_Business_Intelligence\\Reports\\feature_importance_table.csv",
+      "description": "Feature Importance"
+    }
+  ],
+  "ready_for_next_chunk": true,
+  "next_chunk": "CHUNK_13 (Final Report Generation)"
+}

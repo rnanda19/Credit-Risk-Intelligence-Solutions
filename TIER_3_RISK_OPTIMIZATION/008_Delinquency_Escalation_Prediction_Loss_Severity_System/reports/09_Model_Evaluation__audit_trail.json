@@ -1,0 +1,183 @@
+{
+  "execution_id": "20260811_001026_420646",
+  "timestamp": "2026-08-11T00:10:26.420723",
+  "process": "Model Evaluation & Validation",
+  "version": "8.0-COMPREHENSIVE-EVALUATION",
+  "sop_compliance": [
+    "BCBS 239",
+    "SOX 404",
+    "JP Morgan Standards",
+    "Goldman Sachs Framework"
+  ],
+  "evaluation_components": [
+    "Test Set Metrics",
+    "Cross-Validation",
+    "ROC/PR Curves",
+    "Confusion Matrix",
+    "SHAP Analysis",
+    "Residual Analysis"
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "action": "Load Data & Tuned Model",
+      "timestamp": "2026-08-11T00:10:29.871562",
+      "train_records": 246008,
+      "test_records": 61503,
+      "features": 75,
+      "class_distribution": {
+        "0.0": "56538",
+        "1.0": "4965"
+      }
+    },
+    {
+      "step": 2,
+      "action": "Test Set Metrics",
+      "timestamp": "2026-08-11T00:10:30.095896",
+      "metrics": {
+        "accuracy": 0.9569289302960832,
+        "precision": 0.9416475972540046,
+        "recall": 0.4972809667673716,
+        "f1_score": 0.6508501383946224,
+        "roc_auc": 0.954692896616832,
+        "matthews_corrcoef": 0.6668957019425903,
+        "cohen_kappa": 0.6302171407990045
+      }
+    },
+    {
+      "step": 3,
+      "action": "Confusion Matrix & Classification Report",
+      "timestamp": "2026-08-11T00:10:30.136304",
+      "confusion_matrix": [
+        [
+          56385,
+          153
+        ],
+        [
+          2496,
+          2469
+        ]
+      ],
+      "sensitivity": 0.4972809667673716,
+      "specificity": 0.9972938554600446
+    },
+    {
+      "step": 4,
+      "action": "ROC & PR Curves",
+      "timestamp": "2026-08-11T00:10:30.257625",
+      "roc_auc": 0.954692896616832,
+      "pr_auc": 0.7978304866484763
+    },
+    {
+      "step": 5,
+      "action": "Cross-Validation Analysis",
+      "timestamp": "2026-08-11T00:12:02.025848",
+      "cv_folds": 5,
+      "cv_summary": {
+        "accuracy": {
+          "train_mean": 0.9999910572278292,
+          "train_std": 3.041897185510949e-06,
+          "test_mean": 0.9571787647000548,
+          "test_std": 0.0006733836799884439,
+          "cv_folds": [
+            0.9580670861583988,
+            0.9562778446229391,
+            0.9577574713017463,
+            0.9566030372996001,
+            0.9571883841175897
+          ]
+        },
+        "precision": {
+          "train_mean": 1.0,
+          "train_std": 0.0,
+          "test_mean": 0.9497037332888821,
+          "test_std": 0.0025648952147675113,
+          "cv_folds": [
+            0.9512102874432677,
+            0.9530254777070064,
+            0.950513894175866,
+            0.9456521739130435,
+            0.9481168332052268
+          ]
+        },
+        "recall": {
+          "train_mean": 0.9998892245720039,
+          "train_std": 3.7680336221258644e-05,
+          "test_mean": 0.49583081570996984,
+          "test_std": 0.008713764696009416,
+          "cv_folds": [
+            0.5065458207452165,
+            0.48217522658610273,
+            0.502920443101712,
+            0.4906344410876133,
+            0.4968781470292044
+          ]
+        },
+        "f1": {
+          "train_mean": 0.9999446088630247,
+          "train_std": 1.8842133337108736e-05,
+          "test_mean": 0.6514661313894009,
+          "test_std": 0.007547827069818044,
+          "cv_folds": [
+            0.6610592719148377,
+            0.6403637822656145,
+            0.6577976817702845,
+            0.6460681607213897,
+            0.6520417602748778
+          ]
+        },
+        "roc_auc": {
+          "train_mean": 1.0,
+          "train_std": 0.0,
+          "test_mean": 0.9516732589136288,
+          "test_std": 0.0010077645398832715,
+          "cv_folds": [
+            0.9517526413359326,
+            0.952431715928759,
+            0.9497485226591268,
+            0.9525338084350504,
+            0.9518996062092749
+          ]
+        }
+      }
+    },
+    {
+      "step": 6,
+      "action": "Prediction Distribution",
+      "timestamp": "2026-08-11T00:12:02.139768"
+    },
+    {
+      "step": 7,
+      "action": "Error Analysis",
+      "timestamp": "2026-08-11T00:12:02.319961",
+      "total_errors": 2649,
+      "high_confidence_errors": 2123
+    },
+    {
+      "step": 8,
+      "action": "Model Calibration",
+      "timestamp": "2026-08-11T00:12:02.331903",
+      "ece": 0.1494618482672334
+    },
+    {
+      "step": 9,
+      "action": "Visualizations",
+      "timestamp": "2026-08-11T00:12:05.133294",
+      "visualizations_created": 6
+    },
+    {
+      "step": 10,
+      "action": "Dashboard Metrics",
+      "timestamp": "2026-08-11T00:12:05.136412",
+      "metrics_created": 26
+    },
+    {
+      "step": 11,
+      "action": "Evaluation Report",
+      "timestamp": "2026-08-11T00:12:05.143528"
+    }
+  ],
+  "completion_timestamp": "2026-08-11T00:12:05.143697",
+  "execution_status": "SUCCESS",
+  "execution_time_seconds": 98.723038
+}

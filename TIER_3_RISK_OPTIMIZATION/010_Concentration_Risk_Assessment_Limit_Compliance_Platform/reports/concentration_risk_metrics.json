@@ -1,0 +1,46 @@
+{
+  "Income Level": {
+    "segments": 5,
+    "total_exposure": 2089397766.0650501,
+    "hhi": 2012.247707058083,
+    "cr5": 100.0,
+    "cr10": 100.0,
+    "gini": 0.04234571238025442,
+    "normalized_hhi": 0.0015309633822603813,
+    "top_segment": "Medium",
+    "top_segment_share": 21.749464584280958
+  },
+  "Employment Type": {
+    "segments": 3,
+    "total_exposure": 2089397766.0650501,
+    "hhi": 3334.0971677026905,
+    "cr5": 100.0,
+    "cr10": 100.0,
+    "gini": 0.007708371123906765,
+    "normalized_hhi": 0.00011457515540355417,
+    "top_segment": "Working",
+    "top_segment_share": 34.03753705997513
+  },
+  "Credit Score Bucket": {
+    "segments": 5,
+    "total_exposure": 2089397766.0650501,
+    "hhi": 2002.3140062975704,
+    "cr5": 100.0,
+    "cr10": 100.0,
+    "gini": 0.01879836276202007,
+    "normalized_hhi": 0.0002892507871962948,
+    "top_segment": "Fair",
+    "top_segment_share": 20.857510870664477
+  },
+  "Age Group": {
+    "segments": 5,
+    "total_exposure": 2089397766.0650501,
+    "hhi": 2231.1415563599794,
+    "cr5": 100.00000000000003,
+    "cr10": 100.00000000000003,
+    "gini": 0.1757795562559341,
+    "normalized_hhi": 0.028892694544997426,
+    "top_segment": "45-55",
+    "top_segment_share": 26.59183302380741
+  }
+}

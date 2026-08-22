@@ -1,0 +1,51 @@
+{
+  "generated_date": "2026-08-02T21:18:23.700206",
+  "features": {
+    "CUSTOMER_AGE": {
+      "type": "continuous",
+      "source": "application_train (DAYS_BIRTH)",
+      "description": "Customer age in years",
+      "range": [
+        20.558526040761322,
+        60.038430195683915
+      ],
+      "mean": 40.61930045031835,
+      "missing_count": 0
+    },
+    "PROPENSITY_RISK_ADJUSTED": {
+      "type": "continuous",
+      "source": "Engineered feature (composite)",
+      "description": "Risk-adjusted cross-sell propensity (0-1)",
+      "range": [
+        0.357280238074732,
+        0.7051707553205666
+      ],
+      "mean": 0.542069379862354,
+      "missing_count": 0
+    },
+    "PROBABILITY_OF_DEFAULT_PROXY": {
+      "type": "continuous",
+      "source": "Engineered feature (risk proxy)",
+      "description": "Proxy for probability of default (0-1)",
+      "range": [
+        0.125,
+        0.1740691232653978
+      ],
+      "mean": 0.14277442941346952,
+      "missing_count": 0
+    },
+    "SEGMENT": {
+      "type": "categorical",
+      "source": "Engineered segmentation",
+      "description": "4 customer segments for targeting",
+      "unique_values": 4,
+      "distribution": {
+        "MONITOR": 1304,
+        "RETENTION_OFFERS": 1102,
+        "GROWTH_CROSSSELL": 1002,
+        "PREMIUM_CROSSSELL": 592
+      },
+      "missing_count": 0
+    }
+  }
+}

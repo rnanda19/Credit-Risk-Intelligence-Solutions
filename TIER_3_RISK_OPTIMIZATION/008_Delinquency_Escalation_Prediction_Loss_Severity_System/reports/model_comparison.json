@@ -1,0 +1,26 @@
+{
+  "comparison_timestamp": "2026-08-11T11:56:54.724520",
+  "models_evaluated": [
+    {
+      "model_name": "Current: XGBoost",
+      "model_type": "XGBoost",
+      "roc_auc": 0.9180908600822688,
+      "accuracy": 0.944539290766304,
+      "improvement_vs_current": -3.8339068682998154
+    },
+    {
+      "model_name": "Alternative: LightGBM",
+      "model_type": "LightGBM",
+      "roc_auc": 0.9017845282038474,
+      "accuracy": 0.9393362925385753,
+      "improvement_vs_current": -5.541925429682914
+    },
+    {
+      "model_name": "Alternative: GB",
+      "model_type": "Gradient Boosting",
+      "roc_auc": 0.8996280589760643,
+      "accuracy": 0.9395476643415769,
+      "improvement_vs_current": -5.767806363271605
+    }
+  ]
+}

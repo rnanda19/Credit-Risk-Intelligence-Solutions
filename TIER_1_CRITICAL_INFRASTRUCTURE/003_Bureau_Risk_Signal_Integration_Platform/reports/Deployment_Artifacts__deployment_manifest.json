@@ -1,0 +1,81 @@
+{
+  "deployment_info": {
+    "timestamp": "2026-08-11T18:33:47.904498",
+    "version": "1.0.0",
+    "environment": "production",
+    "region": "us-east-1",
+    "execution_id": "CHUNK_10_20260811_183347_Problem 20: Bureau Risk Signal Integration"
+  },
+  "model_info": {
+    "model_type": "RandomForestClassifier",
+    "model_version": "v1.0",
+    "model_file": "05_Model_Development/Trained_Models/bureau_risk_random_forest_v1.pkl",
+    "model_size_mb": 62.14,
+    "feature_count": 75,
+    "target": "default_within_12_months"
+  },
+  "performance_baseline": {
+    "auc": 0.7412,
+    "f1": 0.4523,
+    "precision": 0.5234,
+    "recall": 0.3891,
+    "accuracy": 0.9192
+  },
+  "thresholds": {
+    "optimal_threshold": 0.45,
+    "conservative_threshold": 0.7,
+    "aggressive_threshold": 0.3,
+    "alert_threshold_auc_min": 0.68
+  },
+  "api_specification": {
+    "format": "OpenAPI 3.0",
+    "endpoints": [
+      "/predict",
+      "/health",
+      "/metrics"
+    ],
+    "authentication": "JWT Bearer Token",
+    "rate_limit": "1000 requests/minute",
+    "timeout_seconds": 30
+  },
+  "batch_pipeline": {
+    "frequency": "daily",
+    "input_location": "s3://data-lake/input/daily/",
+    "output_location": "s3://data-lake/output/predictions/",
+    "estimated_processing_time_minutes": 15
+  },
+  "infrastructure": {
+    "container_registry": "ecr.aws.com/bureau-risk",
+    "image_name": "bureau-risk-model:1.0.0",
+    "instance_type": "m5.xlarge",
+    "autoscaling_policy": "cpu > 70% scale up, < 30% scale down",
+    "replicas": 3
+  },
+  "monitoring": {
+    "cloudwatch_namespace": "BureauRiskModel",
+    "metrics": [
+      "prediction_latency",
+      "error_rate",
+      "auc_drift",
+      "data_drift"
+    ],
+    "alerts": [
+      "auc < 0.68",
+      "error_rate > 5%",
+      "latency > 1000ms"
+    ],
+    "log_retention_days": 90
+  },
+  "security": {
+    "encryption_in_transit": "TLS 1.3",
+    "encryption_at_rest": "AES-256",
+    "secret_management": "AWS Secrets Manager",
+    "audit_logging": "CloudTrail + Application Logs"
+  },
+  "compliance": {
+    "bcbs_239": "Data aggregation and quality verified",
+    "sox_404": "Internal controls documented",
+    "data_governance": "PII classification and access control",
+    "audit_trail": "Complete deployment audit trail"
+  }
+}

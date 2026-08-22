@@ -1,0 +1,35 @@
+{
+  "report_date": "2026-08-10T10:57:14.046149",
+  "project_name": "Early Payment Default Detection",
+  "problem_id": 18,
+  "workflow_status": "Complete",
+  "models_registered": 1,
+  "current_production_model": "Early_Payment_Default_LR v1.0.0",
+  "model_registry": {
+    "total_versions": 1,
+    "active_versions": 1,
+    "archived_versions": 0
+  },
+  "performance_summary": {
+    "best_auc": 0.763391574335998,
+    "best_model": "Gradient Boosting",
+    "training_samples": 246008,
+    "test_samples": 61503,
+    "total_features": 129
+  },
+  "deployment_status": {
+    "environment": "Production",
+    "status": "Ready",
+    "endpoints": 5,
+    "monitoring": true
+  },
+  "files_generated": [
+    "mlflow_config.json",
+    "model_registry.json",
+    "deployment_manifest.json",
+    "MODEL_CARD.md",
+    "experiment_tracker.py",
+    "model_versioning.py",
+    "mlflow_setup.py"
+  ]
+}

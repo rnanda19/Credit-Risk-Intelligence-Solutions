@@ -1,0 +1,10 @@
+{
+  "chunk_id": "CHUNK_07_Model_Calibration",
+  "execution_timestamp": "2026-08-11T22:57:29.210735",
+  "status": "COMPLETED",
+  "records_calibrated": 307511,
+  "calibration_method": "Isotonic Regression",
+  "brier_score_improvement": 89.2106943540454,
+  "thresholds_analyzed": 3,
+  "registry_registered": true
+}

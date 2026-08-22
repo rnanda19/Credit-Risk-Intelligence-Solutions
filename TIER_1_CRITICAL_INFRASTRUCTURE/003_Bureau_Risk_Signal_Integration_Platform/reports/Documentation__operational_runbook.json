@@ -1,0 +1,143 @@
+{
+  "document_id": "OP-RUNBOOK-BUREAU-RISK-001",
+  "version": "1.0.0",
+  "last_updated": "2026-08-11T18:42:40.620467",
+  "effective_date": "2024-09-01",
+  "daily_operations": {
+    "morning_checks": [
+      {
+        "time": "07:00",
+        "task": "Start production containers (3 replicas)",
+        "owner": "DevOps"
+      },
+      {
+        "time": "07:15",
+        "task": "Verify all services healthy via health check endpoints",
+        "owner": "DevOps"
+      },
+      {
+        "time": "07:30",
+        "task": "Validate data pipeline - check S3 input files",
+        "owner": "Data Eng"
+      },
+      {
+        "time": "08:00",
+        "task": "Run daily batch scoring (307,511 records)",
+        "owner": "Batch Pipeline"
+      },
+      {
+        "time": "08:45",
+        "task": "Generate overnight reports (compliance, risk dashboards)",
+        "owner": "BI Team"
+      },
+      {
+        "time": "09:00",
+        "task": "Executive dashboard refresh + email digest",
+        "owner": "BI Team"
+      },
+      {
+        "time": "09:15",
+        "task": "Review overnight alerts and incidents",
+        "owner": "Risk Team"
+      }
+    ],
+    "throughout_day": [
+      {
+        "task": "Monitor API latency (target: <500ms p99)",
+        "frequency": "Every 15 minutes",
+        "owner": "Ops"
+      },
+      {
+        "task": "Check error rate (alert if >5%)",
+        "frequency": "Every 15 minutes",
+        "owner": "Ops"
+      },
+      {
+        "task": "Monitor batch pipeline progress",
+        "frequency": "Hourly",
+        "owner": "Data Eng"
+      }
+    ],
+    "evening_checks": [
+      {
+        "time": "17:00",
+        "task": "Final data validation - check output file counts",
+        "owner": "Data Eng"
+      },
+      {
+        "time": "17:30",
+        "task": "Generate daily summary report",
+        "owner": "Risk Team"
+      },
+      {
+        "time": "18:00",
+        "task": "Backup all logs and outputs to archive storage",
+        "owner": "DevOps"
+      }
+    ]
+  },
+  "incident_response": {
+    "severity_1_critical": {
+      "definition": "Production system down or model predictions unavailable",
+      "response_time": "15 minutes",
+      "escalation": [
+        "On-call engineer",
+        "Team lead",
+        "Director of Engineering"
+      ],
+      "steps": [
+        "1. Page on-call engineer immediately",
+        "2. Verify service status via health checks",
+        "3. Check recent deployments for issues",
+        "4. Rollback to previous version if needed",
+        "5. Notify Risk Committee if impact >1 hour"
+      ]
+    },
+    "severity_2_high": {
+      "definition": "Degraded performance (latency >1s or error rate >2%)",
+      "response_time": "30 minutes",
+      "escalation": [
+        "On-call engineer",
+        "Team lead"
+      ],
+      "steps": [
+        "1. Alert on-call engineer",
+        "2. Investigate root cause (database, memory, CPU)",
+        "3. Scale resources if needed",
+        "4. Monitor recovery"
+      ]
+    },
+    "severity_3_medium": {
+      "definition": "Data quality issues or minor service degradation",
+      "response_time": "2 hours",
+      "escalation": [
+        "Data Engineer",
+        "Team lead"
+      ],
+      "steps": [
+        "1. Investigate data quality issue",
+        "2. Assess impact on predictions",
+        "3. Implement fix if safe",
+        "4. Schedule for next deployment if needed"
+      ]
+    }
+  },
+  "maintenance_windows": {
+    "frequency": "Second Saturday of each month",
+    "duration": "2 hours (02:00-04:00 UTC)",
+    "procedures": [
+      "Scale down to 1 replica",
+      "Apply security patches",
+      "Run database optimization",
+      "Test failover mechanism",
+      "Scale back to 3 replicas",
+      "Verify all systems healthy"
+    ]
+  },
+  "escalation_contacts": {
+    "on_call_engineer": "+1-555-0123",
+    "devops_team_lead": "ops-lead@company.com",
+    "chief_risk_officer": "cro@company.com",
+    "incident_commander": "incident-commander@company.com"
+  }
+}

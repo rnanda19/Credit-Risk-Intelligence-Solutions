@@ -1,0 +1,10 @@
+{
+  "qa_date": "2026-08-14T00:22:06.675480",
+  "chunk_number": 12,
+  "chunk_name": "BUSINESS_INTELLIGENCE",
+  "qa_status": "FAILED",
+  "execution_status": "FAILED",
+  "metrics": {},
+  "recommendation": "REQUIRES_REMEDIATION",
+  "sign_off": false
+}

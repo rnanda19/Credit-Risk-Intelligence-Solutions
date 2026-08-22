@@ -1,0 +1,9 @@
+{
+  "framework": "SOP_07_PII_Classification",
+  "sensitive_columns": [
+    "SK_ID_CURR",
+    "DAYS_BIRTH"
+  ],
+  "classification_status": "COMPLETE",
+  "pii_count": 2
+}

@@ -1,0 +1,89 @@
+{
+  "api_version": "1.0.0",
+  "base_url": "https://api.bureau-risk.internal/v1",
+  "authentication": {
+    "method": "OAuth 2.0 + API Key",
+    "token_expiry": "24 hours",
+    "rate_limit": "10000 requests/hour per client"
+  },
+  "endpoints": [
+    {
+      "path": "/predict",
+      "method": "POST",
+      "description": "Get risk prediction for a customer",
+      "request": {
+        "content_type": "application/json",
+        "schema": {
+          "customer_id": "string (required)",
+          "features": "object (91 engineered features)",
+          "scenario": "string (optional: conservative/balanced/aggressive)"
+        }
+      },
+      "response": {
+        "prediction_probability": "float (0.0-1.0)",
+        "risk_category": "string (high/medium/low)",
+        "decision_threshold": "float (0.30-0.70)",
+        "explanation": "string (top 3 contributing factors)",
+        "confidence": "float (model calibration score)",
+        "latency_ms": "integer"
+      },
+      "sla": {
+        "p95_latency_ms": 50,
+        "p99_latency_ms": 100,
+        "availability": "99.9%"
+      }
+    },
+    {
+      "path": "/batch_predict",
+      "method": "POST",
+      "description": "Get predictions for multiple customers",
+      "request": {
+        "content_type": "application/json",
+        "max_batch_size": 1000,
+        "schema": {
+          "customers": "array of customer objects"
+        }
+      },
+      "response": {
+        "predictions": "array of prediction objects",
+        "batch_id": "string (for audit trail)",
+        "processing_time_ms": "integer"
+      }
+    },
+    {
+      "path": "/model_info",
+      "method": "GET",
+      "description": "Get model metadata and status",
+      "response": {
+        "model_name": "Random Forest Bureau Risk",
+        "model_version": "1.0.0",
+        "training_date": "ISO 8601 timestamp",
+        "calibration_method": "Isotonic Regression",
+        "cv_auc": "float",
+        "last_retraining": "ISO 8601 timestamp",
+        "status": "active/inactive/degraded"
+      }
+    },
+    {
+      "path": "/health",
+      "method": "GET",
+      "description": "Health check endpoint (Kubernetes)",
+      "response": {
+        "status": "healthy/unhealthy",
+        "timestamp": "ISO 8601",
+        "dependencies": {
+          "model": "ok/error",
+          "cache": "ok/error",
+          "database": "ok/error"
+        }
+      }
+    }
+  ],
+  "error_handling": {
+    "invalid_input": "HTTP 400 Bad Request",
+    "unauthorized": "HTTP 401 Unauthorized",
+    "rate_limited": "HTTP 429 Too Many Requests",
+    "server_error": "HTTP 500 Internal Server Error",
+    "model_unavailable": "HTTP 503 Service Unavailable"
+  }
+}

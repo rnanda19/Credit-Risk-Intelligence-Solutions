@@ -1,0 +1,9 @@
+{
+  "total_samples": 61503,
+  "anomalies_detected": 511,
+  "anomaly_percentage": 0.8308537794904314,
+  "anomaly_types": {
+    "uncertain_predictions": 511
+  },
+  "alert_status": "OK"
+}

@@ -1,0 +1,10 @@
+{
+  "qa_date": "2026-08-14T00:22:06.660101",
+  "chunk_number": 9,
+  "chunk_name": "MODEL_MONITORING",
+  "qa_status": "FAILED",
+  "execution_status": "FAILED",
+  "metrics": {},
+  "recommendation": "REQUIRES_REMEDIATION",
+  "sign_off": false
+}

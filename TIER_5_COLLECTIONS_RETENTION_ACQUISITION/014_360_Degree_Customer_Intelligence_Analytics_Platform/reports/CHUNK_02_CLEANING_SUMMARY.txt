@@ -1,0 +1,63 @@
+================================================================================
+DATA CLEANING SUMMARY
+Date: 2026-08-13 08:33:26
+================================================================================
+
+
+application_train.csv
+--------------------------------------------------------------------------------
+Before: 307,511 rows, 122 cols
+After:  307,511 rows, 81 cols
+Removed: 0 rows, 41 cols
+Quality: 0.00% missing, 0.00% duplicates
+
+application_test.csv
+--------------------------------------------------------------------------------
+Before: 48,744 rows, 121 cols
+After:  48,744 rows, 92 cols
+Removed: 0 rows, 29 cols
+Quality: 0.00% missing, 0.00% duplicates
+
+bureau.csv
+--------------------------------------------------------------------------------
+Before: 1,716,428 rows, 17 cols
+After:  1,716,428 rows, 15 cols
+Removed: 0 rows, 2 cols
+Quality: 0.00% missing, 0.00% duplicates
+
+bureau_balance.csv
+--------------------------------------------------------------------------------
+Before: 27,299,925 rows, 3 cols
+After:  27,299,925 rows, 3 cols
+Removed: 0 rows, 0 cols
+Quality: 0.00% missing, 0.00% duplicates
+
+credit_card_balance.csv
+--------------------------------------------------------------------------------
+Before: 1,048,575 rows, 23 cols
+After:  1,048,575 rows, 23 cols
+Removed: 0 rows, 0 cols
+Quality: 0.00% missing, 0.00% duplicates
+
+installments_payments.csv
+--------------------------------------------------------------------------------
+Before: 1,048,575 rows, 8 cols
+After:  1,048,575 rows, 8 cols
+Removed: 0 rows, 0 cols
+Quality: 0.00% missing, 0.00% duplicates
+
+POS_CASH_balance.csv
+--------------------------------------------------------------------------------
+Before: 10,001,358 rows, 8 cols
+After:  10,001,358 rows, 8 cols
+Removed: 0 rows, 0 cols
+Quality: 0.00% missing, 0.00% duplicates
+
+previous_application.csv
+--------------------------------------------------------------------------------
+Before: 1,048,575 rows, 37 cols
+After:  1,048,575 rows, 33 cols
+Removed: 0 rows, 4 cols
+Quality: 0.00% missing, 0.00% duplicates
+
+================================================================================

@@ -1,0 +1,8 @@
+{
+  "target_variable": "TARGET",
+  "class_0_count": 282686,
+  "class_1_count": 24825,
+  "class_0_percent": 91.92711805431351,
+  "class_1_percent": 8.072881945686495,
+  "imbalance_ratio": 0.08781828601345662
+}

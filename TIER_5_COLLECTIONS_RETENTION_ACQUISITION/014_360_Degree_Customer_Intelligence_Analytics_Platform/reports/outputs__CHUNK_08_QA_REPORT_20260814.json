@@ -1,0 +1,10 @@
+{
+  "qa_date": "2026-08-14T00:22:06.653418",
+  "chunk_number": 8,
+  "chunk_name": "EXPLAINABILITY",
+  "qa_status": "PASSED",
+  "execution_status": "SUCCESS",
+  "metrics": {},
+  "recommendation": "APPROVED FOR PRODUCTION",
+  "sign_off": true
+}

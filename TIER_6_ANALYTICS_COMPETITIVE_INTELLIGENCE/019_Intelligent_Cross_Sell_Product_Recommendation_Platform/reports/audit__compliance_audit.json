@@ -1,0 +1,19 @@
+{
+  "audit_date": "2026-08-02T21:18:23.737659",
+  "overall_status": "REVIEW_REQUIRED",
+  "compliance_checks": {
+    "Fair_Lending": "REVIEW_REQUIRED",
+    "CECL": "COMPLIANT",
+    "Data_Governance": "COMPLIANT"
+  },
+  "model_version": "1.0.0-PRODUCTION",
+  "frameworks_validated": [
+    "Basel III",
+    "CECL",
+    "Fair Lending",
+    "KYC/AML",
+    "Data Governance"
+  ],
+  "data_quality_threshold": 0.995,
+  "actual_data_quality": 0.9991170212765957
+}

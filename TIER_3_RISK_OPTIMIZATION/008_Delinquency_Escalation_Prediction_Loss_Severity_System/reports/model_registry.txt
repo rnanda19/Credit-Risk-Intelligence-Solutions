@@ -1,0 +1,15 @@
+=== MODEL REGISTRY ===
+Production Model: tuned_xgboost_model.pkl
+  - Version: v1.0.0
+  - ROC-AUC: 0.9512 (95.12%)
+  - Precision: 0.8742
+  - Recall: 0.5234
+  - Accuracy: 0.9489
+  - Estimators: 100
+  - Status: ACTIVE
+  - Deployed: Yes
+
+Candidate Model: new_model_candidate.pkl
+  - Version: v1.1.0-candidate
+  - Status: EVALUATION
+  - Last Updated: August 11, 2026

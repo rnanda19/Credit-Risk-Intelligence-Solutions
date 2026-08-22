@@ -1,0 +1,52 @@
+{
+  "execution_id": "20260810_233531_659226",
+  "timestamp": "2026-08-10T23:35:31.659275",
+  "method": "Extended Random Search (150 iterations, 3-fold CV)",
+  "model_name": "XGBoost",
+  "baseline_metrics": {
+    "accuracy": 0.9510105198120417,
+    "precision": 0.8554260742898762,
+    "recall": 0.47311178247734137,
+    "f1_score": 0.6092594994164181,
+    "roc_auc": 0.9324918687774341
+  },
+  "tuned_metrics": {
+    "accuracy": 0.9569289302960832,
+    "precision": 0.9416475972540046,
+    "recall": 0.4972809667673716,
+    "f1_score": 0.6508501383946224,
+    "roc_auc": 0.954692896616832
+  },
+  "improvements": {
+    "accuracy": 0.005918410484041514,
+    "precision": 0.08622152296412844,
+    "recall": 0.024169184290030232,
+    "f1_score": 0.04159063897820425,
+    "roc_auc": 0.022201027839397924
+  },
+  "improvement_percentages": {
+    "accuracy": 0.6223286031800398,
+    "precision": 10.079365775202072,
+    "recall": 5.108556832694768,
+    "f1_score": 6.826424375498787,
+    "roc_auc": 2.380828035369908
+  },
+  "hyperparameters_tuned": {
+    "subsample": 0.9,
+    "n_estimators": 300,
+    "min_child_weight": 1,
+    "max_depth": 10,
+    "learning_rate": 0.1,
+    "gamma": 0.25,
+    "colsample_bytree": 0.7
+  },
+  "key_findings": [
+    "Best Model: XGBoost",
+    "Baseline ROC-AUC: 0.9325 \u2192 Tuned: 0.9547",
+    "Total Improvement: +2.38%",
+    "Final Accuracy: 0.9569",
+    "Final F1-Score: 0.6509",
+    "Hyperparameters optimized: 7",
+    "Method: Extended Random Search with 150 iterations and 3-fold CV"
+  ]
+}

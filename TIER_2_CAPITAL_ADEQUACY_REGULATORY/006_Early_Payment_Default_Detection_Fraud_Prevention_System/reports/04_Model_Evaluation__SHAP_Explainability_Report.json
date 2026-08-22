@@ -1,0 +1,32 @@
+{
+  "Model": "Gradient Boosting",
+  "Samples_Analyzed": 1000,
+  "Features_Analyzed": 129,
+  "Top_10_Features": [
+    "EXT_SOURCE_3",
+    "EXT_SOURCE_2",
+    "ANNUITY_CREDIT_RATIO",
+    "EXT_SOURCE_1",
+    "ANNUITY_PERCENTAGE",
+    "GOODS_PRICE_RATIO",
+    "EMPLOYMENT_YEARS_SQ",
+    "AMT_GOODS_PRICE",
+    "EMPLOYMENT_YEARS",
+    "AMT_CREDIT"
+  ],
+  "Top_10_Importance_Scores": [
+    0.31804376457603445,
+    0.27328986635632935,
+    0.16008665702869038,
+    0.13065437564652396,
+    0.12620148274346604,
+    0.11992274713407507,
+    0.11567741204102396,
+    0.10663828387067549,
+    0.1062849402590609,
+    0.10155088720522584
+  ],
+  "Average_Impact": 0.02061547152806358,
+  "Max_Impact": 1.9347924875380704,
+  "Min_Impact": 0.0
+}

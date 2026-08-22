@@ -1,0 +1,10 @@
+{
+  "experiment_name": "Early_Payment_Default_Detection",
+  "experiment_id": "1",
+  "tracking_uri": "file:///C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\018_Early_Payment_Default_Detection\\08_MLflow_Registry/mlruns",
+  "artifact_uri": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\018_Early_Payment_Default_Detection\\08_MLflow_Registry/artifacts",
+  "model_name": "early_payment_default_model",
+  "model_version": "1.0.0",
+  "stage": "Production",
+  "timestamp": "2026-08-10T10:57:14.030984"
+}

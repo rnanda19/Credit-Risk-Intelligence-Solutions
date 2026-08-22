@@ -1,0 +1,13 @@
+{
+  "total_predictions": 61503,
+  "high_risk_count": 2159,
+  "medium_risk_count": 1132,
+  "low_risk_count": 58212,
+  "high_risk_percentage": 3.5103978667707265,
+  "average_confidence": 0.9770607352256775,
+  "min_confidence": 0.5000842809677124,
+  "max_confidence": 0.999997615814209,
+  "correct_predictions": 58854,
+  "incorrect_predictions": 2649,
+  "accuracy_on_log": 0.9569289302960832
+}

@@ -1,0 +1,15 @@
+{
+  "from_version": "CHUNK_07_calibration",
+  "to_version": "CHUNK_06_validation",
+  "generated_timestamp": "2026-08-11T17:43:22.349629",
+  "restoration_steps": [
+    "Step 1: Restore validation predictions from CHUNK 06 backup",
+    "Step 2: Delete CHUNK 07 calibration results directory",
+    "Step 3: Reset threshold to default (0.5)",
+    "Step 4: Revert to validation-only predictions",
+    "Step 5: Update execution log with rollback event",
+    "Step 6: Notify calibration team and stakeholders"
+  ],
+  "estimated_duration_minutes": 12,
+  "risk_level": "MEDIUM"
+}

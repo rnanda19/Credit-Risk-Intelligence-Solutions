@@ -1,0 +1,59 @@
+{
+  "workflow_id": "6ea40739-b8a2-4412-a35c-a70dfd280d52",
+  "timestamp": "2026-08-11T11:56:54.724520",
+  "workflow_stages": [
+    {
+      "stage": "Data Preparation",
+      "status": "COMPLETE",
+      "details": {
+        "training_records": 246008,
+        "test_records": 61503,
+        "features": 75,
+        "missing_values_imputed": 0,
+        "outliers_handled": 0,
+        "features_scaled": true
+      }
+    },
+    {
+      "stage": "Model Training",
+      "status": "COMPLETE",
+      "models_trained": [
+        {
+          "model": "Logistic Regression",
+          "roc_auc": 0.79279501417774,
+          "training_status": "COMPLETE"
+        },
+        {
+          "model": "Random Forest",
+          "roc_auc": 0.8787126889179366,
+          "training_status": "COMPLETE"
+        },
+        {
+          "model": "XGBoost",
+          "roc_auc": 0.9324918687774341,
+          "training_status": "COMPLETE"
+        },
+        {
+          "model": "LightGBM",
+          "roc_auc": 0.9151093203736781,
+          "training_status": "COMPLETE"
+        }
+      ]
+    },
+    {
+      "stage": "Model Validation",
+      "status": "COMPLETE",
+      "best_model": "XGBoost",
+      "best_roc_auc": 0.9324918687774341,
+      "passes_quality_checks": true
+    },
+    {
+      "stage": "Current Model Comparison",
+      "status": "COMPLETE",
+      "current_model_roc_auc": 0.954692896616832,
+      "new_model_roc_auc": 0.9324918687774341,
+      "improvement_percent": -2.3254627658875684,
+      "recommendation": "MONITOR"
+    }
+  ]
+}

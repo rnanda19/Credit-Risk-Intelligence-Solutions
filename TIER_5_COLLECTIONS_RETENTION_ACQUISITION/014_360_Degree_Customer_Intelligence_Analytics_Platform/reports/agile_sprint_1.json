@@ -1,0 +1,19 @@
+{
+  "sprint_number": 1,
+  "sprint_name": "Project Setup & Initialization",
+  "duration_days": 7,
+  "start_date": "2026-08-13T00:04:42.243459",
+  "ceremonies": {
+    "sprint_planning": "Day 1 - 2 hours",
+    "daily_standup": "09:30 AM - 15 minutes",
+    "sprint_review": "Day 7 - 1.5 hours",
+    "retrospective": "Day 7 - 1 hour"
+  },
+  "sprint_goals": [
+    "Project structure validated",
+    "Data sources confirmed",
+    "Team aligned on scope",
+    "Configuration established",
+    "Quality gates defined"
+  ]
+}

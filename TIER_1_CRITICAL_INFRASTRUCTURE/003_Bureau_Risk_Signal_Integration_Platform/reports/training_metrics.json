@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-08-11T20:35:05.447113",
+  "AUC": 0.5018570866313387,
+  "F1": 0.0,
+  "precision": 0.0,
+  "recall": 0.0,
+  "accuracy": 0.9190771181893567,
+  "training_records": 246008,
+  "test_records": 61503
+}

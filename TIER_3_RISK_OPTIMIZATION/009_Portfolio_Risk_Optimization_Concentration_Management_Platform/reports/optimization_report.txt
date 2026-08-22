@@ -1,0 +1,14 @@
+================================================================================
+PROBLEM 12: PORTFOLIO OPTIMIZATION & CAPITAL ALLOCATION
+================================================================================
+
+              Metric          Value
+       Total Capital $1,000,000,000
+     Interest Income   $194,971,217
+       Expected Loss    $73,604,309
+          Net Profit   $121,366,908
+                 ROI         12.14%
+        Sharpe Ratio         1.4067
+Portfolio Volatility         0.0721
+
+Recommendation: Optimize allocation toward Tier 1/2 for higher ROI

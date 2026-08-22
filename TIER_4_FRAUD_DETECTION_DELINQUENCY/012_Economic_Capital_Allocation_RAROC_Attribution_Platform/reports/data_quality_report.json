@@ -1,0 +1,9 @@
+{
+    "Total_Loans": 3918,
+    "Missing_Values": 7216,
+    "Duplicates": 0,
+    "Avg_PD": 0.05080907383699493,
+    "Avg_LGD": 0.17730650104235796,
+    "Avg_RAROC": 0.39129642093561984,
+    "Data_Quality_Score": "99.5%"
+}

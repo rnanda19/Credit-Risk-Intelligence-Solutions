@@ -1,0 +1,33 @@
+{
+  "Model Validation": {
+    "Model Type": "GradientBoostingClassifier",
+    "Model Exists": true,
+    "Scaler Exists": true,
+    "Features Count": 129
+  },
+  "Data Validation": {
+    "Dataset Size": 307511,
+    "Missing Values": 0,
+    "Duplicate Rows": 0,
+    "Target Balance": "8.07%"
+  },
+  "Feature Validation": {
+    "Total Features": 129,
+    "Numeric Features": 131,
+    "Features NaN Count": 0,
+    "Features Inf Count": 0
+  },
+  "Model Performance": {
+    "Best Model": "Gradient Boosting",
+    "Test AUC": "0.7634",
+    "Test Precision": "0.5462",
+    "Test Recall": "0.0274",
+    "Test F1": "0.0522"
+  },
+  "Data Split": {
+    "Train Size": 246008,
+    "Test Size": 61503,
+    "Train Ratio": "80.00%",
+    "Features Dimension": 129
+  }
+}

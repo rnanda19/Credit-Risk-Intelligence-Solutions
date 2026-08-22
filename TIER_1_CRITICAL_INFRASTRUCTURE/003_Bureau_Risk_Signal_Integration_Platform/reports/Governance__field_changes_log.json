@@ -1,0 +1,252 @@
+{
+  "CNT_CHILDREN": [
+    {
+      "field": "CNT_CHILDREN",
+      "change_type": "STATISTICAL_PROFILE_CREATED",
+      "before": "raw_data",
+      "after": "mean=0.41, std=0.68",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:21:27.549380"
+    }
+  ],
+  "AMT_INCOME_TOTAL": [
+    {
+      "field": "AMT_INCOME_TOTAL",
+      "change_type": "STATISTICAL_PROFILE_CREATED",
+      "before": "raw_data",
+      "after": "mean=162626.95, std=73303.15",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:21:27.585665"
+    }
+  ],
+  "AMT_CREDIT": [
+    {
+      "field": "AMT_CREDIT",
+      "change_type": "STATISTICAL_PROFILE_CREATED",
+      "before": "raw_data",
+      "after": "mean=592313.04, std=380316.24",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:21:27.622479"
+    }
+  ],
+  "AMT_ANNUITY": [
+    {
+      "field": "AMT_ANNUITY",
+      "change_type": "STATISTICAL_PROFILE_CREATED",
+      "before": "raw_data",
+      "after": "mean=26796.69, std=13282.34",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:21:27.658672"
+    }
+  ],
+  "AMT_GOODS_PRICE": [
+    {
+      "field": "AMT_GOODS_PRICE",
+      "change_type": "STATISTICAL_PROFILE_CREATED",
+      "before": "raw_data",
+      "after": "mean=527448.51, std=337375.51",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:21:27.696451"
+    }
+  ],
+  "REGION_POPULATION_RELATIVE": [
+    {
+      "field": "REGION_POPULATION_RELATIVE",
+      "change_type": "STATISTICAL_PROFILE_CREATED",
+      "before": "raw_data",
+      "after": "mean=0.02, std=0.01",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:21:27.733105"
+    }
+  ],
+  "DAYS_BIRTH": [
+    {
+      "field": "DAYS_BIRTH",
+      "change_type": "STATISTICAL_PROFILE_CREATED",
+      "before": "raw_data",
+      "after": "mean=-16037.00, std=4363.99",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:21:27.771114"
+    }
+  ],
+  "DAYS_EMPLOYED": [
+    {
+      "field": "DAYS_EMPLOYED",
+      "change_type": "STATISTICAL_PROFILE_CREATED",
+      "before": "raw_data",
+      "after": "mean=-1203.54, std=2732.40",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:21:27.808514"
+    }
+  ],
+  "DAYS_REGISTRATION": [
+    {
+      "field": "DAYS_REGISTRATION",
+      "change_type": "STATISTICAL_PROFILE_CREATED",
+      "before": "raw_data",
+      "after": "mean=-4983.51, std=3513.93",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:21:27.843536"
+    }
+  ],
+  "DAYS_ID_PUBLISH": [
+    {
+      "field": "DAYS_ID_PUBLISH",
+      "change_type": "STATISTICAL_PROFILE_CREATED",
+      "before": "raw_data",
+      "after": "mean=-2994.20, std=1509.45",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:21:27.876131"
+    }
+  ],
+  "OWN_CAR_AGE": [
+    {
+      "field": "OWN_CAR_AGE",
+      "change_type": "STATISTICAL_PROFILE_CREATED",
+      "before": "raw_data",
+      "after": "mean=2.85, std=4.65",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:21:27.908582"
+    }
+  ],
+  "FLAG_MOBIL": [
+    {
+      "field": "FLAG_MOBIL",
+      "change_type": "STATISTICAL_PROFILE_CREATED",
+      "before": "raw_data",
+      "after": "mean=1.00, std=0.00",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:21:27.926641"
+    }
+  ],
+  "FLAG_EMP_PHONE": [
+    {
+      "field": "FLAG_EMP_PHONE",
+      "change_type": "STATISTICAL_PROFILE_CREATED",
+      "before": "raw_data",
+      "after": "mean=1.00, std=0.00",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:21:27.944542"
+    }
+  ],
+  "FLAG_WORK_PHONE": [
+    {
+      "field": "FLAG_WORK_PHONE",
+      "change_type": "STATISTICAL_PROFILE_CREATED",
+      "before": "raw_data",
+      "after": "mean=0.00, std=0.00",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:21:27.962399"
+    }
+  ],
+  "FLAG_CONT_MOBILE": [
+    {
+      "field": "FLAG_CONT_MOBILE",
+      "change_type": "STATISTICAL_PROFILE_CREATED",
+      "before": "raw_data",
+      "after": "mean=1.00, std=0.00",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:21:27.981636"
+    }
+  ],
+  "FLAG_PHONE": [
+    {
+      "field": "FLAG_PHONE",
+      "change_type": "STATISTICAL_PROFILE_CREATED",
+      "before": "raw_data",
+      "after": "mean=0.28, std=0.45",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:21:28.009213"
+    }
+  ],
+  "FLAG_EMAIL": [
+    {
+      "field": "FLAG_EMAIL",
+      "change_type": "STATISTICAL_PROFILE_CREATED",
+      "before": "raw_data",
+      "after": "mean=0.00, std=0.00",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:21:28.027376"
+    }
+  ],
+  "CNT_FAM_MEMBERS": [
+    {
+      "field": "CNT_FAM_MEMBERS",
+      "change_type": "STATISTICAL_PROFILE_CREATED",
+      "before": "raw_data",
+      "after": "mean=2.14, std=0.88",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:21:28.059428"
+    }
+  ],
+  "REGION_RATING_CLIENT": [
+    {
+      "field": "REGION_RATING_CLIENT",
+      "change_type": "STATISTICAL_PROFILE_CREATED",
+      "before": "raw_data",
+      "after": "mean=2.00, std=0.00",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:21:28.078721"
+    }
+  ],
+  "REGION_RATING_CLIENT_W_CITY": [
+    {
+      "field": "REGION_RATING_CLIENT_W_CITY",
+      "change_type": "STATISTICAL_PROFILE_CREATED",
+      "before": "raw_data",
+      "after": "mean=2.00, std=0.00",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:21:28.097363"
+    }
+  ],
+  "HOUR_APPR_PROCESS_START": [
+    {
+      "field": "HOUR_APPR_PROCESS_START",
+      "change_type": "STATISTICAL_PROFILE_CREATED",
+      "before": "raw_data",
+      "after": "mean=12.07, std=3.24",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:21:28.132460"
+    }
+  ],
+  "REG_REGION_NOT_LIVE_REGION": [
+    {
+      "field": "REG_REGION_NOT_LIVE_REGION",
+      "change_type": "STATISTICAL_PROFILE_CREATED",
+      "before": "raw_data",
+      "after": "mean=0.00, std=0.00",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:21:28.150471"
+    }
+  ],
+  "REG_REGION_NOT_WORK_REGION": [
+    {
+      "field": "REG_REGION_NOT_WORK_REGION",
+      "change_type": "STATISTICAL_PROFILE_CREATED",
+      "before": "raw_data",
+      "after": "mean=0.00, std=0.00",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:21:28.168390"
+    }
+  ],
+  "LIVE_REGION_NOT_WORK_REGION": [
+    {
+      "field": "LIVE_REGION_NOT_WORK_REGION",
+      "change_type": "STATISTICAL_PROFILE_CREATED",
+      "before": "raw_data",
+      "after": "mean=0.00, std=0.00",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:21:28.186570"
+    }
+  ],
+  "REG_CITY_NOT_LIVE_CITY": [
+    {
+      "field": "REG_CITY_NOT_LIVE_CITY",
+      "change_type": "STATISTICAL_PROFILE_CREATED",
+      "before": "raw_data",
+      "after": "mean=0.00, std=0.00",
+      "affected_records": 307511,
+      "timestamp": "2026-08-11T17:21:28.204576"
+    }
+  ]
+}

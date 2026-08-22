@@ -1,0 +1,40 @@
+{
+  "pipeline_name": "Early_Payment_Default_Detection_Pipeline",
+  "version": "1.0.0",
+  "stages": [
+    {
+      "name": "Build",
+      "steps": [
+        "docker build -t early-payment-api:latest .",
+        "docker push registry/early-payment-api:latest"
+      ]
+    },
+    {
+      "name": "Test",
+      "steps": [
+        "pytest tests/ -v",
+        "python scripts/healthcheck.py"
+      ]
+    },
+    {
+      "name": "Deploy",
+      "steps": [
+        "kubectl apply -f kubernetes/deployment.yaml",
+        "kubectl rollout status deployment/early-payment-api"
+      ]
+    },
+    {
+      "name": "Verify",
+      "steps": [
+        "curl http://early-payment-api:5000/health",
+        "python scripts/healthcheck.py"
+      ]
+    }
+  ],
+  "notifications": {
+    "slack": true,
+    "email": true,
+    "on_success": true,
+    "on_failure": true
+  }
+}

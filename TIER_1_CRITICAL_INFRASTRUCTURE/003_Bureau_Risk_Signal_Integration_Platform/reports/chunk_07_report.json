@@ -1,0 +1,94 @@
+{
+  "chunk_id": "CHUNK_07",
+  "chunk_name": "Model Calibration & Threshold Optimization",
+  "execution_timestamp": "2026-08-12T00:33:07.810386",
+  "status": "COMPLETED",
+  "description": "Probability calibration and decision threshold optimization",
+  "calibration": {
+    "method": "Isotonic Regression",
+    "uncalibrated_logloss": 0.45914058583578904,
+    "calibrated_logloss": 1.328678536413721,
+    "improvement_percent": -189.38381345554166
+  },
+  "optimal_thresholds": {
+    "Conservative": {
+      "threshold": 0.8799999999999996,
+      "true_positives": 72,
+      "false_positives": 71,
+      "true_negatives": 56467,
+      "false_negatives": 4893,
+      "total_cost": 49001000,
+      "cost_per_case": 796.7253629904233,
+      "precision": 0.5034965034965035,
+      "recall": 0.014501510574018127,
+      "f1": 0.028191072826938137
+    },
+    "Balanced": {
+      "threshold": 0.1,
+      "true_positives": 1675,
+      "false_positives": 5359,
+      "true_negatives": 51179,
+      "false_negatives": 3290,
+      "total_cost": 38259000,
+      "cost_per_case": 622.0672162333544,
+      "precision": 0.23812908729030424,
+      "recall": 0.337361530715005,
+      "f1": 0.2791899324943745
+    },
+    "Aggressive": {
+      "threshold": 0.1,
+      "true_positives": 1675,
+      "false_positives": 5359,
+      "true_negatives": 51179,
+      "false_negatives": 3290,
+      "total_cost": 38259000,
+      "cost_per_case": 622.0672162333544,
+      "precision": 0.23812908729030424,
+      "recall": 0.337361530715005,
+      "f1": 0.2791899324943745
+    }
+  },
+  "outputs": [
+    {
+      "type": "pkl",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\07_Model_Calibration\\Calibrated_Models\\isotonic_calibrator_v1.pkl",
+      "description": "Isotonic calibrator model"
+    },
+    {
+      "type": "json",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\07_Model_Calibration\\Metrics\\optimal_thresholds.json",
+      "description": "Optimal thresholds by strategy"
+    },
+    {
+      "type": "png",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\07_Model_Calibration\\Charts\\roc_curve_calibrated.png",
+      "description": "ROC curve (calibrated)"
+    },
+    {
+      "type": "png",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\07_Model_Calibration\\Charts\\threshold_optimization.png",
+      "description": "Threshold optimization plot"
+    }
+  ],
+  "key_metrics": {
+    "model": "Random Forest (Calibrated)",
+    "calibration_method": "Isotonic Regression",
+    "roc_auc": 0.6949536386457298,
+    "strategies": {
+      "Conservative": {
+        "threshold": 0.8799999999999996,
+        "f1": 0.028191072826938137
+      },
+      "Balanced": {
+        "threshold": 0.1,
+        "f1": 0.2791899324943745
+      },
+      "Aggressive": {
+        "threshold": 0.1,
+        "f1": 0.2791899324943745
+      }
+    }
+  },
+  "ready_for_next_chunk": true,
+  "next_chunk": "CHUNK_08 (Explainability & Feature Importance)"
+}

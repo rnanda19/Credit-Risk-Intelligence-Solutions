@@ -1,0 +1,11 @@
+{
+  "chunk_id": "CHUNK_06_Model_Validation",
+  "execution_timestamp": "2026-08-11T21:57:42.489784",
+  "status": "COMPLETED",
+  "records_validated": 307511,
+  "predictions_generated": 307511,
+  "auc_score": 0.9619140036105553,
+  "f1_score": 0.8888938497600178,
+  "backtesting_windows": 5,
+  "segments_analyzed": 4
+}

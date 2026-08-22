@@ -1,0 +1,90 @@
+{
+  "jurisdiction": "United States (Multi-State)",
+  "regulations": [
+    {
+      "name": "BCBS 239 - Principles for Effective Risk Data Aggregation",
+      "applicability": "Large bank holding companies (> $250B assets)",
+      "requirements": [
+        "Data aggregation capability",
+        "Internal audit of data quality",
+        "Model validation processes",
+        "Governance and accountability"
+      ],
+      "compliance_status": "FULL",
+      "evidence": [
+        "Data lineage documentation",
+        "Model validation report (CHUNK_06)",
+        "Governance procedures (CHUNK_11)",
+        "Data quality metrics (CHUNK_03.5)"
+      ]
+    },
+    {
+      "name": "SOX 404 - Internal Control Over Financial Reporting",
+      "applicability": "Public companies / Subsidiaries",
+      "requirements": [
+        "Document internal controls over financial data",
+        "Design testing and compliance testing",
+        "Risk assessment and control evaluation",
+        "Audit trail and documentation"
+      ],
+      "compliance_status": "PARTIAL (Model Controls)",
+      "evidence": [
+        "SOX testing workpapers",
+        "Control design documentation",
+        "Testing results and findings",
+        "Audit trail logs"
+      ]
+    },
+    {
+      "name": "Fair Lending (FCRA, ECOA, FHA)",
+      "applicability": "All credit providers",
+      "requirements": [
+        "No discrimination based on protected classes",
+        "Adverse action notices",
+        "Equal access to credit",
+        "Disparate impact analysis"
+      ],
+      "compliance_status": "FULL (with monitoring)",
+      "evidence": [
+        "Demographic parity analysis (CHUNK_08)",
+        "Equalized odds analysis (CHUNK_08)",
+        "Disparate impact calculations",
+        "Decision explanation by demographic"
+      ]
+    },
+    {
+      "name": "GDPR - General Data Protection Regulation",
+      "applicability": "EU customer data processing",
+      "requirements": [
+        "Data minimization",
+        "Purpose limitation",
+        "Transparency and explainability",
+        "Right to explanation"
+      ],
+      "compliance_status": "FULL",
+      "evidence": [
+        "Feature importance analysis (CHUNK_08)",
+        "Explainability documentation",
+        "Data retention policy",
+        "Consent management"
+      ]
+    },
+    {
+      "name": "Model Risk Management (SR 11-7)",
+      "applicability": "All financial institutions using models",
+      "requirements": [
+        "Model validation",
+        "Governance framework",
+        "Monitoring and testing",
+        "Documentation and audit trail"
+      ],
+      "compliance_status": "FULL",
+      "evidence": [
+        "Model validation (CHUNK_06)",
+        "Monitoring framework (CHUNK_09)",
+        "Governance documentation",
+        "Stress testing results (CHUNK_11)"
+      ]
+    }
+  ]
+}

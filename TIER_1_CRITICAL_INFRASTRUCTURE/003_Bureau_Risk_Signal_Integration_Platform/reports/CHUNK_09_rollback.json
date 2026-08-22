@@ -1,0 +1,15 @@
+{
+  "from_version": "CHUNK_09_monitoring",
+  "to_version": "CHUNK_08_explainability",
+  "generated_timestamp": "2026-08-11T18:23:16.380042",
+  "restoration_steps": [
+    "Step 1: Restore calibrated predictions from CHUNK 07 backup",
+    "Step 2: Delete CHUNK 09 monitoring results directory",
+    "Step 3: Suspend automated monitoring alerts",
+    "Step 4: Reset monitoring baseline metrics",
+    "Step 5: Update execution log with rollback event",
+    "Step 6: Notify operations team and stakeholders"
+  ],
+  "estimated_duration_minutes": 12,
+  "risk_level": "MEDIUM"
+}

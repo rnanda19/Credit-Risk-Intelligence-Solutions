@@ -1,0 +1,56 @@
+{
+  "total_features": 75,
+  "top_10_cumulative_importance_percent": 31.823291778564453,
+  "top_features": [
+    {
+      "feature": "AMT_REQ_CREDIT_BUREAU_DAY",
+      "importance": 0.053572025150060654,
+      "importance_rank": 23
+    },
+    {
+      "feature": "AMT_BALANCE_max",
+      "importance": 0.05217309668660164,
+      "importance_rank": 47
+    },
+    {
+      "feature": "AMT_REQ_CREDIT_BUREAU_HOUR",
+      "importance": 0.04150697588920593,
+      "importance_rank": 49
+    },
+    {
+      "feature": "EXT_SOURCE_3",
+      "importance": 0.03157980367541313,
+      "importance_rank": 64
+    },
+    {
+      "feature": "SK_ID_PREV_count",
+      "importance": 0.02529149129986763,
+      "importance_rank": 53
+    },
+    {
+      "feature": "EXT_SOURCE_1",
+      "importance": 0.024889575317502022,
+      "importance_rank": 5
+    },
+    {
+      "feature": "DAYS_ENTRY_PAYMENT_mean",
+      "importance": 0.024316349998116493,
+      "importance_rank": 73
+    },
+    {
+      "feature": "AMT_BALANCE_mean",
+      "importance": 0.02420848049223423,
+      "importance_rank": 1
+    },
+    {
+      "feature": "FLAG_EMP_PHONE",
+      "importance": 0.02128238044679165,
+      "importance_rank": 75
+    },
+    {
+      "feature": "AMT_INCOME_TOTAL_log",
+      "importance": 0.019412683323025703,
+      "importance_rank": 67
+    }
+  ]
+}

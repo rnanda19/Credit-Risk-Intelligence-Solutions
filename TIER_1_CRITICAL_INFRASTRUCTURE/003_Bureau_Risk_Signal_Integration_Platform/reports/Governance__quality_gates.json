@@ -1,0 +1,7 @@
+{
+  "framework": "SOP_02_Quality_Gates",
+  "gate_name": "data_completeness",
+  "threshold": 99.0,
+  "actual_value": 100.0,
+  "status": "PASS"
+}

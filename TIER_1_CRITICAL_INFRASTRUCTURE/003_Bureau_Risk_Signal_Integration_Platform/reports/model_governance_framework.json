@@ -1,0 +1,132 @@
+{
+  "governance_structure": {
+    "model_risk_committee": {
+      "role": "Oversee all model risk management",
+      "members": [
+        "CRO",
+        "Chief Data Officer",
+        "Compliance Officer",
+        "Model Owner"
+      ],
+      "meeting_frequency": "Quarterly",
+      "responsibilities": [
+        "Approve model changes",
+        "Review stress testing results",
+        "Monitor model performance",
+        "Approve model retirement"
+      ]
+    },
+    "model_development_team": {
+      "role": "Develop and maintain models",
+      "members": [
+        "Data Scientists",
+        "ML Engineers",
+        "Domain Experts"
+      ],
+      "responsibilities": [
+        "Model development",
+        "Model validation preparation",
+        "Documentation",
+        "Performance monitoring"
+      ]
+    },
+    "model_validation_team": {
+      "role": "Independent validation of models",
+      "members": [
+        "Independent Validators",
+        "Internal Audit"
+      ],
+      "responsibilities": [
+        "Validate models (independent)",
+        "Test assumptions",
+        "Performance analysis",
+        "Risk assessment"
+      ]
+    },
+    "compliance_team": {
+      "role": "Ensure regulatory compliance",
+      "members": [
+        "Compliance Officer",
+        "Fair Lending Specialist"
+      ],
+      "responsibilities": [
+        "Fair lending testing",
+        "Regulatory compliance",
+        "Documentation review",
+        "Regulatory reporting"
+      ]
+    }
+  },
+  "model_lifecycle": {
+    "stage_1_development": {
+      "owner": "Model Development Team",
+      "duration": "3-6 months",
+      "key_activities": [
+        "Data prep",
+        "Feature engineering",
+        "Model training",
+        "Initial testing"
+      ],
+      "gate_approval": "Development Team Lead"
+    },
+    "stage_2_validation": {
+      "owner": "Model Validation Team",
+      "duration": "1-2 months",
+      "key_activities": [
+        "5-fold CV",
+        "Stress testing",
+        "Bias testing",
+        "Risk assessment"
+      ],
+      "gate_approval": "Validation Lead + CRO",
+      "quality_gate": "AUC >= 0.70, No material bias"
+    },
+    "stage_3_approval": {
+      "owner": "Model Risk Committee",
+      "duration": "2 weeks",
+      "key_activities": [
+        "Final review",
+        "Risk approval",
+        "Compliance sign-off"
+      ],
+      "gate_approval": "Committee Chair"
+    },
+    "stage_4_deployment": {
+      "owner": "DevOps + Model Development",
+      "duration": "1 week",
+      "key_activities": [
+        "Build",
+        "Test",
+        "Canary",
+        "Full rollout"
+      ],
+      "gate_approval": "DevOps Lead"
+    },
+    "stage_5_monitoring": {
+      "owner": "Model Development Team",
+      "duration": "Ongoing",
+      "key_activities": [
+        "Performance monitoring",
+        "Drift detection",
+        "Bias monitoring"
+      ],
+      "gate_approval": "Continuous monitoring"
+    },
+    "stage_6_retirement": {
+      "owner": "Model Risk Committee",
+      "duration": "1 month",
+      "key_activities": [
+        "Decommission",
+        "Archive",
+        "Knowledge transfer"
+      ],
+      "gate_approval": "Committee Chair"
+    }
+  },
+  "model_change_policy": {
+    "minor_changes": "Parameter tuning only - Dev Team approval",
+    "major_changes": "New features/algorithm - Full validation cycle",
+    "urgent_changes": "Emergency patch - CRO approval + Post-hoc validation",
+    "documentation_requirement": "All changes must be documented"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "evaluation_timestamp": "2026-08-11T11:56:54.724520",
+  "model_comparison": {
+    "current_model": {
+      "roc_auc": 0.954692896616832,
+      "accuracy": 0.9569289302960832
+    },
+    "new_model": {
+      "accuracy": 0.9510105198120417,
+      "precision": 0.8554260742898762,
+      "recall": 0.47311178247734137,
+      "f1_score": 0.6092594994164181,
+      "roc_auc": 0.9324918687774341
+    },
+    "improvements": {
+      "roc_auc_change": -0.022201027839397924,
+      "roc_auc_change_percent": -2.3254627658875684,
+      "accuracy_change": -0.005918410484041514,
+      "accuracy_change_percent": -0.6184796275529364
+    }
+  },
+  "deployment_recommendation": "HOLD"
+}

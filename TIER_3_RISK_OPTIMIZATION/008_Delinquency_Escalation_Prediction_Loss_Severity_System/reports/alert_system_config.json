@@ -1,0 +1,60 @@
+{
+  "alert_system_id": "977eae50-9ca3-4203-86da-603216ef9aad",
+  "timestamp": "2026-08-11T10:53:18.428727",
+  "alerts_configured": true,
+  "alert_rules": [
+    {
+      "alert_id": "5120ea1d-658e-4294-9b67-32f800e1ac94",
+      "alert_name": "ROC-AUC Degradation",
+      "condition": "ROC-AUC drops > 5% from baseline",
+      "threshold": 0.9069582517859903,
+      "severity": "CRITICAL",
+      "action": "Notify ML team and ops"
+    },
+    {
+      "alert_id": "ee8b1b37-73ff-4d6c-ac79-35e46a101f83",
+      "alert_name": "Data Drift Detected",
+      "condition": "KS p-value < 0.05",
+      "threshold": 0.05,
+      "severity": "HIGH",
+      "action": "Investigate data quality"
+    },
+    {
+      "alert_id": "79a87248-f39a-44f5-b073-c25ef17495d4",
+      "alert_name": "High Error Rate",
+      "condition": "Prediction error rate > 10%",
+      "threshold": 0.1,
+      "severity": "CRITICAL",
+      "action": "Immediate investigation"
+    },
+    {
+      "alert_id": "07c1442e-46ea-4156-906b-7d680aee2de4",
+      "alert_name": "Latency Spike",
+      "condition": "Prediction latency > 1000ms",
+      "threshold": 1000,
+      "severity": "MEDIUM",
+      "action": "Check infrastructure"
+    },
+    {
+      "alert_id": "dbcca0ce-2cb5-459f-bc54-6856277f7d7e",
+      "alert_name": "Accuracy Drop",
+      "condition": "Accuracy drops > 5% from baseline",
+      "threshold": 0.909082483781279,
+      "severity": "HIGH",
+      "action": "Review model performance"
+    }
+  ],
+  "notification_channels": {
+    "email": [
+      "ml_team@company.com",
+      "ops_team@company.com"
+    ],
+    "slack": "#ml-alerts",
+    "pagerduty": "ml-on-call"
+  },
+  "escalation_levels": {
+    "level_1_minutes": 15,
+    "level_2_minutes": 60,
+    "level_3_minutes": 240
+  }
+}

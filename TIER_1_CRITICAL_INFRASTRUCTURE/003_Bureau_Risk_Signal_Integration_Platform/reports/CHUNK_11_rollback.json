@@ -1,0 +1,16 @@
+{
+  "from_version": "CHUNK_11_compliance",
+  "to_version": "CHUNK_10_deployment",
+  "generated_timestamp": "2026-08-11T18:41:30.687372",
+  "restoration_steps": [
+    "Step 1: Suspend regulatory reporting if issues detected",
+    "Step 2: Restore previous regulatory framework",
+    "Step 3: Notify Compliance Officer",
+    "Step 4: Halt predictions until re-approved",
+    "Step 5: Conduct expedited review",
+    "Step 6: Update documentation",
+    "Step 7: Brief Board Risk Committee"
+  ],
+  "estimated_duration_minutes": 14,
+  "risk_level": "MEDIUM"
+}

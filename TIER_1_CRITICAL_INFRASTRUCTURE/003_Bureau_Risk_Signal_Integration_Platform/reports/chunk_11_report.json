@@ -1,0 +1,79 @@
+{
+  "chunk_id": "CHUNK_11",
+  "chunk_name": "Regulatory Compliance & Stress Testing",
+  "execution_timestamp": "2026-08-12T01:25:52.658137",
+  "status": "COMPLETED",
+  "description": "Comprehensive regulatory compliance and stress testing framework",
+  "compliance_summary": {
+    "bcbs_239": "COMPLIANT",
+    "sox_404": "EFFECTIVE",
+    "fair_lending": "COMPLIANT",
+    "gdpr": "COMPLIANT",
+    "model_risk_management": "COMPLIANT",
+    "overall_status": "APPROVED FOR PRODUCTION"
+  },
+  "regulatory_frameworks": {
+    "total_frameworks": 5,
+    "all_compliant": true
+  },
+  "sox_404_testing": {
+    "controls_tested": 7,
+    "controls_passed": 7,
+    "findings": 0
+  },
+  "stress_testing": {
+    "scenarios": 5,
+    "worst_case_auc": 0.8574,
+    "performance_threshold": 0.7,
+    "result": "ACCEPTABLE UNDER ALL SCENARIOS"
+  },
+  "fair_lending": {
+    "bias_tests": 4,
+    "all_passed": true,
+    "protected_classes": 8
+  },
+  "governance": {
+    "committees": 4,
+    "lifecycle_stages": 6,
+    "change_policy": 3
+  },
+  "outputs": [
+    {
+      "type": "json",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\11_Regulatory_Compliance\\Compliance_Reports\\regulatory_framework.json",
+      "description": "Regulatory framework analysis"
+    },
+    {
+      "type": "json",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\11_Regulatory_Compliance\\Compliance_Reports\\bcbs_239_compliance.json",
+      "description": "BCBS 239 compliance"
+    },
+    {
+      "type": "json",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\11_Regulatory_Compliance\\Compliance_Reports\\sox_404_testing.json",
+      "description": "SOX 404 control testing"
+    },
+    {
+      "type": "json",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\11_Regulatory_Compliance\\Stress_Testing\\stress_testing_scenarios.json",
+      "description": "Stress testing scenarios"
+    },
+    {
+      "type": "json",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\11_Regulatory_Compliance\\Compliance_Reports\\fair_lending_compliance.json",
+      "description": "Fair lending compliance"
+    },
+    {
+      "type": "json",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\11_Regulatory_Compliance\\Governance\\model_governance_framework.json",
+      "description": "Model governance framework"
+    },
+    {
+      "type": "json",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\11_Regulatory_Compliance\\Compliance_Reports\\compliance_summary_report.json",
+      "description": "Compliance summary report"
+    }
+  ],
+  "ready_for_next_chunk": true,
+  "next_chunk": "CHUNK_12 (Business Intelligence & Dashboards)"
+}

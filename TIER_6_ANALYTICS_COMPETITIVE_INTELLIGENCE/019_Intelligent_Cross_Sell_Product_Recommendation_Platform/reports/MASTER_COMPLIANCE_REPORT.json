@@ -1,0 +1,43 @@
+{
+  "report_date": "2026-08-02T21:14:16.296840",
+  "model_version": "1.0.0-PRODUCTION",
+  "total_customers_analyzed": 4000,
+  "compliance_checks": {
+    "Fair_Lending": "REVIEW_REQUIRED",
+    "CECL": "COMPLIANT",
+    "Data_Governance": "COMPLIANT"
+  },
+  "overall_compliance_status": "REVIEW_REQUIRED",
+  "portfolio_summary": {
+    "total_customers": 4000,
+    "total_expected_revenue": 2743008.997806286,
+    "avg_propensity_score": 0.542069379862354,
+    "avg_pd_proxy": 0.14277442941346952,
+    "segment_distribution": {
+      "MONITOR": 1304,
+      "RETENTION_OFFERS": 1102,
+      "GROWTH_CROSSSELL": 1002,
+      "PREMIUM_CROSSSELL": 592
+    },
+    "campaign_wave_distribution": {
+      "Wave_4_Later": 1600,
+      "Wave_3_Month3": 1200,
+      "Wave_2_Month2": 800,
+      "Wave_1_Immediate": 400
+    }
+  },
+  "audit_details": {
+    "fair_lending": {
+      "overall_status": "REVIEW_REQUIRED",
+      "timestamp": "2026-08-02T21:14:16.200907"
+    },
+    "cecl": {
+      "overall_status": "COMPLIANT",
+      "timestamp": "2026-08-02T21:14:16.200922"
+    },
+    "data_governance": {
+      "overall_status": "COMPLIANT",
+      "timestamp": "2026-08-02T21:14:16.200926"
+    }
+  }
+}

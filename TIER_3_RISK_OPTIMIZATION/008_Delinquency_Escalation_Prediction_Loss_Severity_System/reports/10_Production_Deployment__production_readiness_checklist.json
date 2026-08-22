@@ -1,0 +1,91 @@
+{
+  "checklist_id": "ea3888e6-7885-412c-9f10-7e525bc4226d",
+  "timestamp": "2026-08-11T10:48:11.699413",
+  "components": [
+    {
+      "component": "Model Performance",
+      "checks": [
+        {
+          "check_name": "Minimum ROC-AUC (>0.75)",
+          "status": "PASS",
+          "value": 0.954692896616832
+        },
+        {
+          "check_name": "Minimum Accuracy (>0.70)",
+          "status": "PASS",
+          "value": 0.9569289302960832
+        },
+        {
+          "check_name": "Calibration ECE (<0.1)",
+          "status": "WARN",
+          "value": 0.1494618482672334
+        },
+        {
+          "check_name": "CV Stability (std < 0.05)",
+          "status": "PASS",
+          "value": 0.0010077645398832715
+        }
+      ]
+    },
+    {
+      "component": "Data Quality",
+      "checks": [
+        {
+          "check_name": "Training Data Size (>1000 samples)",
+          "status": "PASS",
+          "value": 246008
+        },
+        {
+          "check_name": "Feature Count (>5)",
+          "status": "PASS",
+          "value": 75
+        },
+        {
+          "check_name": "Class Balance (ratio >0.3)",
+          "status": "WARN",
+          "value": 0.08781704340443595
+        }
+      ]
+    },
+    {
+      "component": "Model Artifacts",
+      "checks": [
+        {
+          "check_name": "Model File Exists",
+          "status": "PASS",
+          "value": "Model loaded successfully"
+        },
+        {
+          "check_name": "Feature List Documented",
+          "status": "PASS",
+          "value": "75 features"
+        },
+        {
+          "check_name": "Evaluation Report Generated",
+          "status": "PASS",
+          "value": "Evaluation complete"
+        }
+      ]
+    },
+    {
+      "component": "Documentation",
+      "checks": [
+        {
+          "check_name": "Model Version Documented",
+          "status": "PASS",
+          "value": "v1.0.0"
+        },
+        {
+          "check_name": "Deployment Guide Ready",
+          "status": "PASS",
+          "value": "In progress"
+        },
+        {
+          "check_name": "Monitoring Setup Defined",
+          "status": "PASS",
+          "value": "Will be configured"
+        }
+      ]
+    }
+  ]
+}

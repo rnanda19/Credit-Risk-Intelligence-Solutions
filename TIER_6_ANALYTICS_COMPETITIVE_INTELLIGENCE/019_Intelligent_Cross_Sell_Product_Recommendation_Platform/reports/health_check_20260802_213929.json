@@ -1,0 +1,51 @@
+{
+  "timestamp": "2026-08-02T21:39:29.551674",
+  "execution_id": "unknown",
+  "checks": {
+    "csv_availability": {
+      "status": "WARN",
+      "files_found": 0,
+      "files_expected": 7,
+      "missing_files": [
+        "application_train.csv",
+        "previous_application.csv",
+        "credit_card_balance.csv",
+        "bureau.csv",
+        "bureau_balance.csv",
+        "installments_payments.csv",
+        "POS_CASH_balance.csv"
+      ],
+      "timestamp": "2026-08-02T21:39:29.555762"
+    },
+    "folder_permissions": {
+      "status": "PASS",
+      "message": "All folders writable",
+      "issues": [],
+      "timestamp": "2026-08-02T21:39:29.586637"
+    },
+    "memory_availability": {
+      "status": "PASS",
+      "available_gb": 12.05,
+      "total_gb": 31.29,
+      "usage_pct": 61.5,
+      "required_gb": 8,
+      "timestamp": "2026-08-02T21:39:29.593694"
+    },
+    "disk_space": {
+      "status": "PASS",
+      "free_gb": 703.19,
+      "total_gb": 933.69,
+      "usage_pct": 24.7,
+      "required_gb": 50,
+      "timestamp": "2026-08-02T21:39:29.599376"
+    },
+    "last_successful_run": {
+      "status": "OK",
+      "last_run": "2026-08-02T20:42:52.791002",
+      "chunks_completed": 38,
+      "total_chunks": 38,
+      "timestamp": "2026-08-02T21:39:29.603778"
+    }
+  },
+  "overall_status": "FAIL"
+}

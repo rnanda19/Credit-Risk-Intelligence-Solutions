@@ -1,0 +1,801 @@
+{
+  "dataset_name": "Bureau Risk Signal Integration Dataset",
+  "version": "1.0.0",
+  "created_date": "2026-08-11T20:10:12.653450",
+  "total_records": 307511,
+  "total_columns": 88,
+  "column_details": {
+    "SK_ID_CURR": {
+      "data_type": "int64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 100002.0,
+      "max": 407512.0,
+      "mean": 253757.0
+    },
+    "TARGET": {
+      "data_type": "int32",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 2,
+      "min": null,
+      "max": null,
+      "mean": null
+    },
+    "NAME_CONTRACT_TYPE": {
+      "data_type": "object",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 2,
+      "min": null,
+      "max": null,
+      "mean": null
+    },
+    "CODE_GENDER": {
+      "data_type": "object",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 2,
+      "min": null,
+      "max": null,
+      "mean": null
+    },
+    "FLAG_OWN_CAR": {
+      "data_type": "object",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 2,
+      "min": null,
+      "max": null,
+      "mean": null
+    },
+    "FLAG_OWN_REALTY": {
+      "data_type": "object",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 2,
+      "min": null,
+      "max": null,
+      "mean": null
+    },
+    "CNT_CHILDREN": {
+      "data_type": "int32",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 9,
+      "min": null,
+      "max": null,
+      "mean": null
+    },
+    "AMT_INCOME_TOTAL": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 2568.018203182844,
+      "max": 498404.6218276649,
+      "mean": 43421.92138246614
+    },
+    "DAYS_BIRTH": {
+      "data_type": "int32",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 16000,
+      "min": null,
+      "max": null,
+      "mean": null
+    },
+    "DAYS_EMPLOYED": {
+      "data_type": "int32",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 18001,
+      "min": null,
+      "max": null,
+      "mean": null
+    },
+    "AMT_CREDIT": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 1479.9938477004653,
+      "max": 1967156.0101283602,
+      "mean": 82470.93429760248
+    },
+    "AMT_ANNUITY": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 215.46290220845506,
+      "max": 323976.859589674,
+      "mean": 11195.770393519088
+    },
+    "AMT_GOODS_PRICE": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 1114.1903259979263,
+      "max": 3227995.8618164626,
+      "mean": 82118.44920560156
+    },
+    "BUREAU_HIGH_RISK_FLAG": {
+      "data_type": "int32",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 2,
+      "min": null,
+      "max": null,
+      "mean": null
+    },
+    "BUREAU_INQUIRY_FREQUENCY": {
+      "data_type": "int32",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 12,
+      "min": null,
+      "max": null,
+      "mean": null
+    },
+    "CREDIT_TO_INCOME_RATIO": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 1.3288133522285319e-06,
+      "max": 35.85709375562078,
+      "mean": 2.5024756206573606
+    },
+    "ANNUITY_TO_INCOME_RATIO": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 0.00029487516292824533,
+      "max": 0.9532331229272911,
+      "mean": 0.2855365355979396
+    },
+    "EXTERNAL_SCORE": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 65.2780151722344,
+      "max": 931.5789065517463,
+      "mean": 500.027461677956
+    },
+    "PAYMENT_CONSISTENCY": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 0.05622942503044745,
+      "max": 0.999581221707409,
+      "mean": 0.7147279252291414
+    },
+    "AGE_AT_APPLICATION": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 21.000026427777055,
+      "max": 91.65173369849035,
+      "mean": 32.952249980398925
+    },
+    "EMPLOYMENT_STABILITY": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 0.007011009837215527,
+      "max": 0.9993328311274613,
+      "mean": 0.59969924941558
+    },
+    "DOCUMENTS_SUBMITTED_COUNT": {
+      "data_type": "int32",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 15,
+      "min": null,
+      "max": null,
+      "mean": null
+    },
+    "CONTACT_INFO_COMPLETENESS": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 0.153678688543183,
+      "max": 0.9996039271644681,
+      "mean": 0.8001382586893658
+    },
+    "BUREAU_SIGNAL_001": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": -44.34745205948468,
+      "max": 242.9877755922285,
+      "mean": 99.89483553029407
+    },
+    "BUREAU_SIGNAL_002": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 1.7409082082950826e-06,
+      "max": 11.413110268497443,
+      "mean": 0.9993528584323728
+    },
+    "BUREAU_SIGNAL_003": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 0.0003697536295650982,
+      "max": 0.9266334461061092,
+      "mean": 0.28570187571339467
+    },
+    "BUREAU_SIGNAL_004": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": -39.81829493012211,
+      "max": 238.92681022005016,
+      "mean": 100.08728778221327
+    },
+    "BUREAU_SIGNAL_005": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 1.4802663591807281e-06,
+      "max": 13.181449278856476,
+      "mean": 1.0004141376162743
+    },
+    "BUREAU_SIGNAL_006": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 0.00018362543399136835,
+      "max": 0.9484570007209894,
+      "mean": 0.28603444210800744
+    },
+    "BUREAU_SIGNAL_007": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": -40.17789946847853,
+      "max": 242.06628321309543,
+      "mean": 100.01755024831515
+    },
+    "BUREAU_SIGNAL_008": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 1.107940690786377e-05,
+      "max": 13.450005904974665,
+      "mean": 0.998902356816854
+    },
+    "BUREAU_SIGNAL_009": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 0.0005735176648308816,
+      "max": 0.9412658002603678,
+      "mean": 0.2857863694809275
+    },
+    "BUREAU_SIGNAL_010": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": -38.186761450100875,
+      "max": 227.1900708517931,
+      "mean": 99.93345033534341
+    },
+    "BUREAU_SIGNAL_011": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 1.9137107132828876e-06,
+      "max": 14.605639663057545,
+      "mean": 1.0002812624034438
+    },
+    "BUREAU_SIGNAL_012": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 0.0003333668920488898,
+      "max": 0.9532712142040151,
+      "mean": 0.2860360365586176
+    },
+    "BUREAU_SIGNAL_013": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": -41.233537803833514,
+      "max": 249.47020380183105,
+      "mean": 100.05320376283967
+    },
+    "BUREAU_SIGNAL_014": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 1.0661802182700056e-06,
+      "max": 13.846889394252187,
+      "mean": 0.9981153555928196
+    },
+    "BUREAU_SIGNAL_015": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 0.00014662104406322943,
+      "max": 0.933338883730017,
+      "mean": 0.2854657359807818
+    },
+    "BUREAU_SIGNAL_016": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": -27.41858594587211,
+      "max": 227.71083603111043,
+      "mean": 100.02154548087144
+    },
+    "BUREAU_SIGNAL_017": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 7.901305356244574e-07,
+      "max": 12.207832324824839,
+      "mean": 1.0033628193161606
+    },
+    "BUREAU_SIGNAL_018": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 0.0007271361183401949,
+      "max": 0.9496050610167154,
+      "mean": 0.2854235049872073
+    },
+    "BUREAU_SIGNAL_019": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": -42.47899801891592,
+      "max": 241.46806923327213,
+      "mean": 100.04896507127415
+    },
+    "BUREAU_SIGNAL_020": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 1.2175440460498116e-06,
+      "max": 12.175457243139162,
+      "mean": 0.9965700412261235
+    },
+    "BUREAU_SIGNAL_021": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 0.0006211394009432245,
+      "max": 0.955331029985009,
+      "mean": 0.28571597596760706
+    },
+    "BUREAU_SIGNAL_022": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": -36.518543011971644,
+      "max": 235.47894085424144,
+      "mean": 99.94530541647661
+    },
+    "BUREAU_SIGNAL_023": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 1.311711397259456e-06,
+      "max": 12.63012882064885,
+      "mean": 0.9985211581251299
+    },
+    "BUREAU_SIGNAL_024": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 0.0005924737026991783,
+      "max": 0.9384766373204488,
+      "mean": 0.28539387100646063
+    },
+    "BUREAU_SIGNAL_025": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": -39.97986766113962,
+      "max": 238.55677396602462,
+      "mean": 99.92367537227092
+    },
+    "BUREAU_SIGNAL_026": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 8.832405570612992e-07,
+      "max": 13.529312839084673,
+      "mean": 0.9966924647947364
+    },
+    "BUREAU_SIGNAL_027": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 0.0005634329534604455,
+      "max": 0.9630037326049089,
+      "mean": 0.2854142764013613
+    },
+    "BUREAU_SIGNAL_028": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": -33.28981255040651,
+      "max": 236.19426467307687,
+      "mean": 100.06571227627822
+    },
+    "BUREAU_SIGNAL_029": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 6.2705836665517365e-06,
+      "max": 11.533754151978584,
+      "mean": 0.9988847249669168
+    },
+    "BUREAU_SIGNAL_030": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 0.0001475937040363208,
+      "max": 0.9570058033742965,
+      "mean": 0.28579106016213457
+    },
+    "BUREAU_SIGNAL_031": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": -49.36760103785943,
+      "max": 244.67247214510923,
+      "mean": 100.05131105896251
+    },
+    "BUREAU_SIGNAL_032": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 6.612211888061763e-07,
+      "max": 13.414353501460964,
+      "mean": 1.0001596385167648
+    },
+    "BUREAU_SIGNAL_033": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 0.00016014824876116234,
+      "max": 0.963066933618124,
+      "mean": 0.2859070666706025
+    },
+    "BUREAU_SIGNAL_034": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": -34.69821930569998,
+      "max": 234.80050688630507,
+      "mean": 99.99292226201375
+    },
+    "BUREAU_SIGNAL_035": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 2.181662245031364e-06,
+      "max": 12.340034366680984,
+      "mean": 1.003331383867079
+    },
+    "BUREAU_SIGNAL_036": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 0.00034360826674939234,
+      "max": 0.9561525744817075,
+      "mean": 0.2865948931119883
+    },
+    "BUREAU_SIGNAL_037": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": -29.49201880417695,
+      "max": 247.1389683213301,
+      "mean": 100.02601143200448
+    },
+    "BUREAU_SIGNAL_038": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 1.4889807250242187e-06,
+      "max": 14.602231590714212,
+      "mean": 0.9999237337744902
+    },
+    "BUREAU_SIGNAL_039": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 0.0007012037577281603,
+      "max": 0.9564221456989254,
+      "mean": 0.2855784215717211
+    },
+    "BUREAU_SIGNAL_040": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": -42.85540736809031,
+      "max": 248.57180187115966,
+      "mean": 99.98057398715389
+    },
+    "BUREAU_SIGNAL_041": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 3.2126600132889334e-06,
+      "max": 13.60962515960369,
+      "mean": 0.9982401897415497
+    },
+    "BUREAU_SIGNAL_042": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 0.0003031680318085093,
+      "max": 0.9545550942361599,
+      "mean": 0.28550599203863725
+    },
+    "BUREAU_SIGNAL_043": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": -45.22768182981332,
+      "max": 240.10320754742878,
+      "mean": 99.94191873218251
+    },
+    "BUREAU_SIGNAL_044": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 1.9330334192017156e-07,
+      "max": 13.627465090708107,
+      "mean": 0.998549901665739
+    },
+    "BUREAU_SIGNAL_045": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 0.000628676527791798,
+      "max": 0.9352282798262422,
+      "mean": 0.2856667989062674
+    },
+    "BUREAU_SIGNAL_046": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": -38.88090726530828,
+      "max": 244.9035562572749,
+      "mean": 99.9900098417142
+    },
+    "BUREAU_SIGNAL_047": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 1.6739162313935175e-07,
+      "max": 13.192191597020049,
+      "mean": 0.9978498751657302
+    },
+    "BUREAU_SIGNAL_048": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 0.000647912734792707,
+      "max": 0.9456349403273921,
+      "mean": 0.2858410623668806
+    },
+    "BUREAU_SIGNAL_049": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": -66.0609380885466,
+      "max": 244.48056689760654,
+      "mean": 99.98978007402212
+    },
+    "BUREAU_SIGNAL_050": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 2.3129113723404664e-07,
+      "max": 14.16598609878619,
+      "mean": 0.9987023371812108
+    },
+    "BUREAU_SIGNAL_051": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 0.00033462478876786455,
+      "max": 0.9360180240108605,
+      "mean": 0.2857644757560026
+    },
+    "BUREAU_SIGNAL_052": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": -39.606067180697096,
+      "max": 233.2432543459168,
+      "mean": 100.04349061862607
+    },
+    "BUREAU_SIGNAL_053": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 5.156064750600712e-06,
+      "max": 11.383805810303484,
+      "mean": 1.002556750350553
+    },
+    "BUREAU_SIGNAL_054": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 0.0004309430207075819,
+      "max": 0.9554058739172617,
+      "mean": 0.28559958113266026
+    },
+    "BUREAU_SIGNAL_055": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": -44.90844885677501,
+      "max": 239.10291668578765,
+      "mean": 99.95224226313314
+    },
+    "BUREAU_SIGNAL_056": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 3.499781661936224e-06,
+      "max": 12.428424709582526,
+      "mean": 0.9990974815196731
+    },
+    "BUREAU_SIGNAL_057": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 0.00034450558139692366,
+      "max": 0.9493809171018004,
+      "mean": 0.2855998003954756
+    },
+    "BUREAU_SIGNAL_058": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": -44.8785884507225,
+      "max": 245.43140700588523,
+      "mean": 100.0735633647209
+    },
+    "BUREAU_SIGNAL_059": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 1.3845482049660748e-05,
+      "max": 13.712662010707334,
+      "mean": 0.9971441341157978
+    },
+    "BUREAU_SIGNAL_060": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 0.00021362030168706875,
+      "max": 0.9351758398514375,
+      "mean": 0.2856487060771542
+    },
+    "BUREAU_SIGNAL_061": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": -41.08716486394252,
+      "max": 238.79446790650013,
+      "mean": 99.91039027345124
+    },
+    "BUREAU_SIGNAL_062": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 1.3701603792956046e-05,
+      "max": 15.249527062635263,
+      "mean": 1.0001019776836468
+    },
+    "BUREAU_SIGNAL_063": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 0.0002862839464469335,
+      "max": 0.9434502388774935,
+      "mean": 0.28571907898474763
+    },
+    "BUREAU_SIGNAL_064": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": -44.30178907988221,
+      "max": 234.98908889192776,
+      "mean": 100.02964624179788
+    },
+    "BUREAU_SIGNAL_065": {
+      "data_type": "float64",
+      "non_null_count": 307511,
+      "null_count": 0,
+      "unique_values": 307511,
+      "min": 2.0683391129667308e-05,
+      "max": 11.677576607488351,
+      "mean": 0.998753334530412
+    }
+  }
+}

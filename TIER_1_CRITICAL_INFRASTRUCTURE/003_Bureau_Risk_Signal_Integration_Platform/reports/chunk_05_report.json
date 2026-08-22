@@ -1,0 +1,91 @@
+{
+  "chunk_id": "CHUNK_05",
+  "chunk_name": "Model Development - 5 Models",
+  "execution_timestamp": "2026-08-12T00:22:57.844250",
+  "status": "COMPLETED",
+  "description": "Training 5 different ML models for comparison",
+  "models_trained": [
+    "Random Forest",
+    "XGBoost",
+    "LightGBM",
+    "Logistic Regression",
+    "Neural Network"
+  ],
+  "best_model": "Logistic Regression",
+  "outputs": [
+    {
+      "type": "pkl",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\05_Model_Development\\Trained_Models\\random_forest_v1.pkl",
+      "description": "Random Forest model"
+    },
+    {
+      "type": "pkl",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\05_Model_Development\\Trained_Models\\xgboost_v1.pkl",
+      "description": "XGBoost model"
+    },
+    {
+      "type": "pkl",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\05_Model_Development\\Trained_Models\\lightgbm_v1.pkl",
+      "description": "LightGBM model"
+    },
+    {
+      "type": "pkl",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\05_Model_Development\\Trained_Models\\logistic_regression_v1.pkl",
+      "description": "Logistic Regression model"
+    },
+    {
+      "type": "pkl",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\05_Model_Development\\Trained_Models\\neural_network_v1.pkl",
+      "description": "Neural Network model"
+    }
+  ],
+  "key_metrics": {
+    "models_trained": 5,
+    "best_model": "Logistic Regression",
+    "best_auc": 0.7396246896765811,
+    "all_models_performance": {
+      "Random Forest": {
+        "AUC": 0.7395386688744877,
+        "F1": 0.2834656262612673,
+        "Precision": 0.2128067871932128,
+        "Recall": 0.4243705941591138,
+        "Accuracy": 0.8268051964944799,
+        "LogLoss": 0.45914058583578904
+      },
+      "XGBoost": {
+        "AUC": 0.729384623347906,
+        "F1": 0.2779236743588311,
+        "Precision": 0.19231364058150324,
+        "Recall": 0.5009063444108761,
+        "Accuracy": 0.7898801684470677,
+        "LogLoss": 0.44515010714530945
+      },
+      "LightGBM": {
+        "AUC": 0.7393383455314586,
+        "F1": 0.28001628001628004,
+        "Precision": 0.18732557348036213,
+        "Recall": 0.5542799597180262,
+        "Accuracy": 0.7698974033786969,
+        "LogLoss": 0.4736266766489675
+      },
+      "Logistic Regression": {
+        "AUC": 0.7396246896765811,
+        "F1": 0.25629960699699467,
+        "Precision": 0.1584639573109724,
+        "Recall": 0.6698892245720041,
+        "Accuracy": 0.6861616506511877,
+        "LogLoss": 0.5993792720799247
+      },
+      "Neural Network": {
+        "AUC": 0.734968886346774,
+        "F1": 0.008379888268156424,
+        "Precision": 0.44680851063829785,
+        "Recall": 0.004229607250755287,
+        "Accuracy": 0.9191909337755881,
+        "LogLoss": 0.2537167958676969
+      }
+    }
+  },
+  "ready_for_next_chunk": true,
+  "next_chunk": "CHUNK_06 (Model Validation - Top 2)"
+}

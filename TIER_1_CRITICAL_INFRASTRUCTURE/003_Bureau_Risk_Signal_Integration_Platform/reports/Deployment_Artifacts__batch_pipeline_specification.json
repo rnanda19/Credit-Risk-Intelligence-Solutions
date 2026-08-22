@@ -1,0 +1,59 @@
+{
+  "name": "bureau_risk_batch_scoring",
+  "version": "1.0.0",
+  "schedule": "daily",
+  "input": {
+    "format": "csv",
+    "location": "s3://data-lake/input/daily/",
+    "schema": {
+      "fields": [
+        "SK_ID_CURR",
+        "feature_1",
+        "feature_2",
+        "...",
+        "feature_75"
+      ],
+      "expected_records_range": [
+        10000,
+        1000000
+      ]
+    }
+  },
+  "processing": {
+    "steps": [
+      "Load and validate input data",
+      "Apply feature scaling",
+      "Run model prediction",
+      "Apply calibrated threshold",
+      "Generate risk category",
+      "Add confidence scores"
+    ],
+    "parallelization": "batch_size_10000",
+    "timeout_seconds": 3600
+  },
+  "output": {
+    "format": "csv",
+    "location": "s3://data-lake/output/predictions/",
+    "schema": {
+      "fields": [
+        "SK_ID_CURR",
+        "PREDICTION_PROBABILITY",
+        "RISK_CATEGORY",
+        "CONFIDENCE",
+        "TIMESTAMP"
+      ],
+      "compression": "gzip"
+    }
+  },
+  "error_handling": {
+    "retry_policy": "exponential_backoff_3_times",
+    "invalid_record_handling": "quarantine_and_alert",
+    "notification": "risk-team@company.com"
+  },
+  "quality_checks": {
+    "record_count_validation": true,
+    "schema_validation": true,
+    "outlier_detection": true,
+    "drift_monitoring": true
+  }
+}

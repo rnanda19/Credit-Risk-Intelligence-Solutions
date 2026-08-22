@@ -1,0 +1,32 @@
+{
+  "validation_timestamp": "2026-08-02T20:44:33.415652",
+  "results": {
+    "application_train.csv": true,
+    "previous_application.csv": true,
+    "credit_card_balance.csv": true,
+    "bureau.csv": true,
+    "bureau_balance.csv": true,
+    "installments_payments.csv": true,
+    "POS_CASH_balance.csv": true
+  },
+  "file_locations": {
+    "application_train.csv": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\application_train.csv",
+    "previous_application.csv": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\data\\previous_application.csv",
+    "credit_card_balance.csv": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\data\\credit_card_balance.csv",
+    "bureau.csv": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\bureau.csv",
+    "bureau_balance.csv": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\data\\bureau_balance.csv",
+    "installments_payments.csv": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\data\\installments_payments.csv",
+    "POS_CASH_balance.csv": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\data\\POS_CASH_balance.csv"
+  },
+  "status": "PASSED_ADAPTIVE",
+  "available_files": [
+    "application_train.csv",
+    "previous_application.csv",
+    "credit_card_balance.csv",
+    "bureau.csv",
+    "bureau_balance.csv",
+    "installments_payments.csv",
+    "POS_CASH_balance.csv"
+  ],
+  "missing_files": []
+}

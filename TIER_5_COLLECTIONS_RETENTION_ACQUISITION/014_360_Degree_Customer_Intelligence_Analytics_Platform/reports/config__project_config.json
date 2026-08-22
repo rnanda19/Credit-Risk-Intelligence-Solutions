@@ -1,0 +1,17 @@
+{
+  "project_name": "004_Customer_360_Analysis",
+  "project_id": "004",
+  "project_title": "Customer 360-Degree Analysis",
+  "description": "Financial 360-degree customer profile system for credit institutions",
+  "created_date": "2026-08-13T00:04:42.239326",
+  "root_directory": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\PROBLEM_004_Customer_360_Analysis",
+  "data_directory": "C:\\Users\\rnand\\OneDrive\\Desktop(1)\\home-credit-default-risk\\data",
+  "environment": {
+    "python_version": "3.13.14",
+    "platform": "win32"
+  },
+  "project_scope": {
+    "dimensions_covered": 6,
+    "dimensions_not_covered": 5
+  }
+}

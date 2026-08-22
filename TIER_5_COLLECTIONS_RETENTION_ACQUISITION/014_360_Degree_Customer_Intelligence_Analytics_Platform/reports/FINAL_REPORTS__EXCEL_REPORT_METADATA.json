@@ -1,0 +1,56 @@
+{
+  "report_type": "Customer 360 Complete Analysis",
+  "generated_datetime": "2026-08-13T19:48:27.931635",
+  "data_sources": {
+    "total_csv_files": 10,
+    "files_loaded": 8,
+    "chunk_workflow": "CHUNK 1-13 Complete"
+  },
+  "workbook_details": {
+    "total_sheets": 15,
+    "sheet_list": [
+      "EXECUTIVE DASHBOARD",
+      "PORTFOLIO ANALYSIS",
+      "MODEL PERFORMANCE",
+      "FINANCIAL IMPACT",
+      "SCENARIO - CONSERVATIVE (30%)",
+      "SCENARIO - MODERATE (50%)",
+      "SCENARIO - AGGRESSIVE (70%)",
+      "SCENARIO COMPARISON",
+      "DATA SOURCES",
+      "CHUNK WORKFLOW",
+      "CALCULATIONS",
+      "PIVOT - SCENARIOS",
+      "PIVOT - PORTFOLIO",
+      "PIVOT - MODEL",
+      "SUMMARY"
+    ],
+    "features": [
+      "Color-coded sheets by category",
+      "Professional formatting with borders",
+      "Conditional formatting on KPIs",
+      "Multiple pivot table data sources",
+      "Executive dashboard with KPIs",
+      "Scenario comparison tables",
+      "Detailed calculation breakdowns",
+      "Model performance metrics",
+      "Portfolio analysis tables",
+      "CHUNK workflow status tracking"
+    ]
+  },
+  "key_metrics": {
+    "total_customers": 356255,
+    "portfolio_value": 209395079986.5,
+    "model_accuracy": 0.9198,
+    "annual_savings_moderate": 1525567470.2432768,
+    "roi_moderate": 815811.481413517,
+    "payback_days_moderate": 0.044740728503548655
+  },
+  "files_generated": [
+    "CUSTOMER_360_COMPLETE_ANALYSIS.xlsx",
+    "SUMMARY_METRICS.csv",
+    "SCENARIOS_ANALYSIS.csv",
+    "PORTFOLIO_ANALYSIS.csv",
+    "MODEL_METRICS.csv"
+  ]
+}

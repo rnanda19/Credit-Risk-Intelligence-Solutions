@@ -1,0 +1,108 @@
+{
+  "execution_id": "20260810_135339_691502",
+  "timestamp": "2026-08-10T13:53:39.691606",
+  "process": "Exploratory Data Analysis - Full Enterprise Grade",
+  "version": "3.0-FULL",
+  "sop_compliance": [
+    "BCBS 239",
+    "SOX 404",
+    "JP Morgan Standards",
+    "Goldman Sachs Framework"
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "action": "Load Cleaned Data",
+      "timestamp": "2026-08-10T13:53:42.490473",
+      "records": 307511,
+      "columns": 138
+    },
+    {
+      "step": 2,
+      "action": "Basic Statistics",
+      "timestamp": "2026-08-10T13:53:44.627556",
+      "metrics": {
+        "dataset_shape": "307,511 rows \u00d7 138 columns",
+        "memory_usage_mb": 561.9594812393188,
+        "numeric_columns": 122,
+        "categorical_columns": 16,
+        "missing_values": 0,
+        "duplicates": 0
+      }
+    },
+    {
+      "step": 3,
+      "action": "Numeric Distribution Analysis",
+      "timestamp": "2026-08-10T13:53:46.869297",
+      "numeric_columns": 122
+    },
+    {
+      "step": 4,
+      "action": "Categorical Analysis",
+      "timestamp": "2026-08-10T13:53:47.962502",
+      "categorical_columns": 16
+    },
+    {
+      "step": 5,
+      "action": "Target Variable Analysis",
+      "timestamp": "2026-08-10T13:53:47.967966",
+      "analysis": {
+        "target_0_count": 282686,
+        "target_1_count": 24825,
+        "target_0_percent": 91.92711805431351,
+        "target_1_percent": 8.072881945686495,
+        "class_imbalance_ratio": 0.08781828601345662
+      }
+    },
+    {
+      "step": 6,
+      "action": "Correlation Analysis",
+      "timestamp": "2026-08-10T13:53:53.968548",
+      "correlations_analyzed": 121
+    },
+    {
+      "step": 7,
+      "action": "Feature Importance (Chi-Square)",
+      "timestamp": "2026-08-10T13:53:54.443737",
+      "categorical_features_tested": 16
+    },
+    {
+      "step": 8,
+      "action": "Outlier Analysis",
+      "timestamp": "2026-08-10T13:53:57.703433",
+      "outlier_columns": 116
+    },
+    {
+      "step": 9,
+      "action": "Missing Data Analysis",
+      "timestamp": "2026-08-10T13:53:57.861555",
+      "columns_with_missing": 0
+    },
+    {
+      "step": 10,
+      "action": "Create Visualizations",
+      "timestamp": "2026-08-10T13:54:01.693282",
+      "visualizations_created": 4
+    },
+    {
+      "step": 11,
+      "action": "Create Dashboard Metrics CSV",
+      "timestamp": "2026-08-10T13:54:03.755421",
+      "dashboard_metrics": 18
+    },
+    {
+      "step": 12,
+      "action": "Create EDA Report",
+      "timestamp": "2026-08-10T13:54:05.404968"
+    },
+    {
+      "step": 13,
+      "action": "Feature Summary Table",
+      "timestamp": "2026-08-10T13:54:06.669038",
+      "features_summarized": 138
+    }
+  ],
+  "completion_timestamp": "2026-08-10T13:54:06.669105",
+  "execution_status": "SUCCESS",
+  "execution_time_seconds": 26.977514
+}

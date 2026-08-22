@@ -1,0 +1,42 @@
+{
+  "data_sources": [
+    "application_train.csv",
+    "Loan_Default.csv"
+  ],
+  "income_calibration": {
+    "mean": 6957.338876146789,
+    "std": 6496.586382220175,
+    "median": 5760.0
+  },
+  "base_case": {
+    "default_rate": 0.07985111200113044,
+    "ecl": 88837587.8576283,
+    "model_auc": 0.9783341703135088
+  },
+  "scenarios": {
+    "Base Case": {
+      "default_rate": 0.07985111200113044,
+      "ecl": 88837587.8576283
+    },
+    "Mild Recession": {
+      "default_rate": 0.07030726114323008,
+      "ecl": 79639269.02628064
+    },
+    "Moderate Recession": {
+      "default_rate": 0.06917685468754727,
+      "ecl": 78541240.98643005
+    },
+    "Severe Recession": {
+      "default_rate": 0.06790958790127422,
+      "ecl": 76841265.7569992
+    },
+    "Financial Crisis": {
+      "default_rate": 0.06800796075971553,
+      "ecl": 77358310.99444564
+    },
+    "Depression Scenario": {
+      "default_rate": 0.06976076299613701,
+      "ecl": 78898591.10599537
+    }
+  }
+}

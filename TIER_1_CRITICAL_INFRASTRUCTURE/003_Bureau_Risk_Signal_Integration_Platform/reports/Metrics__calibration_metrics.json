@@ -1,0 +1,60 @@
+{
+  "timestamp": "2026-08-11T22:57:29.120053",
+  "total_records": 307511,
+  "calibration": {
+    "initial_brier_score": 0.14349327628642422,
+    "calibrated_brier_score": 0.015481928159936398,
+    "calibration_method": "Isotonic Regression",
+    "improvement_percentage": 89.2106943540454
+  },
+  "threshold_analysis": {
+    "conservative": {
+      "threshold": 0.7,
+      "precision": 1.0,
+      "recall": 0.8000080366471108,
+      "f1_score": 0.8888938497600178,
+      "accuracy": 0.9838152131143276,
+      "tp": 19909,
+      "tn": 282625,
+      "fp": 0,
+      "fn": 4977,
+      "total_cost": 49770000.0,
+      "cost_per_prediction": 161.84786885672384
+    },
+    "balanced": {
+      "threshold": 1.0,
+      "precision": 1.0,
+      "recall": 0.8000080366471108,
+      "f1_score": 0.8888938497600178,
+      "accuracy": 0.9838152131143276,
+      "tp": 19909,
+      "tn": 282625,
+      "fp": 0,
+      "fn": 4977,
+      "total_cost": 49770000.0,
+      "cost_per_prediction": 161.84786885672384
+    },
+    "aggressive": {
+      "threshold": 0.3,
+      "precision": 0.999899558055444,
+      "recall": 0.800048219882665,
+      "f1_score": 0.888878967811063,
+      "accuracy": 0.983811961198136,
+      "tp": 19910,
+      "tn": 282623,
+      "fp": 2,
+      "fn": 4976,
+      "total_cost": 49762000.0,
+      "cost_per_prediction": 161.8218535271909
+    }
+  },
+  "probability_distribution": {
+    "mean": 0.08092718634455352,
+    "std": 0.24268508131933253,
+    "min": 0.0,
+    "max": 1.0,
+    "median": 0.008940371608489466,
+    "percentile_25": 0.0021586616297895305,
+    "percentile_75": 0.03306844398872085
+  }
+}

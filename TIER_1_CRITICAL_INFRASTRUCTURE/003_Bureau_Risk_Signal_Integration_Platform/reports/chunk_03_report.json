@@ -1,0 +1,63 @@
+{
+  "chunk_id": "CHUNK_03",
+  "chunk_name": "Feature Validation",
+  "execution_timestamp": "2026-08-12T00:05:30.970194",
+  "status": "COMPLETED",
+  "description": "Statistical feature validation and selection",
+  "inputs": {
+    "file": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\02_Data_Cleaning_Preprocessing\\Cleaned_Data\\home_credit_cleaned.csv",
+    "records": 307511,
+    "features": 122
+  },
+  "outputs": [
+    {
+      "type": "csv",
+      "name": "bureau_risk_validated.csv",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\03_Feature_Validation\\Validated_Features\\bureau_risk_validated.csv",
+      "size_mb": 159.96690845489502,
+      "records": 307511,
+      "features": 106
+    }
+  ],
+  "validation_summary": {
+    "total_features_validated": 105,
+    "features_kept": 105,
+    "features_dropped": 0,
+    "signal_preservation": "HIGH (lenient thresholds)"
+  },
+  "validation_results_sample": {
+    "SK_ID_CURR": {
+      "variance": 10565820148.159872,
+      "correlation_with_target": 0.002108469018197718,
+      "status": "KEEP",
+      "reason": "Passes validation"
+    },
+    "CNT_CHILDREN": {
+      "variance": 0.5214592938621124,
+      "correlation_with_target": 0.019187133596270035,
+      "status": "KEEP",
+      "reason": "Passes validation"
+    },
+    "AMT_INCOME_TOTAL": {
+      "variance": 56227386501.18384,
+      "correlation_with_target": 0.003981865601205655,
+      "status": "KEEP",
+      "reason": "Passes validation"
+    },
+    "AMT_CREDIT": {
+      "variance": 161998825566.72702,
+      "correlation_with_target": 0.03036928646142969,
+      "status": "KEEP",
+      "reason": "Passes validation"
+    },
+    "AMT_ANNUITY": {
+      "variance": 210060413.65694788,
+      "correlation_with_target": 0.012814773963032825,
+      "status": "KEEP",
+      "reason": "Passes validation"
+    }
+  },
+  "quality_status": "PASS",
+  "ready_for_next_chunk": true,
+  "next_chunk": "CHUNK_04 (Feature Engineering)"
+}

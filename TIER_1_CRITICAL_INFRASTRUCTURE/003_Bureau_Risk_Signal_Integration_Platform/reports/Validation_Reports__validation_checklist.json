@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-08-11T17:21:31.650168",
+  "execution_id": "CHUNK_03_20260811_172122_Problem 20: Bureau Risk Signal Integration",
+  "checks": {
+    "no_missing_values": true,
+    "no_duplicates": true,
+    "target_variable_present": true,
+    "id_column_present": true,
+    "sufficient_records": true,
+    "balanced_target": true,
+    "features_with_variance": true,
+    "missing_percentage_acceptable": true,
+    "feature_count_sufficient": true,
+    "normality_diversity": false
+  },
+  "pass_rate": "9/10",
+  "compliance_status": "PASS"
+}

@@ -1,0 +1,358 @@
+{
+  "dashboard": {
+    "name": "CrossSell_Pipeline_Monitor",
+    "description": "Deep Cross-Sell Pipeline Real-Time Monitoring",
+    "dashboard_type": "Grafana",
+    "refresh_interval_seconds": 60,
+    "time_range": "7d",
+    "timezone": "America/New_York",
+    "created_date": "2026-08-02T21:39:29.533316",
+    "version": "1.0.0"
+  },
+  "panels": {
+    "panel_1_execution_status": {
+      "panel_id": 1,
+      "title": "Pipeline Execution Status (Last 30 Days)",
+      "metric": "dag_run.success_rate",
+      "unit": "percent",
+      "threshold_warning": 95,
+      "threshold_critical": 90,
+      "visualization_type": "gauge",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "w": 6,
+        "h": 8
+      },
+      "targets": [
+        "airflow_dag_runs",
+        "airflow_task_runs"
+      ]
+    },
+    "panel_2_execution_time": {
+      "panel_id": 2,
+      "title": "Average Pipeline Execution Time (minutes)",
+      "metric": "dag_run.duration_minutes",
+      "unit": "minutes",
+      "threshold_warning": 180,
+      "threshold_critical": 240,
+      "visualization_type": "timeseries",
+      "position": {
+        "x": 6,
+        "y": 0,
+        "w": 6,
+        "h": 8
+      },
+      "targets": [
+        "airflow_execution_times"
+      ]
+    },
+    "panel_3_data_quality": {
+      "panel_id": 3,
+      "title": "Data Quality Score (% Complete)",
+      "metric": "data_quality.completeness_pct",
+      "unit": "percent",
+      "threshold_warning": 99.0,
+      "threshold_critical": 99.5,
+      "visualization_type": "gauge",
+      "position": {
+        "x": 12,
+        "y": 0,
+        "w": 6,
+        "h": 8
+      },
+      "targets": [
+        "data_quality_metrics"
+      ]
+    },
+    "panel_4_compliance_status": {
+      "panel_id": 4,
+      "title": "Compliance Validation Status",
+      "metrics": [
+        "fair_lending.parity_ratio",
+        "cecl.validation_status",
+        "governance.quality_score"
+      ],
+      "visualization_type": "stat",
+      "position": {
+        "x": 18,
+        "y": 0,
+        "w": 6,
+        "h": 8
+      },
+      "targets": [
+        "compliance_metrics"
+      ]
+    },
+    "panel_5_task_breakdown": {
+      "panel_id": 5,
+      "title": "Task Execution Times Breakdown (minutes)",
+      "tasks": [
+        "preflight_validation",
+        "load_and_aggregate_data",
+        "feature_engineering_and_scoring",
+        "customer_segmentation",
+        "compliance_validation",
+        "generate_outputs",
+        "quality_assurance",
+        "send_completion_notification"
+      ],
+      "visualization_type": "barchart",
+      "position": {
+        "x": 0,
+        "y": 8,
+        "w": 12,
+        "h": 8
+      },
+      "targets": [
+        "task_durations"
+      ]
+    },
+    "panel_6_error_tracking": {
+      "panel_id": 6,
+      "title": "Error Count & Failure Rate (Last 7 Days)",
+      "metric": "pipeline.error_count",
+      "threshold_critical": 5,
+      "visualization_type": "timeseries",
+      "position": {
+        "x": 12,
+        "y": 8,
+        "w": 12,
+        "h": 8
+      },
+      "targets": [
+        "error_logs",
+        "failure_rates"
+      ]
+    },
+    "panel_7_output_metrics": {
+      "panel_id": 7,
+      "title": "Output Deliverables Status & File Sizes",
+      "files": {
+        "customer_360.csv": "CSV export",
+        "recommendations.csv": "CSV export",
+        "Deep_CrossSell_Analysis.xlsx": "Excel workbook",
+        "Deep_CrossSell_SMART_Recommendations.docx": "Word report",
+        "Deep_CrossSell_Analysis_Report.html": "HTML dashboard",
+        "Deep_CrossSell_Dashboard.png": "Visualization"
+      },
+      "visualization_type": "table",
+      "position": {
+        "x": 0,
+        "y": 16,
+        "w": 12,
+        "h": 8
+      },
+      "targets": [
+        "output_files"
+      ]
+    },
+    "panel_8_customer_metrics": {
+      "panel_id": 8,
+      "title": "Customer Analysis Metrics (Latest Run)",
+      "metrics": {
+        "total_customers_analyzed": "Count of customers",
+        "avg_propensity_score": "Mean propensity (0-1)",
+        "premium_segment_pct": "Premium segment %",
+        "total_revenue_potential": "Total revenue $"
+      },
+      "visualization_type": "stat",
+      "position": {
+        "x": 12,
+        "y": 16,
+        "w": 12,
+        "h": 8
+      },
+      "targets": [
+        "customer_metrics"
+      ]
+    }
+  },
+  "alerts": {
+    "alert_1_execution_failure": {
+      "alert_id": 1,
+      "name": "Pipeline Execution Failed",
+      "condition": "dag_run.status == FAILED",
+      "severity": "CRITICAL",
+      "notification_channels": [
+        "email",
+        "slack",
+        "pagerduty"
+      ],
+      "recipients": {
+        "email": [
+          "data-science@enterprise.com",
+          "compliance@enterprise.com"
+        ],
+        "slack": "#data-science-alerts",
+        "pagerduty": "data-science-team"
+      },
+      "cooldown_minutes": 15,
+      "enabled": true
+    },
+    "alert_2_sla_breach": {
+      "alert_id": 2,
+      "name": "Pipeline SLA Breach (Execution > 4 hours)",
+      "condition": "dag_run.duration_minutes > 240",
+      "severity": "WARNING",
+      "notification_channels": [
+        "slack",
+        "email"
+      ],
+      "recipients": {
+        "email": [
+          "data-science@enterprise.com"
+        ],
+        "slack": "#data-science-alerts"
+      },
+      "cooldown_minutes": 30,
+      "enabled": true
+    },
+    "alert_3_data_quality": {
+      "alert_id": 3,
+      "name": "Data Quality Below Threshold (<99.5%)",
+      "condition": "data_quality.completeness_pct < 99.5",
+      "severity": "CRITICAL",
+      "notification_channels": [
+        "email",
+        "slack"
+      ],
+      "recipients": {
+        "email": [
+          "data-science@enterprise.com",
+          "data-governance@enterprise.com"
+        ],
+        "slack": "#data-science-alerts"
+      },
+      "cooldown_minutes": 10,
+      "enabled": true
+    },
+    "alert_4_compliance_violation": {
+      "alert_id": 4,
+      "name": "Compliance Validation Failed (Fair Lending/CECL)",
+      "condition": "compliance.validation_status == FAILED",
+      "severity": "CRITICAL",
+      "notification_channels": [
+        "email",
+        "slack",
+        "pagerduty"
+      ],
+      "recipients": {
+        "email": [
+          "data-science@enterprise.com",
+          "compliance@enterprise.com",
+          "legal@enterprise.com"
+        ],
+        "slack": "#compliance-alerts"
+      },
+      "cooldown_minutes": 5,
+      "enabled": true
+    },
+    "alert_5_fair_lending_parity": {
+      "alert_id": 5,
+      "name": "Fair Lending Parity Violation (<80% Rule)",
+      "condition": "fair_lending.parity_ratio < 0.80",
+      "severity": "CRITICAL",
+      "notification_channels": [
+        "email",
+        "pagerduty"
+      ],
+      "recipients": {
+        "email": [
+          "compliance@enterprise.com",
+          "legal@enterprise.com"
+        ],
+        "pagerduty": "compliance-team"
+      },
+      "cooldown_minutes": 5,
+      "enabled": true
+    }
+  },
+  "health_checks": {
+    "check_1_csv_availability": {
+      "check_id": 1,
+      "name": "CSV File Availability",
+      "description": "Verify all 7 source CSV files are accessible",
+      "check_interval_hours": 24,
+      "timeout_seconds": 30,
+      "retry_count": 3,
+      "enabled": true,
+      "critical": true,
+      "files_to_check": [
+        "application_train.csv",
+        "previous_application.csv",
+        "credit_card_balance.csv",
+        "bureau.csv",
+        "bureau_balance.csv",
+        "installments_payments.csv",
+        "POS_CASH_balance.csv"
+      ]
+    },
+    "check_2_output_folder_permissions": {
+      "check_id": 2,
+      "name": "Output Folder Permissions",
+      "description": "Verify write permissions to all output folders",
+      "check_interval_hours": 12,
+      "timeout_seconds": 10,
+      "retry_count": 2,
+      "enabled": true,
+      "critical": true,
+      "folders_to_check": [
+        "data_output",
+        "reports",
+        "charts",
+        "audit",
+        "logs"
+      ]
+    },
+    "check_3_database_connectivity": {
+      "check_id": 3,
+      "name": "Database Connectivity",
+      "description": "Test connection to Airflow metadata database",
+      "check_interval_hours": 6,
+      "timeout_seconds": 15,
+      "retry_count": 3,
+      "enabled": true,
+      "critical": true
+    },
+    "check_4_memory_availability": {
+      "check_id": 4,
+      "name": "Memory Availability",
+      "description": "Verify sufficient memory (min 8 GB) available",
+      "check_interval_hours": 12,
+      "timeout_seconds": 20,
+      "retry_count": 1,
+      "enabled": true,
+      "critical": false,
+      "minimum_gb": 8,
+      "warning_threshold_gb": 4
+    },
+    "check_5_disk_space": {
+      "check_id": 5,
+      "name": "Disk Space Availability",
+      "description": "Monitor disk space (min 50 GB required)",
+      "check_interval_hours": 12,
+      "timeout_seconds": 20,
+      "retry_count": 1,
+      "enabled": true,
+      "critical": true,
+      "minimum_gb": 50,
+      "warning_threshold_gb": 100
+    }
+  },
+  "metrics_collection": {
+    "retention_days": 90,
+    "export_interval_minutes": 5,
+    "archive_interval_days": 30,
+    "key_metrics": [
+      "dag_run.duration_minutes",
+      "dag_run.success_rate",
+      "task_run.duration_minutes",
+      "data_quality.completeness_pct",
+      "compliance.validation_status",
+      "error_count",
+      "customer_count",
+      "propensity_score.mean"
+    ]
+  }
+}

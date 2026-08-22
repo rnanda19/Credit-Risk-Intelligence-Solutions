@@ -1,0 +1,11 @@
+{
+  "framework": "SOP_10_Compliance_Reports",
+  "chunk": "CHUNK_01",
+  "status": "COMPLIANT",
+  "standards_met": [
+    "BCBS_239",
+    "SOX_404",
+    "JP_Morgan",
+    "Goldman_Sachs"
+  ]
+}

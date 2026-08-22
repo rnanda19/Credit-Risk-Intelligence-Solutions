@@ -1,0 +1,53 @@
+{
+  "chunk_id": "CHUNK_10",
+  "chunk_name": "Production Deployment Specification",
+  "execution_timestamp": "2026-08-12T01:24:52.137021",
+  "status": "COMPLETED",
+  "description": "Complete production deployment architecture and specifications",
+  "deployment_summary": {
+    "platform": "Kubernetes (K8s)",
+    "components": 6,
+    "api_endpoints": 4,
+    "pipeline_stages": 7,
+    "target_availability": "99.95%",
+    "target_latency_p95_ms": 50
+  },
+  "outputs": [
+    {
+      "type": "json",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\10_Production_Deployment\\API_Specs\\api_specification.json",
+      "description": "REST API specification"
+    },
+    {
+      "type": "json",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\10_Production_Deployment\\Reports\\deployment_architecture.json",
+      "description": "Deployment architecture"
+    },
+    {
+      "type": "json",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\10_Production_Deployment\\Reports\\inference_pipeline.json",
+      "description": "Inference pipeline"
+    },
+    {
+      "type": "json",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\10_Production_Deployment\\Reports\\sla_requirements.json",
+      "description": "SLA requirements"
+    },
+    {
+      "type": "json",
+      "path": "C:\\Users\\rnand\\Documents\\home-credit-default-risk\\Enterprise_AI_Workflows\\020_Bureau_Risk_Signal_Integration\\10_Production_Deployment\\Reports\\deployment_checklist.json",
+      "description": "Deployment checklist"
+    }
+  ],
+  "key_features": {
+    "microservices_architecture": true,
+    "kubernetes_ready": true,
+    "auto_scaling": true,
+    "high_availability": true,
+    "monitoring_integrated": true,
+    "audit_logging": true,
+    "compliance_ready": true
+  },
+  "ready_for_next_chunk": true,
+  "next_chunk": "CHUNK_11 (Regulatory Compliance & Stress Testing)"
+}

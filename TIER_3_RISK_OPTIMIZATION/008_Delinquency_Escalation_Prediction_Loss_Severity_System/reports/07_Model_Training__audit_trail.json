@@ -1,0 +1,77 @@
+{
+  "execution_id": "20260810_212019_494488",
+  "timestamp": "2026-08-10T21:20:19.494567",
+  "process": "Model Training - Without CV",
+  "version": "6.0-NocV",
+  "sop_compliance": [
+    "BCBS 239",
+    "SOX 404"
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "action": "Load Feature Set",
+      "timestamp": "2026-08-10T21:20:25.548903",
+      "records": 307511,
+      "features": 75
+    },
+    {
+      "step": 2,
+      "action": "Train-Test Split",
+      "timestamp": "2026-08-10T21:20:25.991128",
+      "train_records": 246008,
+      "test_records": 61503
+    },
+    {
+      "step": 3,
+      "action": "Model Training",
+      "timestamp": "2026-08-10T21:42:03.383271",
+      "models_trained": 5
+    },
+    {
+      "step": 4,
+      "action": "Model Evaluation",
+      "timestamp": "2026-08-10T21:42:04.836717",
+      "models_evaluated": 5
+    },
+    {
+      "step": 5,
+      "action": "Cross-Validation (SKIPPED)",
+      "timestamp": "2026-08-10T21:42:04.839235",
+      "note": "Will be run as separate script"
+    },
+    {
+      "step": 6,
+      "action": "Best Model Selection",
+      "timestamp": "2026-08-10T21:42:04.840052",
+      "best_model": "XGBoost",
+      "best_roc_auc": 0.9324918687774341
+    },
+    {
+      "step": 7,
+      "action": "Feature Importance",
+      "timestamp": "2026-08-10T21:42:04.883504",
+      "features_ranked": 75
+    },
+    {
+      "step": 8,
+      "action": "Model Visualization",
+      "timestamp": "2026-08-10T21:42:06.286314",
+      "visualizations": 2
+    },
+    {
+      "step": 9,
+      "action": "Dashboard Metrics",
+      "timestamp": "2026-08-10T21:42:06.291993",
+      "metrics_created": 13
+    },
+    {
+      "step": 10,
+      "action": "Model Training Report",
+      "timestamp": "2026-08-10T21:42:06.336435"
+    }
+  ],
+  "completion_timestamp": "2026-08-10T21:42:06.336534",
+  "execution_status": "SUCCESS",
+  "execution_time_seconds": 1306.842017
+}

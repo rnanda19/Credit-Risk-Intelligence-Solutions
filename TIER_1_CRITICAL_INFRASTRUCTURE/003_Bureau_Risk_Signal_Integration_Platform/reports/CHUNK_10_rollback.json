@@ -1,0 +1,16 @@
+{
+  "from_version": "CHUNK_10_deployment",
+  "to_version": "CHUNK_09_monitoring",
+  "generated_timestamp": "2026-08-11T18:33:47.921879",
+  "restoration_steps": [
+    "Step 1: Scale down new deployment to 0 replicas",
+    "Step 2: Restore previous model version from container registry",
+    "Step 3: Update load balancer to route to previous version",
+    "Step 4: Verify health checks passing on previous version",
+    "Step 5: Update monitoring dashboards to previous version",
+    "Step 6: Document rollback event in audit trail",
+    "Step 7: Notify deployment team of rollback completion"
+  ],
+  "estimated_duration_minutes": 14,
+  "risk_level": "MEDIUM"
+}

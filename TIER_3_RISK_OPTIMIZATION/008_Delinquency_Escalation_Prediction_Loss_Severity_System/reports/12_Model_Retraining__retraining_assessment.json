@@ -1,0 +1,35 @@
+{
+  "assessment_timestamp": "2026-08-11T11:56:54.724520",
+  "current_metrics": {
+    "roc_auc": 0.954692896616832,
+    "accuracy": 0.9569289302960832
+  },
+  "thresholds": {
+    "roc_auc_degradation_percent": 5.0,
+    "accuracy_degradation_percent": 5.0,
+    "retraining_interval_days": 30
+  },
+  "assessment_criteria": [
+    {
+      "criterion": "Time-Based Retraining",
+      "status": "NO_TRIGGER",
+      "reason": "Model trained 15 days ago (threshold: 30)"
+    },
+    {
+      "criterion": "Performance Degradation",
+      "status": "NO_TRIGGER",
+      "reason": "ROC-AUC degradation 2.09% (threshold: 5.0%)"
+    },
+    {
+      "criterion": "Data Drift Detection",
+      "status": "NO_TRIGGER",
+      "reason": "No significant data drift detected"
+    },
+    {
+      "criterion": "Feature Importance Changes",
+      "status": "NO_TRIGGER",
+      "reason": "Feature importance distribution stable"
+    }
+  ],
+  "retraining_recommendation": "RETRAIN_NOW"
+}

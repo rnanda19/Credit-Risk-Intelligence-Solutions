@@ -1,0 +1,45 @@
+{
+  "execution_id": "20260810_135339_691502",
+  "timestamp": "2026-08-10T13:53:39.691606",
+  "dataset_overview": {
+    "dataset_shape": "307,511 rows \u00d7 138 columns",
+    "memory_usage_mb": 561.9594812393188,
+    "numeric_columns": 122,
+    "categorical_columns": 16,
+    "missing_values": 0,
+    "duplicates": 0
+  },
+  "target_analysis": {
+    "target_0_count": 282686,
+    "target_1_count": 24825,
+    "target_0_percent": 91.92711805431351,
+    "target_1_percent": 8.072881945686495,
+    "class_imbalance_ratio": 0.08781828601345662
+  },
+  "numeric_summary": {
+    "total_columns": 122,
+    "mean_skewness": 24.77752421099157,
+    "highly_skewed_count": 109
+  },
+  "categorical_summary": {
+    "total_columns": 16,
+    "total_unique_values": 140
+  },
+  "correlation_summary": {
+    "total_correlations_analyzed": 121,
+    "strong_correlations": 0,
+    "moderate_correlations": 3
+  },
+  "data_quality_summary": {
+    "missing_values": 0,
+    "duplicate_records": 0,
+    "outlier_columns": 116
+  },
+  "key_findings": [
+    "Dataset contains 307,511 records with 138 features",
+    "Target variable imbalance ratio: 0.0878",
+    "Data quality: 0 missing values (all imputed in CHUNK 02)",
+    "Feature correlation: 3 features correlated with target",
+    "Skewness: 109 features highly skewed"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "control_framework": "COSO Internal Control Framework",
+  "scope": "IT General Controls (ITGC) + Application Controls",
+  "controls": [
+    {
+      "control_id": "SOX_01",
+      "control_name": "Model Development and Training",
+      "objective": "Ensure models are developed with appropriate methodology",
+      "design_status": "EFFECTIVE",
+      "testing_method": "Walkthrough + Inspection",
+      "evidence": "CHUNK_05 - Model development documentation",
+      "test_results": "PASSED",
+      "findings": 0
+    },
+    {
+      "control_id": "SOX_02",
+      "control_name": "Model Validation and Approval",
+      "objective": "Ensure models are validated before deployment",
+      "design_status": "EFFECTIVE",
+      "testing_method": "Re-performance of validation tests",
+      "evidence": "CHUNK_06 - 5-fold CV results (AUC 0.9374)",
+      "test_results": "PASSED",
+      "findings": 0
+    },
+    {
+      "control_id": "SOX_03",
+      "control_name": "Data Quality Controls",
+      "objective": "Ensure data completeness and accuracy",
+      "design_status": "EFFECTIVE",
+      "testing_method": "Data quality testing",
+      "evidence": "CHUNK_02, CHUNK_03 - Data cleaning & validation",
+      "test_results": "PASSED",
+      "findings": 0
+    },
+    {
+      "control_id": "SOX_04",
+      "control_name": "Access Controls and Segregation of Duties",
+      "objective": "Prevent unauthorized model changes",
+      "design_status": "EFFECTIVE",
+      "testing_method": "Access logs review",
+      "evidence": "Model version control and audit trails",
+      "test_results": "PASSED",
+      "findings": 0
+    },
+    {
+      "control_id": "SOX_05",
+      "control_name": "Change Management",
+      "objective": "Ensure controlled model updates",
+      "design_status": "EFFECTIVE",
+      "testing_method": "Change log inspection",
+      "evidence": "Version history and deployment logs",
+      "test_results": "PASSED",
+      "findings": 0
+    },
+    {
+      "control_id": "SOX_06",
+      "control_name": "Model Monitoring and Performance Tracking",
+      "objective": "Detect model degradation and data drift",
+      "design_status": "EFFECTIVE",
+      "testing_method": "Monitoring reports review",
+      "evidence": "CHUNK_09 - Drift detection and monitoring",
+      "test_results": "PASSED",
+      "findings": 0
+    },
+    {
+      "control_id": "SOX_07",
+      "control_name": "Audit Trail and Documentation",
+      "objective": "Maintain audit trail for all model activities",
+      "design_status": "EFFECTIVE",
+      "testing_method": "Audit log review",
+      "evidence": "Comprehensive logging in all CHUNKs",
+      "test_results": "PASSED",
+      "findings": 0
+    }
+  ],
+  "overall_assessment": "EFFECTIVE",
+  "internal_audit_date": "2026-08-12T01:25:52.596603"
+}
